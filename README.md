@@ -38,7 +38,6 @@ A separate query lists the opposite case: links in the tree with no artists behi
 | `results/` | Answers to the queries and test results |
 | `scripts/` | The Python scripts |
 | `docs/` | The web pages |
-| `slides/` | Course slides |
 
 ## How to run it
 
