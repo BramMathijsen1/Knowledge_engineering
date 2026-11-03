@@ -1,0 +1,11 @@
+# Title:    Influence chain
+# Question: Is there a chain of influence from Robert Johnson to Nirvana?
+# Output:   true or false
+
+PREFIX riff: <https://w3id.org/riff/ontology#>
+PREFIX genre: <https://w3id.org/riff/genre/>
+PREFIX artist: <https://w3id.org/riff/artist/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+ASK { artist:nirvana mm:isInfluencedBy+ artist:robert_johnson }

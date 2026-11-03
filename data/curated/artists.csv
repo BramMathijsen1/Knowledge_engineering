@@ -1,0 +1,182 @@
+id,name,wikipedia,wikidata,kind,primary_genre,other_genres,active_from,active_to,status
+robert_johnson,Robert Johnson,Robert Johnson,Q192133,person,blues,,1929,1938,draft
+bessie_smith,Bessie Smith,Bessie Smith,Q93349,person,blues,jazz,1912,1937,draft
+son_house,Son House,Son House,Q352999,person,blues,country,1930,1988,draft
+blind_willie_johnson,Blind Willie Johnson,Blind Willie Johnson,Q712586,person,blues,gospel,1927,1945,draft
+muddy_waters,Muddy Waters,Muddy Waters,Q220707,person,electric_blues,blues,1941,1983,draft
+howlin_wolf,Howlin' Wolf,Howlin' Wolf,Q44780,person,electric_blues,blues,1930,1976,draft
+b_b_king,B. B. King,B. B. King,Q188969,person,electric_blues,blues rhythm_and_blues,1949,2015,draft
+willie_dixon,Willie Dixon,Willie Dixon,Q204092,person,electric_blues,blues rhythm_and_blues,1939,1992,draft
+mahalia_jackson,Mahalia Jackson,Mahalia Jackson,Q206466,person,gospel,,1927,1972,draft
+sister_rosetta_tharpe,Sister Rosetta Tharpe,Sister Rosetta Tharpe,Q438106,person,gospel,blues jazz rhythm_and_blues rock_and_roll,1919,1973,draft
+thomas_a_dorsey,Thomas A. Dorsey,Thomas A. Dorsey,Q562158,person,gospel,jazz,1924,1993,draft
+woody_guthrie,Woody Guthrie,Woody Guthrie,Q4061,person,folk,country,1930,1967,draft
+pete_seeger,Pete Seeger,Pete Seeger,Q244441,person,folk,,1939,2014,draft
+lead_belly,Lead Belly,Lead Belly,Q314310,person,folk,blues country,1903,1949,draft
+hank_williams,Hank Williams,Hank Williams,Q206181,person,country,blues,1937,1953,draft
+jimmie_rodgers,Jimmie Rodgers,Jimmie Rodgers,Q366358,person,country,blues,1927,1933,draft
+johnny_cash,Johnny Cash,Johnny Cash,Q42775,person,country,blues gospel rock_and_roll rockabilly,1954,2003,draft
+louis_armstrong,Louis Armstrong,Louis Armstrong,Q1779,person,jazz,,1914,1971,draft
+duke_ellington,Duke Ellington,Duke Ellington,Q4030,person,jazz,gospel,1922,1974,draft
+billie_holiday,Billie Holiday,Billie Holiday,Q104358,person,jazz,blues,1933,1959,draft
+ella_fitzgerald,Ella Fitzgerald,Ella Fitzgerald,Q1768,person,jazz,soul,1934,1996,draft
+miles_davis,Miles Davis,Miles Davis,Q93341,person,jazz,bebop jazz_fusion,1944,1991,draft
+john_coltrane,John Coltrane,John Coltrane,Q7346,person,jazz,,1945,1967,draft
+ahmad_jamal,Ahmad Jamal,Ahmad Jamal,Q379613,person,jazz,,1948,2023,draft
+dizzy_gillespie,Dizzy Gillespie,Dizzy Gillespie,Q49575,person,bebop,jazz,1935,1993,draft
+thelonious_monk,Thelonious Monk,Thelonious Monk,Q109612,person,bebop,jazz,1944,1982,draft
+louis_jordan,Louis Jordan,Louis Jordan,Q461011,person,rhythm_and_blues,blues jazz,1932,1975,draft
+fats_domino,Fats Domino,Fats Domino,Q209586,person,rhythm_and_blues,jazz rock_and_roll,1949,2017,draft
+ruth_brown,Ruth Brown,Ruth Brown,Q144669,person,rhythm_and_blues,blues,1949,2006,draft
+big_mama_thornton,Big Mama Thornton,Big Mama Thornton,Q237527,person,rhythm_and_blues,blues,1947,1984,draft
+chuck_berry,Chuck Berry,Chuck Berry,Q5921,person,rock_and_roll,blues rock,1953,2017,draft
+little_richard,Little Richard,Little Richard,Q82222,person,rock_and_roll,funk gospel rhythm_and_blues rock soul,1951,2020,draft
+buddy_holly,Buddy Holly,Buddy Holly,Q5977,person,rock_and_roll,country rock rockabilly,1952,1959,draft
+jerry_lee_lewis,Jerry Lee Lewis,Jerry Lee Lewis,Q202729,person,rock_and_roll,blues country gospel rock rockabilly,1949,2022,draft
+bo_diddley,Bo Diddley,Bo Diddley,Q208881,person,rock_and_roll,blues,1943,2008,draft
+elvis_presley,Elvis Presley,Elvis Presley,Q303,person,rock_and_roll,blues country gospel rhythm_and_blues rock rockabilly,1954,1977,draft
+carl_perkins,Carl Perkins,Carl Perkins,Q310339,person,rockabilly,country rock,1946,1998,draft
+eddie_cochran,Eddie Cochran,Eddie Cochran,Q5969,person,rockabilly,country rock,1952,1960,draft
+gene_vincent,Gene Vincent,Gene Vincent,Q82311,person,rockabilly,country,1955,1971,draft
+the_beatles,The Beatles,The Beatles,Q1299,group,rock,blues_rock folk_rock hard_rock psychedelic_rock rock_and_roll,1960,1970,draft
+the_rolling_stones,The Rolling Stones,The Rolling Stones,Q11036,group,rock,blues blues_rock psychedelic_rock rhythm_and_blues rock_and_roll,1962,,draft
+the_who,The Who,The Who,Q93346,group,rock,art_rock hard_rock progressive_rock rhythm_and_blues,1964,,draft
+the_kinks,The Kinks,The Kinks,Q188713,group,rock,garage_rock hard_rock,1963,1996,draft
+bob_dylan,Bob Dylan,Bob Dylan,Q392,person,folk_rock,blues country gospel jazz rock,1962,,draft
+the_byrds,The Byrds,The Byrds,Q211526,group,folk_rock,psychedelic_rock,1964,1973,draft
+neil_young,Neil Young,Neil Young,Q633,person,folk_rock,alternative_rock blues country grunge hard_rock rock rockabilly,1961,,draft
+eric_clapton,Eric Clapton,Eric Clapton,Q48187,person,blues_rock,blues hard_rock jazz_fusion psychedelic_rock rock,1962,2023,draft
+cream,Cream,Cream (band),Q203736,group,blues_rock,hard_rock heavy_metal psychedelic_rock rock,1966,1968,draft
+the_yardbirds,The Yardbirds,The Yardbirds,Q192725,group,blues_rock,psychedelic_rock rhythm_and_blues,1963,,draft
+jimi_hendrix,Jimi Hendrix,Jimi Hendrix,Q5928,person,psychedelic_rock,blues_rock electric_blues hard_rock,1965,1970,draft
+pink_floyd,Pink Floyd,Pink Floyd,Q2306,group,psychedelic_rock,art_rock blues_rock progressive_rock,1964,2014,draft
+the_doors,The Doors,The Doors,Q45354,group,psychedelic_rock,blues_rock,1965,2013,draft
+grateful_dead,Grateful Dead,Grateful Dead,Q212533,group,psychedelic_rock,rock,1965,1995,draft
+led_zeppelin,Led Zeppelin,Led Zeppelin,Q2331,group,hard_rock,blues_rock folk_rock rock,1968,1980,draft
+deep_purple,Deep Purple,Deep Purple,Q101505,group,hard_rock,progressive_rock psychedelic_rock,1968,,draft
+ac_dc,AC/DC,AC/DC,Q27593,group,hard_rock,blues_rock rock_and_roll,1973,,draft
+aerosmith,Aerosmith,Aerosmith,Q126826,group,hard_rock,blues_rock glam_rock heavy_metal rock_and_roll,1969,,draft
+van_halen,Van Halen,Van Halen,Q190155,group,hard_rock,,1972,2020,draft
+black_sabbath,Black Sabbath,Black Sabbath,Q47670,group,heavy_metal,hard_rock,1968,2022,draft
+judas_priest,Judas Priest,Judas Priest,Q83468,group,heavy_metal,,1969,,draft
+iron_maiden,Iron Maiden,Iron Maiden,Q42482,group,heavy_metal,,1975,,draft
+motorhead,Motörhead,Motörhead,Q19697,group,heavy_metal,hard_rock,1975,2015,draft
+metallica,Metallica,Metallica,Q15920,group,heavy_metal,,1981,,draft
+slayer,Slayer,Slayer,Q131231,group,extreme_metal,,1981,2019,draft
+venom,Venom,Venom (band),Q192861,group,extreme_metal,heavy_metal,1979,,draft
+death,Death,Death (metal band),Q192843,group,extreme_metal,,1983,2001,draft
+napalm_death,Napalm Death,Napalm Death,Q321762,group,extreme_metal,hardcore_punk,1981,,draft
+king_crimson,King Crimson,King Crimson,Q189382,group,progressive_rock,art_rock psychedelic_rock,1968,,draft
+yes,Yes,Yes (band),Q184386,group,progressive_rock,art_rock,1968,,draft
+genesis,Genesis,Genesis (band),Q151012,group,progressive_rock,art_rock,1967,,draft
+rush,Rush,Rush (band),Q203871,group,progressive_rock,alternative_rock hard_rock heavy_metal,1968,2018,draft
+david_bowie,David Bowie,David Bowie,Q5383,person,art_rock,alternative_rock ambient glam_rock hard_rock new_wave psychedelic_rock rock soul,1964,2016,draft
+roxy_music,Roxy Music,Roxy Music,Q334648,group,art_rock,glam_rock new_wave,1970,2011,draft
+the_velvet_underground,The Velvet Underground,The Velvet Underground,Q103550,group,art_rock,alternative_rock blues_rock folk_rock psychedelic_rock rock,1964,1972,draft
+kate_bush,Kate Bush,Kate Bush,Q636,person,art_rock,,1975,,draft
+t_rex,T. Rex,T. Rex (band),Q211770,group,glam_rock,folk_rock psychedelic_rock,1967,1977,draft
+new_york_dolls,New York Dolls,New York Dolls,Q830586,group,glam_rock,hard_rock,1971,1977,draft
+the_stooges,The Stooges,The Stooges,Q208767,group,garage_rock,punk_rock,1967,,draft
+the_sonics,The Sonics,The Sonics,Q904921,group,garage_rock,,1960,,draft
+mc5,MC5,MC5,Q830316,group,garage_rock,punk_rock,1964,1972,draft
+ramones,Ramones,Ramones,Q483407,group,punk_rock,pop_punk,1974,1996,draft
+sex_pistols,Sex Pistols,Sex Pistols,Q82545,group,punk_rock,,1975,,draft
+the_clash,The Clash,The Clash,Q125603,group,punk_rock,new_wave post_punk reggae ska,1976,1986,draft
+patti_smith,Patti Smith,Patti Smith,Q557,person,punk_rock,art_rock post_punk rock,1971,,draft
+black_flag,Black Flag,Black Flag (band),Q464476,group,hardcore_punk,punk_rock,1976,,draft
+bad_brains,Bad Brains,Bad Brains,Q798671,group,hardcore_punk,reggae,1977,,draft
+minor_threat,Minor Threat,Minor Threat,Q81509,group,hardcore_punk,punk_rock,1980,1983,draft
+dead_kennedys,Dead Kennedys,Dead Kennedys,Q208211,group,hardcore_punk,punk_rock,1978,1986,draft
+joy_division,Joy Division,Joy Division,Q172763,group,post_punk,,1976,1980,draft
+talking_heads,Talking Heads,Talking Heads,Q205001,group,post_punk,new_wave,1975,1991,draft
+gang_of_four,Gang of Four,Gang of Four (band),Q1130624,group,post_punk,punk_rock,1976,2020,draft
+siouxsie_and_the_banshees,Siouxsie and the Banshees,Siouxsie and the Banshees,Q323834,group,post_punk,alternative_rock new_wave,1976,1996,draft
+blondie,Blondie,Blondie (band),Q202741,group,new_wave,post_punk rock,1974,,draft
+the_police,The Police,The Police,Q178095,group,new_wave,post_punk rock,1977,2008,draft
+devo,Devo,Devo,Q908848,group,new_wave,art_rock,1972,,draft
+the_cars,The Cars,The Cars,Q858388,group,new_wave,rock,1976,2019,draft
+r_e_m,R.E.M.,R.E.M.,Q134969,group,alternative_rock,folk_rock,1980,2011,draft
+pixies,Pixies,Pixies (band),Q188464,group,alternative_rock,indie_rock,1986,,draft
+sonic_youth,Sonic Youth,Sonic Youth,Q188626,group,alternative_rock,indie_rock,1981,2011,draft
+radiohead,Radiohead,Radiohead,Q44190,group,alternative_rock,art_rock,1985,,draft
+the_smiths,The Smiths,The Smiths,Q180598,group,alternative_rock,indie_rock new_wave post_punk,1982,1987,draft
+nirvana,Nirvana,Nirvana (band),Q11649,group,grunge,alternative_rock,1987,1994,draft
+pearl_jam,Pearl Jam,Pearl Jam,Q142701,group,grunge,hard_rock,1990,,draft
+soundgarden,Soundgarden,Soundgarden,Q174817,group,grunge,alternative_rock hard_rock heavy_metal,1984,2019,draft
+melvins,Melvins,Melvins,Q385618,group,grunge,alternative_rock,1983,,draft
+mudhoney,Mudhoney,Mudhoney,Q898820,group,grunge,alternative_rock,1988,,draft
+pavement,Pavement,Pavement (band),Q922445,group,indie_rock,alternative_rock,1989,1999,draft
+the_strokes,The Strokes,The Strokes,Q211583,group,indie_rock,garage_rock new_wave rock,1998,,draft
+arcade_fire,Arcade Fire,Arcade Fire,Q58608,group,indie_rock,,2001,,draft
+green_day,Green Day,Green Day,Q47871,group,pop_punk,alternative_rock punk_rock rock,1982,,draft
+blink_182,Blink-182,Blink-182,Q482477,group,pop_punk,alternative_rock,1992,,draft
+buzzcocks,Buzzcocks,Buzzcocks,Q939329,group,pop_punk,punk_rock,1976,,draft
+sum_41,Sum 41,Sum 41,Q483558,group,pop_punk,punk_rock,1996,2023,draft
+aretha_franklin,Aretha Franklin,Aretha Franklin,Q125121,person,soul,funk gospel jazz rhythm_and_blues,1956,2018,draft
+sam_cooke,Sam Cooke,Sam Cooke,Q295919,person,soul,gospel rhythm_and_blues,1950,1964,draft
+otis_redding,Otis Redding,Otis Redding,Q217839,person,soul,gospel,1958,1967,draft
+marvin_gaye,Marvin Gaye,Marvin Gaye,Q189758,person,soul,funk rhythm_and_blues,1959,1984,draft
+stevie_wonder,Stevie Wonder,Stevie Wonder,Q714,person,soul,blues funk jazz rhythm_and_blues,1961,,draft
+ray_charles,Ray Charles,Ray Charles,Q544387,person,soul,blues country gospel jazz rhythm_and_blues,1947,2004,draft
+james_brown,James Brown,James Brown,Q5950,person,funk,blues gospel soul,1954,2006,draft
+parliament_funkadelic,Parliament-Funkadelic,Parliament-Funkadelic,Q3353842,group,funk,,1955,,draft
+sly_and_the_family_stone,Sly and the Family Stone,Sly and the Family Stone,Q1133807,group,funk,rhythm_and_blues rock soul,1967,1975,draft
+the_meters,The Meters,The Meters,Q1887369,group,funk,,1965,,draft
+donna_summer,Donna Summer,Donna Summer,Q908933,person,disco,contemporary_rnb house rock synth_pop,1968,2012,draft
+chic,Chic,Chic (band),Q516712,group,disco,rhythm_and_blues,1976,,draft
+bee_gees,Bee Gees,Bee Gees,Q133405,group,disco,rhythm_and_blues rock soul,1958,2012,draft
+giorgio_moroder,Giorgio Moroder,Giorgio Moroder,Q312674,person,disco,,1965,,draft
+michael_jackson,Michael Jackson,Michael Jackson,Q2831,person,contemporary_rnb,disco funk rock soul,1964,2009,draft
+prince,Prince,Prince (musician),Q7542,person,contemporary_rnb,disco funk jazz rock soul,1978,2016,draft
+whitney_houston,Whitney Houston,Whitney Houston,Q34389,person,contemporary_rnb,gospel rhythm_and_blues soul,1976,2012,draft
+beyonce,Beyoncé,Beyoncé,Q36153,person,contemporary_rnb,country,1990,,draft
+mariah_carey,Mariah Carey,Mariah Carey,Q41076,person,contemporary_rnb,hip_hop,1988,,draft
+herbie_hancock,Herbie Hancock,Herbie Hancock,Q105875,person,jazz_fusion,bebop electro funk jazz rhythm_and_blues,1961,,draft
+weather_report,Weather Report,Weather Report,Q1120697,group,jazz_fusion,jazz rock,1970,1986,draft
+mahavishnu_orchestra,Mahavishnu Orchestra,Mahavishnu Orchestra,Q841778,group,jazz_fusion,progressive_rock,1971,1987,draft
+the_skatalites,The Skatalites,The Skatalites,Q845449,group,ska,,1964,,draft
+the_specials,The Specials,The Specials,Q19057,group,ska,new_wave,1977,,draft
+madness,Madness,Madness (band),Q745741,group,ska,new_wave reggae synth_pop,1979,,draft
+bob_marley,Bob Marley,Bob Marley,Q409,person,reggae,ska,1962,1981,draft
+toots_and_the_maytals,Toots and the Maytals,Toots and the Maytals,Q845465,group,reggae,ska,1963,2020,draft
+jimmy_cliff,Jimmy Cliff,Jimmy Cliff,Q109063,person,reggae,ska,1962,2025,draft
+king_tubby,King Tubby,King Tubby,Q451858,person,dub,reggae,1968,1989,draft
+lee_scratch_perry,"Lee ""Scratch"" Perry","Lee ""Scratch"" Perry",Q315417,person,dub,drum_and_bass jungle reggae ska,1962,2021,draft
+grandmaster_flash,Grandmaster Flash,Grandmaster Flash,Q506900,person,hip_hop,electro funk,1978,,draft
+afrika_bambaataa,Afrika Bambaataa,Afrika Bambaataa,Q316872,person,hip_hop,electro funk,1977,2026,draft
+run_dmc,Run-DMC,Run-DMC,Q159351,group,hip_hop,,1981,2002,draft
+public_enemy,Public Enemy,Public Enemy,Q209182,group,hip_hop,,1985,,draft
+nas,Nas,Nas,Q194220,person,hip_hop,gangsta_rap jazz_rap,1989,,draft
+kendrick_lamar,Kendrick Lamar,Kendrick Lamar,Q130798,person,hip_hop,gangsta_rap jazz jazz_rap,2003,,draft
+wu_tang_clan,Wu-Tang Clan,Wu-Tang Clan,Q52463,group,hip_hop,gangsta_rap,1992,,draft
+n_w_a,N.W.A,N.W.A,Q216856,group,gangsta_rap,,1986,2002,draft
+dr_dre,Dr. Dre,Dr. Dre,Q6078,person,gangsta_rap,,1984,,draft
+ice_t,Ice-T,Ice-T,Q309941,person,gangsta_rap,heavy_metal,1982,,draft
+tupac_shakur,Tupac Shakur,Tupac Shakur,Q6107,person,gangsta_rap,,1989,1996,draft
+the_notorious_b_i_g,The Notorious B.I.G.,The Notorious B.I.G.,Q179157,person,gangsta_rap,,1992,1997,draft
+t_i,T.I.,T.I.,Q214227,person,trap,gangsta_rap,1999,,draft
+gucci_mane,Gucci Mane,Gucci Mane,Q206032,person,trap,gangsta_rap,2001,,draft
+a_tribe_called_quest,A Tribe Called Quest,A Tribe Called Quest,Q300602,group,jazz_rap,hip_hop,1985,2017,draft
+gang_starr,Gang Starr,Gang Starr,Q844524,group,jazz_rap,,1985,2005,draft
+digable_planets,Digable Planets,Digable Planets,Q3027728,group,jazz_rap,,1991,,draft
+can,Can,Can (band),Q170132,group,krautrock,art_rock progressive_rock,1968,,draft
+neu,Neu!,Neu!,Q181874,group,krautrock,,1971,,draft
+tangerine_dream,Tangerine Dream,Tangerine Dream,Q153616,group,krautrock,,1967,,draft
+kraftwerk,Kraftwerk,Kraftwerk,Q44892,group,krautrock,electro synth_pop techno,1970,2003,draft
+depeche_mode,Depeche Mode,Depeche Mode,Q482964,group,synth_pop,alternative_rock new_wave post_punk,1980,,draft
+new_order,New Order,New Order (band),Q214990,group,synth_pop,new_wave post_punk,1980,,draft
+gary_numan,Gary Numan,Gary Numan,Q331731,person,synth_pop,new_wave,1975,,draft
+the_human_league,The Human League,The Human League,Q730158,group,synth_pop,new_wave post_punk,1977,,draft
+pet_shop_boys,Pet Shop Boys,Pet Shop Boys,Q485625,group,synth_pop,house new_wave,1981,,draft
+egyptian_lover,Egyptian Lover,Egyptian Lover,Q705532,person,electro,hip_hop,1977,,draft
+marshall_jefferson,Marshall Jefferson,Marshall Jefferson,Q1351604,person,house,,1986,,draft
+daft_punk,Daft Punk,Daft Punk,Q185828,group,house,synth_pop,1993,2021,draft
+juan_atkins,Juan Atkins,Juan Atkins,Q366714,person,techno,,1980,2026,draft
+derrick_may,Derrick May,Derrick May (musician),Q923104,person,techno,,1986,,draft
+jeff_mills,Jeff Mills,Jeff Mills,Q506851,person,techno,,1980,,draft
+brian_eno,Brian Eno,Brian Eno,Q569003,person,ambient,art_rock,1970,,draft
+aphex_twin,Aphex Twin,Aphex Twin,Q223161,person,ambient,techno,1985,,draft
+the_orb,The Orb,The Orb,Q924993,group,ambient,dub techno,1988,,draft
+roni_size,Roni Size,Roni Size,Q964002,person,drum_and_bass,,1988,,draft
+ltj_bukem,LTJ Bukem,LTJ Bukem,Q921236,person,drum_and_bass,,1988,,draft
+the_winstons,The Winstons,The Winstons,Q478168,group,funk,,1969,,draft

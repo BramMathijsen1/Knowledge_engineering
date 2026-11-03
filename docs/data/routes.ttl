@@ -1,0 +1,1827 @@
+@prefix ns1: <https://w3id.org/riff/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/riff/route/alternative_rock--extreme_metal> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/alternative_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/extreme_metal> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/alternative_rock--grunge> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/alternative_rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/grunge> ;
+    ns1:routeWeight 4 .
+
+<https://w3id.org/riff/route/alternative_rock--indie_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/alternative_rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/indie_rock> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/ambient--alternative_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/ambient> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/alternative_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/ambient--house> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/ambient> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/house> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/ambient--post_punk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/ambient> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/post_punk> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/ambient--synth_pop> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/ambient> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/synth_pop> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/art_rock--alternative_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/art_rock> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/alternative_rock> ;
+    ns1:routeWeight 6 .
+
+<https://w3id.org/riff/route/art_rock--disco> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/art_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/disco> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/art_rock--gangsta_rap> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/art_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/gangsta_rap> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/art_rock--garage_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/art_rock> ;
+    ns1:routeStatus "reversed" ;
+    ns1:routeTo <https://w3id.org/riff/genre/garage_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/art_rock--glam_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/art_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/glam_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/art_rock--grunge> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/art_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/grunge> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/art_rock--hard_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/art_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hard_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/art_rock--hardcore_punk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/art_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hardcore_punk> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/art_rock--heavy_metal> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/art_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/heavy_metal> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/art_rock--indie_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/art_rock> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/indie_rock> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/art_rock--krautrock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/art_rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/krautrock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/art_rock--new_wave> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/art_rock> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/new_wave> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/art_rock--pop_punk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/art_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/pop_punk> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/art_rock--post_punk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/art_rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/post_punk> ;
+    ns1:routeWeight 5 .
+
+<https://w3id.org/riff/route/art_rock--punk_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/art_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/punk_rock> ;
+    ns1:routeWeight 4 .
+
+<https://w3id.org/riff/route/art_rock--ska> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/art_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/ska> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/art_rock--synth_pop> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/art_rock> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/synth_pop> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/bebop--hip_hop> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/bebop> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hip_hop> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/bebop--jazz> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/bebop> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/jazz> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/blues--blues_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/blues> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/blues_rock> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/blues--electric_blues> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/blues> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/electric_blues> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/blues--folk_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/blues> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/folk_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/blues--gospel> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/blues> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/gospel> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/blues--hard_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/blues> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hard_rock> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/blues--jazz> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/blues> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/jazz> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/blues--rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/blues> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/blues_rock--art_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/blues_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/art_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/blues_rock--garage_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/blues_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/garage_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/blues_rock--grunge> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/blues_rock> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/grunge> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/blues_rock--hard_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/blues_rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hard_rock> ;
+    ns1:routeWeight 5 .
+
+<https://w3id.org/riff/route/blues_rock--heavy_metal> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/blues_rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/heavy_metal> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/blues_rock--progressive_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/blues_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/progressive_rock> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/blues_rock--psychedelic_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/blues_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/blues_rock--soul> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/blues_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/soul> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/contemporary_rnb--ambient> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/contemporary_rnb> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/ambient> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/contemporary_rnb--electro> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/contemporary_rnb> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/electro> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/contemporary_rnb--gangsta_rap> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/contemporary_rnb> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/gangsta_rap> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/contemporary_rnb--hip_hop> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/contemporary_rnb> ;
+    ns1:routeStatus "reversed" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hip_hop> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/contemporary_rnb--synth_pop> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/contemporary_rnb> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/synth_pop> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/contemporary_rnb--techno> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/contemporary_rnb> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/techno> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/country--folk_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/country> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/folk_rock> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/country--rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/country> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/rock> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/country--rock_and_roll> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/country> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/rock_and_roll> ;
+    ns1:routeWeight 6 .
+
+<https://w3id.org/riff/route/country--rockabilly> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/country> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/rockabilly> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/disco--alternative_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/disco> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/alternative_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/disco--contemporary_rnb> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/disco> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/contemporary_rnb> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/disco--house> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/disco> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/house> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/disco--new_wave> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/disco> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/new_wave> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/disco--synth_pop> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/disco> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/synth_pop> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/dub--ambient> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/dub> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/ambient> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/dub--punk_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/dub> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/punk_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/electric_blues--blues_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/electric_blues> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/blues_rock> ;
+    ns1:routeWeight 4 .
+
+<https://w3id.org/riff/route/electric_blues--hard_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/electric_blues> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hard_rock> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/electric_blues--rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/electric_blues> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/rock> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/electric_blues--rock_and_roll> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/electric_blues> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/rock_and_roll> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/extreme_metal--grunge> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/extreme_metal> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/grunge> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/extreme_metal--heavy_metal> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/extreme_metal> ;
+    ns1:routeStatus "reversed" ;
+    ns1:routeTo <https://w3id.org/riff/genre/heavy_metal> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/extreme_metal--pop_punk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/extreme_metal> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/pop_punk> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/folk--country> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/folk> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/country> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/folk--folk_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/folk> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/folk_rock> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/folk--grunge> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/folk> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/grunge> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/folk--punk_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/folk> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/punk_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/folk_rock--alternative_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/folk_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/alternative_rock> ;
+    ns1:routeWeight 6 .
+
+<https://w3id.org/riff/route/folk_rock--art_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/folk_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/art_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/folk_rock--blues_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/folk_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/blues_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/folk_rock--grunge> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/folk_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/grunge> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/folk_rock--hard_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/folk_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hard_rock> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/folk_rock--psychedelic_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/folk_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/folk_rock--punk_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/folk_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/punk_rock> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/folk_rock--rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/folk_rock> ;
+    ns1:routeStatus "reversed" ;
+    ns1:routeTo <https://w3id.org/riff/genre/rock> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/folk_rock--soul> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/folk_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/soul> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/folk_rock--synth_pop> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/folk_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/synth_pop> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/funk--contemporary_rnb> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/funk> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/contemporary_rnb> ;
+    ns1:routeWeight 6 .
+
+<https://w3id.org/riff/route/funk--drum_and_bass> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/funk> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/drum_and_bass> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/funk--gangsta_rap> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/funk> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/gangsta_rap> ;
+    ns1:routeWeight 7 .
+
+<https://w3id.org/riff/route/funk--hip_hop> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/funk> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hip_hop> ;
+    ns1:routeWeight 4 .
+
+<https://w3id.org/riff/route/funk--house> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/funk> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/house> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/funk--jazz> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/funk> ;
+    ns1:routeStatus "reversed" ;
+    ns1:routeTo <https://w3id.org/riff/genre/jazz> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/funk--jazz_fusion> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/funk> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/jazz_fusion> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/funk--jazz_rap> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/funk> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/jazz_rap> ;
+    ns1:routeWeight 8 .
+
+<https://w3id.org/riff/route/funk--krautrock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/funk> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/krautrock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/funk--post_punk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/funk> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/post_punk> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/funk--reggae> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/funk> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/reggae> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/funk--rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/funk> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/funk--soul> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/funk> ;
+    ns1:routeStatus "reversed" ;
+    ns1:routeTo <https://w3id.org/riff/genre/soul> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/funk--synth_pop> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/funk> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/synth_pop> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/funk--techno> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/funk> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/techno> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/gangsta_rap--contemporary_rnb> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/gangsta_rap> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/contemporary_rnb> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/gangsta_rap--hip_hop> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/gangsta_rap> ;
+    ns1:routeStatus "reversed" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hip_hop> ;
+    ns1:routeWeight 5 .
+
+<https://w3id.org/riff/route/gangsta_rap--house> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/gangsta_rap> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/house> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/garage_rock--alternative_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/garage_rock> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/alternative_rock> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/garage_rock--grunge> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/garage_rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/grunge> ;
+    ns1:routeWeight 8 .
+
+<https://w3id.org/riff/route/garage_rock--hardcore_punk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/garage_rock> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hardcore_punk> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/garage_rock--heavy_metal> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/garage_rock> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/heavy_metal> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/garage_rock--krautrock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/garage_rock> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/krautrock> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/garage_rock--pop_punk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/garage_rock> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/pop_punk> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/garage_rock--post_punk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/garage_rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/post_punk> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/garage_rock--punk_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/garage_rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/punk_rock> ;
+    ns1:routeWeight 7 .
+
+<https://w3id.org/riff/route/glam_rock--alternative_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/glam_rock> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/alternative_rock> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/glam_rock--art_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/glam_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/art_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/glam_rock--garage_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/glam_rock> ;
+    ns1:routeStatus "reversed" ;
+    ns1:routeTo <https://w3id.org/riff/genre/garage_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/glam_rock--grunge> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/glam_rock> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/grunge> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/glam_rock--hard_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/glam_rock> ;
+    ns1:routeStatus "reversed" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hard_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/glam_rock--pop_punk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/glam_rock> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/pop_punk> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/glam_rock--punk_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/glam_rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/punk_rock> ;
+    ns1:routeWeight 5 .
+
+<https://w3id.org/riff/route/gospel--country> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/gospel> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/country> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/gospel--disco> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/gospel> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/disco> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/gospel--rock_and_roll> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/gospel> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/rock_and_roll> ;
+    ns1:routeWeight 5 .
+
+<https://w3id.org/riff/route/gospel--rockabilly> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/gospel> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/rockabilly> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/gospel--soul> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/gospel> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/soul> ;
+    ns1:routeWeight 4 .
+
+<https://w3id.org/riff/route/grunge--heavy_metal> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/grunge> ;
+    ns1:routeStatus "reversed" ;
+    ns1:routeTo <https://w3id.org/riff/genre/heavy_metal> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/grunge--indie_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/grunge> ;
+    ns1:routeStatus "reversed" ;
+    ns1:routeTo <https://w3id.org/riff/genre/indie_rock> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/grunge--pop_punk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/grunge> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/pop_punk> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/grunge--synth_pop> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/grunge> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/synth_pop> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/hard_rock--art_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/hard_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/art_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/hard_rock--contemporary_rnb> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/hard_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/contemporary_rnb> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/hard_rock--extreme_metal> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/hard_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/extreme_metal> ;
+    ns1:routeWeight 8 .
+
+<https://w3id.org/riff/route/hard_rock--grunge> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/hard_rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/grunge> ;
+    ns1:routeWeight 5 .
+
+<https://w3id.org/riff/route/hard_rock--heavy_metal> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/hard_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/heavy_metal> ;
+    ns1:routeWeight 9 .
+
+<https://w3id.org/riff/route/hard_rock--hip_hop> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/hard_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hip_hop> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/hard_rock--post_punk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/hard_rock> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/post_punk> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/hard_rock--progressive_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/hard_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/progressive_rock> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/hard_rock--punk_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/hard_rock> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/punk_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/hardcore_punk--alternative_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/hardcore_punk> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/alternative_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/hardcore_punk--extreme_metal> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/hardcore_punk> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/extreme_metal> ;
+    ns1:routeWeight 4 .
+
+<https://w3id.org/riff/route/hardcore_punk--grunge> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/hardcore_punk> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/grunge> ;
+    ns1:routeWeight 4 .
+
+<https://w3id.org/riff/route/hardcore_punk--heavy_metal> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/hardcore_punk> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/heavy_metal> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/hardcore_punk--pop_punk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/hardcore_punk> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/pop_punk> ;
+    ns1:routeWeight 5 .
+
+<https://w3id.org/riff/route/heavy_metal--extreme_metal> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/heavy_metal> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/extreme_metal> ;
+    ns1:routeWeight 12 .
+
+<https://w3id.org/riff/route/heavy_metal--gangsta_rap> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/heavy_metal> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/gangsta_rap> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/heavy_metal--grunge> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/heavy_metal> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/grunge> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/heavy_metal--hard_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/heavy_metal> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hard_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/heavy_metal--hardcore_punk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/heavy_metal> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hardcore_punk> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/heavy_metal--pop_punk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/heavy_metal> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/pop_punk> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/heavy_metal--progressive_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/heavy_metal> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/progressive_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/hip_hop--art_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/hip_hop> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/art_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/hip_hop--contemporary_rnb> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/hip_hop> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/contemporary_rnb> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/hip_hop--drum_and_bass> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/hip_hop> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/drum_and_bass> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/hip_hop--electro> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/hip_hop> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/electro> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/hip_hop--gangsta_rap> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/hip_hop> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/gangsta_rap> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/hip_hop--jazz_rap> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/hip_hop> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/jazz_rap> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/hip_hop--pop_punk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/hip_hop> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/pop_punk> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/house--techno> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/house> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/techno> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/jazz--alternative_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/jazz> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/alternative_rock> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/jazz--ambient> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/jazz> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/ambient> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/jazz--bebop> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/jazz> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/bebop> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/jazz--contemporary_rnb> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/jazz> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/contemporary_rnb> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/jazz--folk_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/jazz> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/folk_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/jazz--grunge> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/jazz> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/grunge> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/jazz--hard_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/jazz> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hard_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/jazz--hip_hop> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/jazz> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hip_hop> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/jazz--jazz_rap> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/jazz> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/jazz_rap> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/jazz--progressive_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/jazz> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/progressive_rock> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/jazz--psychedelic_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/jazz> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/jazz--rhythm_and_blues> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/jazz> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/rhythm_and_blues> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/jazz--soul> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/jazz> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/soul> ;
+    ns1:routeWeight 4 .
+
+<https://w3id.org/riff/route/jazz_fusion--hardcore_punk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/jazz_fusion> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hardcore_punk> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/jazz_fusion--hip_hop> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/jazz_fusion> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hip_hop> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/jazz_fusion--jazz_rap> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/jazz_fusion> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/jazz_rap> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/jazz_fusion--new_wave> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/jazz_fusion> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/new_wave> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/jazz_rap--gangsta_rap> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/jazz_rap> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/gangsta_rap> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/jazz_rap--hip_hop> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/jazz_rap> ;
+    ns1:routeStatus "reversed" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hip_hop> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/krautrock--alternative_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/krautrock> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/alternative_rock> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/krautrock--ambient> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/krautrock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/ambient> ;
+    ns1:routeWeight 5 .
+
+<https://w3id.org/riff/route/krautrock--art_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/krautrock> ;
+    ns1:routeStatus "reversed" ;
+    ns1:routeTo <https://w3id.org/riff/genre/art_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/krautrock--drum_and_bass> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/krautrock> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/drum_and_bass> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/krautrock--electro> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/krautrock> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/electro> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/krautrock--hip_hop> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/krautrock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hip_hop> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/krautrock--jazz_rap> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/krautrock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/jazz_rap> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/krautrock--new_wave> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/krautrock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/new_wave> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/krautrock--post_punk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/krautrock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/post_punk> ;
+    ns1:routeWeight 5 .
+
+<https://w3id.org/riff/route/krautrock--punk_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/krautrock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/punk_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/krautrock--synth_pop> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/krautrock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/synth_pop> ;
+    ns1:routeWeight 5 .
+
+<https://w3id.org/riff/route/krautrock--techno> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/krautrock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/techno> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/new_wave--alternative_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/new_wave> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/alternative_rock> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/new_wave--grunge> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/new_wave> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/grunge> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/new_wave--indie_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/new_wave> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/indie_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/new_wave--pop_punk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/new_wave> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/pop_punk> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/new_wave--progressive_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/new_wave> ;
+    ns1:routeStatus "reversed" ;
+    ns1:routeTo <https://w3id.org/riff/genre/progressive_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/pop_punk--alternative_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/pop_punk> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/alternative_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/pop_punk--hardcore_punk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/pop_punk> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hardcore_punk> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/post_punk--alternative_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/post_punk> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/alternative_rock> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/post_punk--grunge> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/post_punk> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/grunge> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/post_punk--indie_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/post_punk> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/indie_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/post_punk--synth_pop> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/post_punk> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/synth_pop> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/progressive_rock--alternative_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/progressive_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/alternative_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/progressive_rock--art_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/progressive_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/art_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/progressive_rock--extreme_metal> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/progressive_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/extreme_metal> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/progressive_rock--grunge> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/progressive_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/grunge> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/progressive_rock--hard_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/progressive_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hard_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/progressive_rock--hardcore_punk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/progressive_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hardcore_punk> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/progressive_rock--heavy_metal> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/progressive_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/heavy_metal> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/progressive_rock--krautrock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/progressive_rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/krautrock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/progressive_rock--synth_pop> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/progressive_rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/synth_pop> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/psychedelic_rock--alternative_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/alternative_rock> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/psychedelic_rock--ambient> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/ambient> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/psychedelic_rock--art_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/art_rock> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/psychedelic_rock--contemporary_rnb> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/contemporary_rnb> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/psychedelic_rock--funk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/funk> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/psychedelic_rock--gangsta_rap> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/gangsta_rap> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/psychedelic_rock--garage_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeStatus "reversed" ;
+    ns1:routeTo <https://w3id.org/riff/genre/garage_rock> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/psychedelic_rock--grunge> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/grunge> ;
+    ns1:routeWeight 6 .
+
+<https://w3id.org/riff/route/psychedelic_rock--hard_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hard_rock> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/psychedelic_rock--hardcore_punk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hardcore_punk> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/psychedelic_rock--heavy_metal> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/heavy_metal> ;
+    ns1:routeWeight 6 .
+
+<https://w3id.org/riff/route/psychedelic_rock--hip_hop> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hip_hop> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/psychedelic_rock--indie_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/indie_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/psychedelic_rock--jazz> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeStatus "reversed" ;
+    ns1:routeTo <https://w3id.org/riff/genre/jazz> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/psychedelic_rock--jazz_rap> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/jazz_rap> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/psychedelic_rock--krautrock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/krautrock> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/psychedelic_rock--new_wave> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/new_wave> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/psychedelic_rock--post_punk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/post_punk> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/psychedelic_rock--progressive_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/progressive_rock> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/psychedelic_rock--punk_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/punk_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/psychedelic_rock--rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeStatus "reversed" ;
+    ns1:routeTo <https://w3id.org/riff/genre/rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/psychedelic_rock--soul> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/soul> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/punk_rock--alternative_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/punk_rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/alternative_rock> ;
+    ns1:routeWeight 4 .
+
+<https://w3id.org/riff/route/punk_rock--extreme_metal> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/punk_rock> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/extreme_metal> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/punk_rock--grunge> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/punk_rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/grunge> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/punk_rock--hardcore_punk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/punk_rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hardcore_punk> ;
+    ns1:routeWeight 5 .
+
+<https://w3id.org/riff/route/punk_rock--heavy_metal> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/punk_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/heavy_metal> ;
+    ns1:routeWeight 5 .
+
+<https://w3id.org/riff/route/punk_rock--hip_hop> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/punk_rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hip_hop> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/punk_rock--indie_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/punk_rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/indie_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/punk_rock--new_wave> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/punk_rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/new_wave> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/punk_rock--pop_punk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/punk_rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/pop_punk> ;
+    ns1:routeWeight 6 .
+
+<https://w3id.org/riff/route/punk_rock--post_punk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/punk_rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/post_punk> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/reggae--blues_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/reggae> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/blues_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/reggae--indie_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/reggae> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/indie_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/reggae--new_wave> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/reggae> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/new_wave> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/reggae--punk_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/reggae> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/punk_rock> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/rhythm_and_blues--electric_blues> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rhythm_and_blues> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/electric_blues> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/rhythm_and_blues--folk_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rhythm_and_blues> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/folk_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/rhythm_and_blues--funk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rhythm_and_blues> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/funk> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/rhythm_and_blues--hard_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rhythm_and_blues> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hard_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/rhythm_and_blues--reggae> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rhythm_and_blues> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/reggae> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/rhythm_and_blues--rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rhythm_and_blues> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/rhythm_and_blues--rock_and_roll> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rhythm_and_blues> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/rock_and_roll> ;
+    ns1:routeWeight 4 .
+
+<https://w3id.org/riff/route/rhythm_and_blues--soul> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rhythm_and_blues> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/soul> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/rock--alternative_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/alternative_rock> ;
+    ns1:routeWeight 5 .
+
+<https://w3id.org/riff/route/rock--art_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/art_rock> ;
+    ns1:routeWeight 5 .
+
+<https://w3id.org/riff/route/rock--contemporary_rnb> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/contemporary_rnb> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/rock--disco> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/disco> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/rock--extreme_metal> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/extreme_metal> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/rock--folk_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/folk_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/rock--garage_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/garage_rock> ;
+    ns1:routeWeight 5 .
+
+<https://w3id.org/riff/route/rock--grunge> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/grunge> ;
+    ns1:routeWeight 4 .
+
+<https://w3id.org/riff/route/rock--hard_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hard_rock> ;
+    ns1:routeWeight 9 .
+
+<https://w3id.org/riff/route/rock--hip_hop> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hip_hop> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/rock--jazz_rap> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/jazz_rap> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/rock--krautrock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/krautrock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/rock--new_wave> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/new_wave> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/rock--pop_punk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/pop_punk> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/rock--progressive_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/progressive_rock> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/rock--psychedelic_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/rock--punk_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/punk_rock> ;
+    ns1:routeWeight 9 .
+
+<https://w3id.org/riff/route/rock--ska> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/ska> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/rock--soul> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/soul> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/rock_and_roll--art_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock_and_roll> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/art_rock> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/rock_and_roll--blues_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock_and_roll> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/blues_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/rock_and_roll--contemporary_rnb> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock_and_roll> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/contemporary_rnb> ;
+    ns1:routeWeight 5 .
+
+<https://w3id.org/riff/route/rock_and_roll--disco> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock_and_roll> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/disco> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/rock_and_roll--extreme_metal> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock_and_roll> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/extreme_metal> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/rock_and_roll--folk_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock_and_roll> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/folk_rock> ;
+    ns1:routeWeight 5 .
+
+<https://w3id.org/riff/route/rock_and_roll--funk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock_and_roll> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/funk> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/rock_and_roll--grunge> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock_and_roll> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/grunge> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/rock_and_roll--hard_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock_and_roll> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hard_rock> ;
+    ns1:routeWeight 6 .
+
+<https://w3id.org/riff/route/rock_and_roll--heavy_metal> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock_and_roll> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/heavy_metal> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/rock_and_roll--pop_punk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock_and_roll> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/pop_punk> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/rock_and_roll--progressive_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock_and_roll> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/progressive_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/rock_and_roll--psychedelic_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock_and_roll> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/rock_and_roll--punk_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock_and_roll> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/punk_rock> ;
+    ns1:routeWeight 5 .
+
+<https://w3id.org/riff/route/rock_and_roll--rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock_and_roll> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/rock> ;
+    ns1:routeWeight 10 .
+
+<https://w3id.org/riff/route/rock_and_roll--soul> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock_and_roll> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/soul> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/rock_and_roll--synth_pop> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rock_and_roll> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/synth_pop> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/rockabilly--psychedelic_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rockabilly> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/rockabilly--punk_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rockabilly> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/punk_rock> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/rockabilly--rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rockabilly> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/rock> ;
+    ns1:routeWeight 4 .
+
+<https://w3id.org/riff/route/rockabilly--rock_and_roll> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/rockabilly> ;
+    ns1:routeStatus "reversed" ;
+    ns1:routeTo <https://w3id.org/riff/genre/rock_and_roll> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/ska--alternative_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/ska> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/alternative_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/ska--reggae> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/ska> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/reggae> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/soul--art_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/soul> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/art_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/soul--contemporary_rnb> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/soul> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/contemporary_rnb> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/soul--disco> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/soul> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/disco> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/soul--funk> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/soul> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/funk> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/soul--gangsta_rap> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/soul> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/gangsta_rap> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/soul--hard_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/soul> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hard_rock> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/soul--hip_hop> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/soul> ;
+    ns1:routeStatus "direct" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hip_hop> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/soul--jazz_rap> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/soul> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/jazz_rap> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/soul--new_wave> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/soul> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/new_wave> ;
+    ns1:routeWeight 2 .
+
+<https://w3id.org/riff/route/soul--progressive_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/soul> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/progressive_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/soul--psychedelic_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/soul> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/psychedelic_rock> ;
+    ns1:routeWeight 3 .
+
+<https://w3id.org/riff/route/soul--rock_and_roll> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/soul> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/rock_and_roll> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/soul--trap> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/soul> ;
+    ns1:routeStatus "two-step" ;
+    ns1:routeTo <https://w3id.org/riff/genre/trap> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/synth_pop--ambient> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/synth_pop> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/ambient> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/synth_pop--hip_hop> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/synth_pop> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hip_hop> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/synth_pop--indie_rock> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/synth_pop> ;
+    ns1:routeStatus "hidden" ;
+    ns1:routeTo <https://w3id.org/riff/genre/indie_rock> ;
+    ns1:routeWeight 1 .
+
+<https://w3id.org/riff/route/trap--hip_hop> a ns1:GenreRoute ;
+    ns1:routeFrom <https://w3id.org/riff/genre/trap> ;
+    ns1:routeStatus "reversed" ;
+    ns1:routeTo <https://w3id.org/riff/genre/hip_hop> ;
+    ns1:routeWeight 1 .
+

@@ -1,0 +1,10 @@
+artists_have_influence: pass
+influence_dates: pass
+influence_is_complete: pass
+influence_key_is_unique: pass
+known_answers: pass
+no_lineage_cycles: pass
+no_self_influence: pass
+one_influencer_one_influenced: pass
+one_primary_genre: pass
+origin_not_younger: pass

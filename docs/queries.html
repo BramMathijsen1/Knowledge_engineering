@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Queries | RIFF</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><span class="name">RIFF</span><nav><a href="index.html">Home</a><a href="ontology.html">Ontology</a><a href="queries.html">Queries</a><a href="method.html">Method</a></nav></header>
+<main>
+
+<h1>Queries</h1>
+<p>Every query answers one competency question. Tables show the first rows only. All the results are in
+the <code>results</code> folder of the project.</p>
+<h2>01. Roots of a genre</h2>
+<p>What are all the genres that punk rock comes from, near and far?</p>
+<pre><code>SELECT DISTINCT ?root ?year
+WHERE {
+  genre:punk_rock riff:hasStylisticOrigin+ ?ancestor .
+  ?ancestor rdfs:label ?root .
+  OPTIONAL { ?ancestor riff:emergedIn ?year }
+}
+ORDER BY ?year ?root</code></pre>
+<table><tr><th>root</th><th>year</th></tr><tr><td>Folk music</td><td></td></tr><tr><td>Gospel music</td><td></td></tr><tr><td>Blues</td><td>1865</td></tr><tr><td>Jazz</td><td>1890</td></tr><tr><td>Country music</td><td>1925</td></tr><tr><td>Electric blues</td><td>1938</td></tr><tr><td>Rhythm and blues</td><td>1945</td></tr><tr><td>Rock and roll</td><td>1949</td></tr><tr><td>Rockabilly</td><td>1953</td></tr><tr><td>Rock music</td><td>1955</td></tr><tr><td>Garage rock</td><td>1959</td></tr><tr><td>Blues rock</td><td>1962</td></tr><tr><td>Hard rock</td><td>1965</td></tr><tr><td>Psychedelic rock</td><td>1965</td></tr><tr><td>Glam rock</td><td>1972</td></tr></table><h2>02. Most generative genres</h2>
+<p>Which genres have the most descendants in the family tree?</p>
+<pre><code>SELECT ?genreName (COUNT(DISTINCT ?child) AS ?children) (COUNT(DISTINCT ?descendant) AS ?descendants)
+WHERE {
+  ?genre rdfs:label ?genreName .
+  ?child riff:hasStylisticOrigin ?genre .
+  ?descendant riff:hasStylisticOrigin+ ?genre .
+}
+GROUP BY ?genre ?genreName
+ORDER BY DESC(?descendants) DESC(?children) ?genreName
+LIMIT 15</code></pre>
+<table><tr><th>genreName</th><th>children</th><th>descendants</th></tr><tr><td>Folk music</td><td>5</td><td>46</td></tr><tr><td>Blues</td><td>8</td><td>45</td></tr><tr><td>Gospel music</td><td>4</td><td>43</td></tr><tr><td>Jazz</td><td>12</td><td>42</td></tr><tr><td>Rhythm and blues</td><td>11</td><td>41</td></tr><tr><td>Electric blues</td><td>4</td><td>30</td></tr><tr><td>Country music</td><td>3</td><td>30</td></tr><tr><td>Rock and roll</td><td>4</td><td>29</td></tr><tr><td>Rockabilly</td><td>3</td><td>28</td></tr><tr><td>Rock music</td><td>16</td><td>27</td></tr><tr><td>Garage rock</td><td>5</td><td>23</td></tr><tr><td>Psychedelic rock</td><td>6</td><td>22</td></tr><tr><td>Soul music</td><td>4</td><td>21</td></tr><tr><td>Funk</td><td>9</td><td>20</td></tr><tr><td>Ska</td><td>2</td><td>19</td></tr></table><h2>03. Fusion genres</h2>
+<p>Which fusion genres join two genres that had no link before?</p>
+<pre><code>SELECT ?fusion ?parentA ?parentB ?alreadyLinked
+WHERE {
+  ?genre riff:isFusionOf ?a , ?b ;
+         rdfs:label ?fusion .
+  ?a rdfs:label ?parentA .
+  ?b rdfs:label ?parentB .
+  FILTER(STR(?a) &lt; STR(?b))
+  BIND(EXISTS { ?a riff:hasStylisticOrigin+ ?b } || EXISTS { ?b riff:hasStylisticOrigin+ ?a } AS ?alreadyLinked)
+}
+ORDER BY ?alreadyLinked ?fusion</code></pre>
+<table><tr><th>fusion</th><th>parentA</th><th>parentB</th><th>alreadyLinked</th></tr><tr><td>Rockabilly</td><td>Country music</td><td>Rhythm and blues</td><td>false</td></tr><tr><td>Blues rock</td><td>Blues</td><td>Rock music</td><td>true</td></tr><tr><td>Folk rock</td><td>Folk music</td><td>Rock music</td><td>true</td></tr><tr><td>Jazz fusion</td><td>Jazz</td><td>Rock music</td><td>true</td></tr><tr><td>Jazz rap</td><td>Hip hop</td><td>Jazz</td><td>true</td></tr></table><h2>04. Genre forms and trajectories</h2>
+<p>Which form does each genre start in, and how does it change?</p>
+<pre><code>SELECT ?genreName ?phase1 ?phase2 ?phase3 ?phase4
+WHERE {
+  ?first riff:phaseOf ?genre ;
+         riff:phaseOrder 1 ;
+         riff:hasForm/rdfs:label ?phase1 .
+  ?genre rdfs:label ?genreName .
+  OPTIONAL { ?second riff:phaseOf ?genre ; riff:phaseOrder 2 ; riff:hasForm/rdfs:label ?phase2 }
+  OPTIONAL { ?third riff:phaseOf ?genre ; riff:phaseOrder 3 ; riff:hasForm/rdfs:label ?phase3 }
+  OPTIONAL { ?fourth riff:phaseOf ?genre ; riff:phaseOrder 4 ; riff:hasForm/rdfs:label ?phase4 }
+}
+ORDER BY ?phase1 ?genreName</code></pre>
+<table><tr><th>genreName</th><th>phase1</th><th>phase2</th><th>phase3</th><th>phase4</th></tr><tr><td>Bebop</td><td>Avant-garde</td><td>Scene-based</td><td>Industry-based</td><td>Traditionalist</td></tr><tr><td>Electric blues</td><td>Avant-garde</td><td>Scene-based</td><td>Industry-based</td><td>Traditionalist</td></tr><tr><td>Extreme metal</td><td>Avant-garde</td><td>Scene-based</td><td></td><td></td></tr><tr><td>Folk rock</td><td>Avant-garde</td><td>Scene-based</td><td>Industry-based</td><td>Traditionalist</td></tr><tr><td>House music</td><td>Avant-garde</td><td>Scene-based</td><td></td><td></td></tr><tr><td>Funk</td><td>Industry-based</td><td>Scene-based</td><td>Traditionalist</td><td></td></tr><tr><td>Soul music</td><td>Industry-based</td><td>Scene-based</td><td>Traditionalist</td><td></td></tr><tr><td>Reggae</td><td>Scene-based</td><td>Industry-based</td><td></td><td></td></tr></table><h2>05. Most influential artists</h2>
+<p>Which artists influenced the most other artists, and across how many genres?</p>
+<pre><code>SELECT ?artistName ?genreName (COUNT(DISTINCT ?follower) AS ?followers) (COUNT(DISTINCT ?followerGenre) AS ?genresReached)
+WHERE {
+  ?follower mm:isInfluencedBy ?artist ;
+            riff:hasPrimaryGenre ?followerGenre .
+  ?artist rdfs:label ?artistName ;
+          riff:hasPrimaryGenre/rdfs:label ?genreName .
+}
+GROUP BY ?artist ?artistName ?genreName
+ORDER BY DESC(?followers) DESC(?genresReached) ?artistName
+LIMIT 15</code></pre>
+<table><tr><th>artistName</th><th>genreName</th><th>followers</th><th>genresReached</th></tr><tr><td>Jimi Hendrix</td><td>Psychedelic rock</td><td>28</td><td>18</td></tr><tr><td>The Beatles</td><td>Rock music</td><td>23</td><td>17</td></tr><tr><td>The Who</td><td>Rock music</td><td>18</td><td>12</td></tr><tr><td>James Brown</td><td>Funk</td><td>16</td><td>10</td></tr><tr><td>The Velvet Underground</td><td>Art rock</td><td>15</td><td>10</td></tr><tr><td>Led Zeppelin</td><td>Hard rock</td><td>15</td><td>8</td></tr><tr><td>Little Richard</td><td>Rock and roll</td><td>14</td><td>10</td></tr><tr><td>The Stooges</td><td>Garage rock</td><td>14</td><td>8</td></tr><tr><td>Parliament-Funkadelic</td><td>Funk</td><td>14</td><td>7</td></tr><tr><td>Roxy Music</td><td>Art rock</td><td>13</td><td>10</td></tr><tr><td>The Kinks</td><td>Rock music</td><td>13</td><td>10</td></tr><tr><td>Ramones</td><td>Punk rock</td><td>13</td><td>6</td></tr><tr><td>Bob Dylan</td><td>Folk rock</td><td>12</td><td>9</td></tr><tr><td>Black Sabbath</td><td>Heavy metal</td><td>12</td><td>7</td></tr><tr><td>Kraftwerk</td><td>Krautrock</td><td>12</td><td>7</td></tr></table><h2>06. Influence chain</h2>
+<p>Is there a chain of influence from Robert Johnson to Nirvana?</p>
+<pre><code>ASK { artist:nirvana mm:isInfluencedBy+ artist:robert_johnson }</code></pre>
+<p>Result: <strong>true</strong></p>
+<h2>06b. Artists on the chain</h2>
+<p>Which artists sit between Robert Johnson and Nirvana?</p>
+<pre><code>SELECT DISTINCT ?artistName ?genreName
+WHERE {
+  artist:nirvana mm:isInfluencedBy+ ?middle .
+  ?middle mm:isInfluencedBy+ artist:robert_johnson ;
+          rdfs:label ?artistName ;
+          riff:hasPrimaryGenre/rdfs:label ?genreName .
+}
+ORDER BY ?artistName</code></pre>
+<table><tr><th>artistName</th><th>genreName</th></tr><tr><td>A Tribe Called Quest</td><td>Jazz rap</td></tr><tr><td>Aerosmith</td><td>Hard rock</td></tr><tr><td>Black Flag</td><td>Hardcore punk</td></tr><tr><td>Black Sabbath</td><td>Heavy metal</td></tr><tr><td>Bob Dylan</td><td>Folk rock</td></tr><tr><td>Buzzcocks</td><td>Pop-punk</td></tr><tr><td>Can</td><td>Krautrock</td></tr><tr><td>Cream</td><td>Blues rock</td></tr><tr><td>David Bowie</td><td>Art rock</td></tr><tr><td>Deep Purple</td><td>Hard rock</td></tr><tr><td>Devo</td><td>New wave</td></tr><tr><td>Eric Clapton</td><td>Blues rock</td></tr><tr><td>Gang Starr</td><td>Jazz rap</td></tr><tr><td>Gang of Four</td><td>Post-punk</td></tr><tr><td>Genesis</td><td>Progressive rock</td></tr></table><h2>07. Who says so</h2>
+<p>Whose influence is declared by artists themselves, and whose is only stated by others?</p>
+<pre><code>SELECT ?artistName
+       (SUM(IF(?kind = riff:Declared, 1, 0)) AS ?declared)
+       (SUM(IF(?kind = riff:Attributed, 1, 0)) AS ?attributed)
+       (SUM(IF(?kind = riff:Unsourced, 1, 0)) AS ?unsourced)
+WHERE {
+  ?influence riff:influencer ?artist ;
+             riff:hasEvidenceKind ?kind .
+  ?artist rdfs:label ?artistName .
+  FILTER(?kind IN (riff:Declared, riff:Attributed, riff:Unsourced))
+}
+GROUP BY ?artist ?artistName
+ORDER BY DESC(?declared) DESC(?attributed) ?artistName
+LIMIT 20</code></pre>
+<table><tr><th>artistName</th><th>declared</th><th>attributed</th><th>unsourced</th></tr><tr><td>The Who</td><td>10</td><td>7</td><td>10</td></tr><tr><td>Little Richard</td><td>7</td><td>12</td><td>3</td></tr><tr><td>Kraftwerk</td><td>7</td><td>7</td><td>1</td></tr><tr><td>Neil Young</td><td>7</td><td>2</td><td>2</td></tr><tr><td>Neu!</td><td>7</td><td>1</td><td>0</td></tr><tr><td>Jimi Hendrix</td><td>6</td><td>20</td><td>9</td></tr><tr><td>The Stooges</td><td>6</td><td>5</td><td>8</td></tr><tr><td>R.E.M.</td><td>6</td><td>1</td><td>1</td></tr><tr><td>Pink Floyd</td><td>5</td><td>4</td><td>4</td></tr><tr><td>The Beatles</td><td>4</td><td>10</td><td>9</td></tr><tr><td>Ramones</td><td>4</td><td>6</td><td>8</td></tr><tr><td>Bob Dylan</td><td>4</td><td>4</td><td>5</td></tr><tr><td>The Velvet Underground</td><td>4</td><td>4</td><td>7</td></tr><tr><td>King Crimson</td><td>4</td><td>3</td><td>1</td></tr><tr><td>Parliament-Funkadelic</td><td>4</td><td>3</td><td>0</td></tr></table><h2>08. Samples and covers</h2>
+<p>Which genres do sampled and covered recordings come from and go to?</p>
+<pre><code>SELECT ?kindName ?fromGenre ?toGenre (COUNT(DISTINCT ?influence) AS ?statements)
+WHERE {
+  ?influence riff:hasEvidenceKind ?kind ;
+             riff:influencer/riff:hasPrimaryGenre/rdfs:label ?fromGenre ;
+             riff:influenced/riff:hasPrimaryGenre/rdfs:label ?toGenre .
+  ?kind rdfs:label ?kindName .
+  FILTER(?kind IN (riff:Sampling, riff:CoverVersion))
+}
+GROUP BY ?kindName ?fromGenre ?toGenre
+ORDER BY ?kindName DESC(?statements) ?fromGenre</code></pre>
+<table><tr><th>kindName</th><th>fromGenre</th><th>toGenre</th><th>statements</th></tr><tr><td>Cover version</td><td>Rock and roll</td><td>Rock music</td><td>3</td></tr><tr><td>Cover version</td><td>Blues</td><td>Hard rock</td><td>2</td></tr><tr><td>Cover version</td><td>Electric blues</td><td>Blues rock</td><td>2</td></tr><tr><td>Cover version</td><td>Soul music</td><td>Soul music</td><td>2</td></tr><tr><td>Cover version</td><td>Art rock</td><td>Grunge</td><td>1</td></tr><tr><td>Cover version</td><td>Blues</td><td>Blues rock</td><td>1</td></tr><tr><td>Cover version</td><td>Electric blues</td><td>Hard rock</td><td>1</td></tr><tr><td>Cover version</td><td>Electric blues</td><td>Rock music</td><td>1</td></tr><tr><td>Cover version</td><td>Folk music</td><td>Grunge</td><td>1</td></tr><tr><td>Cover version</td><td>Folk rock</td><td>Blues rock</td><td>1</td></tr><tr><td>Cover version</td><td>Folk rock</td><td>Psychedelic rock</td><td>1</td></tr><tr><td>Cover version</td><td>Folk rock</td><td>Folk rock</td><td>1</td></tr><tr><td>Cover version</td><td>Garage rock</td><td>Punk rock</td><td>1</td></tr><tr><td>Cover version</td><td>Hard rock</td><td>Hip hop</td><td>1</td></tr><tr><td>Cover version</td><td>Reggae</td><td>Blues rock</td><td>1</td></tr></table><h2>09. Build the genre routes</h2>
+<p>If we add up artist influence by genre, which routes do we get and how do they compare with the family tree?</p>
+<pre><code>CONSTRUCT {
+  ?route a riff:GenreRoute ;
+         riff:routeFrom ?from ;
+         riff:routeTo ?to ;
+         riff:routeWeight ?weight ;
+         riff:routeStatus ?status .
+}
+WHERE {
+  {
+    SELECT ?from ?to (COUNT(*) AS ?weight)
+    WHERE {
+      ?follower mm:isInfluencedBy ?artist .
+      ?artist riff:hasPrimaryGenre ?from .
+      ?follower riff:hasPrimaryGenre ?to .
+      FILTER(?from != ?to)
+    }
+    GROUP BY ?from ?to
+  }
+  BIND(IF(EXISTS { ?to riff:hasStylisticOrigin ?from }, &quot;direct&quot;,
+       IF(EXISTS { ?to riff:hasStylisticOrigin/riff:hasStylisticOrigin ?from }, &quot;two-step&quot;,
+       IF(EXISTS { ?from riff:hasStylisticOrigin|(riff:hasStylisticOrigin/riff:hasStylisticOrigin) ?to }, &quot;reversed&quot;,
+       &quot;hidden&quot;))) AS ?status)
+  BIND(IRI(CONCAT(&quot;https://w3id.org/riff/route/&quot;, STRAFTER(STR(?from), &quot;genre/&quot;), &quot;--&quot;, STRAFTER(STR(?to), &quot;genre/&quot;))) AS ?route)
+}</code></pre>
+<p>Result: an RDF graph, saved as <code>results/09_build_genre_routes.ttl</code>.</p>
+<h2>10. Route summary</h2>
+<p>Do artist influences follow the genre family tree? How many routes are direct, two-step, reversed or hidden?</p>
+<pre><code>SELECT ?status (COUNT(?route) AS ?routes) (SUM(?weight) AS ?artistPairs)
+WHERE {
+  ?route a riff:GenreRoute ;
+         riff:routeStatus ?status ;
+         riff:routeWeight ?weight .
+}
+GROUP BY ?status
+ORDER BY DESC(?artistPairs)</code></pre>
+<table><tr><th>status</th><th>routes</th><th>artistPairs</th></tr><tr><td>direct</td><td>100</td><td>302</td></tr><tr><td>hidden</td><td>117</td><td>193</td></tr><tr><td>two-step</td><td>68</td><td>133</td></tr><tr><td>reversed</td><td>19</td><td>28</td></tr></table><h2>10b. All routes</h2>
+<p>Which routes have the most artist pairs behind them, and what is their status?</p>
+<pre><code>SELECT ?fromGenre ?toGenre ?weight ?status
+WHERE {
+  ?route a riff:GenreRoute ;
+         riff:routeFrom/rdfs:label ?fromGenre ;
+         riff:routeTo/rdfs:label ?toGenre ;
+         riff:routeWeight ?weight ;
+         riff:routeStatus ?status .
+}
+ORDER BY DESC(?weight) ?fromGenre ?toGenre</code></pre>
+<table><tr><th>fromGenre</th><th>toGenre</th><th>weight</th><th>status</th></tr><tr><td>Heavy metal</td><td>Extreme metal</td><td>12</td><td>direct</td></tr><tr><td>Rock and roll</td><td>Rock music</td><td>10</td><td>direct</td></tr><tr><td>Hard rock</td><td>Heavy metal</td><td>9</td><td>hidden</td></tr><tr><td>Rock music</td><td>Hard rock</td><td>9</td><td>direct</td></tr><tr><td>Rock music</td><td>Punk rock</td><td>9</td><td>direct</td></tr><tr><td>Funk</td><td>Jazz rap</td><td>8</td><td>two-step</td></tr><tr><td>Garage rock</td><td>Grunge</td><td>8</td><td>direct</td></tr><tr><td>Hard rock</td><td>Extreme metal</td><td>8</td><td>hidden</td></tr><tr><td>Funk</td><td>Gangsta rap</td><td>7</td><td>two-step</td></tr><tr><td>Garage rock</td><td>Punk rock</td><td>7</td><td>direct</td></tr><tr><td>Art rock</td><td>Alternative rock</td><td>6</td><td>two-step</td></tr><tr><td>Country music</td><td>Rock and roll</td><td>6</td><td>direct</td></tr><tr><td>Folk rock</td><td>Alternative rock</td><td>6</td><td>hidden</td></tr><tr><td>Funk</td><td>Contemporary R&amp;B</td><td>6</td><td>direct</td></tr><tr><td>Psychedelic rock</td><td>Grunge</td><td>6</td><td>two-step</td></tr></table><h2>11. Links without artists</h2>
+<p>Which documented genre links have no artist influence behind them?</p>
+<pre><code>SELECT ?parentGenre ?childGenre
+WHERE {
+  ?child riff:hasStylisticOrigin ?parent ;
+         rdfs:label ?childGenre .
+  ?parent rdfs:label ?parentGenre .
+  FILTER NOT EXISTS {
+    ?route a riff:GenreRoute ;
+           riff:routeFrom ?parent ;
+           riff:routeTo ?child .
+  }
+}
+ORDER BY ?parentGenre ?childGenre</code></pre>
+<table><tr><th>parentGenre</th><th>childGenre</th></tr><tr><td>Ambient music</td><td>Drum and bass</td></tr><tr><td>Bebop</td><td>Jazz fusion</td></tr><tr><td>Blues</td><td>Country music</td></tr><tr><td>Blues</td><td>Psychedelic rock</td></tr><tr><td>Blues</td><td>Rhythm and blues</td></tr><tr><td>Blues</td><td>Rock and roll</td></tr><tr><td>Disco</td><td>Hip hop</td></tr><tr><td>Disco</td><td>Post-punk</td></tr><tr><td>Dub</td><td>Drum and bass</td></tr><tr><td>Dub</td><td>Hip hop</td></tr><tr><td>Dub</td><td>House music</td></tr><tr><td>Dub</td><td>Jungle</td></tr><tr><td>Dub</td><td>Post-punk</td></tr><tr><td>Dub</td><td>Techno</td></tr><tr><td>Electro</td><td>House music</td></tr></table><h2>12. Describe a genre</h2>
+<p>What does the graph say about punk rock?</p>
+<pre><code>DESCRIBE genre:punk_rock</code></pre>
+<p>Result: an RDF graph, saved as <code>results/12_describe_a_genre.ttl</code>.</p>
+<h2>13. Check with all genres</h2>
+<p>Does the answer change if we use all the genres of each artist instead of one primary genre?</p>
+<pre><code>SELECT ?status (COUNT(*) AS ?routes) (SUM(?weight) AS ?artistPairs)
+WHERE {
+  {
+    SELECT ?from ?to (COUNT(*) AS ?weight)
+    WHERE {
+      ?follower mm:isInfluencedBy ?artist .
+      ?artist mm:hasGenre ?from .
+      ?follower mm:hasGenre ?to .
+      FILTER(?from != ?to)
+    }
+    GROUP BY ?from ?to
+  }
+  BIND(IF(EXISTS { ?to riff:hasStylisticOrigin ?from }, &quot;direct&quot;,
+       IF(EXISTS { ?to riff:hasStylisticOrigin/riff:hasStylisticOrigin ?from }, &quot;two-step&quot;,
+       IF(EXISTS { ?from riff:hasStylisticOrigin|(riff:hasStylisticOrigin/riff:hasStylisticOrigin) ?to }, &quot;reversed&quot;,
+       &quot;hidden&quot;))) AS ?status)
+}
+GROUP BY ?status
+ORDER BY DESC(?artistPairs)</code></pre>
+<table><tr><th>status</th><th>routes</th><th>artistPairs</th></tr><tr><td>hidden</td><td>509</td><td>2142</td></tr><tr><td>direct</td><td>148</td><td>2015</td></tr><tr><td>two-step</td><td>243</td><td>1707</td></tr><tr><td>reversed</td><td>207</td><td>1004</td></tr></table><h2>14. Where artist pairs come from</h2>
+<p>How many artist pairs come only from Wikidata, only from Wikipedia text, or from both?</p>
+<pre><code>SELECT ?source (COUNT(*) AS ?artistPairs)
+WHERE {
+  ?follower mm:isInfluencedBy ?artist .
+  BIND(EXISTS { ?i riff:influenced ?follower ; riff:influencer ?artist ; riff:hasEvidenceKind riff:Unsourced } AS ?inWikidata)
+  BIND(EXISTS { ?j riff:influenced ?follower ; riff:influencer ?artist ; riff:hasEvidenceKind ?kind . FILTER(?kind IN (riff:Declared, riff:Attributed)) } AS ?inText)
+  BIND(IF(?inWikidata &amp;&amp; ?inText, &quot;both&quot;, IF(?inWikidata, &quot;Wikidata only&quot;, IF(?inText, &quot;Wikipedia text only&quot;, &quot;recordings only&quot;))) AS ?source)
+}
+GROUP BY ?source
+ORDER BY DESC(?artistPairs)</code></pre>
+<table><tr><th>source</th><th>artistPairs</th></tr><tr><td>Wikipedia text only</td><td>440</td></tr><tr><td>Wikidata only</td><td>133</td></tr><tr><td>both</td><td>93</td></tr><tr><td>recordings only</td><td>71</td></tr></table><h2>Unit tests</h2>
+<p>A test is a query that looks for mistakes. It passes if it finds none.</p>
+<pre><code>artists_have_influence: pass
+influence_dates: pass
+influence_is_complete: pass
+influence_key_is_unique: pass
+known_answers: pass
+no_lineage_cycles: pass
+no_self_influence: pass
+one_influencer_one_influenced: pass
+one_primary_genre: pass
+origin_not_younger: pass
+</code></pre>
+
+</main>
+<footer>RIFF: Roots, Influence, Forms, Fusion. Data and ontology under
+<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</footer>
+</body>
+</html>

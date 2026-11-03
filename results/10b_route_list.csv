@@ -1,0 +1,305 @@
+fromGenre,toGenre,weight,status
+Heavy metal,Extreme metal,12,direct
+Rock and roll,Rock music,10,direct
+Hard rock,Heavy metal,9,hidden
+Rock music,Hard rock,9,direct
+Rock music,Punk rock,9,direct
+Funk,Jazz rap,8,two-step
+Garage rock,Grunge,8,direct
+Hard rock,Extreme metal,8,hidden
+Funk,Gangsta rap,7,two-step
+Garage rock,Punk rock,7,direct
+Art rock,Alternative rock,6,two-step
+Country music,Rock and roll,6,direct
+Folk rock,Alternative rock,6,hidden
+Funk,Contemporary R&B,6,direct
+Psychedelic rock,Grunge,6,two-step
+Psychedelic rock,Heavy metal,6,direct
+Punk rock,Pop-punk,6,direct
+Rock and roll,Hard rock,6,direct
+Art rock,Post-punk,5,direct
+Blues rock,Hard rock,5,direct
+Gangsta rap,Hip hop,5,reversed
+Glam rock,Punk rock,5,direct
+Gospel music,Rock and roll,5,direct
+Hard rock,Grunge,5,direct
+Hardcore punk,Pop-punk,5,hidden
+Krautrock,Ambient music,5,direct
+Krautrock,Post-punk,5,direct
+Krautrock,Synth-pop,5,direct
+Punk rock,Hardcore punk,5,direct
+Punk rock,Heavy metal,5,hidden
+Rock and roll,Contemporary R&B,5,hidden
+Rock and roll,Folk rock,5,two-step
+Rock and roll,Punk rock,5,direct
+Rock music,Alternative rock,5,direct
+Rock music,Art rock,5,direct
+Rock music,Garage rock,5,direct
+Alternative rock,Grunge,4,direct
+Art rock,Punk rock,4,hidden
+Electric blues,Blues rock,4,direct
+Funk,Hip hop,4,direct
+Gospel music,Soul music,4,direct
+Hardcore punk,Extreme metal,4,direct
+Hardcore punk,Grunge,4,direct
+Jazz,Soul music,4,two-step
+Punk rock,Alternative rock,4,direct
+Rhythm and blues,Rock and roll,4,direct
+Rock music,Grunge,4,direct
+Rockabilly,Rock music,4,direct
+Alternative rock,Indie rock,3,direct
+Art rock,Gangsta rap,3,hidden
+Art rock,Grunge,3,hidden
+Art rock,Indie rock,3,two-step
+Art rock,New wave,3,two-step
+Blues rock,Progressive rock,3,hidden
+Country music,Folk rock,3,two-step
+Electric blues,Hard rock,3,direct
+Folk rock,Grunge,3,hidden
+Folk rock,Punk rock,3,hidden
+Folk rock,Rock music,3,reversed
+Gangsta rap,Contemporary R&B,3,hidden
+Garage rock,Alternative rock,3,two-step
+Grunge,Pop-punk,3,hidden
+Heavy metal,Grunge,3,direct
+Heavy metal,Pop-punk,3,hidden
+Hip hop,Gangsta rap,3,direct
+Jazz,Psychedelic rock,3,direct
+Jazz fusion,Jazz rap,3,hidden
+Jazz rap,Gangsta rap,3,hidden
+Krautrock,Alternative rock,3,two-step
+New wave,Grunge,3,two-step
+Post-punk,Alternative rock,3,direct
+Post-punk,Grunge,3,two-step
+Progressive rock,Extreme metal,3,hidden
+Progressive rock,Heavy metal,3,hidden
+Psychedelic rock,Art rock,3,direct
+Psychedelic rock,Hard rock,3,direct
+Psychedelic rock,Krautrock,3,direct
+Psychedelic rock,Post-punk,3,two-step
+Psychedelic rock,Progressive rock,3,direct
+Punk rock,Grunge,3,direct
+Reggae,New wave,3,direct
+Reggae,Punk rock,3,hidden
+Rock and roll,Art rock,3,two-step
+Rock and roll,Heavy metal,3,two-step
+Rock music,Pop-punk,3,two-step
+Rock music,Progressive rock,3,direct
+Rock music,Psychedelic rock,3,direct
+Soul music,Psychedelic rock,3,hidden
+Art rock,Synth-pop,2,two-step
+Bebop,Jazz,2,hidden
+Blues,Blues rock,2,direct
+Blues,Hard rock,2,two-step
+Blues rock,Heavy metal,2,direct
+Country music,Rock music,2,direct
+Disco,Contemporary R&B,2,two-step
+Disco,New wave,2,direct
+Disco,Synth-pop,2,direct
+Electric blues,Rock music,2,direct
+Folk music,Folk rock,2,direct
+Folk rock,Hard rock,2,hidden
+Funk,Post-punk,2,direct
+Funk,Soul music,2,reversed
+Garage rock,Hardcore punk,2,two-step
+Garage rock,Heavy metal,2,two-step
+Garage rock,Krautrock,2,two-step
+Glam rock,Alternative rock,2,two-step
+Grunge,Indie rock,2,reversed
+Grunge,Synth-pop,2,hidden
+Hard rock,Progressive rock,2,hidden
+Hip hop,Contemporary R&B,2,direct
+Jazz,Alternative rock,2,two-step
+Jazz,Bebop,2,hidden
+Jazz,Contemporary R&B,2,two-step
+Jazz,Jazz rap,2,direct
+Jazz,Progressive rock,2,direct
+Krautrock,Techno,2,direct
+New wave,Alternative rock,2,direct
+New wave,Pop-punk,2,hidden
+Pop-punk,Hardcore punk,2,hidden
+Progressive rock,Grunge,2,hidden
+Psychedelic rock,Alternative rock,2,hidden
+Psychedelic rock,Garage rock,2,reversed
+Punk rock,New wave,2,direct
+Rock and roll,Psychedelic rock,2,two-step
+Rock music,Contemporary R&B,2,hidden
+Rock music,Disco,2,hidden
+Rock music,Extreme metal,2,two-step
+Rock music,Hip hop,2,hidden
+Rock music,New wave,2,direct
+Rockabilly,Punk rock,2,direct
+Soul music,Contemporary R&B,2,direct
+Soul music,Disco,2,direct
+Soul music,Gangsta rap,2,two-step
+Soul music,Hard rock,2,hidden
+Soul music,New wave,2,two-step
+Alternative rock,Extreme metal,1,hidden
+Ambient music,Alternative rock,1,hidden
+Ambient music,House music,1,hidden
+Ambient music,Post-punk,1,hidden
+Ambient music,Synth-pop,1,hidden
+Art rock,Disco,1,hidden
+Art rock,Garage rock,1,reversed
+Art rock,Glam rock,1,hidden
+Art rock,Hard rock,1,hidden
+Art rock,Hardcore punk,1,hidden
+Art rock,Heavy metal,1,hidden
+Art rock,Krautrock,1,direct
+Art rock,Pop-punk,1,hidden
+Art rock,Ska,1,hidden
+Bebop,Hip hop,1,hidden
+Blues,Electric blues,1,direct
+Blues,Folk rock,1,two-step
+Blues,Gospel music,1,hidden
+Blues,Jazz,1,direct
+Blues,Rock music,1,direct
+Blues rock,Art rock,1,hidden
+Blues rock,Garage rock,1,hidden
+Blues rock,Grunge,1,two-step
+Blues rock,Psychedelic rock,1,hidden
+Blues rock,Soul music,1,hidden
+Contemporary R&B,Ambient music,1,hidden
+Contemporary R&B,Electro,1,hidden
+Contemporary R&B,Gangsta rap,1,hidden
+Contemporary R&B,Hip hop,1,reversed
+Contemporary R&B,Synth-pop,1,hidden
+Contemporary R&B,Techno,1,hidden
+Country music,Rockabilly,1,direct
+Disco,Alternative rock,1,two-step
+Disco,House music,1,direct
+Dub,Ambient music,1,direct
+Dub,Punk rock,1,hidden
+Electric blues,Rock and roll,1,direct
+Extreme metal,Grunge,1,hidden
+Extreme metal,Heavy metal,1,reversed
+Extreme metal,Pop-punk,1,hidden
+Folk music,Country music,1,two-step
+Folk music,Grunge,1,two-step
+Folk music,Punk rock,1,two-step
+Folk rock,Art rock,1,hidden
+Folk rock,Blues rock,1,hidden
+Folk rock,Psychedelic rock,1,hidden
+Folk rock,Soul music,1,hidden
+Folk rock,Synth-pop,1,hidden
+Funk,Drum and bass,1,two-step
+Funk,House music,1,two-step
+Funk,Jazz,1,reversed
+Funk,Jazz fusion,1,direct
+Funk,Krautrock,1,direct
+Funk,Reggae,1,hidden
+Funk,Rock music,1,hidden
+Funk,Synth-pop,1,two-step
+Funk,Techno,1,direct
+Gangsta rap,House music,1,hidden
+Garage rock,Pop-punk,1,two-step
+Garage rock,Post-punk,1,direct
+Glam rock,Art rock,1,hidden
+Glam rock,Garage rock,1,reversed
+Glam rock,Grunge,1,two-step
+Glam rock,Hard rock,1,reversed
+Glam rock,Pop-punk,1,two-step
+Gospel music,Country music,1,direct
+Gospel music,Disco,1,two-step
+Gospel music,Rockabilly,1,two-step
+Grunge,Heavy metal,1,reversed
+Hard rock,Art rock,1,hidden
+Hard rock,Contemporary R&B,1,hidden
+Hard rock,Hip hop,1,hidden
+Hard rock,Post-punk,1,two-step
+Hard rock,Punk rock,1,two-step
+Hardcore punk,Alternative rock,1,direct
+Hardcore punk,Heavy metal,1,hidden
+Heavy metal,Gangsta rap,1,hidden
+Heavy metal,Hard rock,1,hidden
+Heavy metal,Hardcore punk,1,hidden
+Heavy metal,Progressive rock,1,hidden
+Hip hop,Art rock,1,hidden
+Hip hop,Drum and bass,1,two-step
+Hip hop,Electro,1,direct
+Hip hop,Jazz rap,1,direct
+Hip hop,Pop-punk,1,hidden
+House music,Techno,1,direct
+Jazz,Ambient music,1,hidden
+Jazz,Folk rock,1,two-step
+Jazz,Grunge,1,two-step
+Jazz,Hard rock,1,two-step
+Jazz,Hip hop,1,direct
+Jazz,Rhythm and blues,1,direct
+Jazz fusion,Hardcore punk,1,hidden
+Jazz fusion,Hip hop,1,hidden
+Jazz fusion,New wave,1,two-step
+Jazz rap,Hip hop,1,reversed
+Krautrock,Art rock,1,reversed
+Krautrock,Drum and bass,1,two-step
+Krautrock,Electro,1,two-step
+Krautrock,Hip hop,1,hidden
+Krautrock,Jazz rap,1,hidden
+Krautrock,New wave,1,direct
+Krautrock,Punk rock,1,hidden
+New wave,Indie rock,1,two-step
+New wave,Progressive rock,1,reversed
+Pop-punk,Alternative rock,1,hidden
+Post-punk,Indie rock,1,direct
+Post-punk,Synth-pop,1,direct
+Progressive rock,Alternative rock,1,hidden
+Progressive rock,Art rock,1,hidden
+Progressive rock,Hard rock,1,hidden
+Progressive rock,Hardcore punk,1,hidden
+Progressive rock,Krautrock,1,direct
+Progressive rock,Synth-pop,1,direct
+Psychedelic rock,Ambient music,1,two-step
+Psychedelic rock,Contemporary R&B,1,hidden
+Psychedelic rock,Funk,1,hidden
+Psychedelic rock,Gangsta rap,1,hidden
+Psychedelic rock,Hardcore punk,1,hidden
+Psychedelic rock,Hip hop,1,hidden
+Psychedelic rock,Indie rock,1,hidden
+Psychedelic rock,Jazz,1,reversed
+Psychedelic rock,Jazz rap,1,hidden
+Psychedelic rock,New wave,1,two-step
+Psychedelic rock,Punk rock,1,two-step
+Psychedelic rock,Rock music,1,reversed
+Psychedelic rock,Soul music,1,hidden
+Punk rock,Extreme metal,1,two-step
+Punk rock,Hip hop,1,hidden
+Punk rock,Indie rock,1,direct
+Punk rock,Post-punk,1,direct
+Reggae,Blues rock,1,hidden
+Reggae,Indie rock,1,hidden
+Rhythm and blues,Electric blues,1,hidden
+Rhythm and blues,Folk rock,1,two-step
+Rhythm and blues,Funk,1,direct
+Rhythm and blues,Hard rock,1,two-step
+Rhythm and blues,Reggae,1,direct
+Rhythm and blues,Rock music,1,direct
+Rhythm and blues,Soul music,1,direct
+Rock and roll,Blues rock,1,two-step
+Rock and roll,Disco,1,hidden
+Rock and roll,Extreme metal,1,hidden
+Rock and roll,Funk,1,hidden
+Rock and roll,Grunge,1,two-step
+Rock and roll,Pop-punk,1,two-step
+Rock and roll,Progressive rock,1,two-step
+Rock and roll,Soul music,1,hidden
+Rock and roll,Synth-pop,1,hidden
+Rock music,Folk rock,1,direct
+Rock music,Jazz rap,1,hidden
+Rock music,Krautrock,1,two-step
+Rock music,Ska,1,hidden
+Rock music,Soul music,1,hidden
+Rockabilly,Psychedelic rock,1,two-step
+Rockabilly,Rock and roll,1,reversed
+Ska,Alternative rock,1,hidden
+Ska,Reggae,1,direct
+Soul music,Art rock,1,hidden
+Soul music,Funk,1,direct
+Soul music,Hip hop,1,direct
+Soul music,Jazz rap,1,two-step
+Soul music,Progressive rock,1,hidden
+Soul music,Rock and roll,1,hidden
+Soul music,Trap,1,two-step
+Synth-pop,Ambient music,1,hidden
+Synth-pop,Hip hop,1,hidden
+Synth-pop,Indie rock,1,hidden
+Trap,Hip hop,1,reversed

@@ -1,0 +1,19 @@
+# Title:    All routes
+# Question: Which routes have the most artist pairs behind them, and what is their status?
+# Output:   source genre, target genre, number of artist pairs, status
+
+PREFIX riff: <https://w3id.org/riff/ontology#>
+PREFIX genre: <https://w3id.org/riff/genre/>
+PREFIX artist: <https://w3id.org/riff/artist/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?fromGenre ?toGenre ?weight ?status
+WHERE {
+  ?route a riff:GenreRoute ;
+         riff:routeFrom/rdfs:label ?fromGenre ;
+         riff:routeTo/rdfs:label ?toGenre ;
+         riff:routeWeight ?weight ;
+         riff:routeStatus ?status .
+}
+ORDER BY DESC(?weight) ?fromGenre ?toGenre

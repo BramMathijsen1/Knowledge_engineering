@@ -1,0 +1,57 @@
+kindName,fromGenre,toGenre,statements
+Cover version,Rock and roll,Rock music,3
+Cover version,Blues,Hard rock,2
+Cover version,Electric blues,Blues rock,2
+Cover version,Soul music,Soul music,2
+Cover version,Art rock,Grunge,1
+Cover version,Blues,Blues rock,1
+Cover version,Electric blues,Hard rock,1
+Cover version,Electric blues,Rock music,1
+Cover version,Folk music,Grunge,1
+Cover version,Folk rock,Blues rock,1
+Cover version,Folk rock,Psychedelic rock,1
+Cover version,Folk rock,Folk rock,1
+Cover version,Garage rock,Punk rock,1
+Cover version,Hard rock,Hip hop,1
+Cover version,Reggae,Blues rock,1
+Cover version,Rhythm and blues,Rock and roll,1
+Cover version,Rock music,Soul music,1
+Cover version,Rock music,Punk rock,1
+Cover version,Rock music,Hard rock,1
+Cover version,Rockabilly,Rock and roll,1
+Cover version,Soul music,Rock and roll,1
+Sampling,Funk,Jazz rap,19
+Sampling,Funk,Gangsta rap,9
+Sampling,Funk,Hip hop,6
+Sampling,Jazz fusion,Jazz rap,5
+Sampling,Gangsta rap,Contemporary R&B,3
+Sampling,Hip hop,Hip hop,3
+Sampling,Art rock,Gangsta rap,2
+Sampling,Contemporary R&B,Contemporary R&B,2
+Sampling,Gangsta rap,Hip hop,2
+Sampling,Heavy metal,Gangsta rap,2
+Sampling,Hip hop,Contemporary R&B,2
+Sampling,Jazz,Jazz rap,2
+Sampling,Jazz rap,Gangsta rap,2
+Sampling,Krautrock,Jazz rap,2
+Sampling,Rock music,Hip hop,2
+Sampling,Contemporary R&B,Techno,1
+Sampling,Contemporary R&B,Gangsta rap,1
+Sampling,Funk,Drum and bass,1
+Sampling,Funk,Contemporary R&B,1
+Sampling,Gangsta rap,Gangsta rap,1
+Sampling,Hard rock,Contemporary R&B,1
+Sampling,Hip hop,Jazz rap,1
+Sampling,Hip hop,Gangsta rap,1
+Sampling,Hip hop,Drum and bass,1
+Sampling,House music,Techno,1
+Sampling,Jazz fusion,Hip hop,1
+Sampling,Jazz rap,Hip hop,1
+Sampling,Krautrock,Drum and bass,1
+Sampling,Psychedelic rock,Gangsta rap,1
+Sampling,Psychedelic rock,Hip hop,1
+Sampling,Rock music,Jazz rap,1
+Sampling,Rock music,Contemporary R&B,1
+Sampling,Soul music,Jazz rap,1
+Sampling,Soul music,Trap,1
+Sampling,Trap,Hip hop,1

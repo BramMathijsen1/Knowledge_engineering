@@ -1,0 +1,15 @@
+# Test: every artist has exactly one primary genre.
+
+PREFIX riff: <https://w3id.org/riff/ontology#>
+PREFIX genre: <https://w3id.org/riff/genre/>
+PREFIX artist: <https://w3id.org/riff/artist/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?artist (COUNT(DISTINCT ?genre) AS ?genres)
+WHERE {
+  ?artist a mm:MusicArtist .
+  OPTIONAL { ?artist riff:hasPrimaryGenre ?genre }
+}
+GROUP BY ?artist
+HAVING (COUNT(DISTINCT ?genre) != 1)

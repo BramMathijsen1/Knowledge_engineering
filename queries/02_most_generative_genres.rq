@@ -1,0 +1,19 @@
+# Title:    Most generative genres
+# Question: Which genres have the most descendants in the family tree?
+# Output:   genre name, number of direct children, number of descendants
+
+PREFIX riff: <https://w3id.org/riff/ontology#>
+PREFIX genre: <https://w3id.org/riff/genre/>
+PREFIX artist: <https://w3id.org/riff/artist/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?genreName (COUNT(DISTINCT ?child) AS ?children) (COUNT(DISTINCT ?descendant) AS ?descendants)
+WHERE {
+  ?genre rdfs:label ?genreName .
+  ?child riff:hasStylisticOrigin ?genre .
+  ?descendant riff:hasStylisticOrigin+ ?genre .
+}
+GROUP BY ?genre ?genreName
+ORDER BY DESC(?descendants) DESC(?children) ?genreName
+LIMIT 15

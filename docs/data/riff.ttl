@@ -1,0 +1,307 @@
+@prefix riff: <https://w3id.org/riff/ontology#> .
+@prefix mm: <https://w3id.org/polifonia/ontology/music-meta/> .
+@prefix sit: <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/riff/ontology> a owl:Ontology ;
+    dcterms:title "RIFF ontology"@en ;
+    dcterms:description "An ontology for music genres and influence: where genres come from, who influenced whom, and how we know it. It extends the Music Meta ontology."@en ;
+    dcterms:creator "Team members: add names here" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    owl:versionInfo "1.0" ;
+    vann:preferredNamespacePrefix "riff" ;
+    vann:preferredNamespaceUri "https://w3id.org/riff/ontology#" ;
+    rdfs:seeAlso <https://w3id.org/polifonia/ontology/music-meta/> .
+
+#################################################################
+# Terms reused from Music Meta
+#################################################################
+
+mm:MusicArtist a owl:Class ;
+    rdfs:label "Music artist"@en ;
+    rdfs:comment "A person or a group that makes music."@en ;
+    rdfs:isDefinedBy <https://w3id.org/polifonia/ontology/music-meta/> .
+
+mm:Musician a owl:Class ;
+    rdfs:subClassOf mm:MusicArtist ;
+    rdfs:label "Musician"@en ;
+    rdfs:comment "A single person who makes music."@en ;
+    rdfs:isDefinedBy <https://w3id.org/polifonia/ontology/music-meta/> .
+
+mm:MusicEnsenble a owl:Class ;
+    rdfs:subClassOf mm:MusicArtist ;
+    rdfs:label "Music ensemble"@en ;
+    rdfs:comment "A band or other music group. The name is spelled this way in Music Meta."@en ;
+    rdfs:isDefinedBy <https://w3id.org/polifonia/ontology/music-meta/> .
+
+mm:MusicGenre a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Music genre"@en ;
+    rdfs:comment "A category of music. Genres are individuals here, not classes, because a subgenre is not a kind of its parent in the logical sense. Subgenres use skos:broader."@en ;
+    rdfs:isDefinedBy <https://w3id.org/polifonia/ontology/music-meta/> .
+
+mm:Recording a owl:Class ;
+    rdfs:label "Recording"@en ;
+    rdfs:comment "A recorded performance of a piece of music."@en ;
+    rdfs:isDefinedBy <https://w3id.org/polifonia/ontology/music-meta/> .
+
+mm:hasGenre a owl:ObjectProperty ;
+    rdfs:domain mm:MusicArtist ;
+    rdfs:range mm:MusicGenre ;
+    rdfs:label "has genre"@en ;
+    rdfs:comment "An artist works in this genre. An artist can have many."@en ;
+    rdfs:isDefinedBy <https://w3id.org/polifonia/ontology/music-meta/> .
+
+mm:isInfluencedBy a owl:ObjectProperty ;
+    rdfs:domain mm:MusicArtist ;
+    rdfs:range mm:MusicArtist ;
+    rdfs:label "is influenced by"@en ;
+    rdfs:comment "The simple link between two artists. We get it from riff:Influence with a property chain. It is not transitive on purpose: if A influenced B and B influenced C, A did not have to influence C."@en ;
+    owl:propertyChainAxiom ( [ owl:inverseOf riff:influenced ] riff:influencer ) ;
+    rdfs:isDefinedBy <https://w3id.org/polifonia/ontology/music-meta/> .
+
+#################################################################
+# Terms reused from other vocabularies
+#################################################################
+
+sit:Situation a owl:Class ;
+    rdfs:label "Situation"@en ;
+    rdfs:comment "The situation pattern from ontologydesignpatterns.org: one thing that links many others."@en ;
+    rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/situation.owl> .
+
+skos:Concept a owl:Class ;
+    rdfs:label "Concept"@en ;
+    rdfs:comment "A concept in a classification scheme, from SKOS."@en ;
+    rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> .
+
+skos:broader a owl:ObjectProperty ;
+    rdfs:label "broader"@en ;
+    rdfs:comment "We use it for subgenres: the subject is a subgenre of the object."@en ;
+    rdfs:isDefinedBy <http://www.w3.org/2004/02/skos/core> .
+
+prov:wasDerivedFrom a owl:ObjectProperty ;
+    rdfs:label "was derived from"@en ;
+    rdfs:comment "The source of a statement: a Wikipedia page, a Wikidata item or a MusicBrainz recording."@en ;
+    rdfs:isDefinedBy <http://www.w3.org/ns/prov#> .
+
+dcterms:creator a owl:AnnotationProperty .
+dcterms:title a owl:AnnotationProperty .
+dcterms:description a owl:AnnotationProperty .
+dcterms:license a owl:AnnotationProperty .
+dcterms:source a owl:AnnotationProperty .
+
+void:Dataset a owl:Class ;
+    rdfs:label "Dataset"@en ;
+    rdfs:comment "A set of RDF data. We use it to describe the graph itself."@en ;
+    rdfs:isDefinedBy <http://rdfs.org/ns/void#> .
+
+#################################################################
+# Influence
+#################################################################
+
+riff:Influence a owl:Class ;
+    rdfs:subClassOf sit:Situation ;
+    rdfs:label "Influence"@en ;
+    rdfs:comment "One claim that an artist influenced another artist, together with how we know it. It is an n-ary relation turned into a class, because a plain link can't hold the evidence and the source."@en ;
+    owl:hasKey ( riff:influencer riff:influenced riff:hasEvidenceKind prov:wasDerivedFrom ) .
+
+riff:influencer a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain riff:Influence ;
+    rdfs:range mm:MusicArtist ;
+    rdfs:label "influencer"@en ;
+    rdfs:comment "The artist who had the influence."@en .
+
+riff:influenced a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain riff:Influence ;
+    rdfs:range mm:MusicArtist ;
+    rdfs:label "influenced"@en ;
+    rdfs:comment "The artist who received the influence."@en .
+
+riff:hasEvidenceKind a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain riff:Influence ;
+    rdfs:range riff:EvidenceKind ;
+    rdfs:label "has evidence kind"@en ;
+    rdfs:comment "How we know about this influence."@en .
+
+riff:viaRecording a owl:ObjectProperty ;
+    rdfs:domain riff:Influence ;
+    rdfs:range mm:Recording ;
+    rdfs:label "via recording"@en ;
+    rdfs:comment "The older recording that was sampled or covered."@en .
+
+riff:inRecording a owl:ObjectProperty ;
+    rdfs:domain riff:Influence ;
+    rdfs:range mm:Recording ;
+    rdfs:label "in recording"@en ;
+    rdfs:comment "The newer recording that uses the older one."@en .
+
+riff:evidenceQuote a owl:DatatypeProperty ;
+    rdfs:domain riff:Influence ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "evidence quote"@en ;
+    rdfs:comment "The sentence that states the influence."@en .
+
+riff:dateNote a owl:DatatypeProperty ;
+    rdfs:domain riff:Influence ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "date note"@en ;
+    rdfs:comment "Explains an influence that looks wrong by date but is correct, for example an older artist influenced by a younger one."@en .
+
+riff:EvidenceKind a owl:Class ;
+    rdfs:label "Evidence kind"@en ;
+    rdfs:comment "A way of knowing about an influence."@en .
+
+riff:Declared a owl:NamedIndividual, riff:EvidenceKind ;
+    rdfs:label "Declared"@en ;
+    rdfs:comment "The influenced artist says it. For example: she cited Mariah Carey as an early influence."@en .
+
+riff:Attributed a owl:NamedIndividual, riff:EvidenceKind ;
+    rdfs:label "Attributed"@en ;
+    rdfs:comment "Someone else says it, such as a critic or the article itself. The artist's own words are not reported."@en .
+
+riff:Unsourced a owl:NamedIndividual, riff:EvidenceKind ;
+    rdfs:label "Unsourced"@en ;
+    rdfs:comment "A Wikidata statement. We did not trace who made the claim."@en .
+
+riff:Sampling a owl:NamedIndividual, riff:EvidenceKind ;
+    rdfs:label "Sampling"@en ;
+    rdfs:comment "The newer recording reuses the sound of the older recording. Lacasse calls this autosonic."@en .
+
+riff:CoverVersion a owl:NamedIndividual, riff:EvidenceKind ;
+    rdfs:label "Cover version"@en ;
+    rdfs:comment "The newer recording plays the song again. Lacasse calls this allosonic."@en .
+
+#################################################################
+# Artists and genres
+#################################################################
+
+riff:hasPrimaryGenre a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:subPropertyOf mm:hasGenre ;
+    rdfs:domain mm:MusicArtist ;
+    rdfs:range mm:MusicGenre ;
+    rdfs:label "has primary genre"@en ;
+    rdfs:comment "The one genre an artist is best known for. We need it to compare artists with the genre family tree."@en .
+
+riff:activeFrom a owl:DatatypeProperty ;
+    rdfs:domain mm:MusicArtist ;
+    rdfs:range xsd:integer ;
+    rdfs:label "active from"@en ;
+    rdfs:comment "The year the artist started."@en .
+
+riff:activeTo a owl:DatatypeProperty ;
+    rdfs:domain mm:MusicArtist ;
+    rdfs:range xsd:integer ;
+    rdfs:label "active to"@en ;
+    rdfs:comment "The year the artist stopped or died. Empty if still active."@en .
+
+riff:hasStylisticOrigin a owl:ObjectProperty ;
+    rdfs:domain mm:MusicGenre ;
+    rdfs:range mm:MusicGenre ;
+    rdfs:label "has stylistic origin"@en ;
+    rdfs:comment "This genre grew out of the other genre. Not declared transitive: use the property path riff:hasStylisticOrigin+ in SPARQL to follow long chains."@en .
+
+riff:isFusionOf a owl:ObjectProperty ;
+    rdfs:subPropertyOf riff:hasStylisticOrigin ;
+    rdfs:domain mm:MusicGenre ;
+    rdfs:range mm:MusicGenre ;
+    rdfs:label "is fusion of"@en ;
+    rdfs:comment "This genre mixes the other genre with at least one more."@en .
+
+riff:emergedIn a owl:DatatypeProperty ;
+    rdfs:domain mm:MusicGenre ;
+    rdfs:range xsd:integer ;
+    rdfs:label "emerged in"@en ;
+    rdfs:comment "A rough year for when the genre appeared. Wikipedia only gives periods such as late 1960s, so this is an estimate used for date checks."@en .
+
+riff:originPlace a owl:DatatypeProperty ;
+    rdfs:domain mm:MusicGenre ;
+    rdfs:range xsd:string ;
+    rdfs:label "origin place"@en ;
+    rdfs:comment "Where the genre first appeared."@en .
+
+#################################################################
+# Genre forms (Lena and Peterson)
+#################################################################
+
+riff:GenrePhase a owl:Class ;
+    rdfs:subClassOf sit:Situation ;
+    rdfs:label "Genre phase"@en ;
+    rdfs:comment "A genre in one form, at one step of its history."@en .
+
+riff:phaseOf a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain riff:GenrePhase ;
+    rdfs:range mm:MusicGenre ;
+    rdfs:label "phase of"@en ;
+    rdfs:comment "The genre this phase belongs to."@en .
+
+riff:hasForm a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain riff:GenrePhase ;
+    rdfs:range riff:GenreForm ;
+    rdfs:label "has form"@en ;
+    rdfs:comment "The form the genre has in this phase."@en .
+
+riff:phaseOrder a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:domain riff:GenrePhase ;
+    rdfs:range xsd:integer ;
+    rdfs:label "phase order"@en ;
+    rdfs:comment "The position of this phase in the genre's history, starting from 1."@en .
+
+riff:GenreForm a owl:Class ;
+    rdfs:label "Genre form"@en ;
+    rdfs:comment "One of the four forms of a music genre described by Lena and Peterson."@en .
+
+riff:AvantGarde a owl:NamedIndividual, riff:GenreForm ;
+    rdfs:label "Avant-garde"@en ;
+    rdfs:comment "A small group of musicians trying out a new style."@en .
+
+riff:SceneBased a owl:NamedIndividual, riff:GenreForm ;
+    rdfs:label "Scene-based"@en ;
+    rdfs:comment "A local community forms around the music."@en .
+
+riff:IndustryBased a owl:NamedIndividual, riff:GenreForm ;
+    rdfs:label "Industry-based"@en ;
+    rdfs:comment "The music industry produces and sells the music."@en .
+
+riff:Traditionalist a owl:NamedIndividual, riff:GenreForm ;
+    rdfs:label "Traditionalist"@en ;
+    rdfs:comment "Fans and musicians work to keep the music as it was."@en .
+
+#################################################################
+# Genre routes (made by a CONSTRUCT query)
+#################################################################
+
+riff:GenreRoute a owl:Class ;
+    rdfs:label "Genre route"@en ;
+    rdfs:comment "Artist influence added up from one genre to another. These are not entered by hand: query 09 builds them."@en .
+
+riff:routeFrom a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain riff:GenreRoute ;
+    rdfs:range mm:MusicGenre ;
+    rdfs:label "route from"@en ;
+    rdfs:comment "The genre of the artists who had the influence."@en .
+
+riff:routeTo a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain riff:GenreRoute ;
+    rdfs:range mm:MusicGenre ;
+    rdfs:label "route to"@en ;
+    rdfs:comment "The genre of the artists who received the influence."@en .
+
+riff:routeWeight a owl:DatatypeProperty ;
+    rdfs:domain riff:GenreRoute ;
+    rdfs:range xsd:integer ;
+    rdfs:label "route weight"@en ;
+    rdfs:comment "How many artist pairs support this route."@en .
+
+riff:routeStatus a owl:DatatypeProperty ;
+    rdfs:domain riff:GenreRoute ;
+    rdfs:range xsd:string ;
+    rdfs:label "route status"@en ;
+    rdfs:comment "How the route compares with the genre family tree: direct, two-step, reversed or hidden."@en .

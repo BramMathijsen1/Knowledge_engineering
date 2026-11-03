@@ -1,0 +1,34 @@
+# Title:    Build the genre routes
+# Question: If we add up artist influence by genre, which routes do we get and how do they compare with the family tree?
+# Output:   an RDF graph of riff:GenreRoute, saved as graph/routes.ttl
+
+PREFIX riff: <https://w3id.org/riff/ontology#>
+PREFIX genre: <https://w3id.org/riff/genre/>
+PREFIX artist: <https://w3id.org/riff/artist/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+CONSTRUCT {
+  ?route a riff:GenreRoute ;
+         riff:routeFrom ?from ;
+         riff:routeTo ?to ;
+         riff:routeWeight ?weight ;
+         riff:routeStatus ?status .
+}
+WHERE {
+  {
+    SELECT ?from ?to (COUNT(*) AS ?weight)
+    WHERE {
+      ?follower mm:isInfluencedBy ?artist .
+      ?artist riff:hasPrimaryGenre ?from .
+      ?follower riff:hasPrimaryGenre ?to .
+      FILTER(?from != ?to)
+    }
+    GROUP BY ?from ?to
+  }
+  BIND(IF(EXISTS { ?to riff:hasStylisticOrigin ?from }, "direct",
+       IF(EXISTS { ?to riff:hasStylisticOrigin/riff:hasStylisticOrigin ?from }, "two-step",
+       IF(EXISTS { ?from riff:hasStylisticOrigin|(riff:hasStylisticOrigin/riff:hasStylisticOrigin) ?to }, "reversed",
+       "hidden"))) AS ?status)
+  BIND(IRI(CONCAT("https://w3id.org/riff/route/", STRAFTER(STR(?from), "genre/"), "--", STRAFTER(STR(?to), "genre/"))) AS ?route)
+}

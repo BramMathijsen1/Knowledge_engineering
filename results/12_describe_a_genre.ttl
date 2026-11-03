@@ -1,0 +1,23 @@
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix genre: <https://w3id.org/riff/genre/> .
+@prefix mm: <https://w3id.org/polifonia/ontology/music-meta/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix riff: <https://w3id.org/riff/ontology#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+genre:punk_rock a mm:MusicGenre ;
+    rdfs:label "Punk rock"@en ;
+    owl:sameAs dbr:Punk_rock,
+        wd:Q3071 ;
+    skos:broader genre:rock ;
+    riff:emergedIn 1975 ;
+    riff:hasStylisticOrigin genre:garage_rock,
+        genre:glam_rock,
+        genre:rock,
+        genre:rock_and_roll,
+        genre:rockabilly ;
+    riff:originPlace "United States, United Kingdom and Australia" .
+

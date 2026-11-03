@@ -1,0 +1,18 @@
+# Title:    Route summary
+# Question: Do artist influences follow the genre family tree? How many routes are direct, two-step, reversed or hidden?
+# Output:   status, number of routes, number of artist pairs behind them
+
+PREFIX riff: <https://w3id.org/riff/ontology#>
+PREFIX genre: <https://w3id.org/riff/genre/>
+PREFIX artist: <https://w3id.org/riff/artist/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?status (COUNT(?route) AS ?routes) (SUM(?weight) AS ?artistPairs)
+WHERE {
+  ?route a riff:GenreRoute ;
+         riff:routeStatus ?status ;
+         riff:routeWeight ?weight .
+}
+GROUP BY ?status
+ORDER BY DESC(?artistPairs)

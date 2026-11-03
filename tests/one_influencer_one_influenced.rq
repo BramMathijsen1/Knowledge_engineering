@@ -1,0 +1,15 @@
+# Test: each influence links exactly one influencer and one influenced artist.
+
+PREFIX riff: <https://w3id.org/riff/ontology#>
+PREFIX genre: <https://w3id.org/riff/genre/>
+PREFIX artist: <https://w3id.org/riff/artist/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?influence (COUNT(DISTINCT ?a) AS ?influencers) (COUNT(DISTINCT ?b) AS ?influenced)
+WHERE {
+  ?influence riff:influencer ?a ;
+             riff:influenced ?b .
+}
+GROUP BY ?influence
+HAVING (COUNT(DISTINCT ?a) != 1 || COUNT(DISTINCT ?b) != 1)

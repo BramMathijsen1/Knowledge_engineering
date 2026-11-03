@@ -1,0 +1,20 @@
+# Title:    Most influential artists
+# Question: Which artists influenced the most other artists, and across how many genres?
+# Output:   artist, genre of the artist, number of influenced artists, number of genres reached
+
+PREFIX riff: <https://w3id.org/riff/ontology#>
+PREFIX genre: <https://w3id.org/riff/genre/>
+PREFIX artist: <https://w3id.org/riff/artist/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?artistName ?genreName (COUNT(DISTINCT ?follower) AS ?followers) (COUNT(DISTINCT ?followerGenre) AS ?genresReached)
+WHERE {
+  ?follower mm:isInfluencedBy ?artist ;
+            riff:hasPrimaryGenre ?followerGenre .
+  ?artist rdfs:label ?artistName ;
+          riff:hasPrimaryGenre/rdfs:label ?genreName .
+}
+GROUP BY ?artist ?artistName ?genreName
+ORDER BY DESC(?followers) DESC(?genresReached) ?artistName
+LIMIT 15

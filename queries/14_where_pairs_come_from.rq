@@ -1,0 +1,19 @@
+# Title:    Where artist pairs come from
+# Question: How many artist pairs come only from Wikidata, only from Wikipedia text, or from both?
+# Output:   source, number of artist pairs
+
+PREFIX riff: <https://w3id.org/riff/ontology#>
+PREFIX genre: <https://w3id.org/riff/genre/>
+PREFIX artist: <https://w3id.org/riff/artist/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?source (COUNT(*) AS ?artistPairs)
+WHERE {
+  ?follower mm:isInfluencedBy ?artist .
+  BIND(EXISTS { ?i riff:influenced ?follower ; riff:influencer ?artist ; riff:hasEvidenceKind riff:Unsourced } AS ?inWikidata)
+  BIND(EXISTS { ?j riff:influenced ?follower ; riff:influencer ?artist ; riff:hasEvidenceKind ?kind . FILTER(?kind IN (riff:Declared, riff:Attributed)) } AS ?inText)
+  BIND(IF(?inWikidata && ?inText, "both", IF(?inWikidata, "Wikidata only", IF(?inText, "Wikipedia text only", "recordings only"))) AS ?source)
+}
+GROUP BY ?source
+ORDER BY DESC(?artistPairs)

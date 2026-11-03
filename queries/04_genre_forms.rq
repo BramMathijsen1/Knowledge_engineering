@@ -1,0 +1,21 @@
+# Title:    Genre forms and trajectories
+# Question: Which form does each genre start in, and how does it change?
+# Output:   genre name, form in each phase (Lena and Peterson)
+
+PREFIX riff: <https://w3id.org/riff/ontology#>
+PREFIX genre: <https://w3id.org/riff/genre/>
+PREFIX artist: <https://w3id.org/riff/artist/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?genreName ?phase1 ?phase2 ?phase3 ?phase4
+WHERE {
+  ?first riff:phaseOf ?genre ;
+         riff:phaseOrder 1 ;
+         riff:hasForm/rdfs:label ?phase1 .
+  ?genre rdfs:label ?genreName .
+  OPTIONAL { ?second riff:phaseOf ?genre ; riff:phaseOrder 2 ; riff:hasForm/rdfs:label ?phase2 }
+  OPTIONAL { ?third riff:phaseOf ?genre ; riff:phaseOrder 3 ; riff:hasForm/rdfs:label ?phase3 }
+  OPTIONAL { ?fourth riff:phaseOf ?genre ; riff:phaseOrder 4 ; riff:hasForm/rdfs:label ?phase4 }
+}
+ORDER BY ?phase1 ?genreName

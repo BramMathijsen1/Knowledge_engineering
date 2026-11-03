@@ -1,0 +1,17 @@
+# Title:    Roots of a genre
+# Question: What are all the genres that punk rock comes from, near and far?
+# Output:   genre name, rough year it appeared
+
+PREFIX riff: <https://w3id.org/riff/ontology#>
+PREFIX genre: <https://w3id.org/riff/genre/>
+PREFIX artist: <https://w3id.org/riff/artist/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?root ?year
+WHERE {
+  genre:punk_rock riff:hasStylisticOrigin+ ?ancestor .
+  ?ancestor rdfs:label ?root .
+  OPTIONAL { ?ancestor riff:emergedIn ?year }
+}
+ORDER BY ?year ?root

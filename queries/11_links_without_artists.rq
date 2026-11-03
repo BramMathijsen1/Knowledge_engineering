@@ -1,0 +1,22 @@
+# Title:    Links without artists
+# Question: Which documented genre links have no artist influence behind them?
+# Output:   parent genre, child genre
+
+PREFIX riff: <https://w3id.org/riff/ontology#>
+PREFIX genre: <https://w3id.org/riff/genre/>
+PREFIX artist: <https://w3id.org/riff/artist/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?parentGenre ?childGenre
+WHERE {
+  ?child riff:hasStylisticOrigin ?parent ;
+         rdfs:label ?childGenre .
+  ?parent rdfs:label ?parentGenre .
+  FILTER NOT EXISTS {
+    ?route a riff:GenreRoute ;
+           riff:routeFrom ?parent ;
+           riff:routeTo ?child .
+  }
+}
+ORDER BY ?parentGenre ?childGenre

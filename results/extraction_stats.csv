@@ -1,0 +1,13 @@
+word,candidates,kept,same claim,dropped,precision
+influenced,254,228,14,12,0.95
+influences,187,176,9,2,0.99
+influence,157,139,5,13,0.92
+inspired,64,46,2,16,0.75
+inspiration,33,27,2,4,0.88
+idolized,5,4,1,0,1.0
+inspirations,2,0,0,2,0.0
+emulation,1,0,1,0,1.0
+emulate,1,1,0,0,1.0
+inspiring,1,1,0,0,1.0
+inspire,1,1,0,0,1.0
+all,706,623,34,49,0.93

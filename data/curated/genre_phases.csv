@@ -1,0 +1,25 @@
+genre,order,form,source,note,status
+bebop,1,AvantGarde,https://doi.org/10.2383/77058,,draft
+bebop,2,SceneBased,https://doi.org/10.2383/77058,,draft
+bebop,3,IndustryBased,https://doi.org/10.2383/77058,,draft
+bebop,4,Traditionalist,https://doi.org/10.2383/77058,,draft
+folk_rock,1,AvantGarde,https://doi.org/10.2383/77058,,draft
+folk_rock,2,SceneBased,https://doi.org/10.2383/77058,,draft
+folk_rock,3,IndustryBased,https://doi.org/10.2383/77058,,draft
+folk_rock,4,Traditionalist,https://doi.org/10.2383/77058,,draft
+electric_blues,1,AvantGarde,https://doi.org/10.2383/77058,The review says urban blues. We use our electric blues genre for it.,draft
+electric_blues,2,SceneBased,https://doi.org/10.2383/77058,The review says urban blues. We use our electric blues genre for it.,draft
+electric_blues,3,IndustryBased,https://doi.org/10.2383/77058,The review says urban blues. We use our electric blues genre for it.,draft
+electric_blues,4,Traditionalist,https://doi.org/10.2383/77058,The review says urban blues. We use our electric blues genre for it.,draft
+extreme_metal,1,AvantGarde,https://doi.org/10.2383/77058,,draft
+extreme_metal,2,SceneBased,https://doi.org/10.2383/77058,,draft
+house,1,AvantGarde,https://doi.org/10.2383/77058,,draft
+house,2,SceneBased,https://doi.org/10.2383/77058,,draft
+reggae,1,SceneBased,https://doi.org/10.2383/77058,,draft
+reggae,2,IndustryBased,https://doi.org/10.2383/77058,,draft
+soul,1,IndustryBased,https://doi.org/10.2383/77058,,draft
+soul,2,SceneBased,https://doi.org/10.2383/77058,,draft
+soul,3,Traditionalist,https://doi.org/10.2383/77058,,draft
+funk,1,IndustryBased,https://doi.org/10.2383/77058,,draft
+funk,2,SceneBased,https://doi.org/10.2383/77058,,draft
+funk,3,Traditionalist,https://doi.org/10.2383/77058,,draft

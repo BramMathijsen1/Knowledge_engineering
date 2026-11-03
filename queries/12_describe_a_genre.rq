@@ -1,0 +1,11 @@
+# Title:    Describe a genre
+# Question: What does the graph say about punk rock?
+# Output:   an RDF graph about punk rock
+
+PREFIX riff: <https://w3id.org/riff/ontology#>
+PREFIX genre: <https://w3id.org/riff/genre/>
+PREFIX artist: <https://w3id.org/riff/artist/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+DESCRIBE genre:punk_rock

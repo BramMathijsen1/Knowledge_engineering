@@ -1,0 +1,134 @@
+<h1>Method</h1>
+<p>We followed eXtreme Design: start from stories, turn them into competency questions, match the
+questions to ontology patterns, and test the result with SPARQL.</p>
+
+<h2>Stories</h2>
+<ul>
+<li>A music historian wants to know if the documented roots of punk match what punk bands say influenced them.</li>
+<li>A student wants to follow the path from an old blues singer to a band of the 1990s.</li>
+<li>A journalist reads that an artist was "influenced by" another one and wants to know who said so.</li>
+</ul>
+
+<h2>Competency questions</h2>
+<ol>
+<li>What are the roots of a genre?</li>
+<li>Which genres have the most descendants?</li>
+<li>Which fusion genres join two genres that had no link before?</li>
+<li>Which form does a genre start in, and how does it change?</li>
+<li>Which artists influenced the most other artists, and across how many genres?</li>
+<li>Is there a chain of influence between two artists?</li>
+<li>Whose influence is declared by artists themselves, and whose is only stated by others?</li>
+<li>Which genres do sampled and covered recordings come from and go to?</li>
+<li>If we add up artist influence by genre, which routes do we get?</li>
+<li>Do those routes follow the family tree of genres?</li>
+<li>Which links in the family tree have no artists behind them?</li>
+<li>What does the graph say about a genre?</li>
+</ol>
+<p><strong>Questions the graph can't answer:</strong> what an influence sounds like (we have no audio
+features), and when an influence happened (claims have no dates).</p>
+
+<h2>Theory</h2>
+<table>
+<tr><th>Source</th><th>Idea we use</th><th>Where</th></tr>
+<tr><td>Lena and Peterson (2008), Lena (2012)</td><td>Genres take four forms: avant-garde, scene-based, industry-based and traditionalist. They move through these forms along a few typical paths. Soul and funk are unusual because they start as industry-based.</td><td>Query 4</td></tr>
+<tr><td>Bryan and Wang (2011)</td><td>Links between songs can be added up to links between artists and genres. We do the same step from artists to genres.</td><td>Queries 9, 10, 11</td></tr>
+<tr><td>Lacasse (2000)</td><td>Reusing the actual recording (autosonic, as in sampling) is different from playing the music again (allosonic, as in a cover).</td><td>Query 8</td></tr>
+</table>
+
+<h2>Sources and steps</h2>
+<table>
+<tr><th>Step</th><th>Source</th><th>What we get</th><th>Script or file</th></tr>
+<tr><td>1. Fetch</td><td>DBpedia (SPARQL)</td><td>Links between genres</td><td><code>fetch_lod.py</code></td></tr>
+<tr><td>2. Fetch</td><td>Wikidata (SPARQL)</td><td>Influence pairs, dates, other genres</td><td><code>fetch_lod.py</code></td></tr>
+<tr><td>3. Extract</td><td>Wikipedia text</td><td>Sentences about influence</td><td><code>extract_text.py</code></td></tr>
+<tr><td>4. Fetch</td><td>MusicBrainz</td><td>Samples between recordings</td><td><code>fetch_samples.py</code></td></tr>
+<tr><td>5. Curate</td><td>Steps 1 to 4</td><td>Cleaned tables, one for each kind of data</td><td><code>data/curated/</code></td></tr>
+<tr><td>6. Build</td><td>Curated tables</td><td>The knowledge graph</td><td><code>build_graph.py</code></td></tr>
+<tr><td>7. Query</td><td>The graph</td><td>Answers and test results</td><td><code>run_queries.py</code></td></tr>
+</table>
+<p>All downloaded data is saved in the project, so the graph can be rebuilt without internet.
+This matters: while we worked, public endpoints were often slow or down.</p>
+
+<h2>Why the data needs curating</h2>
+<p>Raw linked data can't be used as it is. These problems shaped the project:</p>
+<ul>
+<li><strong>DBpedia has genre links but almost no influence links.</strong> So genres come from DBpedia and influence from other sources.</li>
+<li><strong>The raw genre links form loops.</strong> In all of DBpedia, 332 genres are in one big loop, so "ancestor of" means almost nothing. On our chosen genres there are no loops left, and a test checks this.</li>
+<li><strong>Some links are simply wrong.</strong> For example, DBpedia connects trap to soul, but trap is decades younger. Dropped links stay in <code>lineage.csv</code> with the reason.</li>
+<li><strong>Wikidata has gaps and mistakes.</strong> Among our artists it has no influences at all for Kendrick Lamar or Miles Davis, and only one each for Beyonc&eacute; and Radiohead. So text extraction is necessary. It also says Sister Rosetta Tharpe was influenced by Little Richard, which is backwards: she started about 30 years before him. Our date test finds errors like this.</li>
+<li><strong>Artists have many genres.</strong> If we use them all, nearly everything looks connected. So each artist has one primary genre, listed in <code>artists.csv</code>.</li>
+</ul>
+
+<h2>How to read the route labels</h2>
+<p><strong>Reversed doesn't mean wrong.</strong> The family tree shows where a genre came from, but older
+genres don't stop when a newer one appears. Kendrick Lamar is a hip hop artist influenced by Tupac Shakur,
+a gangsta rap artist. Gangsta rap comes from hip hop, so this route counts as reversed, and it is still true.</p>
+<p><strong>Hidden doesn't mean secret.</strong> It only means our family tree has no link there. Hard rock
+to heavy metal comes out as hidden because DBpedia lists no link between them, even though the two are
+clearly close.</p>
+
+<h2>Evidence kinds</h2>
+<p>Each influence statement says how we know about it. <strong>Declared</strong>: the influenced artist
+says it. <strong>Attributed</strong>: someone else says it. <strong>Unsourced</strong>: it comes from
+Wikidata and we did not trace who claimed it. <strong>Sampling</strong> and <strong>Cover version</strong>:
+the influence can be heard in a recording.</p>
+
+<h2>Evaluating the extraction</h2>
+<p>A candidate is a Wikipedia sentence with an influence word and a link to another artist in our list.
+"Kept" means it does state a musical influence between the two artists. "Same claim" means another
+sentence on the same page already says it.</p>
+{{extraction_stats}}
+<p>Precision is high because a candidate must already name two artists from our list. This table says
+nothing about recall: we don't know how many influences the patterns missed. Direction is a separate
+problem. The patterns don't find it, so each sentence has to be read to see who influenced whom.
+The numbers come from the review file and will change as rows go from <code>draft</code> to <code>checked</code>.</p>
+<p>Where the artist pairs in the graph come from:</p>
+{{pair_sources}}
+
+<h2>Does the choice of primary genre matter?</h2>
+<p>Query 13 repeats the comparison with all the genres of each artist instead of one. The result looks
+different, which shows how much the answer depends on this choice:</p>
+{{all_genres_check}}
+
+<h2>Ontology patterns</h2>
+<table>
+<tr><th>Pattern</th><th>How we use it</th></tr>
+<tr><td>Situation (n-ary relation)</td><td><code>riff:Influence</code> holds the influencer, the influenced artist, the evidence and the source. A plain link can't hold all of this.</td></tr>
+<tr><td>Identification key</td><td><code>owl:hasKey</code> on <code>riff:Influence</code>: same artists, same evidence kind and same source mean the same statement.</td></tr>
+<tr><td>Property chain</td><td><code>mm:isInfluencedBy</code> is defined from <code>riff:Influence</code> with a property chain. We also add it with a CONSTRUCT query, so queries work without a reasoner.</td></tr>
+<tr><td>Transition</td><td><code>riff:GenrePhase</code> gives the form of a genre at each step of its history.</td></tr>
+<tr><td>Constructive query</td><td>Query 9 builds <code>riff:GenreRoute</code> from the graph.</td></tr>
+<tr><td>Avoiding an anti-pattern</td><td>Subgenres use <code>skos:broader</code>, not <code>rdfs:subClassOf</code>. Genres are individuals, because hard rock is not a kind of rock in the logical sense.</td></tr>
+</table>
+<p><strong>Influence is not transitive.</strong> If A influenced B and B influenced C, A did not have to
+influence C. So we don't declare the property transitive. We ask for chains with <code>+</code> in SPARQL.</p>
+
+<h2>Limits</h2>
+<ul>
+<li>We chose the genres and artists ourselves, about 3 to 5 artists per genre. Other choices would give other numbers.</li>
+<li>Artists with no influence link in our sources were left out, including Charlie Parker and Joan Baez. That shows a gap in the sources, not that they had no influence. The jungle genre has no artists left for the same reason.</li>
+<li>Wikidata and Wikipedia say much more about rock than about older music or about hip hop. A link with no artists behind it may only mean our sources are thin there.</li>
+<li>Many routes with no link are between close genres, so they show gaps in the tree more than discoveries.</li>
+<li>The years for genres are rough estimates from periods like "late 1960s".</li>
+<li>Genre forms are only filled in for genres named in Regev's review of Lena's book.</li>
+<li>We chose the sampled recordings, so query 8 describes our selection. It can't test what Bryan and Wang found.</li>
+</ul>
+
+<h2>Run it yourself</h2>
+<pre><code>pip install -r requirements.txt
+python scripts/build_graph.py
+python scripts/run_queries.py
+python scripts/build_site.py</code></pre>
+<p>To use a SPARQL endpoint, load <code>graph/graph.ttl</code> and <code>ontology/riff.ttl</code> into
+<a href="https://jena.apache.org/documentation/fuseki2/">Apache Jena Fuseki</a> on your computer.</p>
+
+<h2>References</h2>
+<ul>
+<li>Bryan, N. J. and Wang, G. (2011). Musical Influence Network Analysis and Rank of Sample-Based Music. ISMIR.</li>
+<li>de Berardinis, J., Carriero, V. A., Mero&ntilde;o-Pe&ntilde;uela, A., Poltronieri, A. and Presutti, V. (2023). The Music Meta Ontology: a flexible semantic model for the interoperability of music metadata. ISMIR.</li>
+<li>Hitzler, P., Gangemi, A., Janowicz, K., Krisnadhi, A. and Presutti, V. (eds.) (2016). Ontology Engineering with Ontology Design Patterns. IOS Press.</li>
+<li>Lacasse, S. (2000). Intertextuality and Hypertextuality in Recorded Popular Music. In Talbot, M. (ed.), The Musical Work: Reality or Invention?</li>
+<li>Lena, J. C. and Peterson, R. A. (2008). Classification as Culture: Types and Trajectories of Music Genres. American Sociological Review 73(5).</li>
+<li>Lena, J. C. (2012). Banding Together: How Communities Create Genres in Popular Music. Princeton University Press.</li>
+<li>Regev, M. (2014). Review of Banding Together. Sociologica 1/2014.</li>
+</ul>

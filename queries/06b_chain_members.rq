@@ -1,0 +1,18 @@
+# Title:    Artists on the chain
+# Question: Which artists sit between Robert Johnson and Nirvana?
+# Output:   artist, genre of the artist
+
+PREFIX riff: <https://w3id.org/riff/ontology#>
+PREFIX genre: <https://w3id.org/riff/genre/>
+PREFIX artist: <https://w3id.org/riff/artist/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?artistName ?genreName
+WHERE {
+  artist:nirvana mm:isInfluencedBy+ ?middle .
+  ?middle mm:isInfluencedBy+ artist:robert_johnson ;
+          rdfs:label ?artistName ;
+          riff:hasPrimaryGenre/rdfs:label ?genreName .
+}
+ORDER BY ?artistName

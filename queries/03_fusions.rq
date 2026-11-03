@@ -1,0 +1,20 @@
+# Title:    Fusion genres
+# Question: Which fusion genres join two genres that had no link before?
+# Output:   fusion genre, its two parents, whether the parents were already linked
+
+PREFIX riff: <https://w3id.org/riff/ontology#>
+PREFIX genre: <https://w3id.org/riff/genre/>
+PREFIX artist: <https://w3id.org/riff/artist/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?fusion ?parentA ?parentB ?alreadyLinked
+WHERE {
+  ?genre riff:isFusionOf ?a , ?b ;
+         rdfs:label ?fusion .
+  ?a rdfs:label ?parentA .
+  ?b rdfs:label ?parentB .
+  FILTER(STR(?a) < STR(?b))
+  BIND(EXISTS { ?a riff:hasStylisticOrigin+ ?b } || EXISTS { ?b riff:hasStylisticOrigin+ ?a } AS ?alreadyLinked)
+}
+ORDER BY ?alreadyLinked ?fusion

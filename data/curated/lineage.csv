@@ -1,0 +1,177 @@
+child,parent,relation,dbpedia_properties,keep,note,status
+alternative_rock,hardcore_punk,origin,derivative stylisticOrigin,yes,,draft
+alternative_rock,new_wave,origin,stylisticOrigin,yes,,draft
+alternative_rock,post_punk,origin,derivative stylisticOrigin,yes,,draft
+alternative_rock,punk_rock,origin,derivative stylisticOrigin,yes,,draft
+alternative_rock,rock,subgenre,musicSubgenre,yes,,draft
+ambient,dub,origin,derivative stylisticOrigin,yes,,draft
+ambient,krautrock,origin,derivative stylisticOrigin,yes,,draft
+art_rock,psychedelic_rock,origin,derivative,yes,,draft
+art_rock,rock,subgenre,musicSubgenre,yes,,draft
+blues,folk,origin,stylisticOrigin,yes,,draft
+blues_rock,blues,fusion,musicFusionGenre stylisticOrigin,yes,,draft
+blues_rock,electric_blues,origin,derivative stylisticOrigin,yes,,draft
+blues_rock,rock,fusion,musicFusionGenre stylisticOrigin,yes,,draft
+contemporary_rnb,funk,origin,derivative stylisticOrigin,yes,,draft
+contemporary_rnb,hip_hop,origin,stylisticOrigin,yes,,draft
+contemporary_rnb,rhythm_and_blues,subgenre,musicSubgenre stylisticOrigin,yes,,draft
+contemporary_rnb,soul,origin,derivative stylisticOrigin,yes,,draft
+country,blues,origin,derivative stylisticOrigin,yes,,draft
+country,gospel,origin,derivative,yes,,draft
+disco,funk,origin,derivative stylisticOrigin,yes,,draft
+disco,rhythm_and_blues,origin,derivative,yes,,draft
+disco,soul,origin,derivative,yes,,draft
+drum_and_bass,ambient,origin,musicFusionGenre stylisticOrigin,yes,,draft
+drum_and_bass,drum_and_bass,,musicSubgenre,no,Self loop in DBpedia.,draft
+drum_and_bass,dub,origin,derivative stylisticOrigin,yes,,draft
+drum_and_bass,house,origin,stylisticOrigin,yes,,draft
+drum_and_bass,jungle,origin,derivative stylisticOrigin,yes,,draft
+drum_and_bass,reggae,origin,derivative,yes,,draft
+drum_and_bass,techno,origin,stylisticOrigin,yes,,draft
+dub,ambient,,musicFusionGenre,no,"Dub is a little older than ambient and comes from reggae, so ambient is not one of its origins.",draft
+dub,reggae,origin,derivative stylisticOrigin,yes,,draft
+dub,ska,origin,stylisticOrigin,yes,,draft
+electric_blues,blues,subgenre,musicSubgenre stylisticOrigin,yes,,draft
+electro,electro,,musicSubgenre,no,Self loop in DBpedia.,draft
+electro,funk,origin,derivative stylisticOrigin,yes,,draft
+electro,hip_hop,origin,musicFusionGenre stylisticOrigin,yes,,draft
+electro,synth_pop,origin,derivative stylisticOrigin,yes,,draft
+extreme_metal,hardcore_punk,origin,stylisticOrigin,yes,,draft
+extreme_metal,heavy_metal,subgenre,stylisticOrigin,yes,,draft
+folk_rock,folk,fusion,musicFusionGenre,yes,,draft
+folk_rock,rock,fusion,musicFusionGenre stylisticOrigin,yes,,draft
+funk,jazz,origin,derivative stylisticOrigin,yes,,draft
+funk,rhythm_and_blues,origin,derivative stylisticOrigin,yes,,draft
+funk,soul,origin,derivative stylisticOrigin,yes,,draft
+gangsta_rap,gangsta_rap,,musicSubgenre,no,Self loop in DBpedia.,draft
+gangsta_rap,hip_hop,subgenre,musicSubgenre stylisticOrigin,yes,,draft
+garage_rock,rock,subgenre,musicSubgenre,yes,,draft
+garage_rock,rockabilly,origin,derivative,yes,,draft
+glam_rock,hard_rock,origin,derivative,yes,,draft
+glam_rock,psychedelic_rock,origin,derivative,yes,,draft
+glam_rock,rock,subgenre,musicSubgenre,yes,,draft
+grunge,alternative_rock,subgenre,musicSubgenre stylisticOrigin,yes,,draft
+grunge,extreme_metal,,derivative,no,"Only listed as a derivative of extreme metal, not among grunge's own origins. Both are from the mid 1980s.",draft
+grunge,garage_rock,origin,stylisticOrigin,yes,,draft
+grunge,hard_rock,origin,stylisticOrigin,yes,,draft
+grunge,hardcore_punk,origin,derivative,yes,,draft
+grunge,heavy_metal,origin,stylisticOrigin,yes,,draft
+grunge,indie_rock,origin,derivative stylisticOrigin,yes,,draft
+grunge,punk_rock,origin,musicFusionGenre stylisticOrigin,yes,,draft
+grunge,rock,subgenre,musicSubgenre,yes,,draft
+hard_rock,blues_rock,origin,derivative stylisticOrigin,yes,,draft
+hard_rock,electric_blues,origin,derivative,yes,,draft
+hard_rock,garage_rock,origin,stylisticOrigin,yes,,draft
+hard_rock,psychedelic_rock,origin,derivative stylisticOrigin,yes,,draft
+hard_rock,rock,subgenre,musicSubgenre,yes,,draft
+hard_rock,rock_and_roll,origin,stylisticOrigin,yes,,draft
+hardcore_punk,punk_rock,subgenre,musicSubgenre stylisticOrigin,yes,,draft
+heavy_metal,blues_rock,origin,derivative,yes,,draft
+heavy_metal,psychedelic_rock,origin,derivative,yes,,draft
+heavy_metal,rock,subgenre,musicSubgenre,yes,,draft
+hip_hop,disco,origin,derivative stylisticOrigin,yes,,draft
+hip_hop,dub,origin,derivative,yes,,draft
+hip_hop,funk,origin,derivative stylisticOrigin,yes,,draft
+hip_hop,jazz,origin,derivative stylisticOrigin,yes,,draft
+hip_hop,rhythm_and_blues,origin,derivative musicFusionGenre stylisticOrigin,yes,,draft
+hip_hop,soul,origin,stylisticOrigin,yes,,draft
+house,disco,origin,derivative,yes,,draft
+house,dub,origin,derivative,yes,,draft
+house,electro,origin,derivative,yes,,draft
+house,jazz,origin,derivative,yes,,draft
+house,synth_pop,origin,derivative,yes,,draft
+indie_rock,alternative_rock,subgenre,musicSubgenre,yes,,draft
+indie_rock,post_punk,origin,derivative stylisticOrigin,yes,,draft
+indie_rock,punk_rock,origin,derivative stylisticOrigin,yes,,draft
+indie_rock,rock,subgenre,musicSubgenre,yes,,draft
+jazz,blues,origin,derivative stylisticOrigin,yes,,draft
+jazz,folk,origin,stylisticOrigin,yes,,draft
+jazz_fusion,bebop,origin,stylisticOrigin,yes,,draft
+jazz_fusion,funk,origin,stylisticOrigin,yes,,draft
+jazz_fusion,jazz,fusion,stylisticOrigin,yes,,draft
+jazz_fusion,rhythm_and_blues,origin,musicFusionGenre,yes,,draft
+jazz_fusion,rock,fusion,stylisticOrigin,yes,,draft
+jazz_rap,hip_hop,fusion,musicFusionGenre,yes,,draft
+jazz_rap,jazz,fusion,stylisticOrigin,yes,,draft
+jungle,dub,origin,derivative stylisticOrigin,yes,,draft
+jungle,funk,origin,derivative stylisticOrigin,yes,,draft
+jungle,hip_hop,origin,stylisticOrigin,yes,,draft
+jungle,reggae,origin,derivative stylisticOrigin,yes,,draft
+krautrock,art_rock,origin,stylisticOrigin,yes,,draft
+krautrock,funk,origin,derivative stylisticOrigin,yes,,draft
+krautrock,jazz_fusion,origin,stylisticOrigin,yes,,draft
+krautrock,progressive_rock,origin,derivative stylisticOrigin,yes,,draft
+krautrock,psychedelic_rock,origin,derivative,yes,,draft
+new_wave,disco,origin,derivative,yes,,draft
+new_wave,krautrock,origin,derivative,yes,,draft
+new_wave,punk_rock,origin,derivative,yes,,draft
+new_wave,reggae,origin,derivative,yes,,draft
+new_wave,rock,origin,derivative,yes,,draft
+pop_punk,extreme_metal,,musicFusionGenre,no,"Extreme metal is younger than pop-punk, so it can't be an origin.",draft
+pop_punk,pop_punk,,musicFusionGenre musicSubgenre,no,Self loop in DBpedia.,draft
+pop_punk,punk_rock,origin,derivative stylisticOrigin,yes,,draft
+post_punk,art_rock,origin,stylisticOrigin,yes,,draft
+post_punk,disco,origin,derivative stylisticOrigin,yes,,draft
+post_punk,dub,origin,derivative stylisticOrigin,yes,,draft
+post_punk,funk,origin,derivative stylisticOrigin,yes,,draft
+post_punk,garage_rock,origin,stylisticOrigin,yes,,draft
+post_punk,glam_rock,origin,stylisticOrigin,yes,,draft
+post_punk,krautrock,origin,derivative stylisticOrigin,yes,,draft
+post_punk,punk_rock,origin,derivative stylisticOrigin,yes,,draft
+post_punk,rock,subgenre,musicSubgenre,yes,,draft
+progressive_rock,folk,origin,stylisticOrigin,yes,,draft
+progressive_rock,jazz,origin,stylisticOrigin,yes,,draft
+progressive_rock,psychedelic_rock,origin,derivative,yes,,draft
+progressive_rock,rock,subgenre,musicSubgenre stylisticOrigin,yes,,draft
+psychedelic_rock,blues,origin,stylisticOrigin,yes,,draft
+psychedelic_rock,garage_rock,origin,stylisticOrigin,yes,,draft
+psychedelic_rock,jazz,origin,stylisticOrigin,yes,,draft
+psychedelic_rock,rock,subgenre,musicSubgenre stylisticOrigin,yes,,draft
+punk_rock,garage_rock,origin,stylisticOrigin,yes,,draft
+punk_rock,glam_rock,origin,stylisticOrigin,yes,,draft
+punk_rock,rock,subgenre,musicSubgenre,yes,,draft
+punk_rock,rock_and_roll,origin,stylisticOrigin,yes,,draft
+punk_rock,rockabilly,origin,stylisticOrigin,yes,,draft
+reggae,jazz,origin,derivative stylisticOrigin,yes,,draft
+reggae,rhythm_and_blues,origin,derivative stylisticOrigin,yes,,draft
+reggae,ska,origin,derivative stylisticOrigin,yes,,draft
+rhythm_and_blues,blues,origin,derivative stylisticOrigin,yes,,draft
+rhythm_and_blues,gospel,origin,derivative stylisticOrigin,yes,,draft
+rhythm_and_blues,jazz,origin,derivative stylisticOrigin,yes,,draft
+rock,blues,origin,stylisticOrigin,yes,,draft
+rock,country,origin,stylisticOrigin,yes,,draft
+rock,electric_blues,origin,stylisticOrigin,yes,,draft
+rock,folk,origin,stylisticOrigin,yes,,draft
+rock,jazz,origin,derivative stylisticOrigin,yes,,draft
+rock,rhythm_and_blues,origin,stylisticOrigin,yes,,draft
+rock,rock_and_roll,origin,derivative stylisticOrigin,yes,,draft
+rock,rockabilly,origin,stylisticOrigin,yes,,draft
+rock_and_roll,blues,origin,derivative,yes,,draft
+rock_and_roll,country,origin,stylisticOrigin,yes,,draft
+rock_and_roll,electric_blues,origin,derivative stylisticOrigin,yes,,draft
+rock_and_roll,gospel,origin,derivative stylisticOrigin,yes,,draft
+rock_and_roll,jazz,origin,derivative stylisticOrigin,yes,,draft
+rock_and_roll,rhythm_and_blues,origin,derivative stylisticOrigin,yes,,draft
+rockabilly,country,fusion,musicFusionGenre stylisticOrigin,yes,,draft
+rockabilly,rhythm_and_blues,fusion,stylisticOrigin,yes,,draft
+rockabilly,rock_and_roll,origin,stylisticOrigin,yes,,draft
+ska,jazz,origin,derivative stylisticOrigin,yes,,draft
+ska,rhythm_and_blues,origin,derivative,yes,,draft
+soul,gospel,origin,derivative stylisticOrigin,yes,,draft
+soul,rhythm_and_blues,origin,derivative stylisticOrigin,yes,,draft
+soul,trap,,musicFusionGenre,no,Trap is from the 1990s and soul from the 1950s. The direction is wrong.,draft
+synth_pop,disco,origin,derivative stylisticOrigin,yes,,draft
+synth_pop,glam_rock,origin,stylisticOrigin,yes,,draft
+synth_pop,krautrock,origin,stylisticOrigin,yes,,draft
+synth_pop,new_wave,origin,stylisticOrigin,yes,,draft
+synth_pop,post_punk,origin,derivative,yes,,draft
+synth_pop,progressive_rock,origin,derivative stylisticOrigin,yes,,draft
+techno,dub,origin,derivative,yes,,draft
+techno,electro,origin,derivative stylisticOrigin,yes,,draft
+techno,funk,origin,derivative,yes,,draft
+techno,house,origin,stylisticOrigin,yes,,draft
+techno,krautrock,origin,derivative stylisticOrigin,yes,,draft
+techno,synth_pop,origin,derivative stylisticOrigin,yes,,draft
+trap,electro,origin,stylisticOrigin,yes,,draft
+trap,gangsta_rap,subgenre,musicSubgenre stylisticOrigin,yes,,draft
+trap,hip_hop,subgenre,musicSubgenre,yes,,draft

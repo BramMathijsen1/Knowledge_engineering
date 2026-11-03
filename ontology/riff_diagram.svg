@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 950" width="1280" height="950" font-family="Arial, Helvetica, sans-serif" font-size="13">
+  <title>RIFF ontology diagram</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#2f5fa8"/>
+    </marker>
+    <marker id="open" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto">
+      <path d="M1 1 L11 6 L1 11 z" fill="#fff" stroke="#333"/>
+    </marker>
+  </defs>
+  <style>
+    .class { fill: #fff3a6; stroke: #333; }
+    .reused { fill: #fff3a6; stroke: #333; stroke-dasharray: 5 3; }
+    .name { font-weight: bold; }
+    .data { fill: #1d7a3a; font-size: 12px; }
+    .note { fill: #666; font-size: 11px; }
+    .prop { fill: #2f5fa8; font-size: 12px; }
+    .line { stroke: #2f5fa8; fill: none; stroke-width: 1.4; marker-end: url(#arrow); }
+    .sub { stroke: #333; fill: none; marker-end: url(#open); }
+    .ind { fill: #fbc6dc; stroke: #333; }
+    .type { stroke: #b04a7d; stroke-dasharray: 3 3; fill: none; }
+  </style>
+
+  <!-- Genre phase and form -->
+  <rect class="class" x="60" y="110" width="190" height="62"/>
+  <text class="name" x="155" y="130" text-anchor="middle">riff:GenrePhase</text>
+  <text class="note" x="155" y="146" text-anchor="middle">subclass of sit:Situation</text>
+  <text class="data" x="155" y="163" text-anchor="middle">riff:phaseOrder</text>
+
+  <rect class="class" x="60" y="270" width="190" height="36"/>
+  <text class="name" x="155" y="293" text-anchor="middle">riff:GenreForm</text>
+  <path class="line" d="M155 172 L155 270"/>
+  <text class="prop" x="162" y="225">riff:hasForm</text>
+
+  <path class="type" d="M100 306 L70 360"/>
+  <path class="type" d="M135 306 L135 410"/>
+  <path class="type" d="M175 306 L200 360"/>
+  <path class="type" d="M215 306 L260 410"/>
+  <ellipse class="ind" cx="70" cy="378" rx="52" ry="18"/>
+  <text x="70" y="382" text-anchor="middle" font-size="12">Avant-garde</text>
+  <ellipse class="ind" cx="135" cy="428" rx="52" ry="18"/>
+  <text x="135" y="432" text-anchor="middle" font-size="12">Scene-based</text>
+  <ellipse class="ind" cx="210" cy="378" rx="56" ry="18"/>
+  <text x="210" y="382" text-anchor="middle" font-size="12">Industry-based</text>
+  <ellipse class="ind" cx="265" cy="428" rx="56" ry="18"/>
+  <text x="265" y="432" text-anchor="middle" font-size="12">Traditionalist</text>
+
+  <!-- Genre -->
+  <rect class="reused" x="500" y="110" width="220" height="62"/>
+  <text class="name" x="610" y="130" text-anchor="middle">mm:MusicGenre</text>
+  <text class="data" x="610" y="147" text-anchor="middle">riff:emergedIn</text>
+  <text class="data" x="610" y="163" text-anchor="middle">riff:originPlace</text>
+
+  <path class="line" d="M250 141 L500 141"/>
+  <text class="prop" x="340" y="134">riff:phaseOf</text>
+
+  <path class="line" d="M530 110 C 490 40, 590 40, 570 110"/>
+  <text class="prop" x="430" y="52">riff:hasStylisticOrigin</text>
+  <path class="line" d="M600 110 C 570 30, 670 30, 640 110"/>
+  <text class="prop" x="585" y="38">riff:isFusionOf</text>
+  <path class="line" d="M660 110 C 640 40, 740 40, 700 110"/>
+  <text class="prop" x="705" y="52">skos:broader</text>
+
+  <!-- Route -->
+  <rect class="class" x="960" y="110" width="220" height="62"/>
+  <text class="name" x="1070" y="130" text-anchor="middle">riff:GenreRoute</text>
+  <text class="data" x="1070" y="147" text-anchor="middle">riff:routeWeight</text>
+  <text class="data" x="1070" y="163" text-anchor="middle">riff:routeStatus</text>
+  <path class="line" d="M960 128 L720 128"/>
+  <text class="prop" x="800" y="121">riff:routeFrom</text>
+  <path class="line" d="M960 156 L720 156"/>
+  <text class="prop" x="800" y="149">riff:routeTo</text>
+
+  <!-- Artist -->
+  <rect class="reused" x="500" y="320" width="220" height="62"/>
+  <text class="name" x="610" y="340" text-anchor="middle">mm:MusicArtist</text>
+  <text class="data" x="610" y="357" text-anchor="middle">riff:activeFrom</text>
+  <text class="data" x="610" y="373" text-anchor="middle">riff:activeTo</text>
+
+  <path class="line" d="M570 320 L570 172"/>
+  <text class="prop" x="478" y="250">mm:hasGenre</text>
+  <path class="line" d="M650 320 L650 172"/>
+  <text class="prop" x="656" y="250">riff:hasPrimaryGenre</text>
+
+  <path class="line" d="M720 345 C 820 300, 820 395, 720 365"/>
+  <text class="prop" x="808" y="352">mm:isInfluencedBy</text>
+
+  <rect class="reused" x="320" y="500" width="130" height="36"/>
+  <text class="name" x="385" y="523" text-anchor="middle">mm:Musician</text>
+  <rect class="reused" x="470" y="500" width="150" height="36"/>
+  <text class="name" x="545" y="523" text-anchor="middle">mm:MusicEnsenble</text>
+  <path class="sub" d="M385 500 L540 382"/>
+  <path class="sub" d="M545 500 L570 382"/>
+
+  <!-- Influence -->
+  <rect class="class" x="720" y="500" width="240" height="92"/>
+  <text class="name" x="840" y="520" text-anchor="middle">riff:Influence</text>
+  <text class="note" x="840" y="536" text-anchor="middle">subclass of sit:Situation</text>
+  <text class="data" x="840" y="552" text-anchor="middle">riff:evidenceQuote</text>
+  <text class="data" x="840" y="568" text-anchor="middle">riff:dateNote</text>
+  <text class="prop" x="840" y="584" text-anchor="middle">prov:wasDerivedFrom (source)</text>
+
+  <path class="line" d="M760 500 L640 382"/>
+  <text class="prop" x="612" y="450">riff:influencer</text>
+  <path class="line" d="M810 500 L690 382"/>
+  <text class="prop" x="772" y="450">riff:influenced</text>
+
+  <!-- Recording -->
+  <rect class="reused" x="1080" y="528" width="150" height="36"/>
+  <text class="name" x="1155" y="551" text-anchor="middle">mm:Recording</text>
+  <path class="line" d="M960 536 L1080 536"/>
+  <text class="prop" x="972" y="529">riff:viaRecording</text>
+  <path class="line" d="M960 558 L1080 558"/>
+  <text class="prop" x="972" y="575">riff:inRecording</text>
+
+  <!-- Evidence -->
+  <rect class="class" x="720" y="680" width="240" height="36"/>
+  <text class="name" x="840" y="703" text-anchor="middle">riff:EvidenceKind</text>
+  <path class="line" d="M840 592 L840 680"/>
+  <text class="prop" x="847" y="640">riff:hasEvidenceKind</text>
+
+  <path class="type" d="M760 716 L590 780"/>
+  <path class="type" d="M800 716 L715 780"/>
+  <path class="type" d="M840 716 L840 780"/>
+  <path class="type" d="M880 716 L965 780"/>
+  <path class="type" d="M920 716 L1090 780"/>
+  <ellipse class="ind" cx="590" cy="798" rx="52" ry="18"/>
+  <text x="590" y="802" text-anchor="middle" font-size="12">Declared</text>
+  <ellipse class="ind" cx="715" cy="798" rx="52" ry="18"/>
+  <text x="715" y="802" text-anchor="middle" font-size="12">Attributed</text>
+  <ellipse class="ind" cx="840" cy="798" rx="52" ry="18"/>
+  <text x="840" y="802" text-anchor="middle" font-size="12">Unsourced</text>
+  <ellipse class="ind" cx="965" cy="798" rx="52" ry="18"/>
+  <text x="965" y="802" text-anchor="middle" font-size="12">Sampling</text>
+  <ellipse class="ind" cx="1090" cy="798" rx="56" ry="18"/>
+  <text x="1090" y="802" text-anchor="middle" font-size="12">Cover version</text>
+
+  <!-- Legend -->
+  <rect x="40" y="640" width="330" height="240" fill="#fafafa" stroke="#ccc"/>
+  <text class="name" x="55" y="665">Legend</text>
+  <rect class="class" x="55" y="678" width="46" height="22"/>
+  <text x="112" y="694">Class in the RIFF ontology</text>
+  <rect class="reused" x="55" y="708" width="46" height="22"/>
+  <text x="112" y="724">Class reused from Music Meta</text>
+  <path class="line" d="M55 750 L101 750"/>
+  <text x="112" y="754">Object property</text>
+  <text class="data" x="55" y="782">name</text>
+  <text x="112" y="782">Data property</text>
+  <ellipse class="ind" cx="78" cy="808" rx="23" ry="11"/>
+  <text x="112" y="812">Individual</text>
+  <path class="sub" d="M55 838 L101 838"/>
+  <text x="112" y="842">Subclass of</text>
+  <path class="type" d="M55 866 L101 866"/>
+  <text x="112" y="870">Instance of</text>
+</svg>

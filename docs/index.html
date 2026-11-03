@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | RIFF</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><span class="name">RIFF</span><nav><a href="index.html">Home</a><a href="ontology.html">Ontology</a><a href="queries.html">Queries</a><a href="method.html">Method</a></nav></header>
+<main>
+
+<h1>Do artist influences follow the family tree of genres?</h1>
+<p>Everyone knows the family tree of popular music: blues leads to rock and roll, rock and roll leads
+to rock, and so on. But musicians don't read family trees. They listen to other musicians. So does
+influence between artists really follow the tree?</p>
+<p>RIFF is a knowledge graph that puts both things in one place: genres and where they come from,
+and artists and who influenced them. Then we can compare them with SPARQL.</p>
+
+<h2>What we found</h2>
+<p class="result">Of the artist pairs that cross a genre border, <strong>66%</strong>
+follow the family tree (a direct link or a link through one genre in between),
+<strong>4%</strong> run against it, and <strong>29%</strong>
+have no link in the tree at all.</p>
+<p>So the tree explains much of how influence moves, but not all of it. Many of the routes with no link
+are genres that sit close to each other and the tree just doesn't connect them. These results depend on
+our choice of artists and genres, so they are a starting point for discussion and not a final answer.
+See <a href="method.html">Method</a> for how to read the labels and for the limits.</p>
+<table><tr><th>status</th><th>routes</th><th>artistPairs</th></tr><tr><td>direct</td><td>100</td><td>302</td></tr><tr><td>hidden</td><td>117</td><td>193</td></tr><tr><td>two-step</td><td>68</td><td>133</td></tr><tr><td>reversed</td><td>19</td><td>28</td></tr></table>
+
+<h2>Routes with no link in the tree</h2>
+<p>Artists link these genres, but the tree has no link between them. The weight is the number of artist pairs.</p>
+<table><tr><th>fromGenre</th><th>toGenre</th><th>weight</th><th>status</th></tr><tr><td>Hard rock</td><td>Heavy metal</td><td>9</td><td>hidden</td></tr><tr><td>Hard rock</td><td>Extreme metal</td><td>8</td><td>hidden</td></tr><tr><td>Folk rock</td><td>Alternative rock</td><td>6</td><td>hidden</td></tr><tr><td>Hardcore punk</td><td>Pop-punk</td><td>5</td><td>hidden</td></tr><tr><td>Punk rock</td><td>Heavy metal</td><td>5</td><td>hidden</td></tr><tr><td>Rock and roll</td><td>Contemporary R&amp;B</td><td>5</td><td>hidden</td></tr><tr><td>Art rock</td><td>Punk rock</td><td>4</td><td>hidden</td></tr><tr><td>Art rock</td><td>Gangsta rap</td><td>3</td><td>hidden</td></tr><tr><td>Art rock</td><td>Grunge</td><td>3</td><td>hidden</td></tr><tr><td>Blues rock</td><td>Progressive rock</td><td>3</td><td>hidden</td></tr><tr><td>Folk rock</td><td>Grunge</td><td>3</td><td>hidden</td></tr><tr><td>Folk rock</td><td>Punk rock</td><td>3</td><td>hidden</td></tr><tr><td>Gangsta rap</td><td>Contemporary R&amp;B</td><td>3</td><td>hidden</td></tr><tr><td>Grunge</td><td>Pop-punk</td><td>3</td><td>hidden</td></tr><tr><td>Heavy metal</td><td>Pop-punk</td><td>3</td><td>hidden</td></tr></table>
+
+<h2>Links in the tree with no artists behind them</h2>
+<p>The opposite case: 68 links are in the tree, but no pair of artists in our graph
+supports them. Some of this comes from our sources, which have much more about rock than about older
+music.</p>
+<table><tr><th>parentGenre</th><th>childGenre</th></tr><tr><td>Ambient music</td><td>Drum and bass</td></tr><tr><td>Bebop</td><td>Jazz fusion</td></tr><tr><td>Blues</td><td>Country music</td></tr><tr><td>Blues</td><td>Psychedelic rock</td></tr><tr><td>Blues</td><td>Rhythm and blues</td></tr><tr><td>Blues</td><td>Rock and roll</td></tr><tr><td>Disco</td><td>Hip hop</td></tr><tr><td>Disco</td><td>Post-punk</td></tr><tr><td>Dub</td><td>Drum and bass</td></tr><tr><td>Dub</td><td>Hip hop</td></tr><tr><td>Dub</td><td>House music</td></tr><tr><td>Dub</td><td>Jungle</td></tr><tr><td>Dub</td><td>Post-punk</td></tr><tr><td>Dub</td><td>Techno</td></tr><tr><td>Electro</td><td>House music</td></tr></table>
+
+<h2>What is in the graph</h2>
+<table>
+<tr><th>Item</th><th>Number</th></tr>
+<tr><td>Genres</td><td>49</td></tr>
+<tr><td>Links between genres</td><td>168</td></tr>
+<tr><td>Artists</td><td>181</td></tr>
+<tr><td>Influence statements</td><td>958</td></tr>
+<tr><td>Artist pairs</td><td>737</td></tr>
+<tr><td>Triples</td><td>11216</td></tr>
+</table>
+<p>Download: <a href="data/riff.ttl">ontology</a>, <a href="data/graph.ttl">graph</a>,
+<a href="data/routes.ttl">genre routes</a>.</p>
+
+</main>
+<footer>RIFF: Roots, Influence, Forms, Fusion. Data and ontology under
+<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</footer>
+</body>
+</html>
