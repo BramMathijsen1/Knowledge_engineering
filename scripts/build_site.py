@@ -233,12 +233,10 @@ the <code>results</code> folder of the project.</p>
 def build_method():
     stats = result_rows("extraction_stats")
     overlap = result_rows("14_where_pairs_come_from")
-    check = result_rows("13_check_with_all_genres")
     with open("scripts/method_text.html", encoding="utf-8") as f:
         text = f.read()
     text = text.replace("{{extraction_stats}}", html_table(stats))
     text = text.replace("{{pair_sources}}", html_table(overlap))
-    text = text.replace("{{all_genres_check}}", html_table(check))
     make_page("method.html", "Method", text)
 
 

@@ -110,8 +110,7 @@ void:Dataset a owl:Class ;
 riff:Influence a owl:Class ;
     rdfs:subClassOf sit:Situation ;
     rdfs:label "Influence"@en ;
-    rdfs:comment "One claim that an artist influenced another artist, together with how we know it. It is an n-ary relation turned into a class, because a plain link can't hold the evidence and the source."@en ;
-    owl:hasKey ( riff:influencer riff:influenced riff:hasEvidenceKind prov:wasDerivedFrom ) .
+    rdfs:comment "One claim that an artist influenced another artist, together with how we know it. It is an n-ary relation turned into a class, because a plain link can't hold the evidence and the source."@en .
 
 riff:influencer a owl:ObjectProperty, owl:FunctionalProperty ;
     rdfs:domain riff:Influence ;

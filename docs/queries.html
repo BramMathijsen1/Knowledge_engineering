@@ -177,28 +177,7 @@ ORDER BY ?parentGenre ?childGenre</code></pre>
 <p>What does the graph say about punk rock?</p>
 <pre><code>DESCRIBE genre:punk_rock</code></pre>
 <p>Result: an RDF graph, saved as <code>results/12_describe_a_genre.ttl</code>.</p>
-<h2>13. Check with all genres</h2>
-<p>Does the answer change if we use all the genres of each artist instead of one primary genre?</p>
-<pre><code>SELECT ?status (COUNT(*) AS ?routes) (SUM(?weight) AS ?artistPairs)
-WHERE {
-  {
-    SELECT ?from ?to (COUNT(*) AS ?weight)
-    WHERE {
-      ?follower mm:isInfluencedBy ?artist .
-      ?artist mm:hasGenre ?from .
-      ?follower mm:hasGenre ?to .
-      FILTER(?from != ?to)
-    }
-    GROUP BY ?from ?to
-  }
-  BIND(IF(EXISTS { ?to riff:hasStylisticOrigin ?from }, &quot;direct&quot;,
-       IF(EXISTS { ?to riff:hasStylisticOrigin/riff:hasStylisticOrigin ?from }, &quot;two-step&quot;,
-       IF(EXISTS { ?from riff:hasStylisticOrigin|(riff:hasStylisticOrigin/riff:hasStylisticOrigin) ?to }, &quot;reversed&quot;,
-       &quot;hidden&quot;))) AS ?status)
-}
-GROUP BY ?status
-ORDER BY DESC(?artistPairs)</code></pre>
-<table><tr><th>status</th><th>routes</th><th>artistPairs</th></tr><tr><td>hidden</td><td>509</td><td>2142</td></tr><tr><td>direct</td><td>148</td><td>2015</td></tr><tr><td>two-step</td><td>243</td><td>1707</td></tr><tr><td>reversed</td><td>207</td><td>1004</td></tr></table><h2>14. Where artist pairs come from</h2>
+<h2>14. Where artist pairs come from</h2>
 <p>How many artist pairs come only from Wikidata, only from Wikipedia text, or from both?</p>
 <pre><code>SELECT ?source (COUNT(*) AS ?artistPairs)
 WHERE {

@@ -91,11 +91,6 @@ The numbers come from the review file and will change as rows go from <code>draf
 <p>Where the artist pairs in the graph come from:</p>
 {{pair_sources}}
 
-<h2>Does the choice of primary genre matter?</h2>
-<p>Query 13 repeats the comparison with all the genres of each artist instead of one. The result looks
-different, which shows how much the answer depends on this choice:</p>
-{{all_genres_check}}
-
 <h2>Instruments</h2>
 <p>Each artist plays one or more instruments. For solo artists the data comes from Wikidata. For bands it
 comes from MusicBrainz, which says which instruments each member played in that band. When MusicBrainz has
@@ -115,7 +110,6 @@ treated the same way. Query 17 leaves out the voice, because almost everyone sin
 <table>
 <tr><th>Pattern</th><th>How we use it</th></tr>
 <tr><td>Situation (n-ary relation)</td><td><code>riff:Influence</code> holds the influencer, the influenced artist, the evidence and the source. A plain link can't hold all of this.</td></tr>
-<tr><td>Identification key</td><td><code>owl:hasKey</code> on <code>riff:Influence</code>: same artists, same evidence kind and same source mean the same statement.</td></tr>
 <tr><td>Property chain</td><td><code>mm:isInfluencedBy</code> is defined from <code>riff:Influence</code> with a property chain. We also add it with a CONSTRUCT query, so queries work without a reasoner.</td></tr>
 <tr><td>Transition</td><td><code>riff:GenrePhase</code> gives the form of a genre at each step of its history.</td></tr>
 <tr><td>Constructive query</td><td>Query 9 builds <code>riff:GenreRoute</code> from the graph.</td></tr>
@@ -126,7 +120,7 @@ influence C. So we don't declare the property transitive. We ask for chains with
 
 <h2>Limits</h2>
 <ul>
-<li>We chose the genres and artists ourselves, about 3 to 5 artists per genre. Other choices would give other numbers.</li>
+<li>We chose the genres and artists ourselves, about 3 to 5 artists per genre, and one primary genre for each artist. Other choices would give other numbers.</li>
 <li>Artists with no influence link in our sources were left out, including Charlie Parker and Joan Baez. That shows a gap in the sources, not that they had no influence. The jungle genre has no artists left for the same reason.</li>
 <li>Instrument data is uneven. Some artists have no instruments in our sources, such as Beyonc&eacute;, the Sex Pistols and most of the techno artists. Sources also rarely say whether a guitar is electric or acoustic, so we only have "guitar".</li>
 <li>For a solo artist we only know their own instruments, not those of their backing band. The older genres in our list are mostly solo singers, so query 16 can report drums or bass as new in rock or funk when they are not.</li>
