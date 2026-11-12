@@ -117,4 +117,4 @@ Sources: [DBpedia](https://www.dbpedia.org/), [Wikidata](https://www.wikidata.or
 
 ## Team
 
-Add team names here.
+Bram, Tarek, Eddy
