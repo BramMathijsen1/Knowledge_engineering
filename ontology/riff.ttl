@@ -305,3 +305,52 @@ riff:routeStatus a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     rdfs:label "route status"@en ;
     rdfs:comment "How the route compares with the genre family tree: direct, two-step, reversed or hidden."@en .
+
+#################################################################
+# Instruments
+#################################################################
+
+riff:Instrument a owl:Class ;
+    rdfs:label "Instrument"@en ;
+    rdfs:comment "A musical instrument, or the voice. It is close to Instrument in the Music Ontology, but that class does not include the voice."@en ;
+    rdfs:seeAlso <http://purl.org/ontology/mo/Instrument> .
+
+riff:playsInstrument a owl:ObjectProperty ;
+    rdfs:domain mm:MusicArtist ;
+    rdfs:range riff:Instrument ;
+    rdfs:label "plays instrument"@en ;
+    rdfs:comment "The artist plays this instrument. For a band it means that a member played it in that band."@en .
+
+riff:inInstrumentGroup a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain riff:Instrument ;
+    rdfs:range riff:InstrumentGroup ;
+    rdfs:label "in instrument group"@en ;
+    rdfs:comment "The group the instrument belongs to."@en .
+
+riff:InstrumentGroup a owl:Class ;
+    rdfs:label "Instrument group"@en ;
+    rdfs:comment "A broad group of instruments. The groups loosely follow the top level of the Hornbostel-Sachs classification (strings, winds, drums and percussion, electronic), but keyboards and the voice get their own group."@en .
+
+riff:Voice a owl:NamedIndividual, riff:InstrumentGroup ;
+    rdfs:label "Voice"@en ;
+    rdfs:comment "Singing and rapping."@en .
+
+riff:Strings a owl:NamedIndividual, riff:InstrumentGroup ;
+    rdfs:label "Strings"@en ;
+    rdfs:comment "Instruments with strings, such as guitar, bass guitar and violin. Electric guitars count here too."@en .
+
+riff:Keyboards a owl:NamedIndividual, riff:InstrumentGroup ;
+    rdfs:label "Keyboards"@en ;
+    rdfs:comment "Instruments played from a keyboard, such as piano and organ. Synthesizers count as electronic."@en .
+
+riff:DrumsAndPercussion a owl:NamedIndividual, riff:InstrumentGroup ;
+    rdfs:label "Drums and percussion"@en ;
+    rdfs:comment "The drum kit and other instruments that are struck or shaken."@en .
+
+riff:WindsAndBrass a owl:NamedIndividual, riff:InstrumentGroup ;
+    rdfs:label "Winds and brass"@en ;
+    rdfs:comment "Instruments played by blowing, such as saxophone, trumpet and harmonica."@en .
+
+riff:Electronic a owl:NamedIndividual, riff:InstrumentGroup ;
+    rdfs:label "Electronic"@en ;
+    rdfs:comment "Instruments that make their sound electronically, such as synthesizer, drum machine, sampler and turntables."@en .

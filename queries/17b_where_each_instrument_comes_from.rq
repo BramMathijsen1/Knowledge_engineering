@@ -1,0 +1,31 @@
+# Title:    Where each instrument comes from
+# Question: The same as query 17, but for each instrument.
+# Output:   instrument, then the number of artists in each case
+
+PREFIX riff: <https://w3id.org/riff/ontology#>
+PREFIX genre: <https://w3id.org/riff/genre/>
+PREFIX artist: <https://w3id.org/riff/artist/>
+PREFIX instrument: <https://w3id.org/riff/instrument/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?instrumentName
+       (SUM(IF(?fromInfluences && ?fromRoots, 1, 0)) AS ?both)
+       (SUM(IF(?fromInfluences && !?fromRoots, 1, 0)) AS ?influencesOnly)
+       (SUM(IF(!?fromInfluences && ?fromRoots, 1, 0)) AS ?rootsOnly)
+       (SUM(IF(!?fromInfluences && !?fromRoots, 1, 0)) AS ?neither)
+       (COUNT(*) AS ?artists)
+WHERE {
+  ?artist riff:playsInstrument ?instrument ;
+          riff:hasPrimaryGenre ?genre .
+  ?instrument rdfs:label ?instrumentName .
+  FILTER(?instrument != instrument:voice)
+  BIND(EXISTS { ?artist mm:isInfluencedBy ?other . ?other riff:playsInstrument ?instrument } AS ?fromInfluences)
+  BIND(EXISTS {
+    ?genre riff:hasStylisticOrigin ?root .
+    ?rootArtist riff:hasPrimaryGenre ?root ;
+                riff:playsInstrument ?instrument .
+  } AS ?fromRoots)
+}
+GROUP BY ?instrumentName
+ORDER BY DESC(?artists) ?instrumentName

@@ -12,13 +12,22 @@ INFLUENCE = Namespace("https://w3id.org/riff/influence/")
 RECORDING = Namespace("https://w3id.org/riff/recording/")
 PHASE = Namespace("https://w3id.org/riff/phase/")
 ROUTE = Namespace("https://w3id.org/riff/route/")
-MM = Namespace("https://w3id.org/polifonia/ontology/music-meta/")
+INSTRUMENT = Namespace("https://w3id.org/riff/instrument/")
+MM =Namespace("https://w3id.org/polifonia/ontology/music-meta/")
 WD = Namespace("http://www.wikidata.org/entity/")
 DBR = Namespace("http://dbpedia.org/resource/")
 PROV = Namespace("http://www.w3.org/ns/prov#")
 
 HEADERS = {"User-Agent": "riff-music-kg/1.0 (university course project)"}
 CACHE_FOLDER = "data/raw/wikipedia_cache"
+
+# The official Wikidata endpoint is sometimes limited, so QLever is the second choice.
+WIKIDATA_ENDPOINTS = ["https://query.wikidata.org/sparql", "https://qlever.dev/api/wikidata"]
+WD_PREFIXES = """
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+"""
 
 
 def read_csv(path):
@@ -39,6 +48,45 @@ def run_sparql(endpoint, query):
     response = requests.post(endpoint, data={"query": query}, headers=headers, timeout=180)
     response.raise_for_status()
     return response.json()["results"]["bindings"]
+
+
+def query_wikidata(query):
+    for endpoint in WIKIDATA_ENDPOINTS:
+        try:
+            return run_sparql(endpoint, WD_PREFIXES + query)
+        except Exception as error:
+            print("Problem with", endpoint, ":", error)
+    raise RuntimeError("No Wikidata endpoint worked")
+
+
+def last_part(uri):
+    return uri.rsplit("/", 1)[-1]
+
+
+def ask_musicbrainz(path, params):
+    """Ask the MusicBrainz API. It allows about one request per second."""
+    params["fmt"] = "json"
+    headers = dict(HEADERS)
+    headers["Accept"] = "application/json"
+    while True:
+        response = requests.get("https://musicbrainz.org/ws/2/" + path, params=params,
+                                headers=headers, timeout=60)
+        if response.status_code == 503:
+            print("MusicBrainz asked us to slow down, waiting 15 seconds", flush=True)
+            time.sleep(15)
+            continue
+        response.raise_for_status()
+        time.sleep(1.2)
+        return response.json()
+
+
+def musicbrainz_ids():
+    """MusicBrainz artist id -> our artist id, from the Wikidata facts."""
+    ids = {}
+    for fact in read_csv("data/raw/wikidata_artist_facts.csv"):
+        if fact["fact"] == "musicbrainz":
+            ids[fact["value"]] = fact["artist"]
+    return ids
 
 
 def wikipedia_text(title):

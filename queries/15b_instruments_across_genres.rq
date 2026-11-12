@@ -1,0 +1,29 @@
+# Title:    Instruments across genres
+# Question: In how many genres is each instrument used, and how early does it appear?
+#           An instrument counts for a genre when at least two of its artists play it.
+# Output:   instrument, instrument group, number of genres, year of the oldest genre that uses it
+
+PREFIX riff: <https://w3id.org/riff/ontology#>
+PREFIX genre: <https://w3id.org/riff/genre/>
+PREFIX artist: <https://w3id.org/riff/artist/>
+PREFIX instrument: <https://w3id.org/riff/instrument/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?instrumentName ?groupName (COUNT(DISTINCT ?genre) AS ?genres) (MIN(?year) AS ?firstYear)
+WHERE {
+  {
+    SELECT ?genre ?instrument
+    WHERE {
+      ?artist riff:hasPrimaryGenre ?genre ;
+              riff:playsInstrument ?instrument .
+    }
+    GROUP BY ?genre ?instrument
+    HAVING (COUNT(DISTINCT ?artist) >= 2)
+  }
+  ?instrument rdfs:label ?instrumentName ;
+              riff:inInstrumentGroup/rdfs:label ?groupName .
+  OPTIONAL { ?genre riff:emergedIn ?year }
+}
+GROUP BY ?instrumentName ?groupName
+ORDER BY DESC(?genres) ?instrumentName

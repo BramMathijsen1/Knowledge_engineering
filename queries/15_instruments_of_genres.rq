@@ -1,0 +1,28 @@
+# Title:    Instruments of each genre
+# Question: What instruments do the artists of each genre play?
+#           An instrument counts for a genre when at least two of its artists play it.
+# Output:   genre, instrument, instrument group, artists who play it, artists in the genre
+
+PREFIX riff: <https://w3id.org/riff/ontology#>
+PREFIX genre: <https://w3id.org/riff/genre/>
+PREFIX artist: <https://w3id.org/riff/artist/>
+PREFIX instrument: <https://w3id.org/riff/instrument/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?genreName ?instrumentName ?groupName (COUNT(DISTINCT ?artist) AS ?players) ?artistsInGenre
+WHERE {
+  ?artist riff:hasPrimaryGenre ?genre ;
+          riff:playsInstrument ?instrument .
+  ?genre rdfs:label ?genreName .
+  ?instrument rdfs:label ?instrumentName ;
+              riff:inInstrumentGroup/rdfs:label ?groupName .
+  {
+    SELECT ?genre (COUNT(?member) AS ?artistsInGenre)
+    WHERE { ?member riff:hasPrimaryGenre ?genre }
+    GROUP BY ?genre
+  }
+}
+GROUP BY ?genreName ?instrumentName ?groupName ?artistsInGenre
+HAVING (COUNT(DISTINCT ?artist) >= 2)
+ORDER BY ?genreName DESC(?players) ?instrumentName

@@ -1,0 +1,22 @@
+id,label,group,wikidata,hornbostel_sachs,status
+voice,Voice,Voice,Q17172850,,draft
+guitar,Guitar,Strings,Q6607,321.322-5-6,draft
+bass_guitar,Bass guitar,Strings,Q46185,513,draft
+double_bass,Double bass,Strings,Q80019,321.322-71,draft
+mandolin,Mandolin,Strings,Q302497,321.321-6,draft
+violin,Violin,Strings,Q8355,321.322-71,draft
+piano,Piano,Keyboards,Q5994,314.122-4-8,draft
+keyboards,Keyboards,Keyboards,Q52954,,draft
+organ,Organ,Keyboards,Q1444,421.222.11,draft
+drum_kit,Drum kit,DrumsAndPercussion,Q128309,211.212.21,draft
+percussion,Percussion,DrumsAndPercussion,Q133163,,draft
+harmonica,Harmonica,WindsAndBrass,Q51290,412.132,draft
+saxophone,Saxophone,WindsAndBrass,Q9798,422.212-71,draft
+trumpet,Trumpet,WindsAndBrass,Q8338,423.233,draft
+clarinet,Clarinet,WindsAndBrass,Q8343,422.211.2-71,draft
+flute,Flute,WindsAndBrass,Q11405,421,draft
+accordion,Accordion,WindsAndBrass,Q79838,412.132 412.132-62-8,draft
+synthesizer,Synthesizer,Electronic,Q163829,53,draft
+drum_machine,Drum machine,Electronic,Q831698,,draft
+sampler,Sampler,Electronic,Q320002,,draft
+turntables,Turntables,Electronic,Q17591720,,draft

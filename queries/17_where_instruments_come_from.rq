@@ -1,0 +1,29 @@
+# Title:    Where instruments come from
+# Question: Is an instrument an artist plays also played by an artist who influenced them, by an artist
+#           of a genre their genre comes from, by both, or by neither?
+# Output:   source, number of artist-instrument pairs (the voice is left out)
+
+PREFIX riff: <https://w3id.org/riff/ontology#>
+PREFIX genre: <https://w3id.org/riff/genre/>
+PREFIX artist: <https://w3id.org/riff/artist/>
+PREFIX instrument: <https://w3id.org/riff/instrument/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?source (COUNT(*) AS ?artistInstruments)
+WHERE {
+  ?artist riff:playsInstrument ?instrument ;
+          riff:hasPrimaryGenre ?genre .
+  FILTER(?instrument != instrument:voice)
+  BIND(EXISTS { ?artist mm:isInfluencedBy ?other . ?other riff:playsInstrument ?instrument } AS ?fromInfluences)
+  BIND(EXISTS {
+    ?genre riff:hasStylisticOrigin ?root .
+    ?rootArtist riff:hasPrimaryGenre ?root ;
+                riff:playsInstrument ?instrument .
+  } AS ?fromRoots)
+  BIND(IF(?fromInfluences && ?fromRoots, "both",
+       IF(?fromInfluences, "influences only",
+       IF(?fromRoots, "genre roots only", "neither"))) AS ?source)
+}
+GROUP BY ?source
+ORDER BY DESC(?artistInstruments)

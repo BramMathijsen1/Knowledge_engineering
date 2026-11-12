@@ -5,7 +5,7 @@ Run it from the project folder: python scripts/build_graph.py
 from rdflib import Graph, Literal, URIRef
 from rdflib.namespace import DCTERMS, OWL, RDF, RDFS, SKOS, VOID, XSD
 
-from common import read_csv, RIFF, GENRE, ARTIST, INFLUENCE, RECORDING, PHASE, MM, WD, DBR, PROV
+from common import read_csv, RIFF, GENRE, ARTIST, INFLUENCE, RECORDING, PHASE, INSTRUMENT, MM, WD, DBR, PROV
 
 EVIDENCE = {"Declared": RIFF.Declared, "Attributed": RIFF.Attributed, "Unsourced": RIFF.Unsourced,
             "Sampling": RIFF.Sampling, "CoverVersion": RIFF.CoverVersion}
@@ -83,6 +83,19 @@ def add_recordings(graph):
         graph.add((recording, RDFS.seeAlso, URIRef(row["url"])))
 
 
+def add_instruments(graph):
+    for row in read_csv("data/curated/instruments.csv"):
+        instrument = INSTRUMENT[row["id"]]
+        graph.add((instrument, RDF.type, RIFF.Instrument))
+        graph.add((instrument, RDFS.label, Literal(row["label"], lang="en")))
+        graph.add((instrument, RIFF.inInstrumentGroup, RIFF[row["group"]]))
+        if row["wikidata"]:
+            graph.add((instrument, OWL.sameAs, WD[row["wikidata"]]))
+    for row in read_csv("data/curated/artist_instruments.csv"):
+        if row["keep"] == "yes":
+            graph.add((ARTIST[row["artist"]], RIFF.playsInstrument, INSTRUMENT[row["instrument"]]))
+
+
 def add_influence(graph, row, evidence, source):
     name = row["influenced"] + "--" + row["influencer"] + "--" + evidence.lower()
     used_names[name] = used_names.get(name, 0) + 1
@@ -134,6 +147,7 @@ def main():
     graph.bind("influence", INFLUENCE)
     graph.bind("recording", RECORDING)
     graph.bind("phase", PHASE)
+    graph.bind("instrument", INSTRUMENT)
     graph.bind("mm", MM)
     graph.bind("wd", WD)
     graph.bind("dbr", DBR)
@@ -144,6 +158,7 @@ def main():
     add_artists(graph)
     add_phases(graph)
     add_recordings(graph)
+    add_instruments(graph)
     add_influences(graph)
     add_dataset_info(graph)
 

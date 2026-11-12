@@ -1,7 +1,6 @@
-"""Run the SPARQL queries in queries/ and the tests in tests/. Save the results in results/.
+"""Run the SPARQL queries in queries/ and save the results in results/.
 
 Run it from the project folder: python scripts/run_queries.py
-A test is a query that looks for mistakes, so a test passes when it returns no rows.
 """
 import csv
 import glob
@@ -12,7 +11,12 @@ from rdflib import Graph
 from common import read_csv
 
 CURATED_FILES = ["genres", "lineage", "artists", "genre_phases", "recordings",
-                 "influences_wikidata", "influences_text", "influences_recordings"]
+                 "influences_wikidata", "influences_text", "influences_recordings",
+                 "instruments", "artist_instruments"]
+
+# This query builds new triples. They are saved in graph/ and added to the graph,
+# because later queries need them.
+BUILD_QUERIES = {"09_build_genre_routes": "graph/routes.ttl"}
 
 
 def file_name(path):
@@ -44,32 +48,10 @@ def run_queries(graph):
             result.graph.serialize("results/" + name + ".ttl", format="turtle")
             print(name, "-", len(result.graph), "triples")
 
-        # Query 09 makes the genre routes. Later queries need them.
-        if name.startswith("09"):
-            result.graph.serialize("graph/routes.ttl", format="turtle")
+        if name in BUILD_QUERIES:
+            result.graph.serialize(BUILD_QUERIES[name], format="turtle")
             for triple in result.graph:
                 graph.add(triple)
-
-
-def run_tests(graph):
-    lines = []
-    failed = 0
-    for path in sorted(glob.glob("tests/*.rq")):
-        name = file_name(path)
-        with open(path, encoding="utf-8") as f:
-            result = graph.query(f.read())
-        problems = len(result)
-        if problems == 0:
-            lines.append(name + ": pass")
-        else:
-            failed += 1
-            lines.append(name + ": FAIL, " + str(problems) + " problems")
-            for row in list(result)[:10]:
-                lines.append("    " + " | ".join(str(value) for value in row))
-    with open("results/tests.txt", "w", encoding="utf-8") as f:
-        f.write("\n".join(lines) + "\n")
-    print("\n".join(lines))
-    print("Tests failed:", failed)
 
 
 def save_extraction_stats():
@@ -112,7 +94,6 @@ def main():
     graph.parse("ontology/riff.ttl")
     graph.parse("graph/graph.ttl")
     run_queries(graph)
-    run_tests(graph)
     save_extraction_stats()
     show_review_status()
 

@@ -1,9 +1,0 @@
-# Test: a genre can't be its own ancestor.
-
-PREFIX riff: <https://w3id.org/riff/ontology#>
-PREFIX genre: <https://w3id.org/riff/genre/>
-PREFIX artist: <https://w3id.org/riff/artist/>
-PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-
-SELECT DISTINCT ?genre WHERE { ?genre riff:hasStylisticOrigin+ ?genre }

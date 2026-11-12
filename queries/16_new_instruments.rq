@@ -1,0 +1,35 @@
+# Title:    New instruments in a genre
+# Question: Which instruments does a genre use that no artist of the genres it comes from plays?
+#           An instrument counts for a genre when at least two of its artists play it.
+# Output:   genre, rough year, instrument, instrument group
+
+PREFIX riff: <https://w3id.org/riff/ontology#>
+PREFIX genre: <https://w3id.org/riff/genre/>
+PREFIX artist: <https://w3id.org/riff/artist/>
+PREFIX instrument: <https://w3id.org/riff/instrument/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?genreName ?year ?instrumentName ?groupName
+WHERE {
+  {
+    SELECT ?genre ?instrument
+    WHERE {
+      ?artist riff:hasPrimaryGenre ?genre ;
+              riff:playsInstrument ?instrument .
+    }
+    GROUP BY ?genre ?instrument
+    HAVING (COUNT(DISTINCT ?artist) >= 2)
+  }
+  FILTER EXISTS { ?genre riff:hasStylisticOrigin ?anyRoot }
+  FILTER NOT EXISTS {
+    ?genre riff:hasStylisticOrigin ?root .
+    ?rootArtist riff:hasPrimaryGenre ?root ;
+                riff:playsInstrument ?instrument .
+  }
+  ?genre rdfs:label ?genreName .
+  ?instrument rdfs:label ?instrumentName ;
+              riff:inInstrumentGroup/rdfs:label ?groupName .
+  OPTIONAL { ?genre riff:emergedIn ?year }
+}
+ORDER BY ?year ?genreName ?instrumentName

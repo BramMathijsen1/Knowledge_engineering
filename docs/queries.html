@@ -209,20 +209,110 @@ WHERE {
 }
 GROUP BY ?source
 ORDER BY DESC(?artistPairs)</code></pre>
-<table><tr><th>source</th><th>artistPairs</th></tr><tr><td>Wikipedia text only</td><td>440</td></tr><tr><td>Wikidata only</td><td>133</td></tr><tr><td>both</td><td>93</td></tr><tr><td>recordings only</td><td>71</td></tr></table><h2>Unit tests</h2>
-<p>A test is a query that looks for mistakes. It passes if it finds none.</p>
-<pre><code>artists_have_influence: pass
-influence_dates: pass
-influence_is_complete: pass
-influence_key_is_unique: pass
-known_answers: pass
-no_lineage_cycles: pass
-no_self_influence: pass
-one_influencer_one_influenced: pass
-one_primary_genre: pass
-origin_not_younger: pass
-</code></pre>
-
+<table><tr><th>source</th><th>artistPairs</th></tr><tr><td>Wikipedia text only</td><td>440</td></tr><tr><td>Wikidata only</td><td>133</td></tr><tr><td>both</td><td>93</td></tr><tr><td>recordings only</td><td>71</td></tr></table><h2>15. Instruments of each genre</h2>
+<p>What instruments do the artists of each genre play?</p>
+<pre><code>SELECT ?genreName ?instrumentName ?groupName (COUNT(DISTINCT ?artist) AS ?players) ?artistsInGenre
+WHERE {
+  ?artist riff:hasPrimaryGenre ?genre ;
+          riff:playsInstrument ?instrument .
+  ?genre rdfs:label ?genreName .
+  ?instrument rdfs:label ?instrumentName ;
+              riff:inInstrumentGroup/rdfs:label ?groupName .
+  {
+    SELECT ?genre (COUNT(?member) AS ?artistsInGenre)
+    WHERE { ?member riff:hasPrimaryGenre ?genre }
+    GROUP BY ?genre
+  }
+}
+GROUP BY ?genreName ?instrumentName ?groupName ?artistsInGenre
+HAVING (COUNT(DISTINCT ?artist) &gt;= 2)
+ORDER BY ?genreName DESC(?players) ?instrumentName</code></pre>
+<table><tr><th>genreName</th><th>instrumentName</th><th>groupName</th><th>players</th><th>artistsInGenre</th></tr><tr><td>Alternative rock</td><td>Bass guitar</td><td>Strings</td><td>5</td><td>5</td></tr><tr><td>Alternative rock</td><td>Drum kit</td><td>Drums and percussion</td><td>5</td><td>5</td></tr><tr><td>Alternative rock</td><td>Guitar</td><td>Strings</td><td>5</td><td>5</td></tr><tr><td>Alternative rock</td><td>Voice</td><td>Voice</td><td>5</td><td>5</td></tr><tr><td>Alternative rock</td><td>Keyboards</td><td>Keyboards</td><td>2</td><td>5</td></tr><tr><td>Alternative rock</td><td>Synthesizer</td><td>Electronic</td><td>2</td><td>5</td></tr><tr><td>Ambient music</td><td>Guitar</td><td>Strings</td><td>2</td><td>3</td></tr><tr><td>Ambient music</td><td>Synthesizer</td><td>Electronic</td><td>2</td><td>3</td></tr><tr><td>Art rock</td><td>Bass guitar</td><td>Strings</td><td>3</td><td>4</td></tr><tr><td>Art rock</td><td>Guitar</td><td>Strings</td><td>3</td><td>4</td></tr><tr><td>Art rock</td><td>Keyboards</td><td>Keyboards</td><td>3</td><td>4</td></tr><tr><td>Art rock</td><td>Piano</td><td>Keyboards</td><td>3</td><td>4</td></tr><tr><td>Art rock</td><td>Voice</td><td>Voice</td><td>3</td><td>4</td></tr><tr><td>Art rock</td><td>Drum kit</td><td>Drums and percussion</td><td>2</td><td>4</td></tr><tr><td>Blues</td><td>Voice</td><td>Voice</td><td>4</td><td>4</td></tr></table><h2>15b. Instruments across genres</h2>
+<p>In how many genres is each instrument used, and how early does it appear?</p>
+<pre><code>SELECT ?instrumentName ?groupName (COUNT(DISTINCT ?genre) AS ?genres) (MIN(?year) AS ?firstYear)
+WHERE {
+  {
+    SELECT ?genre ?instrument
+    WHERE {
+      ?artist riff:hasPrimaryGenre ?genre ;
+              riff:playsInstrument ?instrument .
+    }
+    GROUP BY ?genre ?instrument
+    HAVING (COUNT(DISTINCT ?artist) &gt;= 2)
+  }
+  ?instrument rdfs:label ?instrumentName ;
+              riff:inInstrumentGroup/rdfs:label ?groupName .
+  OPTIONAL { ?genre riff:emergedIn ?year }
+}
+GROUP BY ?instrumentName ?groupName
+ORDER BY DESC(?genres) ?instrumentName</code></pre>
+<table><tr><th>instrumentName</th><th>groupName</th><th>genres</th><th>firstYear</th></tr><tr><td>Voice</td><td>Voice</td><td>38</td><td>1865</td></tr><tr><td>Guitar</td><td>Strings</td><td>30</td><td>1865</td></tr><tr><td>Drum kit</td><td>Drums and percussion</td><td>20</td><td>1955</td></tr><tr><td>Keyboards</td><td>Keyboards</td><td>17</td><td>1955</td></tr><tr><td>Bass guitar</td><td>Strings</td><td>16</td><td>1955</td></tr><tr><td>Percussion</td><td>Drums and percussion</td><td>9</td><td>1955</td></tr><tr><td>Piano</td><td>Keyboards</td><td>6</td><td>1890</td></tr><tr><td>Harmonica</td><td>Winds and brass</td><td>4</td><td>1938</td></tr><tr><td>Synthesizer</td><td>Electronic</td><td>3</td><td>1968</td></tr><tr><td>Saxophone</td><td>Winds and brass</td><td>2</td><td>1958</td></tr><tr><td>Trumpet</td><td>Winds and brass</td><td>2</td><td>1890</td></tr><tr><td>Turntables</td><td>Electronic</td><td>2</td><td>1972</td></tr><tr><td>Accordion</td><td>Winds and brass</td><td>1</td><td>1985</td></tr><tr><td>Flute</td><td>Winds and brass</td><td>1</td><td>1967</td></tr><tr><td>Violin</td><td>Strings</td><td>1</td><td>1969</td></tr></table><h2>16. New instruments in a genre</h2>
+<p>Which instruments does a genre use that no artist of the genres it comes from plays?</p>
+<pre><code>SELECT ?genreName ?year ?instrumentName ?groupName
+WHERE {
+  {
+    SELECT ?genre ?instrument
+    WHERE {
+      ?artist riff:hasPrimaryGenre ?genre ;
+              riff:playsInstrument ?instrument .
+    }
+    GROUP BY ?genre ?instrument
+    HAVING (COUNT(DISTINCT ?artist) &gt;= 2)
+  }
+  FILTER EXISTS { ?genre riff:hasStylisticOrigin ?anyRoot }
+  FILTER NOT EXISTS {
+    ?genre riff:hasStylisticOrigin ?root .
+    ?rootArtist riff:hasPrimaryGenre ?root ;
+                riff:playsInstrument ?instrument .
+  }
+  ?genre rdfs:label ?genreName .
+  ?instrument rdfs:label ?instrumentName ;
+              riff:inInstrumentGroup/rdfs:label ?groupName .
+  OPTIONAL { ?genre riff:emergedIn ?year }
+}
+ORDER BY ?year ?genreName ?instrumentName</code></pre>
+<table><tr><th>genreName</th><th>year</th><th>instrumentName</th><th>groupName</th></tr><tr><td>Jazz</td><td>1890</td><td>Piano</td><td>Keyboards</td></tr><tr><td>Jazz</td><td>1890</td><td>Trumpet</td><td>Winds and brass</td></tr><tr><td>Electric blues</td><td>1938</td><td>Harmonica</td><td>Winds and brass</td></tr><tr><td>Rock music</td><td>1955</td><td>Drum kit</td><td>Drums and percussion</td></tr><tr><td>Rock music</td><td>1955</td><td>Keyboards</td><td>Keyboards</td></tr><tr><td>Ska</td><td>1958</td><td>Keyboards</td><td>Keyboards</td></tr><tr><td>Funk</td><td>1965</td><td>Bass guitar</td><td>Strings</td></tr><tr><td>Funk</td><td>1965</td><td>Drum kit</td><td>Drums and percussion</td></tr><tr><td>Funk</td><td>1965</td><td>Guitar</td><td>Strings</td></tr><tr><td>Hip hop</td><td>1972</td><td>Turntables</td><td>Electronic</td></tr><tr><td>Pop-punk</td><td>1978</td><td>Percussion</td><td>Drums and percussion</td></tr><tr><td>Hardcore punk</td><td>1979</td><td>Percussion</td><td>Drums and percussion</td></tr></table><h2>17. Where instruments come from</h2>
+<p>Is an instrument an artist plays also played by an artist who influenced them, by an artist</p>
+<pre><code>SELECT ?source (COUNT(*) AS ?artistInstruments)
+WHERE {
+  ?artist riff:playsInstrument ?instrument ;
+          riff:hasPrimaryGenre ?genre .
+  FILTER(?instrument != instrument:voice)
+  BIND(EXISTS { ?artist mm:isInfluencedBy ?other . ?other riff:playsInstrument ?instrument } AS ?fromInfluences)
+  BIND(EXISTS {
+    ?genre riff:hasStylisticOrigin ?root .
+    ?rootArtist riff:hasPrimaryGenre ?root ;
+                riff:playsInstrument ?instrument .
+  } AS ?fromRoots)
+  BIND(IF(?fromInfluences &amp;&amp; ?fromRoots, &quot;both&quot;,
+       IF(?fromInfluences, &quot;influences only&quot;,
+       IF(?fromRoots, &quot;genre roots only&quot;, &quot;neither&quot;))) AS ?source)
+}
+GROUP BY ?source
+ORDER BY DESC(?artistInstruments)</code></pre>
+<table><tr><th>source</th><th>artistInstruments</th></tr><tr><td>both</td><td>277</td></tr><tr><td>genre roots only</td><td>128</td></tr><tr><td>neither</td><td>58</td></tr><tr><td>influences only</td><td>20</td></tr></table><h2>17b. Where each instrument comes from</h2>
+<p>The same as query 17, but for each instrument.</p>
+<pre><code>SELECT ?instrumentName
+       (SUM(IF(?fromInfluences &amp;&amp; ?fromRoots, 1, 0)) AS ?both)
+       (SUM(IF(?fromInfluences &amp;&amp; !?fromRoots, 1, 0)) AS ?influencesOnly)
+       (SUM(IF(!?fromInfluences &amp;&amp; ?fromRoots, 1, 0)) AS ?rootsOnly)
+       (SUM(IF(!?fromInfluences &amp;&amp; !?fromRoots, 1, 0)) AS ?neither)
+       (COUNT(*) AS ?artists)
+WHERE {
+  ?artist riff:playsInstrument ?instrument ;
+          riff:hasPrimaryGenre ?genre .
+  ?instrument rdfs:label ?instrumentName .
+  FILTER(?instrument != instrument:voice)
+  BIND(EXISTS { ?artist mm:isInfluencedBy ?other . ?other riff:playsInstrument ?instrument } AS ?fromInfluences)
+  BIND(EXISTS {
+    ?genre riff:hasStylisticOrigin ?root .
+    ?rootArtist riff:hasPrimaryGenre ?root ;
+                riff:playsInstrument ?instrument .
+  } AS ?fromRoots)
+}
+GROUP BY ?instrumentName
+ORDER BY DESC(?artists) ?instrumentName</code></pre>
+<table><tr><th>instrumentName</th><th>both</th><th>influencesOnly</th><th>rootsOnly</th><th>neither</th><th>artists</th></tr><tr><td>Guitar</td><td>79</td><td>3</td><td>18</td><td>5</td><td>105</td></tr><tr><td>Drum kit</td><td>51</td><td>5</td><td>14</td><td>3</td><td>73</td></tr><tr><td>Bass guitar</td><td>55</td><td>2</td><td>11</td><td>3</td><td>71</td></tr><tr><td>Keyboards</td><td>30</td><td>3</td><td>14</td><td>5</td><td>52</td></tr><tr><td>Percussion</td><td>19</td><td>3</td><td>13</td><td>3</td><td>38</td></tr><tr><td>Piano</td><td>14</td><td>1</td><td>11</td><td>6</td><td>32</td></tr><tr><td>Synthesizer</td><td>9</td><td>0</td><td>10</td><td>2</td><td>21</td></tr><tr><td>Harmonica</td><td>11</td><td>0</td><td>2</td><td>4</td><td>17</td></tr><tr><td>Saxophone</td><td>0</td><td>0</td><td>10</td><td>1</td><td>11</td></tr><tr><td>Violin</td><td>0</td><td>0</td><td>5</td><td>4</td><td>9</td></tr><tr><td>Trumpet</td><td>0</td><td>2</td><td>5</td><td>1</td><td>8</td></tr><tr><td>Organ</td><td>1</td><td>0</td><td>2</td><td>4</td><td>7</td></tr><tr><td>Turntables</td><td>2</td><td>1</td><td>0</td><td>4</td><td>7</td></tr><tr><td>Double bass</td><td>2</td><td>0</td><td>1</td><td>3</td><td>6</td></tr><tr><td>Flute</td><td>1</td><td>0</td><td>4</td><td>1</td><td>6</td></tr></table>
 </main>
 <footer>RIFF: Roots, Influence, Forms, Fusion. Data and ontology under
 <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</footer>

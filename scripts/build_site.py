@@ -91,6 +91,10 @@ def build_home(graph):
     artists = count_in_graph(graph, "SELECT (COUNT(DISTINCT ?a) AS ?n) WHERE { ?a a mm:MusicArtist }")
     influences = count_in_graph(graph, "SELECT (COUNT(DISTINCT ?i) AS ?n) WHERE { ?i a riff:Influence }")
     pairs = count_in_graph(graph, "SELECT (COUNT(*) AS ?n) WHERE { ?a mm:isInfluencedBy ?b }")
+    instruments = count_in_graph(graph, "SELECT (COUNT(DISTINCT ?i) AS ?n) WHERE { ?i a riff:Instrument }")
+    plays = count_in_graph(graph, "SELECT (COUNT(*) AS ?n) WHERE { ?a riff:playsInstrument ?i }")
+    sources = {row[0]: int(row[1]) for row in result_rows("17_where_instruments_come_from")[1:]}
+    uses = sum(sources.values())
 
     body = f"""
 <h1>Do artist influences follow the family tree of genres?</h1>
@@ -121,6 +125,26 @@ supports them. Some of this comes from our sources, which have much more about r
 music.</p>
 {html_table(no_artists, MAX_ROWS)}
 
+<h2>A second question: instruments</h2>
+<p>Do genres and influences shape which instruments artists play? For each instrument an artist plays
+(leaving out the voice), we check two things. Does an artist who influenced them play it too? And does an
+artist of one of the genres their own genre comes from play it?</p>
+<p class="result">Both: <strong>{percent(sources.get("both", 0), uses)}%</strong>.
+Only the influences: <strong>{percent(sources.get("influences only", 0), uses)}%</strong>.
+Only the genre roots: <strong>{percent(sources.get("genre roots only", 0), uses)}%</strong>.
+Neither: <strong>{percent(sources.get("neither", 0), uses)}%</strong>.</p>
+<p>Most instruments are shared with both, mainly guitar, bass and drums, which almost everyone plays.
+An instrument that only the influences explain is rare. The rows to look at are the rarer instruments in
+the table below, such as turntables and the drum machine, which often appear with neither.</p>
+{html_table(result_rows("17b_where_each_instrument_comes_from"))}
+
+<h2>Instruments a genre adds to its roots</h2>
+<p>At least two artists of the genre play these instruments, but no artist of a genre it comes from does.
+The year is the rough year the genre appeared. Read this table with care: for a solo artist we only know
+their own instruments, not those of their backing band. The older genres in our list are mostly solo singers,
+so drums or bass can look new in rock or funk when they are not. Turntables in hip hop is a real case.</p>
+{html_table(result_rows("16_new_instruments"), MAX_ROWS)}
+
 <h2>What is in the graph</h2>
 <table>
 <tr><th>Item</th><th>Number</th></tr>
@@ -129,6 +153,8 @@ music.</p>
 <tr><td>Artists</td><td>{artists}</td></tr>
 <tr><td>Influence statements</td><td>{influences}</td></tr>
 <tr><td>Artist pairs</td><td>{pairs}</td></tr>
+<tr><td>Instruments</td><td>{instruments}</td></tr>
+<tr><td>Artist plays instrument</td><td>{plays}</td></tr>
 <tr><td>Triples</td><td>{len(graph)}</td></tr>
 </table>
 <p>Download: <a href="data/riff.ttl">ontology</a>, <a href="data/graph.ttl">graph</a>,
@@ -201,9 +227,6 @@ the <code>results</code> folder of the project.</p>
                 body += f"<p>Result: <strong>{f.read().strip()}</strong></p>\n"
         else:
             body += f"<p>Result: an RDF graph, saved as <code>results/{name}.ttl</code>.</p>\n"
-    with open("results/tests.txt", encoding="utf-8") as f:
-        body += "<h2>Unit tests</h2>\n<p>A test is a query that looks for mistakes. It passes if it finds none.</p>\n"
-        body += f"<pre><code>{html.escape(f.read())}</code></pre>\n"
     make_page("queries.html", "Queries", body)
 
 

@@ -5,16 +5,9 @@ It reads the genre and artist lists from data/curated/.
 """
 import re
 
-from common import read_csv, write_csv, run_sparql, wikipedia_text
+from common import read_csv, write_csv, run_sparql, query_wikidata, last_part, wikipedia_text
 
 DBPEDIA = "https://dbpedia.org/sparql"
-# The official Wikidata endpoint is sometimes limited, so QLever is the second choice.
-WIKIDATA_ENDPOINTS = ["https://query.wikidata.org/sparql", "https://qlever.dev/api/wikidata"]
-
-WD_PREFIXES = """
-PREFIX wd: <http://www.wikidata.org/entity/>
-PREFIX wdt: <http://www.wikidata.org/prop/direct/>
-"""
 
 # stylisticOrigin goes child -> parent. The other three go parent -> child.
 LINEAGE_PROPERTIES = {
@@ -35,19 +28,6 @@ WIKIDATA_FACTS = {
     "P2032": "work end",
     "P434": "musicbrainz",
 }
-
-
-def query_wikidata(query):
-    for endpoint in WIKIDATA_ENDPOINTS:
-        try:
-            return run_sparql(endpoint, WD_PREFIXES + query)
-        except Exception as error:
-            print("Problem with", endpoint, ":", error)
-    raise RuntimeError("No Wikidata endpoint worked")
-
-
-def last_part(uri):
-    return uri.rsplit("/", 1)[-1]
 
 
 def fetch_lineage(genres):

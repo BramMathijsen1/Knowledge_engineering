@@ -24,6 +24,13 @@ When we add up artist influence by genre, each genre-to-genre route gets one of 
 
 A separate query lists the opposite case: links in the tree with no artists behind them.
 
+## A second question: instruments
+
+Do genres and influences shape which instruments artists play? The graph also says which
+instruments each artist plays (from Wikidata and MusicBrainz). Queries 15 to 17 add these up by
+genre. They ask which instruments a genre adds to the ones its roots use, and whether artists play
+the same instruments as the artists who influenced them.
+
 ## What is in this folder
 
 | Folder | Contents |
@@ -34,8 +41,7 @@ A separate query lists the opposite case: links in the tree with no artists behi
 | `data/curated/` | Cleaned tables. The graph is built from these |
 | `graph/` | The knowledge graph (`graph.ttl`) and the genre routes (`routes.ttl`) |
 | `queries/` | The SPARQL queries |
-| `tests/` | Unit tests written as SPARQL queries |
-| `results/` | Answers to the queries and test results |
+| `results/` | Answers to the queries |
 | `scripts/` | The Python scripts |
 | `docs/` | The web pages |
 
@@ -57,7 +63,7 @@ python scripts/build_site.py
 ```
 
 The first one builds the graph from the tables in `data/curated/`. The second one runs all the
-queries and tests and saves the answers in `results/`. The third one writes the web pages. To see
+queries and saves the answers in `results/`. The third one writes the web pages. To see
 them, open `docs/index.html`.
 
 To download the data again (this takes a while):
@@ -66,6 +72,7 @@ To download the data again (this takes a while):
 python scripts/fetch_lod.py
 python scripts/extract_text.py
 python scripts/fetch_samples.py
+python scripts/fetch_instruments.py
 ```
 
 These scripts only write to `data/raw/` and `data/extracted/`. They never change the curated tables.
@@ -82,6 +89,8 @@ These scripts only write to `data/raw/` and `data/extracted/`. They never change
 | `influences_text.csv` | Candidate sentences from Wikipedia, with the decision for each |
 | `influences_recordings.csv` | Samples and cover versions |
 | `recordings.csv` | The recordings used in samples and covers |
+| `instruments.csv` | Our list of instruments, each in one instrument group |
+| `artist_instruments.csv` | Which instruments each artist plays, and where this comes from |
 
 Each row has a `status` column. It says `draft` until someone on the team has checked the row, then
 `checked`. `run_queries.py` prints how many rows are still drafts.
