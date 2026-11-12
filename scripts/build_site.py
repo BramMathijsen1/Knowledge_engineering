@@ -89,7 +89,7 @@ def build_home(graph):
     genres = count_in_graph(graph, "SELECT (COUNT(DISTINCT ?g) AS ?n) WHERE { ?g a mm:MusicGenre }")
     links = count_in_graph(graph, "SELECT (COUNT(*) AS ?n) WHERE { ?a riff:hasStylisticOrigin ?b }")
     artists = count_in_graph(graph, "SELECT (COUNT(DISTINCT ?a) AS ?n) WHERE { ?a a mm:MusicArtist }")
-    influences = count_in_graph(graph, "SELECT (COUNT(DISTINCT ?i) AS ?n) WHERE { ?i a riff:Influence }")
+    claims = count_in_graph(graph, "SELECT (COUNT(DISTINCT ?c) AS ?n) WHERE { ?c a riff:InfluenceClaim }")
     pairs = count_in_graph(graph, "SELECT (COUNT(*) AS ?n) WHERE { ?a mm:isInfluencedBy ?b }")
     instruments = count_in_graph(graph, "SELECT (COUNT(DISTINCT ?i) AS ?n) WHERE { ?i a riff:Instrument }")
     plays = count_in_graph(graph, "SELECT (COUNT(*) AS ?n) WHERE { ?a riff:playsInstrument ?i }")
@@ -151,7 +151,7 @@ so drums or bass can look new in rock or funk when they are not. Turntables in h
 <tr><td>Genres</td><td>{genres}</td></tr>
 <tr><td>Links between genres</td><td>{links}</td></tr>
 <tr><td>Artists</td><td>{artists}</td></tr>
-<tr><td>Influence statements</td><td>{influences}</td></tr>
+<tr><td>Influence claims</td><td>{claims}</td></tr>
 <tr><td>Artist pairs</td><td>{pairs}</td></tr>
 <tr><td>Instruments</td><td>{instruments}</td></tr>
 <tr><td>Artist plays instrument</td><td>{plays}</td></tr>

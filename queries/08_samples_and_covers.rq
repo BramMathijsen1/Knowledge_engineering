@@ -1,6 +1,6 @@
 # Title:    Samples and covers
 # Question: Which genres do sampled and covered recordings come from and go to?
-# Output:   evidence kind, source genre, target genre, number of statements
+# Output:   evidence kind, source genre, target genre, number of claims
 
 PREFIX riff: <https://w3id.org/riff/ontology#>
 PREFIX genre: <https://w3id.org/riff/genre/>
@@ -8,13 +8,14 @@ PREFIX artist: <https://w3id.org/riff/artist/>
 PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT ?kindName ?fromGenre ?toGenre (COUNT(DISTINCT ?influence) AS ?statements)
+SELECT ?kindName ?fromGenre ?toGenre (COUNT(DISTINCT ?claim) AS ?claims)
 WHERE {
-  ?influence riff:hasEvidenceKind ?kind ;
-             riff:influencer/riff:hasPrimaryGenre/rdfs:label ?fromGenre ;
+  ?claim riff:hasEvidenceKind ?kind ;
+         riff:describes ?influence .
+  ?influence riff:influencer/riff:hasPrimaryGenre/rdfs:label ?fromGenre ;
              riff:influenced/riff:hasPrimaryGenre/rdfs:label ?toGenre .
   ?kind rdfs:label ?kindName .
   FILTER(?kind IN (riff:Sampling, riff:CoverVersion))
 }
 GROUP BY ?kindName ?fromGenre ?toGenre
-ORDER BY ?kindName DESC(?statements) ?fromGenre
+ORDER BY ?kindName DESC(?claims) ?fromGenre

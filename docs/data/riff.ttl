@@ -89,7 +89,7 @@ skos:broader a owl:ObjectProperty ;
 
 prov:wasDerivedFrom a owl:ObjectProperty ;
     rdfs:label "was derived from"@en ;
-    rdfs:comment "The source of a statement: a Wikipedia page, a Wikidata item or a MusicBrainz recording."@en ;
+    rdfs:comment "The source of a claim: a Wikipedia page, a Wikidata item or a MusicBrainz recording."@en ;
     rdfs:isDefinedBy <http://www.w3.org/ns/prov#> .
 
 dcterms:creator a owl:AnnotationProperty .
@@ -110,7 +110,17 @@ void:Dataset a owl:Class ;
 riff:Influence a owl:Class ;
     rdfs:subClassOf sit:Situation ;
     rdfs:label "Influence"@en ;
-    rdfs:comment "One claim that an artist influenced another artist, together with how we know it. It is an n-ary relation turned into a class, because a plain link can't hold the evidence and the source."@en .
+    rdfs:comment "The influence of one artist on another. This is the situation itself, so there is one for each pair of artists. What the sources say about it is kept in riff:InfluenceClaim."@en .
+
+riff:InfluenceClaim a owl:Class ;
+    rdfs:label "Influence claim"@en ;
+    rdfs:comment "What one source says about an influence, or one recording that shows it. It has the evidence kind, the source, and the quote or the recordings. One influence can have many claims, for example one from Wikipedia and one from Wikidata."@en .
+
+riff:describes a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain riff:InfluenceClaim ;
+    rdfs:range riff:Influence ;
+    rdfs:label "describes"@en ;
+    rdfs:comment "The influence that this claim is about."@en .
 
 riff:influencer a owl:ObjectProperty, owl:FunctionalProperty ;
     rdfs:domain riff:Influence ;
@@ -125,25 +135,25 @@ riff:influenced a owl:ObjectProperty, owl:FunctionalProperty ;
     rdfs:comment "The artist who received the influence."@en .
 
 riff:hasEvidenceKind a owl:ObjectProperty, owl:FunctionalProperty ;
-    rdfs:domain riff:Influence ;
+    rdfs:domain riff:InfluenceClaim ;
     rdfs:range riff:EvidenceKind ;
     rdfs:label "has evidence kind"@en ;
-    rdfs:comment "How we know about this influence."@en .
+    rdfs:comment "What kind of evidence this claim is."@en .
 
 riff:viaRecording a owl:ObjectProperty ;
-    rdfs:domain riff:Influence ;
+    rdfs:domain riff:InfluenceClaim ;
     rdfs:range mm:Recording ;
     rdfs:label "via recording"@en ;
     rdfs:comment "The older recording that was sampled or covered."@en .
 
 riff:inRecording a owl:ObjectProperty ;
-    rdfs:domain riff:Influence ;
+    rdfs:domain riff:InfluenceClaim ;
     rdfs:range mm:Recording ;
     rdfs:label "in recording"@en ;
     rdfs:comment "The newer recording that uses the older one."@en .
 
 riff:evidenceQuote a owl:DatatypeProperty ;
-    rdfs:domain riff:Influence ;
+    rdfs:domain riff:InfluenceClaim ;
     rdfs:range rdfs:Literal ;
     rdfs:label "evidence quote"@en ;
     rdfs:comment "The sentence that states the influence."@en .

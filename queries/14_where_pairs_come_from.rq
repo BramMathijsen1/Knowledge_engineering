@@ -10,9 +10,9 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?source (COUNT(*) AS ?artistPairs)
 WHERE {
-  ?follower mm:isInfluencedBy ?artist .
-  BIND(EXISTS { ?i riff:influenced ?follower ; riff:influencer ?artist ; riff:hasEvidenceKind riff:Unsourced } AS ?inWikidata)
-  BIND(EXISTS { ?j riff:influenced ?follower ; riff:influencer ?artist ; riff:hasEvidenceKind ?kind . FILTER(?kind IN (riff:Declared, riff:Attributed)) } AS ?inText)
+  ?influence a riff:Influence .
+  BIND(EXISTS { ?claim riff:describes ?influence ; riff:hasEvidenceKind riff:Unsourced } AS ?inWikidata)
+  BIND(EXISTS { ?claim riff:describes ?influence ; riff:hasEvidenceKind ?kind . FILTER(?kind IN (riff:Declared, riff:Attributed)) } AS ?inText)
   BIND(IF(?inWikidata && ?inText, "both", IF(?inWikidata, "Wikidata only", IF(?inText, "Wikipedia text only", "recordings only"))) AS ?source)
 }
 GROUP BY ?source

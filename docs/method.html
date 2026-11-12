@@ -85,7 +85,7 @@ to heavy metal comes out as hidden because DBpedia lists no link between them, e
 clearly close.</p>
 
 <h2>Evidence kinds</h2>
-<p>Each influence statement says how we know about it. <strong>Declared</strong>: the influenced artist
+<p>Each influence claim says how we know about the influence. <strong>Declared</strong>: the influenced artist
 says it. <strong>Attributed</strong>: someone else says it. <strong>Unsourced</strong>: it comes from
 Wikidata and we did not trace who claimed it. <strong>Sampling</strong> and <strong>Cover version</strong>:
 the influence can be heard in a recording.</p>
@@ -120,7 +120,8 @@ treated the same way. Query 17 leaves out the voice, because almost everyone sin
 <h2>Ontology patterns</h2>
 <table>
 <tr><th>Pattern</th><th>How we use it</th></tr>
-<tr><td>Situation (n-ary relation)</td><td><code>riff:Influence</code> holds the influencer, the influenced artist, the evidence and the source. A plain link can't hold all of this.</td></tr>
+<tr><td>Situation (n-ary relation)</td><td><code>riff:Influence</code> is the influence of one artist on another. There is one for each pair of artists.</td></tr>
+<tr><td>Description and situation</td><td>What a source says is kept apart from the influence itself. Each <code>riff:InfluenceClaim</code> describes one <code>riff:Influence</code> and has the evidence kind, the source, and the quote or the recordings. A plain link can't hold all of this, and one influence can have several claims, for example one from Wikipedia and one from Wikidata.</td></tr>
 <tr><td>Property chain</td><td><code>mm:isInfluencedBy</code> is defined from <code>riff:Influence</code> with a property chain. We also add it with a CONSTRUCT query, so queries work without a reasoner.</td></tr>
 <tr><td>Transition</td><td><code>riff:GenrePhase</code> gives the form of a genre at each step of its history.</td></tr>
 <tr><td>Constructive query</td><td>Query 9 builds <code>riff:GenreRoute</code> from the graph.</td></tr>

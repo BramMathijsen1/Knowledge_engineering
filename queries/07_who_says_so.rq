@@ -1,6 +1,6 @@
 # Title:    Who says so
 # Question: Whose influence is declared by artists themselves, and whose is only stated by others?
-# Output:   artist, number of statements of each evidence kind
+# Output:   artist, number of claims of each evidence kind
 
 PREFIX riff: <https://w3id.org/riff/ontology#>
 PREFIX genre: <https://w3id.org/riff/genre/>
@@ -13,8 +13,8 @@ SELECT ?artistName
        (SUM(IF(?kind = riff:Attributed, 1, 0)) AS ?attributed)
        (SUM(IF(?kind = riff:Unsourced, 1, 0)) AS ?unsourced)
 WHERE {
-  ?influence riff:influencer ?artist ;
-             riff:hasEvidenceKind ?kind .
+  ?claim riff:describes/riff:influencer ?artist ;
+         riff:hasEvidenceKind ?kind .
   ?artist rdfs:label ?artistName .
   FILTER(?kind IN (riff:Declared, riff:Attributed, riff:Unsourced))
 }

@@ -5,7 +5,7 @@ Run it from the project folder: python scripts/build_graph.py
 from rdflib import Graph, Literal, URIRef
 from rdflib.namespace import DCTERMS, OWL, RDF, RDFS, SKOS, VOID, XSD
 
-from common import read_csv, RIFF, GENRE, ARTIST, INFLUENCE, RECORDING, PHASE, INSTRUMENT, MM, WD, DBR, PROV
+from common import read_csv, RIFF, GENRE, ARTIST, INFLUENCE, CLAIM, RECORDING, PHASE, INSTRUMENT, MM, WD, DBR, PROV
 
 EVIDENCE = {"Declared": RIFF.Declared, "Attributed": RIFF.Attributed, "Unsourced": RIFF.Unsourced,
             "Sampling": RIFF.Sampling, "CoverVersion": RIFF.CoverVersion}
@@ -97,24 +97,29 @@ def add_instruments(graph):
 
 
 def add_influence(graph, row, evidence, source):
-    name = row["influenced"] + "--" + row["influencer"] + "--" + evidence.lower()
-    used_names[name] = used_names.get(name, 0) + 1
-    if used_names[name] > 1:
-        name += "--" + str(used_names[name])
-    influence = INFLUENCE[name]
+    pair = row["influenced"] + "--" + row["influencer"]
+    influence = INFLUENCE[pair]
     graph.add((influence, RDF.type, RIFF.Influence))
     graph.add((influence, RIFF.influenced, ARTIST[row["influenced"]]))
     graph.add((influence, RIFF.influencer, ARTIST[row["influencer"]]))
-    graph.add((influence, RIFF.hasEvidenceKind, EVIDENCE[evidence]))
-    graph.add((influence, PROV.wasDerivedFrom, source))
-    if row.get("sentence"):
-        graph.add((influence, RIFF.evidenceQuote, Literal(row["sentence"], lang="en")))
-    if row.get("via_recording"):
-        graph.add((influence, RIFF.viaRecording, RECORDING[row["via_recording"]]))
-    if row.get("in_recording"):
-        graph.add((influence, RIFF.inRecording, RECORDING[row["in_recording"]]))
     if row.get("date_note"):
         graph.add((influence, RIFF.dateNote, Literal(row["date_note"], lang="en")))
+
+    name = pair + "--" + evidence.lower()
+    used_names[name] = used_names.get(name, 0) + 1
+    if used_names[name] > 1:
+        name += "--" + str(used_names[name])
+    claim = CLAIM[name]
+    graph.add((claim, RDF.type, RIFF.InfluenceClaim))
+    graph.add((claim, RIFF.describes, influence))
+    graph.add((claim, RIFF.hasEvidenceKind, EVIDENCE[evidence]))
+    graph.add((claim, PROV.wasDerivedFrom, source))
+    if row.get("sentence"):
+        graph.add((claim, RIFF.evidenceQuote, Literal(row["sentence"], lang="en")))
+    if row.get("via_recording"):
+        graph.add((claim, RIFF.viaRecording, RECORDING[row["via_recording"]]))
+    if row.get("in_recording"):
+        graph.add((claim, RIFF.inRecording, RECORDING[row["in_recording"]]))
 
 
 def add_influences(graph):
@@ -145,6 +150,7 @@ def main():
     graph.bind("genre", GENRE)
     graph.bind("artist", ARTIST)
     graph.bind("influence", INFLUENCE)
+    graph.bind("claim", CLAIM)
     graph.bind("recording", RECORDING)
     graph.bind("phase", PHASE)
     graph.bind("instrument", INSTRUMENT)

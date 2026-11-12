@@ -93,47 +93,53 @@
   <path class="sub" d="M545 500 L570 382"/>
 
   <!-- Influence -->
-  <rect class="class" x="720" y="500" width="240" height="92"/>
+  <rect class="class" x="720" y="500" width="240" height="62"/>
   <text class="name" x="840" y="520" text-anchor="middle">riff:Influence</text>
   <text class="note" x="840" y="536" text-anchor="middle">subclass of sit:Situation</text>
-  <text class="data" x="840" y="552" text-anchor="middle">riff:evidenceQuote</text>
-  <text class="data" x="840" y="568" text-anchor="middle">riff:dateNote</text>
-  <text class="prop" x="840" y="584" text-anchor="middle">prov:wasDerivedFrom (source)</text>
+  <text class="data" x="840" y="553" text-anchor="middle">riff:dateNote</text>
 
   <path class="line" d="M760 500 L640 382"/>
   <text class="prop" x="612" y="450">riff:influencer</text>
   <path class="line" d="M810 500 L690 382"/>
   <text class="prop" x="772" y="450">riff:influenced</text>
 
+  <!-- Claim -->
+  <rect class="class" x="720" y="640" width="240" height="62"/>
+  <text class="name" x="840" y="660" text-anchor="middle">riff:InfluenceClaim</text>
+  <text class="data" x="840" y="677" text-anchor="middle">riff:evidenceQuote</text>
+  <text class="prop" x="840" y="693" text-anchor="middle">prov:wasDerivedFrom (source)</text>
+  <path class="line" d="M840 640 L840 562"/>
+  <text class="prop" x="847" y="606">riff:describes</text>
+
   <!-- Recording -->
-  <rect class="reused" x="1080" y="528" width="150" height="36"/>
-  <text class="name" x="1155" y="551" text-anchor="middle">mm:Recording</text>
-  <path class="line" d="M960 536 L1080 536"/>
-  <text class="prop" x="972" y="529">riff:viaRecording</text>
-  <path class="line" d="M960 558 L1080 558"/>
-  <text class="prop" x="972" y="575">riff:inRecording</text>
+  <rect class="reused" x="1080" y="653" width="150" height="36"/>
+  <text class="name" x="1155" y="676" text-anchor="middle">mm:Recording</text>
+  <path class="line" d="M960 661 L1080 661"/>
+  <text class="prop" x="972" y="654">riff:viaRecording</text>
+  <path class="line" d="M960 683 L1080 683"/>
+  <text class="prop" x="972" y="700">riff:inRecording</text>
 
   <!-- Evidence -->
-  <rect class="class" x="720" y="680" width="240" height="36"/>
-  <text class="name" x="840" y="703" text-anchor="middle">riff:EvidenceKind</text>
-  <path class="line" d="M840 592 L840 680"/>
-  <text class="prop" x="847" y="640">riff:hasEvidenceKind</text>
+  <rect class="class" x="720" y="770" width="240" height="36"/>
+  <text class="name" x="840" y="793" text-anchor="middle">riff:EvidenceKind</text>
+  <path class="line" d="M840 702 L840 770"/>
+  <text class="prop" x="847" y="740">riff:hasEvidenceKind</text>
 
-  <path class="type" d="M760 716 L590 780"/>
-  <path class="type" d="M800 716 L715 780"/>
-  <path class="type" d="M840 716 L840 780"/>
-  <path class="type" d="M880 716 L965 780"/>
-  <path class="type" d="M920 716 L1090 780"/>
-  <ellipse class="ind" cx="590" cy="798" rx="52" ry="18"/>
-  <text x="590" y="802" text-anchor="middle" font-size="12">Declared</text>
-  <ellipse class="ind" cx="715" cy="798" rx="52" ry="18"/>
-  <text x="715" y="802" text-anchor="middle" font-size="12">Attributed</text>
-  <ellipse class="ind" cx="840" cy="798" rx="52" ry="18"/>
-  <text x="840" y="802" text-anchor="middle" font-size="12">Unsourced</text>
-  <ellipse class="ind" cx="965" cy="798" rx="52" ry="18"/>
-  <text x="965" y="802" text-anchor="middle" font-size="12">Sampling</text>
-  <ellipse class="ind" cx="1090" cy="798" rx="56" ry="18"/>
-  <text x="1090" y="802" text-anchor="middle" font-size="12">Cover version</text>
+  <path class="type" d="M760 806 L590 860"/>
+  <path class="type" d="M800 806 L715 860"/>
+  <path class="type" d="M840 806 L840 860"/>
+  <path class="type" d="M880 806 L965 860"/>
+  <path class="type" d="M920 806 L1090 860"/>
+  <ellipse class="ind" cx="590" cy="878" rx="52" ry="18"/>
+  <text x="590" y="882" text-anchor="middle" font-size="12">Declared</text>
+  <ellipse class="ind" cx="715" cy="878" rx="52" ry="18"/>
+  <text x="715" y="882" text-anchor="middle" font-size="12">Attributed</text>
+  <ellipse class="ind" cx="840" cy="878" rx="52" ry="18"/>
+  <text x="840" y="882" text-anchor="middle" font-size="12">Unsourced</text>
+  <ellipse class="ind" cx="965" cy="878" rx="52" ry="18"/>
+  <text x="965" y="882" text-anchor="middle" font-size="12">Sampling</text>
+  <ellipse class="ind" cx="1090" cy="878" rx="56" ry="18"/>
+  <text x="1090" y="882" text-anchor="middle" font-size="12">Cover version</text>
 
   <!-- Instruments -->
   <rect class="class" x="1290" y="320" width="200" height="36"/>

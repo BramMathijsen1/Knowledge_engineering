@@ -91,8 +91,8 @@ ORDER BY ?artistName</code></pre>
        (SUM(IF(?kind = riff:Attributed, 1, 0)) AS ?attributed)
        (SUM(IF(?kind = riff:Unsourced, 1, 0)) AS ?unsourced)
 WHERE {
-  ?influence riff:influencer ?artist ;
-             riff:hasEvidenceKind ?kind .
+  ?claim riff:describes/riff:influencer ?artist ;
+         riff:hasEvidenceKind ?kind .
   ?artist rdfs:label ?artistName .
   FILTER(?kind IN (riff:Declared, riff:Attributed, riff:Unsourced))
 }
@@ -101,17 +101,18 @@ ORDER BY DESC(?declared) DESC(?attributed) ?artistName
 LIMIT 20</code></pre>
 <table><tr><th>artistName</th><th>declared</th><th>attributed</th><th>unsourced</th></tr><tr><td>The Who</td><td>10</td><td>7</td><td>10</td></tr><tr><td>Little Richard</td><td>7</td><td>12</td><td>3</td></tr><tr><td>Kraftwerk</td><td>7</td><td>7</td><td>1</td></tr><tr><td>Neil Young</td><td>7</td><td>2</td><td>2</td></tr><tr><td>Neu!</td><td>7</td><td>1</td><td>0</td></tr><tr><td>Jimi Hendrix</td><td>6</td><td>20</td><td>9</td></tr><tr><td>The Stooges</td><td>6</td><td>5</td><td>8</td></tr><tr><td>R.E.M.</td><td>6</td><td>1</td><td>1</td></tr><tr><td>Pink Floyd</td><td>5</td><td>4</td><td>4</td></tr><tr><td>The Beatles</td><td>4</td><td>10</td><td>9</td></tr><tr><td>Ramones</td><td>4</td><td>6</td><td>8</td></tr><tr><td>Bob Dylan</td><td>4</td><td>4</td><td>5</td></tr><tr><td>The Velvet Underground</td><td>4</td><td>4</td><td>7</td></tr><tr><td>King Crimson</td><td>4</td><td>3</td><td>1</td></tr><tr><td>Parliament-Funkadelic</td><td>4</td><td>3</td><td>0</td></tr></table><h2>08. Samples and covers</h2>
 <p>Which genres do sampled and covered recordings come from and go to?</p>
-<pre><code>SELECT ?kindName ?fromGenre ?toGenre (COUNT(DISTINCT ?influence) AS ?statements)
+<pre><code>SELECT ?kindName ?fromGenre ?toGenre (COUNT(DISTINCT ?claim) AS ?claims)
 WHERE {
-  ?influence riff:hasEvidenceKind ?kind ;
-             riff:influencer/riff:hasPrimaryGenre/rdfs:label ?fromGenre ;
+  ?claim riff:hasEvidenceKind ?kind ;
+         riff:describes ?influence .
+  ?influence riff:influencer/riff:hasPrimaryGenre/rdfs:label ?fromGenre ;
              riff:influenced/riff:hasPrimaryGenre/rdfs:label ?toGenre .
   ?kind rdfs:label ?kindName .
   FILTER(?kind IN (riff:Sampling, riff:CoverVersion))
 }
 GROUP BY ?kindName ?fromGenre ?toGenre
-ORDER BY ?kindName DESC(?statements) ?fromGenre</code></pre>
-<table><tr><th>kindName</th><th>fromGenre</th><th>toGenre</th><th>statements</th></tr><tr><td>Cover version</td><td>Rock and roll</td><td>Rock music</td><td>3</td></tr><tr><td>Cover version</td><td>Blues</td><td>Hard rock</td><td>2</td></tr><tr><td>Cover version</td><td>Electric blues</td><td>Blues rock</td><td>2</td></tr><tr><td>Cover version</td><td>Soul music</td><td>Soul music</td><td>2</td></tr><tr><td>Cover version</td><td>Art rock</td><td>Grunge</td><td>1</td></tr><tr><td>Cover version</td><td>Blues</td><td>Blues rock</td><td>1</td></tr><tr><td>Cover version</td><td>Electric blues</td><td>Hard rock</td><td>1</td></tr><tr><td>Cover version</td><td>Electric blues</td><td>Rock music</td><td>1</td></tr><tr><td>Cover version</td><td>Folk music</td><td>Grunge</td><td>1</td></tr><tr><td>Cover version</td><td>Folk rock</td><td>Blues rock</td><td>1</td></tr><tr><td>Cover version</td><td>Folk rock</td><td>Psychedelic rock</td><td>1</td></tr><tr><td>Cover version</td><td>Folk rock</td><td>Folk rock</td><td>1</td></tr><tr><td>Cover version</td><td>Garage rock</td><td>Punk rock</td><td>1</td></tr><tr><td>Cover version</td><td>Hard rock</td><td>Hip hop</td><td>1</td></tr><tr><td>Cover version</td><td>Reggae</td><td>Blues rock</td><td>1</td></tr></table><h2>09. Build the genre routes</h2>
+ORDER BY ?kindName DESC(?claims) ?fromGenre</code></pre>
+<table><tr><th>kindName</th><th>fromGenre</th><th>toGenre</th><th>claims</th></tr><tr><td>Cover version</td><td>Rock and roll</td><td>Rock music</td><td>3</td></tr><tr><td>Cover version</td><td>Blues</td><td>Hard rock</td><td>2</td></tr><tr><td>Cover version</td><td>Electric blues</td><td>Blues rock</td><td>2</td></tr><tr><td>Cover version</td><td>Soul music</td><td>Soul music</td><td>2</td></tr><tr><td>Cover version</td><td>Art rock</td><td>Grunge</td><td>1</td></tr><tr><td>Cover version</td><td>Blues</td><td>Blues rock</td><td>1</td></tr><tr><td>Cover version</td><td>Electric blues</td><td>Hard rock</td><td>1</td></tr><tr><td>Cover version</td><td>Electric blues</td><td>Rock music</td><td>1</td></tr><tr><td>Cover version</td><td>Folk music</td><td>Grunge</td><td>1</td></tr><tr><td>Cover version</td><td>Folk rock</td><td>Blues rock</td><td>1</td></tr><tr><td>Cover version</td><td>Folk rock</td><td>Psychedelic rock</td><td>1</td></tr><tr><td>Cover version</td><td>Folk rock</td><td>Folk rock</td><td>1</td></tr><tr><td>Cover version</td><td>Garage rock</td><td>Punk rock</td><td>1</td></tr><tr><td>Cover version</td><td>Hard rock</td><td>Hip hop</td><td>1</td></tr><tr><td>Cover version</td><td>Reggae</td><td>Blues rock</td><td>1</td></tr></table><h2>09. Build the genre routes</h2>
 <p>If we add up artist influence by genre, which routes do we get and how do they compare with the family tree?</p>
 <pre><code>CONSTRUCT {
   ?route a riff:GenreRoute ;
@@ -181,9 +182,9 @@ ORDER BY ?parentGenre ?childGenre</code></pre>
 <p>How many artist pairs come only from Wikidata, only from Wikipedia text, or from both?</p>
 <pre><code>SELECT ?source (COUNT(*) AS ?artistPairs)
 WHERE {
-  ?follower mm:isInfluencedBy ?artist .
-  BIND(EXISTS { ?i riff:influenced ?follower ; riff:influencer ?artist ; riff:hasEvidenceKind riff:Unsourced } AS ?inWikidata)
-  BIND(EXISTS { ?j riff:influenced ?follower ; riff:influencer ?artist ; riff:hasEvidenceKind ?kind . FILTER(?kind IN (riff:Declared, riff:Attributed)) } AS ?inText)
+  ?influence a riff:Influence .
+  BIND(EXISTS { ?claim riff:describes ?influence ; riff:hasEvidenceKind riff:Unsourced } AS ?inWikidata)
+  BIND(EXISTS { ?claim riff:describes ?influence ; riff:hasEvidenceKind ?kind . FILTER(?kind IN (riff:Declared, riff:Attributed)) } AS ?inText)
   BIND(IF(?inWikidata &amp;&amp; ?inText, &quot;both&quot;, IF(?inWikidata, &quot;Wikidata only&quot;, IF(?inText, &quot;Wikipedia text only&quot;, &quot;recordings only&quot;))) AS ?source)
 }
 GROUP BY ?source
