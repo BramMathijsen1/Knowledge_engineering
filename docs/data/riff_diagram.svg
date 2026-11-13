@@ -61,6 +61,17 @@
   <path class="line" d="M660 110 C 640 40, 740 40, 700 110"/>
   <text class="prop" x="705" y="52">skos:broader</text>
 
+  <!-- Origin claim -->
+  <rect class="class" x="800" y="198" width="250" height="100"/>
+  <text class="name" x="925" y="217" text-anchor="middle">riff:OriginClaim</text>
+  <text class="data" x="925" y="234" text-anchor="middle">riff:earliestYear, riff:latestYear</text>
+  <text class="data" x="925" y="250" text-anchor="middle">riff:claimedPlace, riff:sourceWording</text>
+  <text class="data" x="925" y="266" text-anchor="middle">riff:isPreferred, riff:originNote</text>
+  <text class="prop" x="925" y="285" text-anchor="middle">prov:wasDerivedFrom (source)</text>
+  <path class="line" d="M800 222 L720 168"/>
+  <text class="prop" x="762" y="189">riff:originOf</text>
+  <text class="note" x="925" y="313" text-anchor="middle">preferred claim is copied to riff:emergedIn, riff:originPlace</text>
+
   <!-- Route -->
   <rect class="class" x="960" y="110" width="220" height="62"/>
   <text class="name" x="1070" y="130" text-anchor="middle">riff:GenreRoute</text>

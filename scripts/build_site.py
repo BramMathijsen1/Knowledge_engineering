@@ -87,6 +87,7 @@ def build_home(graph):
     hidden_routes = [routes[0]] + [row for row in routes[1:] if row[3] == "hidden"]
     no_artists = result_rows("11_links_without_artists")
     genres = count_in_graph(graph, "SELECT (COUNT(DISTINCT ?g) AS ?n) WHERE { ?g a mm:MusicGenre }")
+    origin_claims = count_in_graph(graph, "SELECT (COUNT(DISTINCT ?c) AS ?n) WHERE { ?c a riff:OriginClaim }")
     links = count_in_graph(graph, "SELECT (COUNT(*) AS ?n) WHERE { ?a riff:hasStylisticOrigin ?b }")
     artists = count_in_graph(graph, "SELECT (COUNT(DISTINCT ?a) AS ?n) WHERE { ?a a mm:MusicArtist }")
     claims = count_in_graph(graph, "SELECT (COUNT(DISTINCT ?c) AS ?n) WHERE { ?c a riff:InfluenceClaim }")
@@ -140,7 +141,7 @@ the table below, such as turntables and the drum machine, which often appear wit
 
 <h2>Instruments a genre adds to its roots</h2>
 <p>At least two artists of the genre play these instruments, but no artist of a genre it comes from does.
-The year is the rough year the genre appeared. Read this table with care: for a solo artist we only know
+The year is the earliest year Wikipedia gives for the genre. Read this table with care: for a solo artist we only know
 their own instruments, not those of their backing band. The older genres in our list are mostly solo singers,
 so drums or bass can look new in rock or funk when they are not. Turntables in hip hop is a real case.</p>
 {html_table(result_rows("16_new_instruments"), MAX_ROWS)}
@@ -149,6 +150,7 @@ so drums or bass can look new in rock or funk when they are not. Turntables in h
 <table>
 <tr><th>Item</th><th>Number</th></tr>
 <tr><td>Genres</td><td>{genres}</td></tr>
+<tr><td>Origin claims (dates and places of genres)</td><td>{origin_claims}</td></tr>
 <tr><td>Links between genres</td><td>{links}</td></tr>
 <tr><td>Artists</td><td>{artists}</td></tr>
 <tr><td>Influence claims</td><td>{claims}</td></tr>

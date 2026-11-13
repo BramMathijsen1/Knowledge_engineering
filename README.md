@@ -81,7 +81,8 @@ These scripts only write to `data/raw/` and `data/extracted/`. They never change
 
 | File | Contents |
 |---|---|
-| `genres.csv` | The genres, with a rough year and place |
+| `genres.csv` | The genres, with their Wikipedia, DBpedia and Wikidata names |
+| `origin_claims.csv` | When and where each genre began, one row per source (Wikipedia, Wikidata). One row per genre is `preferred` |
 | `lineage.csv` | Links between genres. Dropped links stay here with the reason |
 | `artists.csv` | The artists, with one primary genre each |
 | `genre_phases.csv` | Forms of genres, from Lena and Peterson |

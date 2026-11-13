@@ -5,12 +5,16 @@ Run it from the project folder: python scripts/build_graph.py
 from rdflib import Graph, Literal, URIRef
 from rdflib.namespace import DCTERMS, OWL, RDF, RDFS, SKOS, VOID, XSD
 
-from common import read_csv, RIFF, GENRE, ARTIST, INFLUENCE, CLAIM, RECORDING, PHASE, INSTRUMENT, MM, WD, DBR, PROV
+from common import (read_csv, RIFF, GENRE, ARTIST, INFLUENCE, CLAIM, RECORDING, PHASE, INSTRUMENT,
+                    ORIGIN, MM, WD, DBR, PROV)
 
 EVIDENCE = {"Declared": RIFF.Declared, "Attributed": RIFF.Attributed, "Unsourced": RIFF.Unsourced,
             "Sampling": RIFF.Sampling, "CoverVersion": RIFF.CoverVersion}
 FORMS = {"AvantGarde": RIFF.AvantGarde, "SceneBased": RIFF.SceneBased,
          "IndustryBased": RIFF.IndustryBased, "Traditionalist": RIFF.Traditionalist}
+# The page or item an origin claim comes from, made from the genre's row in genres.csv.
+SOURCES = {"wikipedia": lambda g: URIRef("https://en.wikipedia.org/wiki/" + g["wikipedia"].replace(" ", "_")),
+           "wikidata": lambda g: WD[g["wikidata"]]}
 
 SHORTCUT_QUERY = """
 PREFIX riff: <https://w3id.org/riff/ontology#>
@@ -29,9 +33,44 @@ def add_genres(graph):
         graph.add((genre, RDFS.label, Literal(row["label"], lang="en")))
         graph.add((genre, OWL.sameAs, WD[row["wikidata"]]))
         graph.add((genre, OWL.sameAs, DBR[row["dbpedia"]]))
-        graph.add((genre, RIFF.originPlace, Literal(row["origin_place"])))
-        if row["emerged"]:
-            graph.add((genre, RIFF.emergedIn, Literal(int(row["emerged"]))))
+
+
+def add_origin_claims(graph):
+    """One claim per genre and source. The preferred claim also gives the genre its
+    riff:emergedIn (earliest year) and riff:originPlace, which the queries use."""
+    genres = {row["id"]: row for row in read_csv("data/curated/genres.csv")}
+    preferred = {}
+    for row in read_csv("data/curated/origin_claims.csv"):
+        genre_id = row["genre"]
+        if genre_id not in genres:
+            raise ValueError("origin_claims.csv: unknown genre " + genre_id)
+        claim = ORIGIN[genre_id + "--" + row["source"]]
+        graph.add((claim, RDF.type, RIFF.OriginClaim))
+        graph.add((claim, RIFF.originOf, GENRE[genre_id]))
+        if row["earliest"]:
+            graph.add((claim, RIFF.earliestYear, Literal(int(row["earliest"]))))
+        if row["latest"]:
+            graph.add((claim, RIFF.latestYear, Literal(int(row["latest"]))))
+        if row["place"]:
+            graph.add((claim, RIFF.claimedPlace, Literal(row["place"])))
+        graph.add((claim, RIFF.sourceWording, Literal(row["wording"])))
+        graph.add((claim, RIFF.isPreferred, Literal(row["preferred"] == "yes")))
+        if row["note"]:
+            graph.add((claim, RIFF.originNote, Literal(row["note"], lang="en")))
+        graph.add((claim, PROV.wasDerivedFrom, SOURCES[row["source"]](genres[genre_id])))
+
+        if row["preferred"] == "yes":
+            if genre_id in preferred:
+                raise ValueError("origin_claims.csv: more than one preferred claim for " + genre_id)
+            preferred[genre_id] = row
+            if row["earliest"]:
+                graph.add((GENRE[genre_id], RIFF.emergedIn, Literal(int(row["earliest"]))))
+            if row["place"]:
+                graph.add((GENRE[genre_id], RIFF.originPlace, Literal(row["place"])))
+
+    missing = sorted(set(genres) - set(preferred))
+    if missing:
+        raise ValueError("origin_claims.csv: no preferred claim for " + ", ".join(missing))
 
 
 def add_lineage(graph):
@@ -154,12 +193,14 @@ def main():
     graph.bind("recording", RECORDING)
     graph.bind("phase", PHASE)
     graph.bind("instrument", INSTRUMENT)
+    graph.bind("origin", ORIGIN)
     graph.bind("mm", MM)
     graph.bind("wd", WD)
     graph.bind("dbr", DBR)
     graph.bind("prov", PROV)
 
     add_genres(graph)
+    add_origin_claims(graph)
     add_lineage(graph)
     add_artists(graph)
     add_phases(graph)

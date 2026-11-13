@@ -2,8 +2,10 @@
 
 Run it from the project folder: python scripts/fetch_lod.py
 It reads the genre and artist lists from data/curated/.
+To fetch only the Wikidata genre dates: python scripts/fetch_lod.py genre-dates
 """
 import re
+import sys
 
 from common import read_csv, write_csv, run_sparql, query_wikidata, last_part, wikipedia_text
 
@@ -90,6 +92,9 @@ def fetch_artist_facts(artists):
 def clean_wiki_markup(text):
     text = re.sub(r"<ref.*?(</ref>|/>)", "", text)
     text = re.sub(r"\[\[([^\]|]*\|)?([^\]]*)\]\]", r"\2", text)
+    # A list template such as {{hlist|Mid-1980s|Oakland}} holds the value itself, so keep its items.
+    text = re.sub(r"\{\{\s*(?:hlist|flatlist|ubl|unbulleted list)\s*\|([^{}]*)\}\}",
+                  lambda m: ", ".join(item.strip() for item in m.group(1).split("|")), text, flags=re.I)
     text = re.sub(r"\{\{[^{}]*\}\}", "", text)
     return text.replace("'''", "").replace("''", "").strip()
 
@@ -105,13 +110,41 @@ def fetch_genre_origins(genres):
     print("Genre origin rows:", len(rows))
 
 
+def fetch_genre_dates_wikidata(genres):
+    """Inception (P571) and country of origin (P495) of each genre, a second source for origin claims."""
+    ids = {g["wikidata"]: g["id"] for g in genres}
+    values = " ".join("wd:" + qid for qid in ids)
+    query = f"""
+    SELECT ?genre (MIN(YEAR(?inception)) AS ?year)
+           (GROUP_CONCAT(DISTINCT ?countryLabel; separator="|") AS ?countries) WHERE {{
+      VALUES ?genre {{ {values} }}
+      OPTIONAL {{ ?genre wdt:P571 ?inception }}
+      OPTIONAL {{ ?genre wdt:P495 ?country .
+                 ?country rdfs:label ?countryLabel FILTER(lang(?countryLabel) = "en") }}
+    }}
+    GROUP BY ?genre"""
+    rows = []
+    for result in query_wikidata(query):
+        rows.append({"genre": ids[last_part(result["genre"]["value"])],
+                     "inception_year": result.get("year", {}).get("value", ""),
+                     "countries": result.get("countries", {}).get("value", "")})
+    rows.sort(key=lambda r: r["genre"])
+    write_csv("data/raw/wikidata_genre_origins.csv", rows, ["genre", "inception_year", "countries"])
+    print("Wikidata genre origin rows:", len(rows))
+
+
 def main():
     genres = read_csv("data/curated/genres.csv")
     artists = read_csv("data/curated/artists.csv")
+    if sys.argv[1:] == ["genre-dates"]:
+        # Only the Wikidata genre dates, so the other raw files stay as they are.
+        fetch_genre_dates_wikidata(genres)
+        return
     fetch_lineage(genres)
     fetch_influences(artists)
     fetch_artist_facts(artists)
     fetch_genre_origins(genres)
+    fetch_genre_dates_wikidata(genres)
 
 
 main()
