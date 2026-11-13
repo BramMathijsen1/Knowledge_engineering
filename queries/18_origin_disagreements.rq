@@ -1,0 +1,26 @@
+# Title:    Origin disagreements
+# Question: For which genres do Wikipedia and Wikidata give origin years that do not overlap?
+#           Each claim has a range from its earliest to its latest year. Two claims disagree when
+#           one range ends before the other starts.
+# Output:   genre, preferred source and its years, other source and its years, gap in years
+
+PREFIX riff: <https://w3id.org/riff/ontology#>
+PREFIX genre: <https://w3id.org/riff/genre/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+
+SELECT ?genreName ?preferredFrom ?preferredTo ?otherFrom ?otherTo ?gap
+WHERE {
+  ?preferred riff:originOf ?genre ;
+             riff:isPreferred true ;
+             riff:earliestYear ?preferredFrom ;
+             riff:latestYear ?preferredTo .
+  ?other riff:originOf ?genre ;
+         riff:isPreferred false ;
+         riff:earliestYear ?otherFrom ;
+         riff:latestYear ?otherTo .
+  FILTER (?otherTo < ?preferredFrom || ?otherFrom > ?preferredTo)
+  BIND (IF(?otherTo < ?preferredFrom, ?preferredFrom - ?otherTo, ?otherFrom - ?preferredTo) AS ?gap)
+  ?genre rdfs:label ?genreName .
+}
+ORDER BY DESC(?gap) ?genreName

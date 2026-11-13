@@ -89,7 +89,7 @@ skos:broader a owl:ObjectProperty ;
 
 prov:wasDerivedFrom a owl:ObjectProperty ;
     rdfs:label "was derived from"@en ;
-    rdfs:comment "The source of a claim: a Wikipedia page, a Wikidata item or a MusicBrainz recording."@en ;
+    rdfs:comment "The source of a claim: a Wikipedia page, a Wikidata item or a MusicBrainz recording. Used for influence claims, origin claims and genre phases."@en ;
     rdfs:isDefinedBy <http://www.w3.org/ns/prov#> .
 
 dcterms:creator a owl:AnnotationProperty .
@@ -228,13 +228,63 @@ riff:emergedIn a owl:DatatypeProperty ;
     rdfs:domain mm:MusicGenre ;
     rdfs:range xsd:integer ;
     rdfs:label "emerged in"@en ;
-    rdfs:comment "A rough year for when the genre appeared. Wikipedia only gives periods such as late 1960s, so this is an estimate used for date checks."@en .
+    rdfs:comment "The earliest year of the genre's preferred origin claim, so it means: not before this year. It is copied from riff:OriginClaim so that simple queries need no claims. Empty when the preferred source gives no date."@en .
 
 riff:originPlace a owl:DatatypeProperty ;
     rdfs:domain mm:MusicGenre ;
     rdfs:range xsd:string ;
     rdfs:label "origin place"@en ;
-    rdfs:comment "Where the genre first appeared."@en .
+    rdfs:comment "Where the genre first appeared, copied from its preferred origin claim. Other sources may name other places: see riff:OriginClaim."@en .
+
+#################################################################
+# Genre origins (one claim per source)
+#################################################################
+
+riff:OriginClaim a owl:Class ;
+    rdfs:label "Origin claim"@en ;
+    rdfs:comment "What one source says about when and where a genre appeared: a range of years, a place, the source's own wording and the source. One genre can have many claims, for example one from Wikipedia and one from Wikidata. It follows the same pattern as riff:InfluenceClaim."@en .
+
+riff:originOf a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain riff:OriginClaim ;
+    rdfs:range mm:MusicGenre ;
+    rdfs:label "origin of"@en ;
+    rdfs:comment "The genre that this claim is about."@en .
+
+riff:earliestYear a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:domain riff:OriginClaim ;
+    rdfs:range xsd:integer ;
+    rdfs:label "earliest year"@en ;
+    rdfs:comment "The first year of the period the source gives. A period such as mid-1960s becomes 1963 to 1967 by a fixed rule, described on the method page."@en .
+
+riff:latestYear a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:domain riff:OriginClaim ;
+    rdfs:range xsd:integer ;
+    rdfs:label "latest year"@en ;
+    rdfs:comment "The last year of the period the source gives. The same as the earliest year when the source gives one year."@en .
+
+riff:claimedPlace a owl:DatatypeProperty ;
+    rdfs:domain riff:OriginClaim ;
+    rdfs:range xsd:string ;
+    rdfs:label "claimed place"@en ;
+    rdfs:comment "Where the source says the genre appeared."@en .
+
+riff:sourceWording a owl:DatatypeProperty ;
+    rdfs:domain riff:OriginClaim ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "source wording"@en ;
+    rdfs:comment "What the source says, before it was turned into years, for example: Mid-1960s, United States."@en .
+
+riff:isPreferred a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:domain riff:OriginClaim ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "is preferred"@en ;
+    rdfs:comment "True for the one claim per genre whose first year and place are copied to riff:emergedIn and riff:originPlace."@en .
+
+riff:originNote a owl:DatatypeProperty ;
+    rdfs:domain riff:OriginClaim ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "origin note"@en ;
+    rdfs:comment "Explains a claim that needs it, for example why a genre has no year."@en .
 
 #################################################################
 # Genre forms (Lena and Peterson)

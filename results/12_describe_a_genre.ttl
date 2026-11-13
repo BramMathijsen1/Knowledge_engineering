@@ -13,7 +13,7 @@ genre:punk_rock a mm:MusicGenre ;
     owl:sameAs dbr:Punk_rock,
         wd:Q3071 ;
     skos:broader genre:rock ;
-    riff:emergedIn 1975 ;
+    riff:emergedIn 1973 ;
     riff:hasStylisticOrigin genre:garage_rock,
         genre:glam_rock,
         genre:rock,

@@ -44,7 +44,8 @@ features), and when an influence happened (claims have no dates).</p>
 <table>
 <tr><th>Step</th><th>Source</th><th>What we get</th><th>Script or file</th></tr>
 <tr><td>1. Fetch</td><td>DBpedia (SPARQL)</td><td>Links between genres</td><td><code>fetch_lod.py</code></td></tr>
-<tr><td>2. Fetch</td><td>Wikidata (SPARQL)</td><td>Influence pairs, dates, other genres</td><td><code>fetch_lod.py</code></td></tr>
+<tr><td>2. Fetch</td><td>Wikidata (SPARQL)</td><td>Influence pairs, dates, other genres, the year and country each genre began</td><td><code>fetch_lod.py</code></td></tr>
+<tr><td>2b. Fetch</td><td>Wikipedia infoboxes</td><td>When and where each genre began, in the article's own words</td><td><code>fetch_lod.py</code></td></tr>
 <tr><td>3. Extract</td><td>Wikipedia text</td><td>Sentences about influence</td><td><code>extract_text.py</code></td></tr>
 <tr><td>4. Fetch</td><td>MusicBrainz</td><td>Samples between recordings</td><td><code>fetch_samples.py</code></td></tr>
 <tr><td>4b. Fetch</td><td>Wikidata and MusicBrainz</td><td>Which instruments artists play</td><td><code>fetch_instruments.py</code></td></tr>
@@ -62,6 +63,7 @@ This matters: while we worked, public endpoints were often slow or down.</p>
 <li><strong>The raw genre links form loops.</strong> In all of DBpedia, 332 genres are in one big loop, so "ancestor of" means almost nothing. On our chosen genres there are no loops left.</li>
 <li><strong>Some links are simply wrong.</strong> For example, DBpedia connects trap to soul, but trap is decades younger. Dropped links stay in <code>lineage.csv</code> with the reason.</li>
 <li><strong>Wikidata has gaps and mistakes.</strong> Among our artists it has no influences at all for Kendrick Lamar or Miles Davis, and only one each for Beyonc&eacute; and Radiohead. So text extraction is necessary. It also says Sister Rosetta Tharpe was influenced by Little Richard, which is backwards: she started about 30 years before him. Comparing the years when the artists started finds errors like this.</li>
+<li><strong>Sources disagree on when genres began.</strong> Wikipedia gives jazz the late 19th century, Wikidata gives 1917. Wikipedia says gospel began in the Southern United States, Wikidata gives 1600 and DBpedia says 17th-century Scotland. So each source's answer is kept as its own <code>riff:OriginClaim</code> in <code>origin_claims.csv</code>, and query 18 lists the genres where they do not overlap. DBpedia's dates are left out: they are copied from the Wikipedia infobox, often damaged (for example "-1960.0"), so they add no second opinion.</li>
 <li><strong>Artists have many genres.</strong> If we use them all, nearly everything looks connected. So each artist has one primary genre, listed in <code>artists.csv</code>.</li>
 </ul>
 
@@ -111,6 +113,7 @@ treated the same way. Query 17 leaves out the voice, because almost everyone sin
 <tr><th>Pattern</th><th>How we use it</th></tr>
 <tr><td>Situation (n-ary relation)</td><td><code>riff:Influence</code> is the influence of one artist on another. There is one for each pair of artists.</td></tr>
 <tr><td>Description and situation</td><td>What a source says is kept apart from the influence itself. Each <code>riff:InfluenceClaim</code> describes one <code>riff:Influence</code> and has the evidence kind, the source, and the quote or the recordings. A plain link can't hold all of this, and one influence can have several claims, for example one from Wikipedia and one from Wikidata.</td></tr>
+<tr><td>Description and situation, for genre origins</td><td>The same split is used for when and where a genre began. Each <code>riff:OriginClaim</code> holds what one source says: a range of years, a place, the source's own wording, and the source. One claim per genre is marked as preferred, and its first year and place are copied to the genre, so simple queries don't have to deal with the claims.</td></tr>
 <tr><td>Property chain</td><td><code>mm:isInfluencedBy</code> is defined from <code>riff:Influence</code> with a property chain. We also add it with a CONSTRUCT query, so queries work without a reasoner.</td></tr>
 <tr><td>Transition</td><td><code>riff:GenrePhase</code> gives the form of a genre at each step of its history.</td></tr>
 <tr><td>Constructive query</td><td>Query 9 builds <code>riff:GenreRoute</code> from the graph.</td></tr>
@@ -128,7 +131,7 @@ influence C. So we don't declare the property transitive. We ask for chains with
 <li>Query 17 shows that an artist plays the same instrument as their influences, not that they took it from them. Guitar, bass and drums are shared by almost everyone, so the interesting rows are the rarer instruments.</li>
 <li>Wikidata and Wikipedia say much more about rock than about older music or about hip hop. A link with no artists behind it may only mean our sources are thin there.</li>
 <li>Many routes with no link are between close genres, so they show gaps in the tree more than discoveries.</li>
-<li>The years for genres are rough estimates from periods like "late 1960s".</li>
+<li>Wikipedia gives periods, not years, so each period becomes a range by a fixed rule: early = years 0&ndash;3 of the decade, early to mid = 0&ndash;6, mid = 3&ndash;7, mid to late = 3&ndash;9, late = 6&ndash;9, a whole decade = 0&ndash;9, and a stated range is kept as it is. The year shown for a genre (<code>riff:emergedIn</code>) is the start of Wikipedia's range, so it means "not before". Gospel and folk have no year because Wikipedia gives none.</li>
 <li>Genre forms are only filled in for genres named in Regev's review of Lena's book.</li>
 <li>We chose the sampled recordings, so query 8 describes our selection. It can't test what Bryan and Wang found.</li>
 </ul>

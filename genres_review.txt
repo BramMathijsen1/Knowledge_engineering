@@ -1,0 +1,64 @@
+REVIEW OF data/curated/genres.csv
+
+UPDATE: Dates and places now live in data/curated/origin_claims.csv, one row per source. The
+"emerged" and "origin_place" columns of genres.csv are no longer read. Query 18 lists the genres where
+Wikipedia and Wikidata disagree. The notes below describe the old columns.
+Checked on 13 November 2026 against Wikipedia, DBpedia and Wikidata.
+
+WHAT WAS CHECKED
+- Wikipedia: each title exists and is not a redirect.
+- Wikidata: each ID's English Wikipedia link matches the "wikipedia" column. Inception date (P571) and country of origin (P495) were compared with "emerged" and "origin_place".
+- DBpedia: each resource exists, is not a redirect, and links to the same Wikidata ID. Its culturalOrigins value was compared too.
+- data/raw/genre_origins.csv (Wikipedia infobox text saved earlier) was compared with the CSV. The rows that could be re-fetched from Wikipedia matched it word for word, so it is up to date. Wikipedia rate-limited the rest, including gangsta rap, rock and hip-hop.
+- data/curated/lineage.csv: no genre has an "emerged" year before a genre it descends from.
+
+OVERALL
+All 49 IDs and links are correct. Three rows have values that need changing, and three more points need a decision.
+
+HOW "EMERGED" WAS DERIVED
+The CSV turns the Wikipedia wording into one year by a steady rule:
+  "Early 1960s" -> 1962     "Early to mid-1960s" -> 1963
+  "Mid-1960s" -> 1965       "Mid to late 1960s" -> 1967
+  "Late 1960s" -> 1968      "Late 1950s to early 1960s" -> 1959
+  "1960s" -> 1965
+The rule is not written down anywhere. A sentence in scripts/method_text.html would make it easier to defend.
+
+
+VALUES THAT NEED CHANGING
+
+1. gangsta_rap: origin_place and emerged
+   Now:      "Oakland, Los Angeles, Philadelphia and New York", 1986
+   Problem:  The project's source data has nothing for gangsta rap: its entry in genre_origins.csv is blank, and live DBpedia gives only a decade (1980s). 1986 does not follow the rule ("mid-1980s" -> 1985). Wikidata gives 1985.
+   Fix:      Take the place from the current Wikipedia infobox, or note in the row that it was entered by hand. Change the year to 1985.
+
+2. rock: emerged
+   Now:      1955
+   Problem:  The source says "1940s-1950s" and Wikidata says 1948. 1955 does not follow the rule.
+   Fix:      Change to about 1948, or record why 1955 was chosen.
+
+3. gospel: emerged and origin_place
+   Now:      blank, "Southern United States"
+   Problem:  The sources disagree. Wikipedia says Southern United States. Wikidata (1600) and live DBpedia ("Early 17th century, Scotland") point to an older, Scottish origin. Wikipedia gives no date.
+   Fix:      Decide which source wins, then fill in emerged or record why it is blank.
+
+
+SMALLER POINTS TO DECIDE
+
+4. hip_hop: dbpedia column
+   The only row where "dbpedia" is not the "wikipedia" title with underscores (Hip-hop vs Hip_hop_music). Both links work, because DBpedia still uses the article's old title. Keep it, but add a note so it does not look like a mistake.
+
+5. synth_pop: emerged
+   The source says "1977-1980" and the row has 1978. The rule (start year) gives 1977.
+
+6. ambient: emerged
+   The source says "1960s-70s" and the row has 1970. Wikidata gives 1967.
+
+7. folk: origin_place and emerged
+   "Many regions" paraphrases the source's "Individual nations or regions". The blank year is correct, because Wikipedia gives no date.
+
+
+DIFFERENCES THAT DO NOT NEED CHANGING
+
+- Some years differ from Wikidata: jazz 1890 vs 1917, electric blues 1938 vs 1945, reggae 1968 vs 1961, jazz fusion 1968 vs 1950, jungle 1992 vs 1987. For these Wikidata gives one specific date instead of the article's range. The CSV follows Wikipedia every time, which is consistent.
+- Some places list more countries or fewer than Wikidata (for example progressive rock, heavy metal). The CSV follows the Wikipedia infobox, the stated source.
+- Live DBpedia stores many origins as bare decades, some with a stray minus sign (for example "-1960.0"). That is DBpedia's error and not a reason to change the CSV.
