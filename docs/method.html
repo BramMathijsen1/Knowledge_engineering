@@ -106,9 +106,12 @@ The numbers come from the review file and will change as rows go from <code>draf
 
 <h2>Instruments</h2>
 <p>Each artist plays one or more instruments. For solo artists the data comes from Wikidata. For bands it
-comes from MusicBrainz, which says which instruments each member played in that band. When MusicBrainz has
-no instruments for a band, we use the instruments of its members from Wikidata, which covers their whole
-career. The <code>source</code> column in <code>artist_instruments.csv</code> says which one was used.</p>
+comes from MusicBrainz, which says which instruments each member played in that band. MusicBrainz often
+gives instruments for only some members: for The Clash it only had a late guitarist, and for Run-DMC only
+the DJ. So for every member that MusicBrainz lists with no instruments, and for bands where it has none at
+all, we use the member's instruments from Wikidata. This is less exact, because Wikidata covers the
+member's whole career and not only that band. The <code>source</code> column in
+<code>artist_instruments.csv</code> says which one was used.</p>
 <p>The many instrument names in the sources (for example "Gibson Les Paul" or "drums (drum set)") are mapped
 to a short list in <code>instruments.csv</code>. An instrument stays in the list only if at least three of
 our artists play it.</p>
@@ -137,8 +140,8 @@ influence C. So we don't declare the property transitive. We ask for chains with
 <ul>
 <li>We chose the genres and artists ourselves, about 3 to 5 artists per genre, and one primary genre for each artist. Other choices would give other numbers.</li>
 <li>Artists with no influence link in our sources were left out, including Charlie Parker and Joan Baez. That shows a gap in the sources, not that they had no influence. The jungle genre has no artists left for the same reason.</li>
-<li>Instrument data is uneven. Some artists have no instruments in our sources, such as Beyonc&eacute;, the Sex Pistols and most of the techno artists. Sources also rarely say whether a guitar is electric or acoustic, so we only have "guitar".</li>
-<li>For a solo artist we only know their own instruments, not those of their backing band. The older genres in our list are mostly solo singers, so query 16 can report drums or bass as new in rock or funk when they are not.</li>
+<li>Instrument data is uneven. Some artists have no instruments in our sources, such as Beyonc&eacute;, The Sonics and most of the techno artists. Sources also rarely say whether a guitar is electric or acoustic, so we only have "guitar".</li>
+<li>For a solo artist we only know their own instruments, not those of their backing band. The older genres in our list are mostly solo singers, so query 16 can report drums or bass as new in rock, ska or funk when they are not.</li>
 <li>Query 17 shows that an artist plays the same instrument as their influences, not that they took it from them. Guitar, bass and drums are shared by almost everyone, so the interesting rows are the rarer instruments.</li>
 <li>Wikidata and Wikipedia say much more about rock than about older music or about hip hop. A link with no artists behind it may only mean our sources are thin there.</li>
 <li>Many routes with no link are between close genres, so they show gaps in the tree more than discoveries.</li>

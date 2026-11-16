@@ -9908,7 +9908,15 @@ artist:mahavishnu_orchestra a mm:MusicArtist,
     riff:activeFrom 1971 ;
     riff:activeTo 1987 ;
     riff:hasPrimaryGenre genre:jazz_fusion ;
-    riff:playsInstrument instrument:violin .
+    riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
+        instrument:guitar,
+        instrument:keyboards,
+        instrument:percussion,
+        instrument:piano,
+        instrument:saxophone,
+        instrument:violin,
+        instrument:voice .
 
 artist:napalm_death a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -9983,9 +9991,14 @@ artist:the_skatalites a mm:MusicArtist,
     mm:hasGenre genre:ska ;
     riff:activeFrom 1964 ;
     riff:hasPrimaryGenre genre:ska ;
-    riff:playsInstrument instrument:keyboards,
+    riff:playsInstrument instrument:double_bass,
+        instrument:drum_kit,
+        instrument:guitar,
+        instrument:keyboards,
+        instrument:piano,
         instrument:saxophone,
-        instrument:trumpet .
+        instrument:trumpet,
+        instrument:voice .
 
 artist:the_specials a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -10921,11 +10934,6 @@ influence:van_halen--the_kinks a riff:Influence ;
     riff:influenced artist:van_halen ;
     riff:influencer artist:the_kinks .
 
-instrument:drum_machine a riff:Instrument ;
-    rdfs:label "Drum machine"@en ;
-    owl:sameAs wd:Q831698 ;
-    riff:inInstrumentGroup riff:Electronic .
-
 recording:parliament_funkadelic__get_off_your_ass_and_jam a mm:Recording ;
     rdfs:label "Get Off Your Ass and Jam"@en ;
     dcterms:creator artist:parliament_funkadelic ;
@@ -10965,7 +10973,12 @@ artist:blondie a mm:MusicArtist,
         artist:the_kinks ;
     riff:activeFrom 1974 ;
     riff:hasPrimaryGenre genre:new_wave ;
-    riff:playsInstrument instrument:guitar .
+    riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
+        instrument:guitar,
+        instrument:keyboards,
+        instrument:piano,
+        instrument:voice .
 
 artist:daft_punk a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -10984,7 +10997,8 @@ artist:daft_punk a mm:MusicArtist,
         instrument:drum_kit,
         instrument:guitar,
         instrument:keyboards,
-        instrument:synthesizer .
+        instrument:synthesizer,
+        instrument:voice .
 
 artist:jeff_mills a mm:MusicArtist,
         mm:Musician ;
@@ -11119,16 +11133,6 @@ instrument:clarinet a riff:Instrument ;
     owl:sameAs wd:Q8343 ;
     riff:inInstrumentGroup riff:WindsAndBrass .
 
-instrument:mandolin a riff:Instrument ;
-    rdfs:label "Mandolin"@en ;
-    owl:sameAs wd:Q302497 ;
-    riff:inInstrumentGroup riff:Strings .
-
-instrument:sampler a riff:Instrument ;
-    rdfs:label "Sampler"@en ;
-    owl:sameAs wd:Q320002 ;
-    riff:inInstrumentGroup riff:Electronic .
-
 artist:aphex_twin a mm:MusicArtist,
         mm:Musician ;
     rdfs:label "Aphex Twin"@en ;
@@ -11226,7 +11230,11 @@ artist:mudhoney a mm:MusicArtist,
         artist:the_stooges ;
     riff:activeFrom 1988 ;
     riff:hasPrimaryGenre genre:grunge ;
-    riff:playsInstrument instrument:bass_guitar .
+    riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
+        instrument:guitar,
+        instrument:saxophone,
+        instrument:voice .
 
 artist:the_winstons a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -11241,10 +11249,15 @@ influence:a_tribe_called_quest--sly_and_the_family_stone a riff:Influence ;
     riff:influenced artist:a_tribe_called_quest ;
     riff:influencer artist:sly_and_the_family_stone .
 
-instrument:accordion a riff:Instrument ;
-    rdfs:label "Accordion"@en ;
-    owl:sameAs wd:Q79838 ;
-    riff:inInstrumentGroup riff:WindsAndBrass .
+instrument:drum_machine a riff:Instrument ;
+    rdfs:label "Drum machine"@en ;
+    owl:sameAs wd:Q831698 ;
+    riff:inInstrumentGroup riff:Electronic .
+
+instrument:sampler a riff:Instrument ;
+    rdfs:label "Sampler"@en ;
+    owl:sameAs wd:Q320002 ;
+    riff:inInstrumentGroup riff:Electronic .
 
 artist:arcade_fire a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -11319,6 +11332,7 @@ artist:gang_of_four a mm:MusicArtist,
     riff:playsInstrument instrument:bass_guitar,
         instrument:drum_kit,
         instrument:guitar,
+        instrument:keyboards,
         instrument:voice .
 
 artist:gary_numan a mm:MusicArtist,
@@ -11348,7 +11362,16 @@ artist:grateful_dead a mm:MusicArtist,
     riff:activeFrom 1965 ;
     riff:activeTo 1995 ;
     riff:hasPrimaryGenre genre:psychedelic_rock ;
-    riff:playsInstrument instrument:keyboards .
+    riff:playsInstrument instrument:accordion,
+        instrument:bass_guitar,
+        instrument:drum_kit,
+        instrument:guitar,
+        instrument:harmonica,
+        instrument:keyboards,
+        instrument:mandolin,
+        instrument:organ,
+        instrument:piano,
+        instrument:voice .
 
 artist:john_coltrane a mm:MusicArtist,
         mm:Musician ;
@@ -11424,6 +11447,11 @@ artist:tangerine_dream a mm:MusicArtist,
     riff:activeFrom 1967 ;
     riff:hasPrimaryGenre genre:krautrock ;
     riff:playsInstrument instrument:drum_kit,
+        instrument:guitar,
+        instrument:keyboards,
+        instrument:percussion,
+        instrument:saxophone,
+        instrument:synthesizer,
         instrument:violin .
 
 artist:the_meters a mm:MusicArtist,
@@ -11488,15 +11516,15 @@ genre:trap a mm:MusicGenre ;
         genre:hip_hop ;
     riff:originPlace "Atlanta, United States" .
 
-instrument:double_bass a riff:Instrument ;
-    rdfs:label "Double bass"@en ;
-    owl:sameAs wd:Q80019 ;
-    riff:inInstrumentGroup riff:Strings .
-
-instrument:flute a riff:Instrument ;
-    rdfs:label "Flute"@en ;
-    owl:sameAs wd:Q11405 ;
+instrument:accordion a riff:Instrument ;
+    rdfs:label "Accordion"@en ;
+    owl:sameAs wd:Q79838 ;
     riff:inInstrumentGroup riff:WindsAndBrass .
+
+instrument:mandolin a riff:Instrument ;
+    rdfs:label "Mandolin"@en ;
+    owl:sameAs wd:Q302497 ;
+    riff:inInstrumentGroup riff:Strings .
 
 recording:james_brown__funky_drummer a mm:Recording ;
     rdfs:label "Funky Drummer, Part 1"@en ;
@@ -11574,8 +11602,12 @@ artist:death a mm:MusicArtist,
     riff:activeFrom 1983 ;
     riff:activeTo 2001 ;
     riff:hasPrimaryGenre genre:extreme_metal ;
-    riff:playsInstrument instrument:drum_kit,
-        instrument:guitar .
+    riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
+        instrument:guitar,
+        instrument:keyboards,
+        instrument:percussion,
+        instrument:voice .
 
 artist:new_order a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -11649,10 +11681,10 @@ genre:drum_and_bass a mm:MusicGenre ;
         genre:techno ;
     riff:originPlace "United Kingdom" .
 
-instrument:organ a riff:Instrument ;
-    rdfs:label "Organ"@en ;
-    owl:sameAs wd:Q1444 ;
-    riff:inInstrumentGroup riff:Keyboards .
+instrument:flute a riff:Instrument ;
+    rdfs:label "Flute"@en ;
+    owl:sameAs wd:Q11405 ;
+    riff:inInstrumentGroup riff:WindsAndBrass .
 
 instrument:turntables a riff:Instrument ;
     rdfs:label "Turntables"@en ;
@@ -11723,8 +11755,8 @@ artist:minor_threat a mm:MusicArtist,
     riff:activeTo 1983 ;
     riff:hasPrimaryGenre genre:hardcore_punk ;
     riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
         instrument:guitar,
-        instrument:percussion,
         instrument:voice .
 
 artist:the_smiths a mm:MusicArtist,
@@ -11779,8 +11811,8 @@ artist:bad_brains a mm:MusicArtist,
     riff:activeFrom 1977 ;
     riff:hasPrimaryGenre genre:hardcore_punk ;
     riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
         instrument:guitar,
-        instrument:percussion,
         instrument:voice .
 
 artist:bee_gees a mm:MusicArtist,
@@ -11886,13 +11918,20 @@ artist:weather_report a mm:MusicArtist,
     riff:activeFrom 1970 ;
     riff:activeTo 1986 ;
     riff:hasPrimaryGenre genre:jazz_fusion ;
-    riff:playsInstrument instrument:double_bass,
+    riff:playsInstrument instrument:bass_guitar,
+        instrument:double_bass,
         instrument:drum_kit,
-        instrument:percussion .
+        instrument:guitar,
+        instrument:keyboards,
+        instrument:percussion,
+        instrument:piano,
+        instrument:saxophone,
+        instrument:synthesizer,
+        instrument:voice .
 
-instrument:violin a riff:Instrument ;
-    rdfs:label "Violin"@en ;
-    owl:sameAs wd:Q8355 ;
+instrument:double_bass a riff:Instrument ;
+    rdfs:label "Double bass"@en ;
+    owl:sameAs wd:Q80019 ;
     riff:inInstrumentGroup riff:Strings .
 
 artist:billie_holiday a mm:MusicArtist,
@@ -11950,6 +11989,7 @@ artist:genesis a mm:MusicArtist,
         instrument:flute,
         instrument:guitar,
         instrument:keyboards,
+        instrument:organ,
         instrument:percussion,
         instrument:voice .
 
@@ -11981,6 +12021,9 @@ artist:yes a mm:MusicArtist,
         instrument:drum_kit,
         instrument:guitar,
         instrument:keyboards,
+        instrument:organ,
+        instrument:percussion,
+        instrument:piano,
         instrument:voice .
 
 genre:ambient a mm:MusicGenre ;
@@ -12095,10 +12138,15 @@ genre:pop_punk a mm:MusicGenre ;
     riff:hasStylisticOrigin genre:punk_rock ;
     riff:originPlace "United States and United Kingdom" .
 
-instrument:saxophone a riff:Instrument ;
-    rdfs:label "Saxophone"@en ;
-    owl:sameAs wd:Q9798 ;
-    riff:inInstrumentGroup riff:WindsAndBrass .
+instrument:organ a riff:Instrument ;
+    rdfs:label "Organ"@en ;
+    owl:sameAs wd:Q1444 ;
+    riff:inInstrumentGroup riff:Keyboards .
+
+instrument:violin a riff:Instrument ;
+    rdfs:label "Violin"@en ;
+    owl:sameAs wd:Q8355 ;
+    riff:inInstrumentGroup riff:Strings .
 
 artist:bo_diddley a mm:MusicArtist,
         mm:Musician ;
@@ -12277,7 +12325,9 @@ artist:buzzcocks a mm:MusicArtist,
     riff:hasPrimaryGenre genre:pop_punk ;
     riff:playsInstrument instrument:bass_guitar,
         instrument:drum_kit,
-        instrument:percussion .
+        instrument:guitar,
+        instrument:synthesizer,
+        instrument:voice .
 
 artist:devo a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -12288,8 +12338,12 @@ artist:devo a mm:MusicArtist,
     mm:isInfluencedBy artist:roxy_music ;
     riff:activeFrom 1972 ;
     riff:hasPrimaryGenre genre:new_wave ;
-    riff:playsInstrument instrument:drum_kit,
-        instrument:guitar .
+    riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
+        instrument:guitar,
+        instrument:keyboards,
+        instrument:synthesizer,
+        instrument:voice .
 
 artist:judas_priest a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -12322,7 +12376,13 @@ artist:n_w_a a mm:MusicArtist,
     riff:activeFrom 1986 ;
     riff:activeTo 2002 ;
     riff:hasPrimaryGenre genre:gangsta_rap ;
-    riff:playsInstrument instrument:turntables .
+    riff:playsInstrument instrument:drum_machine,
+        instrument:keyboards,
+        instrument:piano,
+        instrument:sampler,
+        instrument:synthesizer,
+        instrument:turntables,
+        instrument:voice .
 
 artist:ray_charles a mm:MusicArtist,
         mm:Musician ;
@@ -12380,7 +12440,6 @@ artist:sum_41 a mm:MusicArtist,
         instrument:drum_kit,
         instrument:guitar,
         instrument:keyboards,
-        instrument:percussion,
         instrument:voice .
 
 genre:bebop a mm:MusicGenre ;
@@ -12467,9 +12526,10 @@ artist:depeche_mode a mm:MusicArtist,
         artist:the_human_league ;
     riff:activeFrom 1980 ;
     riff:hasPrimaryGenre genre:synth_pop ;
-    riff:playsInstrument instrument:guitar,
+    riff:playsInstrument instrument:drum_kit,
+        instrument:drum_machine,
+        instrument:guitar,
         instrument:keyboards,
-        instrument:percussion,
         instrument:voice .
 
 artist:eric_clapton a mm:MusicArtist,
@@ -12537,7 +12597,10 @@ artist:melvins a mm:MusicArtist,
         artist:venom ;
     riff:activeFrom 1983 ;
     riff:hasPrimaryGenre genre:grunge ;
-    riff:playsInstrument instrument:bass_guitar .
+    riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
+        instrument:guitar,
+        instrument:voice .
 
 artist:neu a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -12546,7 +12609,9 @@ artist:neu a mm:MusicArtist,
     mm:hasGenre genre:krautrock ;
     riff:activeFrom 1971 ;
     riff:hasPrimaryGenre genre:krautrock ;
-    riff:playsInstrument instrument:drum_kit .
+    riff:playsInstrument instrument:double_bass,
+        instrument:drum_kit,
+        instrument:guitar .
 
 artist:r_e_m a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -12611,7 +12676,13 @@ artist:the_yardbirds a mm:MusicArtist,
     mm:isInfluencedBy artist:howlin_wolf ;
     riff:activeFrom 1963 ;
     riff:hasPrimaryGenre genre:blues_rock ;
-    riff:playsInstrument instrument:guitar,
+    riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
+        instrument:guitar,
+        instrument:harmonica,
+        instrument:keyboards,
+        instrument:mandolin,
+        instrument:synthesizer,
         instrument:voice .
 
 genre:dub a mm:MusicGenre ;
@@ -12753,7 +12824,8 @@ artist:run_dmc a mm:MusicArtist,
     riff:activeFrom 1981 ;
     riff:activeTo 2002 ;
     riff:hasPrimaryGenre genre:hip_hop ;
-    riff:playsInstrument instrument:turntables .
+    riff:playsInstrument instrument:turntables,
+        instrument:voice .
 
 genre:garage_rock a mm:MusicGenre ;
     rdfs:label "Garage rock"@en ;
@@ -12923,7 +12995,6 @@ artist:venom a mm:MusicArtist,
     riff:playsInstrument instrument:bass_guitar,
         instrument:drum_kit,
         instrument:guitar,
-        instrument:percussion,
         instrument:voice .
 
 genre:rockabilly a mm:MusicGenre ;
@@ -13007,6 +13078,9 @@ artist:green_day a mm:MusicArtist,
     riff:playsInstrument instrument:bass_guitar,
         instrument:drum_kit,
         instrument:guitar,
+        instrument:keyboards,
+        instrument:piano,
+        instrument:saxophone,
         instrument:voice .
 
 artist:nas a mm:MusicArtist,
@@ -13059,9 +13133,9 @@ genre:progressive_rock a mm:MusicGenre ;
         genre:rock ;
     riff:originPlace "United States and United Kingdom" .
 
-instrument:harmonica a riff:Instrument ;
-    rdfs:label "Harmonica"@en ;
-    owl:sameAs wd:Q51290 ;
+instrument:saxophone a riff:Instrument ;
+    rdfs:label "Saxophone"@en ;
+    owl:sameAs wd:Q9798 ;
     riff:inInstrumentGroup riff:WindsAndBrass .
 
 artist:can a mm:MusicArtist,
@@ -13076,8 +13150,13 @@ artist:can a mm:MusicArtist,
         artist:the_velvet_underground ;
     riff:activeFrom 1968 ;
     riff:hasPrimaryGenre genre:krautrock ;
-    riff:playsInstrument instrument:drum_kit,
+    riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
+        instrument:flute,
+        instrument:guitar,
         instrument:keyboards,
+        instrument:percussion,
+        instrument:violin,
         instrument:voice .
 
 artist:hank_williams a mm:MusicArtist,
@@ -13201,7 +13280,8 @@ artist:public_enemy a mm:MusicArtist,
     riff:playsInstrument instrument:bass_guitar,
         instrument:drum_kit,
         instrument:guitar,
-        instrument:turntables .
+        instrument:turntables,
+        instrument:voice .
 
 artist:radiohead a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -13439,7 +13519,11 @@ artist:van_halen a mm:MusicArtist,
     riff:activeFrom 1972 ;
     riff:activeTo 2020 ;
     riff:hasPrimaryGenre genre:hard_rock ;
-    riff:playsInstrument instrument:bass_guitar .
+    riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
+        instrument:guitar,
+        instrument:keyboards,
+        instrument:voice .
 
 artist:black_flag a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -13493,10 +13577,10 @@ genre:post_punk a mm:MusicGenre ;
         genre:rock ;
     riff:originPlace "United Kingdom" .
 
-instrument:synthesizer a riff:Instrument ;
-    rdfs:label "Synthesizer"@en ;
-    owl:sameAs wd:Q163829 ;
-    riff:inInstrumentGroup riff:Electronic .
+instrument:harmonica a riff:Instrument ;
+    rdfs:label "Harmonica"@en ;
+    owl:sameAs wd:Q51290 ;
+    riff:inInstrumentGroup riff:WindsAndBrass .
 
 artist:pearl_jam a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -13532,7 +13616,10 @@ artist:pearl_jam a mm:MusicArtist,
         instrument:drum_kit,
         instrument:guitar,
         instrument:harmonica,
+        instrument:keyboards,
+        instrument:organ,
         instrument:percussion,
+        instrument:piano,
         instrument:voice .
 
 artist:slayer a mm:MusicArtist,
@@ -13730,6 +13817,7 @@ artist:kraftwerk a mm:MusicArtist,
     riff:activeTo 2003 ;
     riff:hasPrimaryGenre genre:krautrock ;
     riff:playsInstrument instrument:bass_guitar,
+        instrument:double_bass,
         instrument:drum_kit,
         instrument:flute,
         instrument:guitar,
@@ -13841,6 +13929,11 @@ genre:hip_hop a mm:MusicGenre ;
         genre:soul ;
     riff:originPlace "The Bronx, New York City" .
 
+instrument:synthesizer a riff:Instrument ;
+    rdfs:label "Synthesizer"@en ;
+    owl:sameAs wd:Q163829 ;
+    riff:inInstrumentGroup riff:Electronic .
+
 artist:black_sabbath a mm:MusicArtist,
         mm:MusicEnsenble ;
     rdfs:label "Black Sabbath"@en ;
@@ -13859,6 +13952,7 @@ artist:black_sabbath a mm:MusicArtist,
         instrument:harmonica,
         instrument:keyboards,
         instrument:percussion,
+        instrument:piano,
         instrument:synthesizer,
         instrument:voice .
 
@@ -14021,7 +14115,12 @@ artist:the_clash a mm:MusicArtist,
     riff:activeFrom 1976 ;
     riff:activeTo 1986 ;
     riff:hasPrimaryGenre genre:punk_rock ;
-    riff:playsInstrument instrument:guitar .
+    riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
+        instrument:guitar,
+        instrument:harmonica,
+        instrument:keyboards,
+        instrument:voice .
 
 artist:the_velvet_underground a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -14046,11 +14145,6 @@ artist:the_velvet_underground a mm:MusicArtist,
         instrument:percussion,
         instrument:piano,
         instrument:voice .
-
-instrument:piano a riff:Instrument ;
-    rdfs:label "Piano"@en ;
-    owl:sameAs wd:Q5994 ;
-    riff:inInstrumentGroup riff:Keyboards .
 
 artist:bob_dylan a mm:MusicArtist,
         mm:Musician ;
@@ -14105,7 +14199,11 @@ artist:sex_pistols a mm:MusicArtist,
         artist:the_velvet_underground,
         artist:the_who ;
     riff:activeFrom 1975 ;
-    riff:hasPrimaryGenre genre:punk_rock .
+    riff:hasPrimaryGenre genre:punk_rock ;
+    riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
+        instrument:guitar,
+        instrument:voice .
 
 artist:deep_purple a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -14225,7 +14323,14 @@ artist:roxy_music a mm:MusicArtist,
     riff:activeTo 2011 ;
     riff:hasPrimaryGenre genre:art_rock ;
     riff:playsInstrument instrument:bass_guitar,
-        instrument:keyboards .
+        instrument:guitar,
+        instrument:harmonica,
+        instrument:keyboards,
+        instrument:piano,
+        instrument:saxophone,
+        instrument:synthesizer,
+        instrument:violin,
+        instrument:voice .
 
 artist:the_stooges a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -14244,7 +14349,11 @@ artist:the_stooges a mm:MusicArtist,
         artist:the_who,
         artist:the_yardbirds ;
     riff:activeFrom 1967 ;
-    riff:hasPrimaryGenre genre:garage_rock .
+    riff:hasPrimaryGenre genre:garage_rock ;
+    riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
+        instrument:guitar,
+        instrument:voice .
 
 artist:parliament_funkadelic a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -14257,6 +14366,8 @@ artist:parliament_funkadelic a mm:MusicArtist,
     riff:activeFrom 1955 ;
     riff:hasPrimaryGenre genre:funk ;
     riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
+        instrument:guitar,
         instrument:voice .
 
 artist:led_zeppelin a mm:MusicArtist,
@@ -14319,6 +14430,11 @@ artist:the_who a mm:MusicArtist,
         instrument:trumpet,
         instrument:voice .
 
+instrument:piano a riff:Instrument ;
+    rdfs:label "Piano"@en ;
+    owl:sameAs wd:Q5994 ;
+    riff:inInstrumentGroup riff:Keyboards .
+
 genre:blues a mm:MusicGenre ;
     rdfs:label "Blues"@en ;
     owl:sameAs dbr:Blues,
@@ -14355,11 +14471,6 @@ genre:jazz a mm:MusicGenre ;
         genre:folk ;
     riff:originPlace "New Orleans, United States" .
 
-instrument:keyboards a riff:Instrument ;
-    rdfs:label "Keyboards"@en ;
-    owl:sameAs wd:Q52954 ;
-    riff:inInstrumentGroup riff:Keyboards .
-
 artist:jimi_hendrix a mm:MusicArtist,
         mm:Musician ;
     rdfs:label "Jimi Hendrix"@en ;
@@ -14380,6 +14491,11 @@ artist:jimi_hendrix a mm:MusicArtist,
     riff:playsInstrument instrument:guitar,
         instrument:percussion,
         instrument:voice .
+
+instrument:keyboards a riff:Instrument ;
+    rdfs:label "Keyboards"@en ;
+    owl:sameAs wd:Q52954 ;
+    riff:inInstrumentGroup riff:Keyboards .
 
 artist:the_beatles a mm:MusicArtist,
         mm:MusicEnsenble ;

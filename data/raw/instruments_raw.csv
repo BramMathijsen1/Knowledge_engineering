@@ -13,6 +13,7 @@ ac_dc,musicbrainz,Cliff Williams,background vocals,
 ac_dc,musicbrainz,Cliff Williams,background vocals,
 ac_dc,musicbrainz,Malcolm Young,background vocals,
 ac_dc,musicbrainz,Stevie Young,background vocals,
+ac_dc,wikidata members,Chris Chaney,bass guitar,Q46185
 ac_dc,musicbrainz,Cliff Williams,bass guitar,
 ac_dc,musicbrainz,Cliff Williams,bass guitar,
 ac_dc,musicbrainz,Larry van Kriedt,bass guitar,
@@ -21,6 +22,7 @@ ac_dc,musicbrainz,Mark Evans,bass guitar,
 ac_dc,musicbrainz,Neil Smith,bass guitar,
 ac_dc,musicbrainz,Paul Matters,bass guitar,
 ac_dc,musicbrainz,Rob Bailey,bass guitar,
+ac_dc,wikidata members,Matt Laug,drum kit,Q128309
 ac_dc,musicbrainz,Chris Slade,drums (drum set),
 ac_dc,musicbrainz,Chris Slade,drums (drum set),
 ac_dc,musicbrainz,Colin Burgess,drums (drum set),
@@ -78,12 +80,14 @@ arcade_fire,musicbrainz,Myles Broscoe,bass guitar,
 arcade_fire,musicbrainz,Richard Reed Parry,bass guitar,
 arcade_fire,musicbrainz,Timothy Kingsbury,bass guitar,
 arcade_fire,musicbrainz,Will Butler,bass guitar,
+arcade_fire,wikidata members,William Butler,bass guitar,Q46185
 arcade_fire,musicbrainz,Win Butler,bass guitar,
 arcade_fire,musicbrainz,Kelly Pratt,brass,
 arcade_fire,musicbrainz,Richard Reed Parry,celesta,
 arcade_fire,musicbrainz,Mike Olsen,cello,
 arcade_fire,musicbrainz,Will Butler,clarinet,
 arcade_fire,musicbrainz,Will Butler,concertina,
+arcade_fire,wikidata members,Richard Parry,double bass,Q80019
 arcade_fire,musicbrainz,Richard Reed Parry,double bass,
 arcade_fire,musicbrainz,Timothy Kingsbury,double bass,
 arcade_fire,musicbrainz,Will Butler,double bass,
@@ -109,6 +113,7 @@ arcade_fire,musicbrainz,Régine Chassagne,keyboard,
 arcade_fire,musicbrainz,Sarah Neufeld,keyboard,
 arcade_fire,musicbrainz,Timothy Kingsbury,keyboard,
 arcade_fire,musicbrainz,Win Butler,keyboard,
+arcade_fire,wikidata members,Tim Kingsbury,keyboard instrument,Q52954
 arcade_fire,musicbrainz,Brendan Reed,lead vocals,
 arcade_fire,musicbrainz,Régine Chassagne,lead vocals,
 arcade_fire,musicbrainz,Win Butler,lead vocals,
@@ -129,6 +134,7 @@ arcade_fire,musicbrainz,Régine Chassagne,recorder,
 arcade_fire,musicbrainz,Will Butler,sitar,
 arcade_fire,musicbrainz,Richard Reed Parry,synthesizer,
 arcade_fire,musicbrainz,Will Butler,synthesizer,
+arcade_fire,wikidata members,William Butler,synthesizer,Q163829
 arcade_fire,musicbrainz,Brendan Reed,tap dance,
 arcade_fire,musicbrainz,Will Butler,trombone,
 arcade_fire,musicbrainz,Sarah Neufeld,violin,
@@ -178,6 +184,9 @@ big_mama_thornton,wikidata,,harmonica,Q51290
 big_mama_thornton,wikidata,,percussion instrument,Q133163
 big_mama_thornton,wikidata,,voice,Q17172850
 billie_holiday,wikidata,,voice,Q17172850
+black_flag,wikidata members,C'el Revuelta,bass guitar,Q46185
+black_flag,wikidata members,,drum kit,Q128309
+black_flag,wikidata members,,drum kit,Q128309
 black_flag,musicbrainz,Bill Stevenson,drums (drum set),
 black_flag,musicbrainz,Brandon Pertzborn,drums (drum set),
 black_flag,musicbrainz,Brian Migdol,drums (drum set),
@@ -228,12 +237,14 @@ black_sabbath,musicbrainz,Vinny Appice,drums (drum set),
 black_sabbath,musicbrainz,Vinny Appice,drums (drum set),
 black_sabbath,musicbrainz,Vinny Appice,drums (drum set),
 black_sabbath,musicbrainz,Vinny Appice,drums (drum set),
+black_sabbath,wikidata members,Adam Wakeman,guitar,Q6607
 black_sabbath,musicbrainz,Tony Iommi,guitar,
 black_sabbath,musicbrainz,Tony Iommi,guitar,
 black_sabbath,musicbrainz,Tony Iommi,guitar,
 black_sabbath,musicbrainz,Ozzy Osbourne,harmonica,
 black_sabbath,musicbrainz,Ozzy Osbourne,harmonica,
 black_sabbath,musicbrainz,Geoff Nicholls,keyboard,
+black_sabbath,wikidata members,Adam Wakeman,keyboard instrument,Q52954
 black_sabbath,musicbrainz,Dave Walker,lead vocals,
 black_sabbath,musicbrainz,David Donato,lead vocals,
 black_sabbath,musicbrainz,Glenn Hughes,lead vocals,
@@ -252,6 +263,7 @@ black_sabbath,musicbrainz,Bev Bevan,percussion,
 black_sabbath,musicbrainz,Bev Bevan,percussion,
 black_sabbath,musicbrainz,Bill Ward,percussion,
 black_sabbath,musicbrainz,Bill Ward,percussion,
+black_sabbath,wikidata members,Adam Wakeman,piano,Q5994
 black_sabbath,musicbrainz,Geezer Butler,synthesizer,
 black_sabbath,musicbrainz,Geezer Butler,synthesizer,
 blind_willie_johnson,wikidata,,guitar,Q6607
@@ -267,7 +279,21 @@ blink_182,musicbrainz,Mark Hoppus,lead vocals,
 blink_182,musicbrainz,Matt Skiba,lead vocals,
 blink_182,musicbrainz,Tom DeLonge,lead vocals,
 blink_182,musicbrainz,Tom DeLonge,lead vocals,
+blondie,wikidata members,Chris Stein,bass guitar,Q46185
+blondie,wikidata members,Ivan Král,bass guitar,Q46185
+blondie,wikidata members,Leigh Foxx,bass instrument,Q810447
+blondie,wikidata members,Clem Burke,drum kit,Q128309
+blondie,wikidata members,Chris Stein,guitar,Q6607
+blondie,wikidata members,Gary Lachman,guitar,Q6607
+blondie,wikidata members,Ivan Král,guitar,Q6607
+blondie,wikidata members,Nigel Harrison,guitar,Q6607
 blondie,musicbrainz,Paul Carbonara,guitar,
+blondie,wikidata members,Matt Katz-Bohen,keyboard instrument,Q52954
+blondie,wikidata members,Jimmy Destri,musical keyboard,Q901207
+blondie,wikidata members,Ivan Král,piano,Q5994
+blondie,wikidata members,Jimmy Destri,piano,Q5994
+blondie,wikidata members,Debbie Harry,voice,Q17172850
+blondie,wikidata members,Ivan Král,voice,Q17172850
 bo_diddley,wikidata,,guitar,Q6607
 bo_diddley,wikidata,,voice,Q17172850
 bob_dylan,wikidata,,guitar,Q6607
@@ -284,10 +310,24 @@ buddy_holly,wikidata,,guitar,Q6607
 buddy_holly,wikidata,,violin,Q8355
 buddy_holly,wikidata,,voice,Q17172850
 buzzcocks,musicbrainz,Garth Smith,bass guitar,
+buzzcocks,wikidata members,Steve Diggle,bass guitar,Q46185
+buzzcocks,wikidata members,Tony Barber,bass guitar,Q46185
 buzzcocks,musicbrainz,Danny Farrant,drums (drum set),
+buzzcocks,wikidata members,Barry Adamson,guitar,Q6607
+buzzcocks,wikidata members,Pete Shelley,guitar,Q6607
+buzzcocks,wikidata members,Steve Diggle,guitar,Q6607
+buzzcocks,wikidata members,Tony Barber,guitar,Q6607
 buzzcocks,musicbrainz,John Maher,membranophone,
+buzzcocks,wikidata members,Pete Shelley,synthesizer,Q163829
+buzzcocks,wikidata members,Barry Adamson,voice,Q17172850
+buzzcocks,wikidata members,Howard Devoto,voice,Q17172850
+buzzcocks,wikidata members,Pete Shelley,voice,Q17172850
+can,wikidata members,Holger Czukay,bass guitar,Q46185
 can,musicbrainz,Jaki Liebezeit,drums (drum set),
 can,musicbrainz,Jaki Liebezeit,drums (drum set),
+can,wikidata members,David C. Johnson,flute,Q11405
+can,wikidata members,Michael Karoli,guitar,Q6607
+can,wikidata members,Rosko Gee,guitar,Q6607
 can,musicbrainz,Irmin Schmidt,keyboard,
 can,musicbrainz,Irmin Schmidt,keyboard,
 can,musicbrainz,Irmin Schmidt,keyboard,
@@ -296,6 +336,10 @@ can,musicbrainz,Malcolm Mooney,lead vocals,
 can,musicbrainz,Malcolm Mooney,lead vocals,
 can,musicbrainz,Malcolm Mooney,lead vocals,
 can,musicbrainz,Thaiga Raj Raja Ratnam,lead vocals,
+can,wikidata members,Rebop Kwaku Baah,percussion instrument,Q133163
+can,wikidata members,Michael Karoli,violin,Q8355
+can,wikidata members,Damo Suzuki,voice,Q17172850
+can,wikidata members,David C. Johnson,western concert flute,Q209554
 carl_perkins,wikidata,,electric guitar,Q78987
 carl_perkins,wikidata,,guitar,Q6607
 carl_perkins,wikidata,,voice,Q17172850
@@ -322,11 +366,18 @@ cream,wikidata members,Eric Clapton,keyboard instrument,Q52954
 cream,wikidata members,Eric Clapton,voice,Q17172850
 cream,wikidata members,Jack Bruce,voice,Q17172850
 daft_punk,musicbrainz,Thomas Bangalter,bass,
+daft_punk,wikidata members,,bass guitar,Q46185
 daft_punk,musicbrainz,Guy‐Manuel de Homem‐Christo,drums (drum set),
+daft_punk,wikidata members,,electronic keyboard,Q1343007
+daft_punk,wikidata members,,guitar,Q6607
 daft_punk,musicbrainz,Guy‐Manuel de Homem‐Christo,guitar,
 daft_punk,musicbrainz,Thomas Bangalter,keyboard,
+daft_punk,wikidata members,,programming,Q2289786
+daft_punk,wikidata members,,synthesizer,Q163829
 daft_punk,musicbrainz,Guy‐Manuel de Homem‐Christo,synthesizer,
 daft_punk,musicbrainz,Thomas Bangalter,synthesizer,
+daft_punk,wikidata members,,vocoder,Q908562
+daft_punk,wikidata members,,voice,Q17172850
 david_bowie,wikidata,,arp 2500,Q2410029
 david_bowie,wikidata,,drum kit,Q128309
 david_bowie,wikidata,,guitar,Q6607
@@ -335,6 +386,8 @@ david_bowie,wikidata,,musical keyboard,Q901207
 david_bowie,wikidata,,piano,Q5994
 david_bowie,wikidata,,saxophone,Q9798
 david_bowie,wikidata,,voice,Q17172850
+dead_kennedys,wikidata members,Bruce Slesinger,drum kit,Q128309
+dead_kennedys,wikidata members,D. H. Peligro,drum kit,Q128309
 dead_kennedys,musicbrainz,D.H. Peligro,drums (drum set),
 dead_kennedys,musicbrainz,D.H. Peligro,drums (drum set),
 dead_kennedys,musicbrainz,D.H. Peligro,drums (drum set),
@@ -349,12 +402,36 @@ dead_kennedys,musicbrainz,Klaus Flouride,electric bass guitar,
 dead_kennedys,musicbrainz,6025,electric guitar,
 dead_kennedys,musicbrainz,East Bay Ray,electric guitar,
 dead_kennedys,musicbrainz,East Bay Ray,electric guitar,
+dead_kennedys,wikidata members,Carlos Cadona,guitar,Q6607
 dead_kennedys,musicbrainz,Brandon Cruz,lead vocals,
 dead_kennedys,musicbrainz,Jeff Penalty,lead vocals,
 dead_kennedys,musicbrainz,Jello Biafra,lead vocals,
 dead_kennedys,musicbrainz,Skip Greer,lead vocals,
+death,wikidata members,,bass guitar,Q46185
+death,wikidata members,Kelly Conlon,bass guitar,Q46185
+death,wikidata members,Steve DiGiorgio,bass guitar,Q46185
+death,wikidata members,Terry Butler,bass guitar,Q46185
+death,wikidata members,Bill Andrews,drum kit,Q128309
+death,wikidata members,Chris Reifert,drum kit,Q128309
+death,wikidata members,Gene Hoglan,drum kit,Q128309
+death,wikidata members,Richard Christy,drum kit,Q128309
 death,musicbrainz,Sean Reinert,drums (drum set),
+death,wikidata members,Bobby Koelble,electric guitar,Q78987
+death,wikidata members,Andy LaRocque,guitar,Q6607
+death,wikidata members,Chuck Schuldiner,guitar,Q6607
 death,musicbrainz,James Murphy,guitar,
+death,wikidata members,Kelly Conlon,guitar,Q6607
+death,wikidata members,Paul Masvidal,guitar,Q6607
+death,wikidata members,Ralph Santolla,guitar,Q6607
+death,wikidata members,Richard Christy,guitar,Q6607
+death,wikidata members,Rick Rozz,guitar,Q6607
+death,wikidata members,Shannon Hamm,guitar,Q6607
+death,wikidata members,Richard Christy,keyboard instrument,Q52954
+death,wikidata members,Richard Christy,percussion instrument,Q133163
+death,wikidata members,Chris Reifert,voice,Q17172850
+death,wikidata members,Chuck Schuldiner,voice,Q17172850
+death,wikidata members,Kam Lee,voice,Q17172850
+death,wikidata members,Paul Masvidal,voice,Q17172850
 deep_purple,musicbrainz,Jon Lord,background vocals,
 deep_purple,musicbrainz,Jon Lord,background vocals,
 deep_purple,musicbrainz,Nick Simper,background vocals,
@@ -393,15 +470,37 @@ deep_purple,musicbrainz,Ian Gillan,percussion,
 deep_purple,musicbrainz,Ian Gillan,percussion,
 deep_purple,musicbrainz,Ian Paice,percussion,
 deep_purple,musicbrainz,Ian Paice,percussion,
+depeche_mode,wikidata members,Martin Gore,guitar,Q6607
 depeche_mode,musicbrainz,Martin L. Gore,guitar,
+depeche_mode,wikidata members,Simon Le Bon,guitar,Q6607
 depeche_mode,musicbrainz,Alan Wilder,keyboard,
 depeche_mode,musicbrainz,Andrew Fletcher,keyboard,
 depeche_mode,musicbrainz,Martin L. Gore,keyboard,
 depeche_mode,musicbrainz,Vince Clarke,keyboard,
+depeche_mode,wikidata members,Martin Gore,keyboard instrument,Q52954
+depeche_mode,wikidata members,Simon Le Bon,keyboard instrument,Q52954
 depeche_mode,musicbrainz,Dave Gahan,lead vocals,
 depeche_mode,musicbrainz,Alan Wilder,membranophone,
+depeche_mode,wikidata members,Simon Le Bon,roland tr-808,Q1414221
+depeche_mode,wikidata members,Martin Gore,voice,Q17172850
+devo,wikidata members,Gerald Casale,bass guitar,Q46185
+devo,wikidata members,David Kendrick,drum kit,Q128309
+devo,wikidata members,Jim Mothersbaugh,drum kit,Q128309
 devo,musicbrainz,Josh Freese,drums (drum set),
 devo,musicbrainz,Bob Casale,guitar,
+devo,wikidata members,Bob Lewis,guitar,Q6607
+devo,wikidata members,Bob Mothersbaugh,guitar,Q6607
+devo,wikidata members,Gerald Casale,guitar,Q6607
+devo,wikidata members,Josh Hager,guitar,Q6607
+devo,wikidata members,Mark Mothersbaugh,guitar,Q6607
+devo,wikidata members,Mark Mothersbaugh,keyboard instrument,Q52954
+devo,wikidata members,Mark Mothersbaugh,mellotron,Q212483
+devo,wikidata members,Mark Mothersbaugh,minimoog,Q734687
+devo,wikidata members,Mark Mothersbaugh,suzuki omnichord,Q604813
+devo,wikidata members,Mark Mothersbaugh,synthesizer,Q163829
+devo,wikidata members,Fred Weber,voice,Q17172850
+devo,wikidata members,Gerald Casale,voice,Q17172850
+devo,wikidata members,Mark Mothersbaugh,voice,Q17172850
 digable_planets,wikidata members,Craig Irving,voice,Q17172850
 digable_planets,wikidata members,Ishmael Butler,voice,Q17172850
 digable_planets,wikidata members,Ladybug Mecca,voice,Q17172850
@@ -455,6 +554,7 @@ gang_of_four,musicbrainz,Andy Gill,electric guitar,
 gang_of_four,musicbrainz,Andy Gill,electric guitar,
 gang_of_four,musicbrainz,David Pajo,electric guitar,
 gang_of_four,musicbrainz,Ted Leo,electric guitar,
+gang_of_four,wikidata members,Barry Andrews,keyboard instrument,Q52954
 gang_of_four,musicbrainz,David Pajo,lead vocals,
 gang_of_four,musicbrainz,John Sterry,lead vocals,
 gang_of_four,musicbrainz,Jon King,lead vocals,
@@ -476,6 +576,9 @@ gary_numan,wikidata,,voice,Q17172850
 gene_vincent,wikidata,,guitar,Q6607
 gene_vincent,wikidata,,voice,Q17172850
 genesis,musicbrainz,Mike Rutherford,bass guitar,
+genesis,wikidata members,Bill Bruford,drum kit,Q128309
+genesis,wikidata members,Chester Thompson,drum kit,Q128309
+genesis,wikidata members,Nir Zidkyahu,drum kit,Q128309
 genesis,musicbrainz,Chris Stewart,drums (drum set),
 genesis,musicbrainz,John Mayhew,drums (drum set),
 genesis,musicbrainz,Jonathan Silver,drums (drum set),
@@ -483,15 +586,18 @@ genesis,musicbrainz,Phil Collins,drums (drum set),
 genesis,musicbrainz,Phil Collins,drums (drum set),
 genesis,musicbrainz,Peter Gabriel,flute,
 genesis,musicbrainz,Anthony Phillips,guitar,
+genesis,wikidata members,Daryl Stuermer,guitar,Q6607
 genesis,musicbrainz,Mick Barnard,guitar,
 genesis,musicbrainz,Mike Rutherford,guitar,
 genesis,musicbrainz,Steve Hackett,guitar,
 genesis,musicbrainz,Tony Banks,guitar,
+genesis,wikidata members,Chester Thompson,hammond organ,Q105891
 genesis,musicbrainz,Tony Banks,keyboard,
 genesis,musicbrainz,Peter Gabriel,lead vocals,
 genesis,musicbrainz,Phil Collins,lead vocals,
 genesis,musicbrainz,Phil Collins,lead vocals,
 genesis,musicbrainz,Ray Wilson,lead vocals,
+genesis,wikidata members,Chester Thompson,musical keyboard,Q901207
 genesis,musicbrainz,Peter Gabriel,oboe,
 genesis,musicbrainz,Chris Stewart,percussion,
 genesis,musicbrainz,John Mayhew,percussion,
@@ -499,16 +605,49 @@ genesis,musicbrainz,Jonathan Silver,percussion,
 genesis,musicbrainz,Peter Gabriel,percussion,
 genesis,musicbrainz,Phil Collins,percussion,
 genesis,musicbrainz,Phil Collins,percussion,
+genesis,wikidata members,Chester Thompson,voice,Q17172850
 giorgio_moroder,wikidata,,synthesizer,Q163829
 grandmaster_flash,wikidata,,turntable,Q17591720
 grandmaster_flash,wikidata,,voice,Q17172850
+grateful_dead,wikidata members,Bruce Hornsby,accordion,Q79838
+grateful_dead,wikidata members,Jerry Garcia,banjo,Q258896
+grateful_dead,wikidata members,Phil Lesh,bass guitar,Q46185
+grateful_dead,wikidata members,Bill Kreutzmann,drum kit,Q128309
+grateful_dead,wikidata members,Mickey Hart,drum kit,Q128309
+grateful_dead,wikidata members,Robert Hunter,electric bass guitar,Q64166304
+grateful_dead,wikidata members,"Ron ""Pigpen"" McKernan",electronic organ,Q1327327
+grateful_dead,wikidata members,Bob Weir,guitar,Q6607
+grateful_dead,wikidata members,Jerry Garcia,guitar,Q6607
+grateful_dead,wikidata members,Phil Lesh,guitar,Q6607
+grateful_dead,wikidata members,Robert Hunter,guitar,Q6607
+grateful_dead,wikidata members,Robert Hunter,harmonica,Q51290
+grateful_dead,wikidata members,"Ron ""Pigpen"" McKernan",harmonica,Q51290
 grateful_dead,musicbrainz,Brent Mydland,keyboard,
+grateful_dead,wikidata members,Tom Constanten,keyboard instrument,Q52954
+grateful_dead,wikidata members,Vince Welnick,keyboard instrument,Q52954
+grateful_dead,wikidata members,Robert Hunter,mandolin,Q302497
+grateful_dead,wikidata members,Jerry Garcia,pedal steel guitar,Q587027
+grateful_dead,wikidata members,Bruce Hornsby,piano,Q5994
+grateful_dead,wikidata members,Keith Godchaux,piano,Q5994
+grateful_dead,wikidata members,"Ron ""Pigpen"" McKernan",piano,Q5994
+grateful_dead,wikidata members,Tom Constanten,piano,Q5994
+grateful_dead,wikidata members,Bob Weir,voice,Q17172850
+grateful_dead,wikidata members,Bruce Hornsby,voice,Q17172850
+grateful_dead,wikidata members,Donna Jean Godchaux,voice,Q17172850
+grateful_dead,wikidata members,Jerry Garcia,voice,Q17172850
+grateful_dead,wikidata members,Phil Lesh,voice,Q17172850
+grateful_dead,wikidata members,"Ron ""Pigpen"" McKernan",voice,Q17172850
+grateful_dead,wikidata members,Vince Welnick,voice,Q17172850
 green_day,musicbrainz,Mike Dirnt,bass guitar,
 green_day,musicbrainz,John Kiffmeyer,drums (drum set),
 green_day,musicbrainz,Tré Cool,drums (drum set),
 green_day,musicbrainz,Billie Joe Armstrong,guitar,
+green_day,wikidata members,Jason Freese,guitar,Q6607
 green_day,musicbrainz,Jason White,guitar,
+green_day,wikidata members,Jason Freese,keyboard instrument,Q52954
 green_day,musicbrainz,Billie Joe Armstrong,lead vocals,
+green_day,wikidata members,Jason Freese,piano,Q5994
+green_day,wikidata members,Jason Freese,saxophone,Q9798
 gucci_mane,wikidata,,voice,Q17172850
 hank_williams,wikidata,,guitar,Q6607
 hank_williams,wikidata,,voice,Q17172850
@@ -530,6 +669,7 @@ iron_maiden,musicbrainz,Dennis Stratton,background vocals,
 iron_maiden,musicbrainz,Steve Harris,background vocals,
 iron_maiden,musicbrainz,Adrian Smith,bass guitar,
 iron_maiden,musicbrainz,Steve Harris,bass guitar,
+iron_maiden,wikidata members,Ron Matthews,drum kit,Q128309
 iron_maiden,musicbrainz,Clive Burr,drums (drum set),
 iron_maiden,musicbrainz,Doug Sampson,drums (drum set),
 iron_maiden,musicbrainz,Nicko McBrain,drums (drum set),
@@ -561,6 +701,7 @@ iron_maiden,musicbrainz,Clive Burr,percussion,
 iron_maiden,musicbrainz,Doug Sampson,percussion,
 iron_maiden,musicbrainz,Nicko McBrain,percussion,
 iron_maiden,musicbrainz,Thunderstick,percussion,
+iron_maiden,wikidata members,Paul Di'Anno,voice,Q17172850
 james_brown,wikidata,,drum kit,Q128309
 james_brown,wikidata,,guitar,Q6607
 james_brown,wikidata,,organ,Q1444
@@ -605,6 +746,7 @@ judas_priest,musicbrainz,Scott Travis,drums (drum set),
 judas_priest,musicbrainz,Simon Phillips,drums (drum set),
 judas_priest,musicbrainz,Davey Rimmer,electric bass guitar,
 judas_priest,musicbrainz,Richie Faulkner,electric guitar,
+judas_priest,wikidata members,K. K. Downing,guitar,Q6607
 judas_priest,musicbrainz,Kenneth Downing,guitar,
 judas_priest,musicbrainz,Ernie Chataway,guitar family,
 judas_priest,musicbrainz,Glenn Tipton,guitar family,
@@ -625,6 +767,7 @@ judas_priest,musicbrainz,Scott Travis,percussion,
 judas_priest,musicbrainz,Scott Travis,percussion,
 judas_priest,musicbrainz,Simon Phillips,percussion,
 judas_priest,musicbrainz,Glenn Tipton,synthesizer,
+judas_priest,wikidata members,"Tim ""Ripper"" Owens",voice,Q17172850
 kate_bush,wikidata,,bass guitar,Q46185
 kate_bush,wikidata,,cello,Q8371
 kate_bush,wikidata,,guitar,Q6607
@@ -664,6 +807,7 @@ king_crimson,musicbrainz,Pat Mastelotto,electronic drum set,
 king_crimson,musicbrainz,Ian McDonald,flute,
 king_crimson,musicbrainz,Mel Collins,flute,
 king_crimson,musicbrainz,Mel Collins,flute,
+king_crimson,wikidata members,,guitar,Q6607
 king_crimson,musicbrainz,Jakko Jakszyk,guitar,
 king_crimson,musicbrainz,Robert Fripp,guitar,
 king_crimson,musicbrainz,Bill Rieflin,keyboard,
@@ -690,11 +834,15 @@ king_crimson,musicbrainz,Michael Giles,percussion,
 king_crimson,musicbrainz,Ian McDonald,saxophone,
 king_crimson,musicbrainz,Mel Collins,saxophone,
 king_crimson,musicbrainz,Mel Collins,saxophone,
+king_crimson,wikidata members,,synthesizer,Q163829
 king_crimson,musicbrainz,Peter Sinfield,synthesizer,
 king_crimson,musicbrainz,David Cross,violin,
+king_crimson,wikidata members,,voice,Q17172850
 king_crimson,musicbrainz,Trey Gunn,warr guitar,
 kraftwerk,musicbrainz,Florian Schneider,background vocals,
 kraftwerk,musicbrainz,Ralf Hütter,bass guitar,
+kraftwerk,wikidata members,,double bass,Q80019
+kraftwerk,wikidata members,Klaus Dinger,drum kit,Q128309
 kraftwerk,musicbrainz,Andreas Hohmann,drums (drum set),
 kraftwerk,musicbrainz,Ralf Hütter,drums (drum set),
 kraftwerk,musicbrainz,Florian Schneider,electric guitar,
@@ -725,6 +873,7 @@ lead_belly,wikidata,,accordion,Q79838
 lead_belly,wikidata,,guitar,Q6607
 lead_belly,wikidata,,voice,Q17172850
 led_zeppelin,musicbrainz,John Paul Jones,bass guitar,
+led_zeppelin,wikidata members,Jason Bonham,drum kit,Q128309
 led_zeppelin,musicbrainz,John Bonham,drums (drum set),
 led_zeppelin,musicbrainz,Jimmy Page,guitar,
 led_zeppelin,musicbrainz,John Paul Jones,keyboard,
@@ -787,14 +936,42 @@ madness,musicbrainz,Steve Nieve,synthesizer,
 madness,musicbrainz,Cathal Smyth,trumpet,
 madness,musicbrainz,Cathal Smyth,trumpet,
 madness,musicbrainz,Cathal Smyth,trumpet,
+madness,wikidata members,Chas Smash,trumpet,Q8338
 madness,musicbrainz,Mike Barson,vibraphone,
 madness,musicbrainz,Mike Barson,vibraphone,
+madness,wikidata members,Chas Smash,voice,Q17172850
 mahalia_jackson,wikidata,,voice,Q17172850
+mahavishnu_orchestra,wikidata members,Danny Gottlieb,acoustic bass guitar,Q424017
+mahavishnu_orchestra,wikidata members,Jonas Hellborg,bass guitar,Q46185
+mahavishnu_orchestra,wikidata members,Jonas Hellborg,bass instrument,Q810447
 mahavishnu_orchestra,musicbrainz,Philip Hirschi,cello,
+mahavishnu_orchestra,wikidata members,Billy Cobham,drum kit,Q128309
+mahavishnu_orchestra,wikidata members,Danny Gottlieb,drum kit,Q128309
+mahavishnu_orchestra,wikidata members,Jan Hammer,drum kit,Q128309
+mahavishnu_orchestra,wikidata members,Narada Michael Walden,drum kit,Q128309
+mahavishnu_orchestra,wikidata members,John McLaughlin,guitar,Q6607
+mahavishnu_orchestra,wikidata members,Rick Laird,guitar,Q6607
+mahavishnu_orchestra,wikidata members,Danny Gottlieb,jew's harp,Q185003
+mahavishnu_orchestra,wikidata members,Gayle Moran,keyboard instrument,Q52954
+mahavishnu_orchestra,wikidata members,Jan Hammer,keyboard instrument,Q52954
+mahavishnu_orchestra,wikidata members,Jan Hammer,musical keyboard,Q901207
+mahavishnu_orchestra,wikidata members,Jim Beard,musical keyboard,Q901207
+mahavishnu_orchestra,wikidata members,Mitchel Forman,musical keyboard,Q901207
+mahavishnu_orchestra,wikidata members,Stu Goldberg,musical keyboard,Q901207
+mahavishnu_orchestra,wikidata members,Billy Cobham,percussion instrument,Q133163
+mahavishnu_orchestra,wikidata members,Jan Hammer,piano,Q5994
+mahavishnu_orchestra,wikidata members,Jim Beard,piano,Q5994
+mahavishnu_orchestra,wikidata members,Mitchel Forman,piano,Q5994
+mahavishnu_orchestra,wikidata members,Stu Goldberg,piano,Q5994
+mahavishnu_orchestra,wikidata members,Bill Evans,saxophone,Q9798
 mahavishnu_orchestra,musicbrainz,Marsha Westbrook,viola,
 mahavishnu_orchestra,musicbrainz,Carol Shive,violin,
 mahavishnu_orchestra,musicbrainz,Jean‐Luc Ponty,violin,
 mahavishnu_orchestra,musicbrainz,Jerry Goodman,violin,
+mahavishnu_orchestra,wikidata members,Steve Kindler,violin,Q8355
+mahavishnu_orchestra,wikidata members,Billy Cobham,voice,Q17172850
+mahavishnu_orchestra,wikidata members,John McLaughlin,voice,Q17172850
+mahavishnu_orchestra,wikidata members,Narada Michael Walden,voice,Q17172850
 mariah_carey,wikidata,,voice,Q17172850
 marvin_gaye,wikidata,,voice,Q17172850
 mc5,musicbrainz,Dennis Thompson,drums (drum set),
@@ -804,10 +981,15 @@ mc5,musicbrainz,Wayne Kramer,electric guitar,
 mc5,musicbrainz,Rob Tyner,lead vocals,
 melvins,musicbrainz,Lori Black,bass,
 melvins,musicbrainz,Billy Anderson,bass guitar,
+melvins,wikidata members,Jared Warren,bass guitar,Q46185
 melvins,musicbrainz,Matt Lukin,bass guitar,
+melvins,wikidata members,Dale Crover,drum kit,Q128309
 melvins,musicbrainz,JD Pinkus,electric bass guitar,
 melvins,musicbrainz,Joe Preston,electric bass guitar,
 melvins,musicbrainz,Mark Deutrom,electric bass guitar,
+melvins,wikidata members,Buzz Osborne,guitar,Q6607
+melvins,wikidata members,Jared Warren,guitar,Q6607
+melvins,wikidata members,Buzz Osborne,voice,Q17172850
 metallica,musicbrainz,Cliff Burton,background vocals,
 metallica,musicbrainz,Dave Mustaine,background vocals,
 metallica,musicbrainz,Jason Newsted,background vocals,
@@ -820,7 +1002,9 @@ metallica,musicbrainz,Lars Ulrich,drums (drum set),
 metallica,musicbrainz,Jason Newsted,electric bass guitar,
 metallica,musicbrainz,Dave Mustaine,guitar,
 metallica,musicbrainz,James Hetfield,guitar,
+metallica,wikidata members,John Marshall,guitar,Q6607
 metallica,musicbrainz,Kirk Hammett,guitar,
+metallica,wikidata members,Lloyd Grant,guitar,Q6607
 metallica,musicbrainz,James Hetfield,lead vocals,
 metallica,musicbrainz,Lars Ulrich,percussion,
 michael_jackson,wikidata,,drum kit,Q128309
@@ -840,7 +1024,9 @@ minor_threat,musicbrainz,Brian Baker,guitar,
 minor_threat,musicbrainz,Lyle Preslar,guitar,
 minor_threat,musicbrainz,Ian MacKaye,lead vocals,
 minor_threat,musicbrainz,Jeff Nelson,membranophone,
+motorhead,wikidata members,Lemmy,bass guitar,Q46185
 motorhead,musicbrainz,Lemmy Kilmister,bass guitar,
+motorhead,wikidata members,Phil Taylor,drum kit,Q128309
 motorhead,musicbrainz,Lucas Fox,drums (drum set),
 motorhead,musicbrainz,Mikkey Dee,drums (drum set),
 motorhead,musicbrainz,Pete Gill,drums (drum set),
@@ -852,11 +1038,32 @@ motorhead,musicbrainz,Larry Wallis,guitar,
 motorhead,musicbrainz,Phil Campbell,guitar,
 motorhead,musicbrainz,Würzel,guitar,
 motorhead,musicbrainz,Lemmy Kilmister,lead vocals,
+motorhead,wikidata members,Lemmy,voice,Q17172850
 muddy_waters,wikidata,,guitar,Q6607
 muddy_waters,wikidata,,harmonica,Q51290
 muddy_waters,wikidata,,voice,Q17172850
+mudhoney,wikidata members,Guy Maddison,bass guitar,Q46185
 mudhoney,musicbrainz,Matt Lukin,bass guitar,
+mudhoney,wikidata members,Dan Peters,drum kit,Q128309
+mudhoney,wikidata members,Mark Arm,electric guitar,Q78987
+mudhoney,wikidata members,Steve Turner,guitar,Q6607
+mudhoney,wikidata members,Steve Turner,saxophone,Q9798
+mudhoney,wikidata members,Mark Arm,voice,Q17172850
+mudhoney,wikidata members,Steve Turner,voice,Q17172850
+n_w_a,wikidata members,,drum machine,Q831698
+n_w_a,wikidata members,DJ Yella,electrophone,Q105738
+n_w_a,wikidata members,,keyboard instrument,Q52954
+n_w_a,wikidata members,,piano,Q5994
+n_w_a,wikidata members,,sampler,Q1513987
+n_w_a,wikidata members,,synthesizer,Q163829
+n_w_a,wikidata members,,turntable,Q17591720
 n_w_a,musicbrainz,DJ Speed,turntable,
+n_w_a,wikidata members,,voice,Q17172850
+n_w_a,wikidata members,Arabian Prince,voice,Q17172850
+n_w_a,wikidata members,DJ Yella,voice,Q17172850
+n_w_a,wikidata members,Eazy-E,voice,Q17172850
+n_w_a,wikidata members,Ice Cube,voice,Q17172850
+n_w_a,wikidata members,MC Ren,voice,Q17172850
 napalm_death,musicbrainz,Danny Herrera,drums (drum set),
 napalm_death,musicbrainz,Mick Harris,drums (drum set),
 napalm_death,musicbrainz,Miles “The Rat” Ratledge,drums (drum set),
@@ -875,8 +1082,10 @@ napalm_death,musicbrainz,Nik Bullen,lead vocals,
 napalm_death,musicbrainz,Phil Vane,lead vocals,
 nas,wikidata,,voice,Q17172850
 neil_young,wikidata,,guitar,Q6607
+neu,wikidata members,,double bass,Q80019
 neu,musicbrainz,Hans Lampe,drums (drum set),
 neu,musicbrainz,Thomas Dinger,drums (drum set),
+neu,wikidata members,Michael Rother,guitar,Q6607
 new_order,musicbrainz,Peter Hook,bass guitar,
 new_order,musicbrainz,Tom Chapman,bass guitar,
 new_order,musicbrainz,Stephen Morris,drums (drum set),
@@ -894,15 +1103,20 @@ new_order,musicbrainz,Peter Hook,synthesizer,
 new_order,musicbrainz,Phil Cunningham,synthesizer,
 new_order,musicbrainz,Stephen Morris,synthesizer,
 new_order,musicbrainz,Tom Chapman,synthesizer,
+new_york_dolls,wikidata members,Arthur Kane,bass guitar,Q46185
+new_york_dolls,wikidata members,Sami Yaffa,bass guitar,Q46185
 new_york_dolls,musicbrainz,Sylvain Sylvain,bass guitar,
+new_york_dolls,wikidata members,Billy Murcia,drum kit,Q128309
 new_york_dolls,musicbrainz,Brian Delaney,drums (drum set),
 new_york_dolls,musicbrainz,Gary Powell,drums (drum set),
 new_york_dolls,musicbrainz,Jerry Nolan,drums (drum set),
+new_york_dolls,wikidata members,Johnny Thunders,guitar,Q6607
 new_york_dolls,musicbrainz,Steve Conte,guitar,
 new_york_dolls,musicbrainz,Sylvain Sylvain,guitar,
 new_york_dolls,musicbrainz,David Johansen,harmonica,
 new_york_dolls,musicbrainz,David Johansen,lead vocals,
 new_york_dolls,musicbrainz,Sylvain Sylvain,piano,
+new_york_dolls,wikidata members,Johnny Thunders,voice,Q17172850
 nirvana,musicbrainz,Krist Novoselic,accordion,
 nirvana,musicbrainz,Dave Grohl,background vocals,
 nirvana,musicbrainz,Jason Everman,background vocals,
@@ -924,6 +1138,9 @@ otis_redding,wikidata,,voice,Q17172850
 parliament_funkadelic,musicbrainz,Belita Woods,background vocals,
 parliament_funkadelic,musicbrainz,Debbie Wright,background vocals,
 parliament_funkadelic,musicbrainz,Lonnie Motley,bass guitar,
+parliament_funkadelic,wikidata members,Jerome Brailey,drum kit,Q128309
+parliament_funkadelic,wikidata members,Glenn Goins,guitar,Q6607
+parliament_funkadelic,wikidata members,Glenn Goins,voice,Q17172850
 patti_smith,wikidata,,clarinet,Q8343
 patti_smith,wikidata,,guitar,Q6607
 patti_smith,wikidata,,voice,Q17172850
@@ -935,19 +1152,27 @@ pearl_jam,musicbrainz,Matt Cameron,background vocals,
 pearl_jam,musicbrainz,Mike McCready,background vocals,
 pearl_jam,musicbrainz,Stone Gossard,background vocals,
 pearl_jam,musicbrainz,Jeff Ament,bass guitar,
+pearl_jam,wikidata members,Josh Klinghoffer,bass guitar,Q46185
 pearl_jam,musicbrainz,Stone Gossard,bass guitar,
 pearl_jam,musicbrainz,Jeff Ament,double bass,
+pearl_jam,wikidata members,Josh Klinghoffer,drum kit,Q128309
 pearl_jam,musicbrainz,Jack Irons,drums (drum set),
 pearl_jam,musicbrainz,Matt Cameron,drums (drum set),
 pearl_jam,musicbrainz,Matt Chamberlain,drums (drum set),
+pearl_jam,wikidata members,Josh Klinghoffer,electronic keyboard,Q1343007
 pearl_jam,musicbrainz,Eddie Vedder,guitar,
+pearl_jam,wikidata members,Josh Klinghoffer,guitar,Q6607
 pearl_jam,musicbrainz,Mike McCready,guitar,
 pearl_jam,musicbrainz,Stone Gossard,guitar,
 pearl_jam,musicbrainz,Eddie Vedder,harmonica,
 pearl_jam,musicbrainz,Eddie Vedder,lead vocals,
 pearl_jam,musicbrainz,Dave Abbruzzese,membranophone,
 pearl_jam,musicbrainz,Dave Krusen,membranophone,
+pearl_jam,wikidata members,Josh Klinghoffer,musical keyboard,Q901207
+pearl_jam,wikidata members,Boom Gaspar,organ,Q1444
+pearl_jam,wikidata members,Boom Gaspar,piano,Q5994
 pearl_jam,musicbrainz,Eddie Vedder,tambourine,
+pearl_jam,wikidata members,Josh Klinghoffer,voice,Q17172850
 pet_shop_boys,wikidata members,Chris Lowe,electronic keyboard,Q1343007
 pet_shop_boys,wikidata members,Neil Tennant,guitar,Q6607
 pet_shop_boys,wikidata members,Neil Tennant,keyboard instrument,Q52954
@@ -959,6 +1184,7 @@ pete_seeger,wikidata,,guitar,Q6607
 pete_seeger,wikidata,,voice,Q17172850
 pink_floyd,musicbrainz,Roger Waters,bass guitar,
 pink_floyd,musicbrainz,Nick Mason,drums (drum set),
+pink_floyd,wikidata members,Bob Klose,guitar,Q6607
 pink_floyd,musicbrainz,David Gilmour,guitar,
 pink_floyd,musicbrainz,Syd Barrett,guitar,
 pink_floyd,musicbrainz,Richard Wright,keyboard,
@@ -974,6 +1200,7 @@ pixies,musicbrainz,Emma Richardson,background vocals,
 pixies,musicbrainz,Kim Deal,background vocals,
 pixies,musicbrainz,Kim Shattuck,background vocals,
 pixies,musicbrainz,Paz Lenchantin,background vocals,
+pixies,wikidata members,David Lovering,drum kit,Q128309
 pixies,musicbrainz,Dave Lovering,drums (drum set),
 pixies,musicbrainz,Emma Richardson,electric bass guitar,
 pixies,musicbrainz,Kim Deal,electric bass guitar,
@@ -997,6 +1224,9 @@ public_enemy,musicbrainz,T Bone Motta,drums (drum set),
 public_enemy,musicbrainz,Khari Wynn,guitar,
 public_enemy,musicbrainz,DJ Lord,turntable,
 public_enemy,musicbrainz,Terminator X,turntable,
+public_enemy,wikidata members,,voice,Q17172850
+public_enemy,wikidata members,Chuck D,voice,Q17172850
+public_enemy,wikidata members,Professor Griff,voice,Q17172850
 r_e_m,musicbrainz,Mike Mills,background vocals,
 r_e_m,musicbrainz,Mike Mills,bass guitar,
 r_e_m,musicbrainz,Bill Berry,drums (drum set),
@@ -1014,6 +1244,7 @@ radiohead,musicbrainz,Ed O’Brien,electric guitar,
 radiohead,musicbrainz,Jonny Greenwood,electric guitar,
 radiohead,musicbrainz,Thom Yorke,electric guitar,
 radiohead,musicbrainz,Jonny Greenwood,glockenspiel,
+radiohead,wikidata members,Ed O'Brien,guitar,Q6607
 radiohead,musicbrainz,Thom Yorke,lead vocals,
 radiohead,musicbrainz,Jonny Greenwood,ondes martenot,
 radiohead,musicbrainz,Philip Selway,percussion,
@@ -1022,10 +1253,13 @@ radiohead,musicbrainz,Colin Greenwood,sampler,
 radiohead,musicbrainz,Colin Greenwood,string synthesizer,
 radiohead,musicbrainz,Thom Yorke,synthesizer,
 radiohead,musicbrainz,Jonny Greenwood,toy piano,
+radiohead,wikidata members,Ed O'Brien,voice,Q17172850
 ramones,musicbrainz,C.J. Ramone,background vocals,
 ramones,musicbrainz,Richie Ramone,background vocals,
+ramones,wikidata members,C. J. Ramone,bass guitar,Q46185
 ramones,musicbrainz,C.J. Ramone,bass guitar,
 ramones,musicbrainz,Dee Dee Ramone,bass guitar,
+ramones,wikidata members,Clem Burke,drum kit,Q128309
 ramones,musicbrainz,Elvis Ramone,drums (drum set),
 ramones,musicbrainz,Marky Ramone,drums (drum set),
 ramones,musicbrainz,Marky Ramone,drums (drum set),
@@ -1038,9 +1272,36 @@ ray_charles,wikidata,,piano,Q5994
 ray_charles,wikidata,,voice,Q17172850
 robert_johnson,wikidata,,guitar,Q6607
 robert_johnson,wikidata,,voice,Q17172850
+roxy_music,wikidata members,John Gustafson,bass guitar,Q46185
 roxy_music,musicbrainz,Sal Maida,bass guitar,
+roxy_music,wikidata members,Brian Eno,guitar,Q6607
+roxy_music,wikidata members,Bryan Ferry,guitar,Q6607
+roxy_music,wikidata members,David O'List,guitar,Q6607
+roxy_music,wikidata members,John Gustafson,guitar,Q6607
+roxy_music,wikidata members,Neil Hubbard,guitar,Q6607
+roxy_music,wikidata members,Phil Manzanera,guitar,Q6607
+roxy_music,wikidata members,Rick Wills,guitar,Q6607
+roxy_music,wikidata members,Bryan Ferry,harmonica,Q51290
 roxy_music,musicbrainz,David Skinner,keyboard,
+roxy_music,wikidata members,Andy Mackay,keyboard instrument,Q52954
+roxy_music,wikidata members,Dave Skinner,keyboard instrument,Q52954
+roxy_music,wikidata members,Eddie Jobson,keyboard instrument,Q52954
+roxy_music,wikidata members,Bryan Ferry,musical keyboard,Q901207
+roxy_music,wikidata members,Andy Mackay,oboe,Q8377
+roxy_music,wikidata members,Bryan Ferry,piano,Q5994
+roxy_music,wikidata members,Dave Skinner,piano,Q5994
+roxy_music,wikidata members,Andy Mackay,saxophone,Q9798
+roxy_music,wikidata members,Brian Eno,synthesizer,Q163829
+roxy_music,wikidata members,Eddie Jobson,synthesizer,Q163829
+roxy_music,wikidata members,Andy Mackay,violin,Q8355
+roxy_music,wikidata members,Eddie Jobson,violin,Q8355
+roxy_music,wikidata members,Bryan Ferry,voice,Q17172850
+roxy_music,wikidata members,Eddie Jobson,voice,Q17172850
+roxy_music,wikidata members,John Gustafson,voice,Q17172850
 run_dmc,musicbrainz,DJ Jam Master J'Son,turntable,
+run_dmc,wikidata members,Darryl McDaniels,voice,Q17172850
+run_dmc,wikidata members,Jam Master Jay,voice,Q17172850
+run_dmc,wikidata members,Joseph Simmons,voice,Q17172850
 rush,musicbrainz,Alex Lifeson,background vocals,
 rush,musicbrainz,Geddy Lee,bass guitar,
 rush,musicbrainz,Jeff Jones,bass guitar,
@@ -1053,7 +1314,15 @@ rush,musicbrainz,Jeff Jones,lead vocals,
 rush,musicbrainz,Neil Peart,percussion,
 sam_cooke,wikidata,,upright piano,Q3382191
 sam_cooke,wikidata,,voice,Q17172850
+sex_pistols,wikidata members,Glen Matlock,bass guitar,Q46185
+sex_pistols,wikidata members,Sid Vicious,bass guitar,Q46185
+sex_pistols,wikidata members,Paul Cook,drum kit,Q128309
 sex_pistols,musicbrainz,Sex Pistols feat. Frank Carter,eponymous,
+sex_pistols,wikidata members,Steve Jones,guitar,Q6607
+sex_pistols,wikidata members,Frank Carter,voice,Q17172850
+sex_pistols,wikidata members,Glen Matlock,voice,Q17172850
+sex_pistols,wikidata members,John Lydon,voice,Q17172850
+siouxsie_and_the_banshees,wikidata members,Sid Vicious,bass guitar,Q46185
 siouxsie_and_the_banshees,musicbrainz,Steven Severin,bass guitar,
 siouxsie_and_the_banshees,musicbrainz,Budgie,drums (drum set),
 siouxsie_and_the_banshees,musicbrainz,Kenny Morris,drums (drum set),
@@ -1063,6 +1332,7 @@ siouxsie_and_the_banshees,musicbrainz,John McKay,guitar,
 siouxsie_and_the_banshees,musicbrainz,John Valentine Carruthers,guitar,
 siouxsie_and_the_banshees,musicbrainz,Jon Klein,guitar,
 siouxsie_and_the_banshees,musicbrainz,Knox Chandler,guitar,
+siouxsie_and_the_banshees,wikidata members,Marco Pirroni,guitar,Q6607
 siouxsie_and_the_banshees,musicbrainz,Peter Fenton,guitar,
 siouxsie_and_the_banshees,musicbrainz,Robert Smith,guitar,
 siouxsie_and_the_banshees,musicbrainz,Martin McCarrick,keyboard,
@@ -1096,14 +1366,18 @@ sly_and_the_family_stone,musicbrainz,Cynthia Robinson,trumpet,
 sly_and_the_family_stone,musicbrainz,Sid Page,violin,
 son_house,wikidata,,guitar,Q6607
 son_house,wikidata,,voice,Q17172850
+sonic_youth,wikidata members,Jim O'Rourke,bass guitar,Q46185
 sonic_youth,musicbrainz,Jim O’Rourke,bass guitar,
 sonic_youth,musicbrainz,Kim Gordon,bass guitar,
 sonic_youth,musicbrainz,Mark Ibold,bass guitar,
+sonic_youth,wikidata members,Jim O'Rourke,bass instrument,Q810447
 sonic_youth,musicbrainz,Bob Bert,drums (drum set),
 sonic_youth,musicbrainz,Bob Bert,drums (drum set),
 sonic_youth,musicbrainz,Jim Sclavunos,drums (drum set),
 sonic_youth,musicbrainz,Richard Edson,drums (drum set),
 sonic_youth,musicbrainz,Steve Shelley,drums (drum set),
+sonic_youth,wikidata members,Jim O'Rourke,electronic musical instrument,Q1327500
+sonic_youth,wikidata members,Jim O'Rourke,guitar,Q6607
 sonic_youth,musicbrainz,Jim O’Rourke,guitar,
 sonic_youth,musicbrainz,Kim Gordon,guitar,
 sonic_youth,musicbrainz,Lee Ranaldo,guitar,
@@ -1163,7 +1437,20 @@ talking_heads,wikidata members,Jerry Harrison,musical keyboard,Q901207
 talking_heads,wikidata members,David Byrne,voice,Q17172850
 talking_heads,wikidata members,Tina Weymouth,voice,Q17172850
 tangerine_dream,musicbrainz,Hoshiko Yamane,cello,
+tangerine_dream,wikidata members,Klaus Schulze,drum kit,Q128309
 tangerine_dream,musicbrainz,Lanse Hapshash,drums (drum set),
+tangerine_dream,wikidata members,Christopher Franke,electronic keyboard,Q1343007
+tangerine_dream,wikidata members,Edgar Froese,electronic keyboard,Q1343007
+tangerine_dream,wikidata members,Peter Baumann,electronic keyboard,Q1343007
+tangerine_dream,wikidata members,Ulrich Schnauss,electronic keyboard,Q1343007
+tangerine_dream,wikidata members,Klaus Schulze,guitar,Q6607
+tangerine_dream,wikidata members,Christopher Franke,keyboard instrument,Q52954
+tangerine_dream,wikidata members,Thorsten Quaeschning,keyboard instrument,Q52954
+tangerine_dream,wikidata members,Klaus Schulze,percussion instrument,Q133163
+tangerine_dream,wikidata members,Steve Jolliffe,saxophone,Q9798
+tangerine_dream,wikidata members,Christopher Franke,synthesizer,Q163829
+tangerine_dream,wikidata members,Conrad Schnitzler,synthesizer,Q163829
+tangerine_dream,wikidata members,Klaus Schulze,synthesizer,Q163829
 tangerine_dream,musicbrainz,Hoshiko Yamane,violin,
 the_beatles,musicbrainz,Chas Newby,bass guitar,
 the_beatles,musicbrainz,Paul McCartney,bass guitar,
@@ -1226,7 +1513,22 @@ the_cars,musicbrainz,David Robinson,percussion,
 the_cars,musicbrainz,Greg Hawkes,percussion,
 the_cars,musicbrainz,Greg Hawkes,saxophone,
 the_cars,musicbrainz,Greg Hawkes,synthesizer,
+the_clash,wikidata members,Mick Jones,bass,Q27911
+the_clash,wikidata members,Paul Simonon,bass guitar,Q46185
+the_clash,wikidata members,Paul Simonon,bass instrument,Q810447
+the_clash,wikidata members,Mick Jones,drum kit,Q128309
+the_clash,wikidata members,Terry Chimes,drum kit,Q128309
+the_clash,wikidata members,Topper Headon,drum kit,Q128309
+the_clash,wikidata members,Joe Strummer,guitar,Q6607
+the_clash,wikidata members,Keith Levene,guitar,Q6607
+the_clash,wikidata members,Mick Jones,guitar,Q6607
 the_clash,musicbrainz,Nick Sheppard,guitar,
+the_clash,wikidata members,Paul Simonon,guitar,Q6607
+the_clash,wikidata members,Mick Jones,harmonica,Q51290
+the_clash,wikidata members,Mick Jones,keyboard instrument,Q52954
+the_clash,wikidata members,Mick Jones,musical keyboard,Q901207
+the_clash,wikidata members,Mick Jones,voice,Q17172850
+the_clash,wikidata members,Paul Simonon,voice,Q17172850
 the_doors,musicbrainz,Ray Manzarek,background vocals,
 the_doors,musicbrainz,Robby Krieger,background vocals,
 the_doors,musicbrainz,John Densmore,drums (drum set),
@@ -1268,15 +1570,18 @@ the_kinks,wikidata members,Ray Davies,keyboard instrument,Q52954
 the_kinks,wikidata members,Ian Gibbons,piano,Q5994
 the_kinks,wikidata members,Ray Davies,voice,Q17172850
 the_meters,musicbrainz,"George Porter, Jr.",bass guitar,
+the_meters,wikidata members,George Porter,bass instrument,Q810447
 the_meters,musicbrainz,Russell Batiste,drums (drum set),
 the_meters,musicbrainz,Ziggy Modeliste,drums (drum set),
 the_meters,musicbrainz,Brian Stoltz,guitar,
+the_meters,wikidata members,George Porter,guitar,Q6607
 the_meters,musicbrainz,Leo Nocentelli,guitar,
 the_meters,musicbrainz,Art Neville,keyboard,
 the_meters,musicbrainz,Art Neville,lead vocals,
 the_meters,musicbrainz,Cyril Neville,lead vocals,
 the_meters,musicbrainz,"George Porter, Jr.",lead vocals,
 the_meters,musicbrainz,Cyril Neville,percussion,
+the_meters,wikidata members,George Porter,voice,Q17172850
 the_orb,wikidata members,Kris Weston,electronic keyboard,Q1343007
 the_orb,wikidata members,Jimmy Cauty,guitar,Q6607
 the_police,musicbrainz,Sting,bass guitar,
@@ -1315,6 +1620,7 @@ the_rolling_stones,musicbrainz,Mick Jagger,bass guitar,
 the_rolling_stones,musicbrainz,Mick Taylor,bass guitar,
 the_rolling_stones,musicbrainz,Ronnie Wood,bass guitar,
 the_rolling_stones,musicbrainz,Brian Jones,cello,
+the_rolling_stones,wikidata members,Carlo Little,drum kit,Q128309
 the_rolling_stones,musicbrainz,Charlie Watts,drums (drum set),
 the_rolling_stones,musicbrainz,Mick Avory,drums (drum set),
 the_rolling_stones,musicbrainz,Steve Jordan,drums (drum set),
@@ -1352,13 +1658,23 @@ the_rolling_stones,musicbrainz,Brian Jones,sitar,
 the_rolling_stones,musicbrainz,Brian Jones,slide guitar,
 the_rolling_stones,musicbrainz,Mick Taylor,slide guitar,
 the_rolling_stones,musicbrainz,Ronnie Wood,slide guitar,
+the_skatalites,wikidata members,Lloyd Brevett,double bass,Q80019
+the_skatalites,wikidata members,Lloyd Knibb,drum kit,Q128309
+the_skatalites,wikidata members,Sparrow Thompson,drum kit,Q128309
+the_skatalites,wikidata members,Jah Jerry Haynes,guitar,Q6607
 the_skatalites,musicbrainz,Cameron Greenlee,keyboard,
+the_skatalites,wikidata members,Jackie Mittoo,piano,Q5994
 the_skatalites,musicbrainz,Karl Bryan,saxophone,
 the_skatalites,musicbrainz,Lester Sterling,saxophone,
+the_skatalites,wikidata members,Roland Alphonso,saxophone,Q9798
+the_skatalites,wikidata members,Tommy McCook,saxophone,Q9798
 the_skatalites,musicbrainz,Cedric “Im” Brooks,tenor saxophone,
+the_skatalites,wikidata members,Don Drummond,trombone,Q8350
 the_skatalites,musicbrainz,Vin Gordon,trombone,
 the_skatalites,musicbrainz,Will Clark,trombone,
+the_skatalites,wikidata members,Johnny Moore,trumpet,Q8338
 the_skatalites,musicbrainz,Nathan Breedlove,trumpet,
+the_skatalites,wikidata members,Doreen Shaffer,voice,Q17172850
 the_smiths,musicbrainz,Andy Rourke,bass guitar,
 the_smiths,musicbrainz,Mike Joyce,drums (drum set),
 the_smiths,musicbrainz,Johnny Marr,guitar,
@@ -1366,7 +1682,15 @@ the_smiths,musicbrainz,Morrissey,lead vocals,
 the_specials,wikidata members,Jerry Dammers,keyboard instrument,Q52954
 the_specials,wikidata members,Jerry Dammers,musical keyboard,Q901207
 the_specials,wikidata members,Terry Hall,voice,Q17172850
+the_stooges,wikidata members,Mike Watt,bass guitar,Q46185
+the_stooges,wikidata members,Mike Watt,bass instrument,Q810447
+the_stooges,wikidata members,Scott Asheton,drum kit,Q128309
+the_stooges,wikidata members,Dave Alexander,electric bass guitar,Q64166304
 the_stooges,musicbrainz,Iggy Pop,eponymous,
+the_stooges,wikidata members,Bill Cheatham,guitar,Q6607
+the_stooges,wikidata members,James Williamson,guitar,Q6607
+the_stooges,wikidata members,Ron Asheton,guitar,Q6607
+the_stooges,wikidata members,Mike Watt,voice,Q17172850
 the_strokes,musicbrainz,"Albert Hammond, Jr.",background vocals,
 the_strokes,musicbrainz,Nick Valensi,background vocals,
 the_strokes,musicbrainz,Nikolai Fraiture,bass guitar,
@@ -1376,6 +1700,7 @@ the_strokes,musicbrainz,Nick Valensi,guitar,
 the_strokes,musicbrainz,"Albert Hammond, Jr.",keyboard,
 the_strokes,musicbrainz,Nick Valensi,keyboard,
 the_strokes,musicbrainz,Julian Casablancas,lead vocals,
+the_strokes,wikidata members,Julian Fernando Casablancas Christiansen,voice,Q17172850
 the_velvet_underground,musicbrainz,John Cale,background vocals,
 the_velvet_underground,musicbrainz,John Cale,background vocals,
 the_velvet_underground,musicbrainz,Moe Tucker,background vocals,
@@ -1390,6 +1715,7 @@ the_velvet_underground,musicbrainz,John Cale,bass,
 the_velvet_underground,musicbrainz,Sterling Morrison,bass,
 the_velvet_underground,musicbrainz,Sterling Morrison,bass,
 the_velvet_underground,musicbrainz,Walter Powers,bass,
+the_velvet_underground,wikidata members,Maureen Tucker,bass guitar,Q46185
 the_velvet_underground,musicbrainz,Angus MacLise,drums (drum set),
 the_velvet_underground,musicbrainz,Billy Yule,drums (drum set),
 the_velvet_underground,musicbrainz,Moe Tucker,drums (drum set),
@@ -1397,6 +1723,7 @@ the_velvet_underground,musicbrainz,Moe Tucker,drums (drum set),
 the_velvet_underground,musicbrainz,Doug Yule,guitar,
 the_velvet_underground,musicbrainz,Lou Reed,guitar,
 the_velvet_underground,musicbrainz,Lou Reed,guitar,
+the_velvet_underground,wikidata members,Maureen Tucker,guitar,Q6607
 the_velvet_underground,musicbrainz,Sterling Morrison,guitar,
 the_velvet_underground,musicbrainz,Sterling Morrison,guitar,
 the_velvet_underground,musicbrainz,Willie Alexander,keyboard,
@@ -1410,12 +1737,15 @@ the_velvet_underground,musicbrainz,John Cale,organ,
 the_velvet_underground,musicbrainz,Angus MacLise,percussion,
 the_velvet_underground,musicbrainz,Moe Tucker,percussion,
 the_velvet_underground,musicbrainz,Moe Tucker,percussion,
+the_velvet_underground,wikidata members,Maureen Tucker,percussion instrument,Q133163
 the_velvet_underground,musicbrainz,Doug Yule,piano,
 the_velvet_underground,musicbrainz,Lou Reed,piano,
 the_velvet_underground,musicbrainz,Lou Reed,piano,
 the_velvet_underground,musicbrainz,John Cale,viola,
 the_velvet_underground,musicbrainz,John Cale,viola,
+the_velvet_underground,wikidata members,Maureen Tucker,voice,Q17172850
 the_who,musicbrainz,John Entwistle,bass guitar,
+the_who,wikidata members,Zak Starkey,drum kit,Q128309
 the_who,musicbrainz,Doug Sandom,drums (drum set),
 the_who,musicbrainz,Keith Moon,drums (drum set),
 the_who,musicbrainz,Kenney Jones,drums (drum set),
@@ -1430,26 +1760,60 @@ the_who,musicbrainz,John Entwistle,lead vocals,
 the_who,musicbrainz,Pete Townshend,lead vocals,
 the_who,musicbrainz,Roger Daltrey,lead vocals,
 the_who,musicbrainz,Roger Daltrey,percussion,
+the_who,wikidata members,Zak Starkey,percussion instrument,Q133163
 the_who,musicbrainz,John Entwistle,synthesizer,
 the_who,musicbrainz,Pete Townshend,synthesizer,
 the_who,musicbrainz,John Entwistle,trumpet,
 the_winstons,wikidata members,Richard Lewis Spencer,saxophone,Q9798
+the_yardbirds,wikidata members,Jimmy Page,arp 2500,Q2410029
 the_yardbirds,musicbrainz,Ray Majors,background vocals,
+the_yardbirds,wikidata members,Paul Samwell-Smith,bass guitar,Q46185
+the_yardbirds,wikidata members,Jim McCarty,drum kit,Q128309
+the_yardbirds,wikidata members,Jimmy Page,fender stratocaster,Q208173
+the_yardbirds,wikidata members,Jimmy Page,fender telecaster,Q623103
+the_yardbirds,wikidata members,Jimmy Page,gibson eds-1275,Q608223
+the_yardbirds,wikidata members,Jimmy Page,gibson les paul,Q322625
+the_yardbirds,wikidata members,Chris Dreja,guitar,Q6607
+the_yardbirds,wikidata members,Eric Clapton,guitar,Q6607
+the_yardbirds,wikidata members,Jeff Beck,guitar,Q6607
+the_yardbirds,wikidata members,Jimmy Page,guitar,Q6607
+the_yardbirds,wikidata members,Paul Samwell-Smith,guitar,Q6607
 the_yardbirds,musicbrainz,Ray Majors,guitar,
 the_yardbirds,musicbrainz,Top Topham,guitar,
+the_yardbirds,wikidata members,Keith Relf,harmonica,Q51290
+the_yardbirds,wikidata members,Eric Clapton,keyboard instrument,Q52954
+the_yardbirds,wikidata members,Jimmy Page,mandolin,Q302497
+the_yardbirds,wikidata members,Eric Clapton,voice,Q17172850
+the_yardbirds,wikidata members,Jeff Beck,voice,Q17172850
+the_yardbirds,wikidata members,Keith Relf,voice,Q17172850
 thelonious_monk,wikidata,,piano,Q5994
 thomas_a_dorsey,wikidata,,piano,Q5994
 toots_and_the_maytals,wikidata members,Paul Douglas,drum kit,Q128309
 toots_and_the_maytals,wikidata members,Toots Hibbert,voice,Q17172850
 tupac_shakur,wikidata,,voice,Q17172850
 van_halen,musicbrainz,Mark Stone,bass guitar,
+van_halen,wikidata members,Michael Anthony,bass guitar,Q46185
+van_halen,wikidata members,Wolfgang Van Halen,bass guitar,Q46185
+van_halen,wikidata members,Alex Van Halen,drum kit,Q128309
+van_halen,wikidata members,Eddie Van Halen,guitar,Q6607
+van_halen,wikidata members,Wolfgang Van Halen,guitar,Q6607
+van_halen,wikidata members,Eddie Van Halen,keyboard instrument,Q52954
+van_halen,wikidata members,David Lee Roth,voice,Q17172850
+van_halen,wikidata members,Gary Cherone,voice,Q17172850
+van_halen,wikidata members,Sammy Hagar,voice,Q17172850
+van_halen,wikidata members,Wolfgang Van Halen,voice,Q17172850
 venom,musicbrainz,Cronos,bass,
 venom,musicbrainz,Cronos,bass,
+venom,wikidata members,Conrad Lant,bass guitar,Q46185
+venom,wikidata members,Tony Dolan,bass guitar,Q46185
 venom,musicbrainz,Tony “Demolition Man” Dolan,bass guitar,
+venom,wikidata members,Anthony Lant,drum kit,Q128309
+venom,wikidata members,Tony Bray,drum kit,Q128309
 venom,musicbrainz,Abaddon,drums (drum set),
 venom,musicbrainz,Abaddon,drums (drum set),
 venom,musicbrainz,Antton,drums (drum set),
 venom,musicbrainz,Al Barnes,guitar,
+venom,wikidata members,Jeffrey Dunn,guitar,Q6607
 venom,musicbrainz,Mantas,guitar,
 venom,musicbrainz,Mantas,guitar,
 venom,musicbrainz,Mantas,guitar,
@@ -1461,9 +1825,40 @@ venom,musicbrainz,Cronos,lead vocals,
 venom,musicbrainz,Cronos,lead vocals,
 venom,musicbrainz,Tony “Demolition Man” Dolan,lead vocals,
 venom,musicbrainz,Danny “Dante” Needham,membranophone,
+venom,wikidata members,Conrad Lant,voice,Q17172850
+venom,wikidata members,Tony Dolan,voice,Q17172850
+weather_report,wikidata members,Miroslav Vitouš,acoustic bass guitar,Q424017
+weather_report,wikidata members,Alex Acuña,alphorn,Q685206
+weather_report,wikidata members,Wayne Shorter,alto saxophone,Q445275
+weather_report,wikidata members,Joe Zawinul,arp chroma,Q2819385
+weather_report,wikidata members,Alphonso Johnson,bass guitar,Q46185
+weather_report,wikidata members,Jaco Pastorius,bass guitar,Q46185
+weather_report,wikidata members,Alphonso Johnson,bass instrument,Q810447
+weather_report,wikidata members,Miroslav Vitouš,bass instrument,Q810447
+weather_report,wikidata members,Airto Moreira,berimbau,Q748187
+weather_report,wikidata members,Alphonso Johnson,chapman stick,Q754518
+weather_report,wikidata members,Alex Acuña,conga,Q270200
+weather_report,wikidata members,Miroslav Vitouš,double bass,Q80019
 weather_report,musicbrainz,Victor Bailey,double bass,
+weather_report,wikidata members,Airto Moreira,drum kit,Q128309
+weather_report,wikidata members,Alex Acuña,drum kit,Q128309
+weather_report,wikidata members,Alphonse Mouzon,drum kit,Q128309
+weather_report,wikidata members,Don Alias,drum kit,Q128309
 weather_report,musicbrainz,Peter Erskine,drums (drum set),
+weather_report,wikidata members,Alphonso Johnson,guitar,Q6607
+weather_report,wikidata members,Joe Zawinul,musical keyboard,Q901207
 weather_report,musicbrainz,José Rossy,percussion,
+weather_report,wikidata members,Alex Acuña,percussion guitare,Q1661583
+weather_report,wikidata members,Airto Moreira,percussion instrument,Q133163
+weather_report,wikidata members,Alex Acuña,percussion instrument,Q133163
+weather_report,wikidata members,Don Alias,percussion instrument,Q133163
+weather_report,wikidata members,Joe Zawinul,piano,Q5994
+weather_report,wikidata members,Wayne Shorter,saxophone,Q9798
+weather_report,wikidata members,Wayne Shorter,soprano saxophone,Q1463985
+weather_report,wikidata members,Wayne Shorter,tenor saxophone,Q1414932
+weather_report,wikidata members,Alex Acuña,timbales,Q379248
+weather_report,wikidata members,Airto Moreira,voice,Q17172850
+weather_report,wikidata members,Joe Zawinul,voice,Q17172850
 whitney_houston,wikidata,,voice,Q17172850
 willie_dixon,wikidata,,bass guitar,Q46185
 willie_dixon,wikidata,,bass instrument,Q810447
@@ -1487,25 +1882,70 @@ wu_tang_clan,wikidata members,Method Man,voice,Q17172850
 wu_tang_clan,wikidata members,Ol' Dirty Bastard,voice,Q17172850
 wu_tang_clan,wikidata members,Raekwon,voice,Q17172850
 wu_tang_clan,wikidata members,U-God,voice,Q17172850
+yes,musicbrainz,Benoît David,acoustic guitar,
+yes,musicbrainz,Steve Howe,acoustic guitar,
+yes,musicbrainz,Trevor Horn,acoustic guitar,
+yes,musicbrainz,Trevor Rabin,acoustic guitar,
+yes,musicbrainz,Alan White,background vocals,
+yes,musicbrainz,Billy Sherwood,background vocals,
+yes,musicbrainz,Billy Sherwood,background vocals,
+yes,musicbrainz,Chris Squire,background vocals,
+yes,musicbrainz,Igor Khoroshev,background vocals,
 yes,musicbrainz,Oliver Wakeman,background vocals,
+yes,musicbrainz,Peter Banks,background vocals,
+yes,musicbrainz,Trevor Rabin,background vocals,
 yes,musicbrainz,Chris Squire,bass guitar,
+yes,musicbrainz,Steve Howe,classical guitar,
+yes,wikidata members,Ian Wallace,drum kit,Q128309
 yes,musicbrainz,Alan White,drums (drum set),
 yes,musicbrainz,Bill Bruford,drums (drum set),
 yes,musicbrainz,Bill Bruford,drums (drum set),
+yes,musicbrainz,Bill Bruford,drums (drum set),
+yes,musicbrainz,Jay Schellen,drums (drum set),
+yes,musicbrainz,Tony O'Reilly,drums (drum set),
+yes,musicbrainz,Billy Sherwood,electric bass guitar,
+yes,musicbrainz,Steve Howe,electric guitar,
+yes,musicbrainz,Trevor Rabin,electric guitar,
+yes,musicbrainz,Bill Bruford,electronic drum set,
+yes,musicbrainz,Trevor Horn,fretless bass,
+yes,musicbrainz,Billy Sherwood,guitar,
 yes,musicbrainz,Peter Banks,guitar,
 yes,musicbrainz,Steve Howe,guitar,
 yes,musicbrainz,Steve Howe,guitar,
-yes,musicbrainz,Steve Howe,guitar,
+yes,wikidata members,Steve Nardelli,guitar,Q6607
+yes,musicbrainz,Tony Kaye,hammond organ,
+yes,musicbrainz,Billy Sherwood,keyboard,
+yes,musicbrainz,Eddie Jobson,keyboard,
+yes,musicbrainz,Geoff Downes,keyboard,
+yes,musicbrainz,Geoff Downes,keyboard,
+yes,musicbrainz,Igor Khoroshev,keyboard,
 yes,musicbrainz,Oliver Wakeman,keyboard,
+yes,musicbrainz,Patrick Moraz,keyboard,
 yes,musicbrainz,Rick Wakeman,keyboard,
 yes,musicbrainz,Rick Wakeman,keyboard,
 yes,musicbrainz,Rick Wakeman,keyboard,
 yes,musicbrainz,Rick Wakeman,keyboard,
 yes,musicbrainz,Rick Wakeman,keyboard,
 yes,musicbrainz,Tony Kaye,keyboard,
+yes,musicbrainz,Trevor Rabin,keyboard,
+yes,musicbrainz,Steve Howe,laúd,
 yes,musicbrainz,Benoît David,lead vocals,
 yes,musicbrainz,Jon Anderson,lead vocals,
 yes,musicbrainz,Jon Anderson,lead vocals,
 yes,musicbrainz,Jon Anderson,lead vocals,
 yes,musicbrainz,Jon Davison,lead vocals,
 yes,musicbrainz,Trevor Horn,lead vocals,
+yes,musicbrainz,Trevor Rabin,lead vocals,
+yes,musicbrainz,Geoff Downes,other vocals,
+yes,musicbrainz,Geoff Downes,other vocals,
+yes,musicbrainz,Alan White,percussion,
+yes,musicbrainz,Bill Bruford,percussion,
+yes,musicbrainz,Bill Bruford,percussion,
+yes,musicbrainz,Bill Bruford,percussion,
+yes,musicbrainz,Jay Schellen,percussion,
+yes,musicbrainz,Tony O'Reilly,percussion,
+yes,musicbrainz,Tony Kaye,piano,
+yes,musicbrainz,Steve Howe,steel guitar,
+yes,musicbrainz,Geoff Downes,vocoder,
+yes,musicbrainz,Geoff Downes,vocoder,
+yes,wikidata members,Ian Wallace,voice,Q17172850

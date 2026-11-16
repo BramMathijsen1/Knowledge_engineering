@@ -13,6 +13,7 @@ ac_dc,voice,background vocals,musicbrainz,Cliff Williams,yes,,draft
 ac_dc,voice,background vocals,musicbrainz,Cliff Williams,yes,,draft
 ac_dc,voice,background vocals,musicbrainz,Malcolm Young,yes,,draft
 ac_dc,voice,background vocals,musicbrainz,Stevie Young,yes,,draft
+ac_dc,bass_guitar,bass guitar,wikidata members,Chris Chaney,yes,,draft
 ac_dc,bass_guitar,bass guitar,musicbrainz,Cliff Williams,yes,,draft
 ac_dc,bass_guitar,bass guitar,musicbrainz,Cliff Williams,yes,,draft
 ac_dc,bass_guitar,bass guitar,musicbrainz,Larry van Kriedt,yes,,draft
@@ -21,6 +22,7 @@ ac_dc,bass_guitar,bass guitar,musicbrainz,Mark Evans,yes,,draft
 ac_dc,bass_guitar,bass guitar,musicbrainz,Neil Smith,yes,,draft
 ac_dc,bass_guitar,bass guitar,musicbrainz,Paul Matters,yes,,draft
 ac_dc,bass_guitar,bass guitar,musicbrainz,Rob Bailey,yes,,draft
+ac_dc,drum_kit,drum kit,wikidata members,Matt Laug,yes,,draft
 ac_dc,drum_kit,drums (drum set),musicbrainz,Chris Slade,yes,,draft
 ac_dc,drum_kit,drums (drum set),musicbrainz,Chris Slade,yes,,draft
 ac_dc,drum_kit,drums (drum set),musicbrainz,Colin Burgess,yes,,draft
@@ -78,12 +80,14 @@ arcade_fire,bass_guitar,bass guitar,musicbrainz,Myles Broscoe,yes,,draft
 arcade_fire,bass_guitar,bass guitar,musicbrainz,Richard Reed Parry,yes,,draft
 arcade_fire,bass_guitar,bass guitar,musicbrainz,Timothy Kingsbury,yes,,draft
 arcade_fire,bass_guitar,bass guitar,musicbrainz,Will Butler,yes,,draft
+arcade_fire,bass_guitar,bass guitar,wikidata members,William Butler,yes,,draft
 arcade_fire,bass_guitar,bass guitar,musicbrainz,Win Butler,yes,,draft
 arcade_fire,,brass,musicbrainz,Kelly Pratt,no,Not in our list of instruments.,draft
 arcade_fire,percussion,celesta,musicbrainz,Richard Reed Parry,yes,,draft
 arcade_fire,,cello,musicbrainz,Mike Olsen,no,Not in our list of instruments.,draft
 arcade_fire,clarinet,clarinet,musicbrainz,Will Butler,yes,,draft
 arcade_fire,,concertina,musicbrainz,Will Butler,no,Not in our list of instruments.,draft
+arcade_fire,double_bass,double bass,wikidata members,Richard Parry,yes,,draft
 arcade_fire,double_bass,double bass,musicbrainz,Richard Reed Parry,yes,,draft
 arcade_fire,double_bass,double bass,musicbrainz,Timothy Kingsbury,yes,,draft
 arcade_fire,double_bass,double bass,musicbrainz,Will Butler,yes,,draft
@@ -109,12 +113,13 @@ arcade_fire,keyboards,keyboard,musicbrainz,Régine Chassagne,yes,,draft
 arcade_fire,keyboards,keyboard,musicbrainz,Sarah Neufeld,yes,,draft
 arcade_fire,keyboards,keyboard,musicbrainz,Timothy Kingsbury,yes,,draft
 arcade_fire,keyboards,keyboard,musicbrainz,Win Butler,yes,,draft
+arcade_fire,keyboards,keyboard instrument,wikidata members,Tim Kingsbury,yes,,draft
 arcade_fire,voice,lead vocals,musicbrainz,Brendan Reed,yes,,draft
 arcade_fire,voice,lead vocals,musicbrainz,Régine Chassagne,yes,,draft
 arcade_fire,voice,lead vocals,musicbrainz,Win Butler,yes,,draft
 arcade_fire,mandolin,mandolin,musicbrainz,Win Butler,yes,,draft
-arcade_fire,percussion,membranophone,musicbrainz,Richard Reed Parry,yes,,draft
-arcade_fire,percussion,membranophone,musicbrainz,Régine Chassagne,yes,,draft
+arcade_fire,drum_kit,membranophone,musicbrainz,Richard Reed Parry,yes,,draft
+arcade_fire,drum_kit,membranophone,musicbrainz,Régine Chassagne,yes,,draft
 arcade_fire,,musical saw,musicbrainz,Will Butler,no,Not in our list of instruments.,draft
 arcade_fire,,omnichord,musicbrainz,Will Butler,no,Not in our list of instruments.,draft
 arcade_fire,organ,organ,musicbrainz,Richard Reed Parry,yes,,draft
@@ -129,6 +134,7 @@ arcade_fire,flute,recorder,musicbrainz,Régine Chassagne,yes,,draft
 arcade_fire,,sitar,musicbrainz,Will Butler,no,Not in our list of instruments.,draft
 arcade_fire,synthesizer,synthesizer,musicbrainz,Richard Reed Parry,yes,,draft
 arcade_fire,synthesizer,synthesizer,musicbrainz,Will Butler,yes,,draft
+arcade_fire,synthesizer,synthesizer,wikidata members,William Butler,yes,,draft
 arcade_fire,,tap dance,musicbrainz,Brendan Reed,no,Not in our list of instruments.,draft
 arcade_fire,trombone,trombone,musicbrainz,Will Butler,no,Fewer than 3 of our artists play it.,draft
 arcade_fire,violin,violin,musicbrainz,Sarah Neufeld,yes,,draft
@@ -153,11 +159,11 @@ bad_brains,voice,lead vocals,musicbrainz,H.R.,yes,,draft
 bad_brains,voice,lead vocals,musicbrainz,H.R.,yes,,draft
 bad_brains,voice,lead vocals,musicbrainz,Israel Joseph I,yes,,draft
 bad_brains,voice,lead vocals,musicbrainz,Sid McCray,yes,,draft
-bad_brains,percussion,membranophone,musicbrainz,Earl Hudson,yes,,draft
-bad_brains,percussion,membranophone,musicbrainz,Earl Hudson,yes,,draft
-bad_brains,percussion,membranophone,musicbrainz,Earl Hudson,yes,,draft
-bad_brains,percussion,membranophone,musicbrainz,Earl Hudson,yes,,draft
-bad_brains,percussion,membranophone,musicbrainz,Mackie Jayson,yes,,draft
+bad_brains,drum_kit,membranophone,musicbrainz,Earl Hudson,yes,,draft
+bad_brains,drum_kit,membranophone,musicbrainz,Earl Hudson,yes,,draft
+bad_brains,drum_kit,membranophone,musicbrainz,Earl Hudson,yes,,draft
+bad_brains,drum_kit,membranophone,musicbrainz,Earl Hudson,yes,,draft
+bad_brains,drum_kit,membranophone,musicbrainz,Mackie Jayson,yes,,draft
 bee_gees,bass_guitar,bass guitar,musicbrainz,Maurice Gibb,yes,,draft
 bee_gees,drum_kit,drums (drum set),musicbrainz,Colin Petersen,yes,,draft
 bee_gees,drum_kit,drums (drum set),musicbrainz,Dennis Bryon,yes,,draft
@@ -178,6 +184,9 @@ big_mama_thornton,harmonica,harmonica,wikidata,,yes,,draft
 big_mama_thornton,percussion,percussion instrument,wikidata,,yes,,draft
 big_mama_thornton,voice,voice,wikidata,,yes,,draft
 billie_holiday,voice,voice,wikidata,,yes,,draft
+black_flag,bass_guitar,bass guitar,wikidata members,C'el Revuelta,yes,,draft
+black_flag,drum_kit,drum kit,wikidata members,,yes,,draft
+black_flag,drum_kit,drum kit,wikidata members,,yes,,draft
 black_flag,drum_kit,drums (drum set),musicbrainz,Bill Stevenson,yes,,draft
 black_flag,drum_kit,drums (drum set),musicbrainz,Brandon Pertzborn,yes,,draft
 black_flag,drum_kit,drums (drum set),musicbrainz,Brian Migdol,yes,,draft
@@ -228,12 +237,14 @@ black_sabbath,drum_kit,drums (drum set),musicbrainz,Vinny Appice,yes,,draft
 black_sabbath,drum_kit,drums (drum set),musicbrainz,Vinny Appice,yes,,draft
 black_sabbath,drum_kit,drums (drum set),musicbrainz,Vinny Appice,yes,,draft
 black_sabbath,drum_kit,drums (drum set),musicbrainz,Vinny Appice,yes,,draft
+black_sabbath,guitar,guitar,wikidata members,Adam Wakeman,yes,,draft
 black_sabbath,guitar,guitar,musicbrainz,Tony Iommi,yes,,draft
 black_sabbath,guitar,guitar,musicbrainz,Tony Iommi,yes,,draft
 black_sabbath,guitar,guitar,musicbrainz,Tony Iommi,yes,,draft
 black_sabbath,harmonica,harmonica,musicbrainz,Ozzy Osbourne,yes,,draft
 black_sabbath,harmonica,harmonica,musicbrainz,Ozzy Osbourne,yes,,draft
 black_sabbath,keyboards,keyboard,musicbrainz,Geoff Nicholls,yes,,draft
+black_sabbath,keyboards,keyboard instrument,wikidata members,Adam Wakeman,yes,,draft
 black_sabbath,voice,lead vocals,musicbrainz,Dave Walker,yes,,draft
 black_sabbath,voice,lead vocals,musicbrainz,David Donato,yes,,draft
 black_sabbath,voice,lead vocals,musicbrainz,Glenn Hughes,yes,,draft
@@ -247,11 +258,12 @@ black_sabbath,voice,lead vocals,musicbrainz,Ronnie James Dio,yes,,draft
 black_sabbath,voice,lead vocals,musicbrainz,Ronnie James Dio,yes,,draft
 black_sabbath,voice,lead vocals,musicbrainz,Tony Martin,yes,,draft
 black_sabbath,voice,lead vocals,musicbrainz,Tony Martin,yes,,draft
-black_sabbath,percussion,membranophone,musicbrainz,Terry Chimes,yes,,draft
+black_sabbath,drum_kit,membranophone,musicbrainz,Terry Chimes,yes,,draft
 black_sabbath,percussion,percussion,musicbrainz,Bev Bevan,yes,,draft
 black_sabbath,percussion,percussion,musicbrainz,Bev Bevan,yes,,draft
 black_sabbath,percussion,percussion,musicbrainz,Bill Ward,yes,,draft
 black_sabbath,percussion,percussion,musicbrainz,Bill Ward,yes,,draft
+black_sabbath,piano,piano,wikidata members,Adam Wakeman,yes,,draft
 black_sabbath,synthesizer,synthesizer,musicbrainz,Geezer Butler,yes,,draft
 black_sabbath,synthesizer,synthesizer,musicbrainz,Geezer Butler,yes,,draft
 blind_willie_johnson,guitar,guitar,wikidata,,yes,,draft
@@ -267,7 +279,21 @@ blink_182,voice,lead vocals,musicbrainz,Mark Hoppus,yes,,draft
 blink_182,voice,lead vocals,musicbrainz,Matt Skiba,yes,,draft
 blink_182,voice,lead vocals,musicbrainz,Tom DeLonge,yes,,draft
 blink_182,voice,lead vocals,musicbrainz,Tom DeLonge,yes,,draft
+blondie,bass_guitar,bass guitar,wikidata members,Chris Stein,yes,,draft
+blondie,bass_guitar,bass guitar,wikidata members,Ivan Král,yes,,draft
+blondie,bass_guitar,bass instrument,wikidata members,Leigh Foxx,yes,,draft
+blondie,drum_kit,drum kit,wikidata members,Clem Burke,yes,,draft
+blondie,guitar,guitar,wikidata members,Chris Stein,yes,,draft
+blondie,guitar,guitar,wikidata members,Gary Lachman,yes,,draft
+blondie,guitar,guitar,wikidata members,Ivan Král,yes,,draft
+blondie,guitar,guitar,wikidata members,Nigel Harrison,yes,,draft
 blondie,guitar,guitar,musicbrainz,Paul Carbonara,yes,,draft
+blondie,keyboards,keyboard instrument,wikidata members,Matt Katz-Bohen,yes,,draft
+blondie,keyboards,musical keyboard,wikidata members,Jimmy Destri,yes,,draft
+blondie,piano,piano,wikidata members,Ivan Král,yes,,draft
+blondie,piano,piano,wikidata members,Jimmy Destri,yes,,draft
+blondie,voice,voice,wikidata members,Debbie Harry,yes,,draft
+blondie,voice,voice,wikidata members,Ivan Král,yes,,draft
 bo_diddley,guitar,guitar,wikidata,,yes,,draft
 bo_diddley,voice,voice,wikidata,,yes,,draft
 bob_dylan,guitar,guitar,wikidata,,yes,,draft
@@ -284,10 +310,24 @@ buddy_holly,guitar,guitar,wikidata,,yes,,draft
 buddy_holly,violin,violin,wikidata,,yes,,draft
 buddy_holly,voice,voice,wikidata,,yes,,draft
 buzzcocks,bass_guitar,bass guitar,musicbrainz,Garth Smith,yes,,draft
+buzzcocks,bass_guitar,bass guitar,wikidata members,Steve Diggle,yes,,draft
+buzzcocks,bass_guitar,bass guitar,wikidata members,Tony Barber,yes,,draft
 buzzcocks,drum_kit,drums (drum set),musicbrainz,Danny Farrant,yes,,draft
-buzzcocks,percussion,membranophone,musicbrainz,John Maher,yes,,draft
+buzzcocks,guitar,guitar,wikidata members,Barry Adamson,yes,,draft
+buzzcocks,guitar,guitar,wikidata members,Pete Shelley,yes,,draft
+buzzcocks,guitar,guitar,wikidata members,Steve Diggle,yes,,draft
+buzzcocks,guitar,guitar,wikidata members,Tony Barber,yes,,draft
+buzzcocks,drum_kit,membranophone,musicbrainz,John Maher,yes,,draft
+buzzcocks,synthesizer,synthesizer,wikidata members,Pete Shelley,yes,,draft
+buzzcocks,voice,voice,wikidata members,Barry Adamson,yes,,draft
+buzzcocks,voice,voice,wikidata members,Howard Devoto,yes,,draft
+buzzcocks,voice,voice,wikidata members,Pete Shelley,yes,,draft
+can,bass_guitar,bass guitar,wikidata members,Holger Czukay,yes,,draft
 can,drum_kit,drums (drum set),musicbrainz,Jaki Liebezeit,yes,,draft
 can,drum_kit,drums (drum set),musicbrainz,Jaki Liebezeit,yes,,draft
+can,flute,flute,wikidata members,David C. Johnson,yes,,draft
+can,guitar,guitar,wikidata members,Michael Karoli,yes,,draft
+can,guitar,guitar,wikidata members,Rosko Gee,yes,,draft
 can,keyboards,keyboard,musicbrainz,Irmin Schmidt,yes,,draft
 can,keyboards,keyboard,musicbrainz,Irmin Schmidt,yes,,draft
 can,keyboards,keyboard,musicbrainz,Irmin Schmidt,yes,,draft
@@ -296,6 +336,10 @@ can,voice,lead vocals,musicbrainz,Malcolm Mooney,yes,,draft
 can,voice,lead vocals,musicbrainz,Malcolm Mooney,yes,,draft
 can,voice,lead vocals,musicbrainz,Malcolm Mooney,yes,,draft
 can,voice,lead vocals,musicbrainz,Thaiga Raj Raja Ratnam,yes,,draft
+can,percussion,percussion instrument,wikidata members,Rebop Kwaku Baah,yes,,draft
+can,violin,violin,wikidata members,Michael Karoli,yes,,draft
+can,voice,voice,wikidata members,Damo Suzuki,yes,,draft
+can,flute,western concert flute,wikidata members,David C. Johnson,yes,,draft
 carl_perkins,guitar,electric guitar,wikidata,,yes,,draft
 carl_perkins,guitar,guitar,wikidata,,yes,,draft
 carl_perkins,voice,voice,wikidata,,yes,,draft
@@ -322,11 +366,18 @@ cream,keyboards,keyboard instrument,wikidata members,Eric Clapton,yes,,draft
 cream,voice,voice,wikidata members,Eric Clapton,yes,,draft
 cream,voice,voice,wikidata members,Jack Bruce,yes,,draft
 daft_punk,bass_guitar,bass,musicbrainz,Thomas Bangalter,yes,,draft
+daft_punk,bass_guitar,bass guitar,wikidata members,,yes,,draft
 daft_punk,drum_kit,drums (drum set),musicbrainz,Guy‐Manuel de Homem‐Christo,yes,,draft
+daft_punk,keyboards,electronic keyboard,wikidata members,,yes,,draft
+daft_punk,guitar,guitar,wikidata members,,yes,,draft
 daft_punk,guitar,guitar,musicbrainz,Guy‐Manuel de Homem‐Christo,yes,,draft
 daft_punk,keyboards,keyboard,musicbrainz,Thomas Bangalter,yes,,draft
+daft_punk,,programming,wikidata members,,no,Not in our list of instruments.,draft
+daft_punk,synthesizer,synthesizer,wikidata members,,yes,,draft
 daft_punk,synthesizer,synthesizer,musicbrainz,Guy‐Manuel de Homem‐Christo,yes,,draft
 daft_punk,synthesizer,synthesizer,musicbrainz,Thomas Bangalter,yes,,draft
+daft_punk,,vocoder,wikidata members,,no,Not in our list of instruments.,draft
+daft_punk,voice,voice,wikidata members,,yes,,draft
 david_bowie,synthesizer,arp 2500,wikidata,,yes,,draft
 david_bowie,drum_kit,drum kit,wikidata,,yes,,draft
 david_bowie,guitar,guitar,wikidata,,yes,,draft
@@ -335,6 +386,8 @@ david_bowie,keyboards,musical keyboard,wikidata,,yes,,draft
 david_bowie,piano,piano,wikidata,,yes,,draft
 david_bowie,saxophone,saxophone,wikidata,,yes,,draft
 david_bowie,voice,voice,wikidata,,yes,,draft
+dead_kennedys,drum_kit,drum kit,wikidata members,Bruce Slesinger,yes,,draft
+dead_kennedys,drum_kit,drum kit,wikidata members,D. H. Peligro,yes,,draft
 dead_kennedys,drum_kit,drums (drum set),musicbrainz,D.H. Peligro,yes,,draft
 dead_kennedys,drum_kit,drums (drum set),musicbrainz,D.H. Peligro,yes,,draft
 dead_kennedys,drum_kit,drums (drum set),musicbrainz,D.H. Peligro,yes,,draft
@@ -349,12 +402,36 @@ dead_kennedys,bass_guitar,electric bass guitar,musicbrainz,Klaus Flouride,yes,,d
 dead_kennedys,guitar,electric guitar,musicbrainz,6025,yes,,draft
 dead_kennedys,guitar,electric guitar,musicbrainz,East Bay Ray,yes,,draft
 dead_kennedys,guitar,electric guitar,musicbrainz,East Bay Ray,yes,,draft
+dead_kennedys,guitar,guitar,wikidata members,Carlos Cadona,yes,,draft
 dead_kennedys,voice,lead vocals,musicbrainz,Brandon Cruz,yes,,draft
 dead_kennedys,voice,lead vocals,musicbrainz,Jeff Penalty,yes,,draft
 dead_kennedys,voice,lead vocals,musicbrainz,Jello Biafra,yes,,draft
 dead_kennedys,voice,lead vocals,musicbrainz,Skip Greer,yes,,draft
+death,bass_guitar,bass guitar,wikidata members,,yes,,draft
+death,bass_guitar,bass guitar,wikidata members,Kelly Conlon,yes,,draft
+death,bass_guitar,bass guitar,wikidata members,Steve DiGiorgio,yes,,draft
+death,bass_guitar,bass guitar,wikidata members,Terry Butler,yes,,draft
+death,drum_kit,drum kit,wikidata members,Bill Andrews,yes,,draft
+death,drum_kit,drum kit,wikidata members,Chris Reifert,yes,,draft
+death,drum_kit,drum kit,wikidata members,Gene Hoglan,yes,,draft
+death,drum_kit,drum kit,wikidata members,Richard Christy,yes,,draft
 death,drum_kit,drums (drum set),musicbrainz,Sean Reinert,yes,,draft
+death,guitar,electric guitar,wikidata members,Bobby Koelble,yes,,draft
+death,guitar,guitar,wikidata members,Andy LaRocque,yes,,draft
+death,guitar,guitar,wikidata members,Chuck Schuldiner,yes,,draft
 death,guitar,guitar,musicbrainz,James Murphy,yes,,draft
+death,guitar,guitar,wikidata members,Kelly Conlon,yes,,draft
+death,guitar,guitar,wikidata members,Paul Masvidal,yes,,draft
+death,guitar,guitar,wikidata members,Ralph Santolla,yes,,draft
+death,guitar,guitar,wikidata members,Richard Christy,yes,,draft
+death,guitar,guitar,wikidata members,Rick Rozz,yes,,draft
+death,guitar,guitar,wikidata members,Shannon Hamm,yes,,draft
+death,keyboards,keyboard instrument,wikidata members,Richard Christy,yes,,draft
+death,percussion,percussion instrument,wikidata members,Richard Christy,yes,,draft
+death,voice,voice,wikidata members,Chris Reifert,yes,,draft
+death,voice,voice,wikidata members,Chuck Schuldiner,yes,,draft
+death,voice,voice,wikidata members,Kam Lee,yes,,draft
+death,voice,voice,wikidata members,Paul Masvidal,yes,,draft
 deep_purple,voice,background vocals,musicbrainz,Jon Lord,yes,,draft
 deep_purple,voice,background vocals,musicbrainz,Jon Lord,yes,,draft
 deep_purple,voice,background vocals,musicbrainz,Nick Simper,yes,,draft
@@ -393,15 +470,37 @@ deep_purple,percussion,percussion,musicbrainz,Ian Gillan,yes,,draft
 deep_purple,percussion,percussion,musicbrainz,Ian Gillan,yes,,draft
 deep_purple,percussion,percussion,musicbrainz,Ian Paice,yes,,draft
 deep_purple,percussion,percussion,musicbrainz,Ian Paice,yes,,draft
+depeche_mode,guitar,guitar,wikidata members,Martin Gore,yes,,draft
 depeche_mode,guitar,guitar,musicbrainz,Martin L. Gore,yes,,draft
+depeche_mode,guitar,guitar,wikidata members,Simon Le Bon,yes,,draft
 depeche_mode,keyboards,keyboard,musicbrainz,Alan Wilder,yes,,draft
 depeche_mode,keyboards,keyboard,musicbrainz,Andrew Fletcher,yes,,draft
 depeche_mode,keyboards,keyboard,musicbrainz,Martin L. Gore,yes,,draft
 depeche_mode,keyboards,keyboard,musicbrainz,Vince Clarke,yes,,draft
+depeche_mode,keyboards,keyboard instrument,wikidata members,Martin Gore,yes,,draft
+depeche_mode,keyboards,keyboard instrument,wikidata members,Simon Le Bon,yes,,draft
 depeche_mode,voice,lead vocals,musicbrainz,Dave Gahan,yes,,draft
-depeche_mode,percussion,membranophone,musicbrainz,Alan Wilder,yes,,draft
+depeche_mode,drum_kit,membranophone,musicbrainz,Alan Wilder,yes,,draft
+depeche_mode,drum_machine,roland tr-808,wikidata members,Simon Le Bon,yes,,draft
+depeche_mode,voice,voice,wikidata members,Martin Gore,yes,,draft
+devo,bass_guitar,bass guitar,wikidata members,Gerald Casale,yes,,draft
+devo,drum_kit,drum kit,wikidata members,David Kendrick,yes,,draft
+devo,drum_kit,drum kit,wikidata members,Jim Mothersbaugh,yes,,draft
 devo,drum_kit,drums (drum set),musicbrainz,Josh Freese,yes,,draft
 devo,guitar,guitar,musicbrainz,Bob Casale,yes,,draft
+devo,guitar,guitar,wikidata members,Bob Lewis,yes,,draft
+devo,guitar,guitar,wikidata members,Bob Mothersbaugh,yes,,draft
+devo,guitar,guitar,wikidata members,Gerald Casale,yes,,draft
+devo,guitar,guitar,wikidata members,Josh Hager,yes,,draft
+devo,guitar,guitar,wikidata members,Mark Mothersbaugh,yes,,draft
+devo,keyboards,keyboard instrument,wikidata members,Mark Mothersbaugh,yes,,draft
+devo,mellotron,mellotron,wikidata members,Mark Mothersbaugh,no,Fewer than 3 of our artists play it.,draft
+devo,synthesizer,minimoog,wikidata members,Mark Mothersbaugh,yes,,draft
+devo,,suzuki omnichord,wikidata members,Mark Mothersbaugh,no,Not in our list of instruments.,draft
+devo,synthesizer,synthesizer,wikidata members,Mark Mothersbaugh,yes,,draft
+devo,voice,voice,wikidata members,Fred Weber,yes,,draft
+devo,voice,voice,wikidata members,Gerald Casale,yes,,draft
+devo,voice,voice,wikidata members,Mark Mothersbaugh,yes,,draft
 digable_planets,voice,voice,wikidata members,Craig Irving,yes,,draft
 digable_planets,voice,voice,wikidata members,Ishmael Butler,yes,,draft
 digable_planets,voice,voice,wikidata members,Ladybug Mecca,yes,,draft
@@ -455,6 +554,7 @@ gang_of_four,guitar,electric guitar,musicbrainz,Andy Gill,yes,,draft
 gang_of_four,guitar,electric guitar,musicbrainz,Andy Gill,yes,,draft
 gang_of_four,guitar,electric guitar,musicbrainz,David Pajo,yes,,draft
 gang_of_four,guitar,electric guitar,musicbrainz,Ted Leo,yes,,draft
+gang_of_four,keyboards,keyboard instrument,wikidata members,Barry Andrews,yes,,draft
 gang_of_four,voice,lead vocals,musicbrainz,David Pajo,yes,,draft
 gang_of_four,voice,lead vocals,musicbrainz,John Sterry,yes,,draft
 gang_of_four,voice,lead vocals,musicbrainz,Jon King,yes,,draft
@@ -476,6 +576,9 @@ gary_numan,voice,voice,wikidata,,yes,,draft
 gene_vincent,guitar,guitar,wikidata,,yes,,draft
 gene_vincent,voice,voice,wikidata,,yes,,draft
 genesis,bass_guitar,bass guitar,musicbrainz,Mike Rutherford,yes,,draft
+genesis,drum_kit,drum kit,wikidata members,Bill Bruford,yes,,draft
+genesis,drum_kit,drum kit,wikidata members,Chester Thompson,yes,,draft
+genesis,drum_kit,drum kit,wikidata members,Nir Zidkyahu,yes,,draft
 genesis,drum_kit,drums (drum set),musicbrainz,Chris Stewart,yes,,draft
 genesis,drum_kit,drums (drum set),musicbrainz,John Mayhew,yes,,draft
 genesis,drum_kit,drums (drum set),musicbrainz,Jonathan Silver,yes,,draft
@@ -483,15 +586,18 @@ genesis,drum_kit,drums (drum set),musicbrainz,Phil Collins,yes,,draft
 genesis,drum_kit,drums (drum set),musicbrainz,Phil Collins,yes,,draft
 genesis,flute,flute,musicbrainz,Peter Gabriel,yes,,draft
 genesis,guitar,guitar,musicbrainz,Anthony Phillips,yes,,draft
+genesis,guitar,guitar,wikidata members,Daryl Stuermer,yes,,draft
 genesis,guitar,guitar,musicbrainz,Mick Barnard,yes,,draft
 genesis,guitar,guitar,musicbrainz,Mike Rutherford,yes,,draft
 genesis,guitar,guitar,musicbrainz,Steve Hackett,yes,,draft
 genesis,guitar,guitar,musicbrainz,Tony Banks,yes,,draft
+genesis,organ,hammond organ,wikidata members,Chester Thompson,yes,,draft
 genesis,keyboards,keyboard,musicbrainz,Tony Banks,yes,,draft
 genesis,voice,lead vocals,musicbrainz,Peter Gabriel,yes,,draft
 genesis,voice,lead vocals,musicbrainz,Phil Collins,yes,,draft
 genesis,voice,lead vocals,musicbrainz,Phil Collins,yes,,draft
 genesis,voice,lead vocals,musicbrainz,Ray Wilson,yes,,draft
+genesis,keyboards,musical keyboard,wikidata members,Chester Thompson,yes,,draft
 genesis,,oboe,musicbrainz,Peter Gabriel,no,Not in our list of instruments.,draft
 genesis,percussion,percussion,musicbrainz,Chris Stewart,yes,,draft
 genesis,percussion,percussion,musicbrainz,John Mayhew,yes,,draft
@@ -499,16 +605,49 @@ genesis,percussion,percussion,musicbrainz,Jonathan Silver,yes,,draft
 genesis,percussion,percussion,musicbrainz,Peter Gabriel,yes,,draft
 genesis,percussion,percussion,musicbrainz,Phil Collins,yes,,draft
 genesis,percussion,percussion,musicbrainz,Phil Collins,yes,,draft
+genesis,voice,voice,wikidata members,Chester Thompson,yes,,draft
 giorgio_moroder,synthesizer,synthesizer,wikidata,,yes,,draft
 grandmaster_flash,turntables,turntable,wikidata,,yes,,draft
 grandmaster_flash,voice,voice,wikidata,,yes,,draft
+grateful_dead,accordion,accordion,wikidata members,Bruce Hornsby,yes,,draft
+grateful_dead,banjo,banjo,wikidata members,Jerry Garcia,no,Not in our list of instruments.,draft
+grateful_dead,bass_guitar,bass guitar,wikidata members,Phil Lesh,yes,,draft
+grateful_dead,drum_kit,drum kit,wikidata members,Bill Kreutzmann,yes,,draft
+grateful_dead,drum_kit,drum kit,wikidata members,Mickey Hart,yes,,draft
+grateful_dead,bass_guitar,electric bass guitar,wikidata members,Robert Hunter,yes,,draft
+grateful_dead,organ,electronic organ,wikidata members,"Ron ""Pigpen"" McKernan",yes,,draft
+grateful_dead,guitar,guitar,wikidata members,Bob Weir,yes,,draft
+grateful_dead,guitar,guitar,wikidata members,Jerry Garcia,yes,,draft
+grateful_dead,guitar,guitar,wikidata members,Phil Lesh,yes,,draft
+grateful_dead,guitar,guitar,wikidata members,Robert Hunter,yes,,draft
+grateful_dead,harmonica,harmonica,wikidata members,Robert Hunter,yes,,draft
+grateful_dead,harmonica,harmonica,wikidata members,"Ron ""Pigpen"" McKernan",yes,,draft
 grateful_dead,keyboards,keyboard,musicbrainz,Brent Mydland,yes,,draft
+grateful_dead,keyboards,keyboard instrument,wikidata members,Tom Constanten,yes,,draft
+grateful_dead,keyboards,keyboard instrument,wikidata members,Vince Welnick,yes,,draft
+grateful_dead,mandolin,mandolin,wikidata members,Robert Hunter,yes,,draft
+grateful_dead,guitar,pedal steel guitar,wikidata members,Jerry Garcia,yes,,draft
+grateful_dead,piano,piano,wikidata members,Bruce Hornsby,yes,,draft
+grateful_dead,piano,piano,wikidata members,Keith Godchaux,yes,,draft
+grateful_dead,piano,piano,wikidata members,"Ron ""Pigpen"" McKernan",yes,,draft
+grateful_dead,piano,piano,wikidata members,Tom Constanten,yes,,draft
+grateful_dead,voice,voice,wikidata members,Bob Weir,yes,,draft
+grateful_dead,voice,voice,wikidata members,Bruce Hornsby,yes,,draft
+grateful_dead,voice,voice,wikidata members,Donna Jean Godchaux,yes,,draft
+grateful_dead,voice,voice,wikidata members,Jerry Garcia,yes,,draft
+grateful_dead,voice,voice,wikidata members,Phil Lesh,yes,,draft
+grateful_dead,voice,voice,wikidata members,"Ron ""Pigpen"" McKernan",yes,,draft
+grateful_dead,voice,voice,wikidata members,Vince Welnick,yes,,draft
 green_day,bass_guitar,bass guitar,musicbrainz,Mike Dirnt,yes,,draft
 green_day,drum_kit,drums (drum set),musicbrainz,John Kiffmeyer,yes,,draft
 green_day,drum_kit,drums (drum set),musicbrainz,Tré Cool,yes,,draft
 green_day,guitar,guitar,musicbrainz,Billie Joe Armstrong,yes,,draft
+green_day,guitar,guitar,wikidata members,Jason Freese,yes,,draft
 green_day,guitar,guitar,musicbrainz,Jason White,yes,,draft
+green_day,keyboards,keyboard instrument,wikidata members,Jason Freese,yes,,draft
 green_day,voice,lead vocals,musicbrainz,Billie Joe Armstrong,yes,,draft
+green_day,piano,piano,wikidata members,Jason Freese,yes,,draft
+green_day,saxophone,saxophone,wikidata members,Jason Freese,yes,,draft
 gucci_mane,voice,voice,wikidata,,yes,,draft
 hank_williams,guitar,guitar,wikidata,,yes,,draft
 hank_williams,voice,voice,wikidata,,yes,,draft
@@ -530,6 +669,7 @@ iron_maiden,voice,background vocals,musicbrainz,Dennis Stratton,yes,,draft
 iron_maiden,voice,background vocals,musicbrainz,Steve Harris,yes,,draft
 iron_maiden,bass_guitar,bass guitar,musicbrainz,Adrian Smith,yes,,draft
 iron_maiden,bass_guitar,bass guitar,musicbrainz,Steve Harris,yes,,draft
+iron_maiden,drum_kit,drum kit,wikidata members,Ron Matthews,yes,,draft
 iron_maiden,drum_kit,drums (drum set),musicbrainz,Clive Burr,yes,,draft
 iron_maiden,drum_kit,drums (drum set),musicbrainz,Doug Sampson,yes,,draft
 iron_maiden,drum_kit,drums (drum set),musicbrainz,Nicko McBrain,yes,,draft
@@ -561,6 +701,7 @@ iron_maiden,percussion,percussion,musicbrainz,Clive Burr,yes,,draft
 iron_maiden,percussion,percussion,musicbrainz,Doug Sampson,yes,,draft
 iron_maiden,percussion,percussion,musicbrainz,Nicko McBrain,yes,,draft
 iron_maiden,percussion,percussion,musicbrainz,Thunderstick,yes,,draft
+iron_maiden,voice,voice,wikidata members,Paul Di'Anno,yes,,draft
 james_brown,drum_kit,drum kit,wikidata,,yes,,draft
 james_brown,guitar,guitar,wikidata,,yes,,draft
 james_brown,organ,organ,wikidata,,yes,,draft
@@ -605,6 +746,7 @@ judas_priest,drum_kit,drums (drum set),musicbrainz,Scott Travis,yes,,draft
 judas_priest,drum_kit,drums (drum set),musicbrainz,Simon Phillips,yes,,draft
 judas_priest,bass_guitar,electric bass guitar,musicbrainz,Davey Rimmer,yes,,draft
 judas_priest,guitar,electric guitar,musicbrainz,Richie Faulkner,yes,,draft
+judas_priest,guitar,guitar,wikidata members,K. K. Downing,yes,,draft
 judas_priest,guitar,guitar,musicbrainz,Kenneth Downing,yes,,draft
 judas_priest,,guitar family,musicbrainz,Ernie Chataway,no,Not in our list of instruments.,draft
 judas_priest,,guitar family,musicbrainz,Glenn Tipton,no,Not in our list of instruments.,draft
@@ -625,6 +767,7 @@ judas_priest,percussion,percussion,musicbrainz,Scott Travis,yes,,draft
 judas_priest,percussion,percussion,musicbrainz,Scott Travis,yes,,draft
 judas_priest,percussion,percussion,musicbrainz,Simon Phillips,yes,,draft
 judas_priest,synthesizer,synthesizer,musicbrainz,Glenn Tipton,yes,,draft
+judas_priest,voice,voice,wikidata members,"Tim ""Ripper"" Owens",yes,,draft
 kate_bush,bass_guitar,bass guitar,wikidata,,yes,,draft
 kate_bush,,cello,wikidata,,no,Not in our list of instruments.,draft
 kate_bush,guitar,guitar,wikidata,,yes,,draft
@@ -664,6 +807,7 @@ king_crimson,drum_kit,electronic drum set,musicbrainz,Pat Mastelotto,yes,,draft
 king_crimson,flute,flute,musicbrainz,Ian McDonald,yes,,draft
 king_crimson,flute,flute,musicbrainz,Mel Collins,yes,,draft
 king_crimson,flute,flute,musicbrainz,Mel Collins,yes,,draft
+king_crimson,guitar,guitar,wikidata members,,yes,,draft
 king_crimson,guitar,guitar,musicbrainz,Jakko Jakszyk,yes,,draft
 king_crimson,guitar,guitar,musicbrainz,Robert Fripp,yes,,draft
 king_crimson,keyboards,keyboard,musicbrainz,Bill Rieflin,yes,,draft
@@ -690,11 +834,15 @@ king_crimson,percussion,percussion,musicbrainz,Michael Giles,yes,,draft
 king_crimson,saxophone,saxophone,musicbrainz,Ian McDonald,yes,,draft
 king_crimson,saxophone,saxophone,musicbrainz,Mel Collins,yes,,draft
 king_crimson,saxophone,saxophone,musicbrainz,Mel Collins,yes,,draft
+king_crimson,synthesizer,synthesizer,wikidata members,,yes,,draft
 king_crimson,synthesizer,synthesizer,musicbrainz,Peter Sinfield,yes,,draft
 king_crimson,violin,violin,musicbrainz,David Cross,yes,,draft
+king_crimson,voice,voice,wikidata members,,yes,,draft
 king_crimson,guitar,warr guitar,musicbrainz,Trey Gunn,yes,,draft
 kraftwerk,voice,background vocals,musicbrainz,Florian Schneider,yes,,draft
 kraftwerk,bass_guitar,bass guitar,musicbrainz,Ralf Hütter,yes,,draft
+kraftwerk,double_bass,double bass,wikidata members,,yes,,draft
+kraftwerk,drum_kit,drum kit,wikidata members,Klaus Dinger,yes,,draft
 kraftwerk,drum_kit,drums (drum set),musicbrainz,Andreas Hohmann,yes,,draft
 kraftwerk,drum_kit,drums (drum set),musicbrainz,Ralf Hütter,yes,,draft
 kraftwerk,guitar,electric guitar,musicbrainz,Florian Schneider,yes,,draft
@@ -725,6 +873,7 @@ lead_belly,accordion,accordion,wikidata,,yes,,draft
 lead_belly,guitar,guitar,wikidata,,yes,,draft
 lead_belly,voice,voice,wikidata,,yes,,draft
 led_zeppelin,bass_guitar,bass guitar,musicbrainz,John Paul Jones,yes,,draft
+led_zeppelin,drum_kit,drum kit,wikidata members,Jason Bonham,yes,,draft
 led_zeppelin,drum_kit,drums (drum set),musicbrainz,John Bonham,yes,,draft
 led_zeppelin,guitar,guitar,musicbrainz,Jimmy Page,yes,,draft
 led_zeppelin,keyboards,keyboard,musicbrainz,John Paul Jones,yes,,draft
@@ -787,14 +936,42 @@ madness,synthesizer,synthesizer,musicbrainz,Steve Nieve,yes,,draft
 madness,trumpet,trumpet,musicbrainz,Cathal Smyth,yes,,draft
 madness,trumpet,trumpet,musicbrainz,Cathal Smyth,yes,,draft
 madness,trumpet,trumpet,musicbrainz,Cathal Smyth,yes,,draft
+madness,trumpet,trumpet,wikidata members,Chas Smash,yes,,draft
 madness,percussion,vibraphone,musicbrainz,Mike Barson,yes,,draft
 madness,percussion,vibraphone,musicbrainz,Mike Barson,yes,,draft
+madness,voice,voice,wikidata members,Chas Smash,yes,,draft
 mahalia_jackson,voice,voice,wikidata,,yes,,draft
+mahavishnu_orchestra,bass_guitar,acoustic bass guitar,wikidata members,Danny Gottlieb,yes,,draft
+mahavishnu_orchestra,bass_guitar,bass guitar,wikidata members,Jonas Hellborg,yes,,draft
+mahavishnu_orchestra,bass_guitar,bass instrument,wikidata members,Jonas Hellborg,yes,,draft
 mahavishnu_orchestra,,cello,musicbrainz,Philip Hirschi,no,Not in our list of instruments.,draft
+mahavishnu_orchestra,drum_kit,drum kit,wikidata members,Billy Cobham,yes,,draft
+mahavishnu_orchestra,drum_kit,drum kit,wikidata members,Danny Gottlieb,yes,,draft
+mahavishnu_orchestra,drum_kit,drum kit,wikidata members,Jan Hammer,yes,,draft
+mahavishnu_orchestra,drum_kit,drum kit,wikidata members,Narada Michael Walden,yes,,draft
+mahavishnu_orchestra,guitar,guitar,wikidata members,John McLaughlin,yes,,draft
+mahavishnu_orchestra,guitar,guitar,wikidata members,Rick Laird,yes,,draft
+mahavishnu_orchestra,,jew's harp,wikidata members,Danny Gottlieb,no,Not in our list of instruments.,draft
+mahavishnu_orchestra,keyboards,keyboard instrument,wikidata members,Gayle Moran,yes,,draft
+mahavishnu_orchestra,keyboards,keyboard instrument,wikidata members,Jan Hammer,yes,,draft
+mahavishnu_orchestra,keyboards,musical keyboard,wikidata members,Jan Hammer,yes,,draft
+mahavishnu_orchestra,keyboards,musical keyboard,wikidata members,Jim Beard,yes,,draft
+mahavishnu_orchestra,keyboards,musical keyboard,wikidata members,Mitchel Forman,yes,,draft
+mahavishnu_orchestra,keyboards,musical keyboard,wikidata members,Stu Goldberg,yes,,draft
+mahavishnu_orchestra,percussion,percussion instrument,wikidata members,Billy Cobham,yes,,draft
+mahavishnu_orchestra,piano,piano,wikidata members,Jan Hammer,yes,,draft
+mahavishnu_orchestra,piano,piano,wikidata members,Jim Beard,yes,,draft
+mahavishnu_orchestra,piano,piano,wikidata members,Mitchel Forman,yes,,draft
+mahavishnu_orchestra,piano,piano,wikidata members,Stu Goldberg,yes,,draft
+mahavishnu_orchestra,saxophone,saxophone,wikidata members,Bill Evans,yes,,draft
 mahavishnu_orchestra,,viola,musicbrainz,Marsha Westbrook,no,Not in our list of instruments.,draft
 mahavishnu_orchestra,violin,violin,musicbrainz,Carol Shive,yes,,draft
 mahavishnu_orchestra,violin,violin,musicbrainz,Jean‐Luc Ponty,yes,,draft
 mahavishnu_orchestra,violin,violin,musicbrainz,Jerry Goodman,yes,,draft
+mahavishnu_orchestra,violin,violin,wikidata members,Steve Kindler,yes,,draft
+mahavishnu_orchestra,voice,voice,wikidata members,Billy Cobham,yes,,draft
+mahavishnu_orchestra,voice,voice,wikidata members,John McLaughlin,yes,,draft
+mahavishnu_orchestra,voice,voice,wikidata members,Narada Michael Walden,yes,,draft
 mariah_carey,voice,voice,wikidata,,yes,,draft
 marvin_gaye,voice,voice,wikidata,,yes,,draft
 mc5,drum_kit,drums (drum set),musicbrainz,Dennis Thompson,yes,,draft
@@ -804,10 +981,15 @@ mc5,guitar,electric guitar,musicbrainz,Wayne Kramer,yes,,draft
 mc5,voice,lead vocals,musicbrainz,Rob Tyner,yes,,draft
 melvins,bass_guitar,bass,musicbrainz,Lori Black,yes,,draft
 melvins,bass_guitar,bass guitar,musicbrainz,Billy Anderson,yes,,draft
+melvins,bass_guitar,bass guitar,wikidata members,Jared Warren,yes,,draft
 melvins,bass_guitar,bass guitar,musicbrainz,Matt Lukin,yes,,draft
+melvins,drum_kit,drum kit,wikidata members,Dale Crover,yes,,draft
 melvins,bass_guitar,electric bass guitar,musicbrainz,JD Pinkus,yes,,draft
 melvins,bass_guitar,electric bass guitar,musicbrainz,Joe Preston,yes,,draft
 melvins,bass_guitar,electric bass guitar,musicbrainz,Mark Deutrom,yes,,draft
+melvins,guitar,guitar,wikidata members,Buzz Osborne,yes,,draft
+melvins,guitar,guitar,wikidata members,Jared Warren,yes,,draft
+melvins,voice,voice,wikidata members,Buzz Osborne,yes,,draft
 metallica,voice,background vocals,musicbrainz,Cliff Burton,yes,,draft
 metallica,voice,background vocals,musicbrainz,Dave Mustaine,yes,,draft
 metallica,voice,background vocals,musicbrainz,Jason Newsted,yes,,draft
@@ -820,7 +1002,9 @@ metallica,drum_kit,drums (drum set),musicbrainz,Lars Ulrich,yes,,draft
 metallica,bass_guitar,electric bass guitar,musicbrainz,Jason Newsted,yes,,draft
 metallica,guitar,guitar,musicbrainz,Dave Mustaine,yes,,draft
 metallica,guitar,guitar,musicbrainz,James Hetfield,yes,,draft
+metallica,guitar,guitar,wikidata members,John Marshall,yes,,draft
 metallica,guitar,guitar,musicbrainz,Kirk Hammett,yes,,draft
+metallica,guitar,guitar,wikidata members,Lloyd Grant,yes,,draft
 metallica,voice,lead vocals,musicbrainz,James Hetfield,yes,,draft
 metallica,percussion,percussion,musicbrainz,Lars Ulrich,yes,,draft
 michael_jackson,drum_kit,drum kit,wikidata,,yes,,draft
@@ -839,8 +1023,10 @@ minor_threat,bass_guitar,bass guitar,musicbrainz,Steve Hansgen,yes,,draft
 minor_threat,guitar,guitar,musicbrainz,Brian Baker,yes,,draft
 minor_threat,guitar,guitar,musicbrainz,Lyle Preslar,yes,,draft
 minor_threat,voice,lead vocals,musicbrainz,Ian MacKaye,yes,,draft
-minor_threat,percussion,membranophone,musicbrainz,Jeff Nelson,yes,,draft
+minor_threat,drum_kit,membranophone,musicbrainz,Jeff Nelson,yes,,draft
+motorhead,bass_guitar,bass guitar,wikidata members,Lemmy,yes,,draft
 motorhead,bass_guitar,bass guitar,musicbrainz,Lemmy Kilmister,yes,,draft
+motorhead,drum_kit,drum kit,wikidata members,Phil Taylor,yes,,draft
 motorhead,drum_kit,drums (drum set),musicbrainz,Lucas Fox,yes,,draft
 motorhead,drum_kit,drums (drum set),musicbrainz,Mikkey Dee,yes,,draft
 motorhead,drum_kit,drums (drum set),musicbrainz,Pete Gill,yes,,draft
@@ -852,11 +1038,32 @@ motorhead,guitar,guitar,musicbrainz,Larry Wallis,yes,,draft
 motorhead,guitar,guitar,musicbrainz,Phil Campbell,yes,,draft
 motorhead,guitar,guitar,musicbrainz,Würzel,yes,,draft
 motorhead,voice,lead vocals,musicbrainz,Lemmy Kilmister,yes,,draft
+motorhead,voice,voice,wikidata members,Lemmy,yes,,draft
 muddy_waters,guitar,guitar,wikidata,,yes,,draft
 muddy_waters,harmonica,harmonica,wikidata,,yes,,draft
 muddy_waters,voice,voice,wikidata,,yes,,draft
+mudhoney,bass_guitar,bass guitar,wikidata members,Guy Maddison,yes,,draft
 mudhoney,bass_guitar,bass guitar,musicbrainz,Matt Lukin,yes,,draft
+mudhoney,drum_kit,drum kit,wikidata members,Dan Peters,yes,,draft
+mudhoney,guitar,electric guitar,wikidata members,Mark Arm,yes,,draft
+mudhoney,guitar,guitar,wikidata members,Steve Turner,yes,,draft
+mudhoney,saxophone,saxophone,wikidata members,Steve Turner,yes,,draft
+mudhoney,voice,voice,wikidata members,Mark Arm,yes,,draft
+mudhoney,voice,voice,wikidata members,Steve Turner,yes,,draft
+n_w_a,drum_machine,drum machine,wikidata members,,yes,,draft
+n_w_a,,electrophone,wikidata members,DJ Yella,no,Not in our list of instruments.,draft
+n_w_a,keyboards,keyboard instrument,wikidata members,,yes,,draft
+n_w_a,piano,piano,wikidata members,,yes,,draft
+n_w_a,sampler,sampler,wikidata members,,yes,,draft
+n_w_a,synthesizer,synthesizer,wikidata members,,yes,,draft
+n_w_a,turntables,turntable,wikidata members,,yes,,draft
 n_w_a,turntables,turntable,musicbrainz,DJ Speed,yes,,draft
+n_w_a,voice,voice,wikidata members,,yes,,draft
+n_w_a,voice,voice,wikidata members,Arabian Prince,yes,,draft
+n_w_a,voice,voice,wikidata members,DJ Yella,yes,,draft
+n_w_a,voice,voice,wikidata members,Eazy-E,yes,,draft
+n_w_a,voice,voice,wikidata members,Ice Cube,yes,,draft
+n_w_a,voice,voice,wikidata members,MC Ren,yes,,draft
 napalm_death,drum_kit,drums (drum set),musicbrainz,Danny Herrera,yes,,draft
 napalm_death,drum_kit,drums (drum set),musicbrainz,Mick Harris,yes,,draft
 napalm_death,drum_kit,drums (drum set),musicbrainz,Miles “The Rat” Ratledge,yes,,draft
@@ -875,8 +1082,10 @@ napalm_death,voice,lead vocals,musicbrainz,Nik Bullen,yes,,draft
 napalm_death,voice,lead vocals,musicbrainz,Phil Vane,yes,,draft
 nas,voice,voice,wikidata,,yes,,draft
 neil_young,guitar,guitar,wikidata,,yes,,draft
+neu,double_bass,double bass,wikidata members,,yes,,draft
 neu,drum_kit,drums (drum set),musicbrainz,Hans Lampe,yes,,draft
 neu,drum_kit,drums (drum set),musicbrainz,Thomas Dinger,yes,,draft
+neu,guitar,guitar,wikidata members,Michael Rother,yes,,draft
 new_order,bass_guitar,bass guitar,musicbrainz,Peter Hook,yes,,draft
 new_order,bass_guitar,bass guitar,musicbrainz,Tom Chapman,yes,,draft
 new_order,drum_kit,drums (drum set),musicbrainz,Stephen Morris,yes,,draft
@@ -894,15 +1103,20 @@ new_order,synthesizer,synthesizer,musicbrainz,Peter Hook,yes,,draft
 new_order,synthesizer,synthesizer,musicbrainz,Phil Cunningham,yes,,draft
 new_order,synthesizer,synthesizer,musicbrainz,Stephen Morris,yes,,draft
 new_order,synthesizer,synthesizer,musicbrainz,Tom Chapman,yes,,draft
+new_york_dolls,bass_guitar,bass guitar,wikidata members,Arthur Kane,yes,,draft
+new_york_dolls,bass_guitar,bass guitar,wikidata members,Sami Yaffa,yes,,draft
 new_york_dolls,bass_guitar,bass guitar,musicbrainz,Sylvain Sylvain,yes,,draft
+new_york_dolls,drum_kit,drum kit,wikidata members,Billy Murcia,yes,,draft
 new_york_dolls,drum_kit,drums (drum set),musicbrainz,Brian Delaney,yes,,draft
 new_york_dolls,drum_kit,drums (drum set),musicbrainz,Gary Powell,yes,,draft
 new_york_dolls,drum_kit,drums (drum set),musicbrainz,Jerry Nolan,yes,,draft
+new_york_dolls,guitar,guitar,wikidata members,Johnny Thunders,yes,,draft
 new_york_dolls,guitar,guitar,musicbrainz,Steve Conte,yes,,draft
 new_york_dolls,guitar,guitar,musicbrainz,Sylvain Sylvain,yes,,draft
 new_york_dolls,harmonica,harmonica,musicbrainz,David Johansen,yes,,draft
 new_york_dolls,voice,lead vocals,musicbrainz,David Johansen,yes,,draft
 new_york_dolls,piano,piano,musicbrainz,Sylvain Sylvain,yes,,draft
+new_york_dolls,voice,voice,wikidata members,Johnny Thunders,yes,,draft
 nirvana,accordion,accordion,musicbrainz,Krist Novoselic,yes,,draft
 nirvana,voice,background vocals,musicbrainz,Dave Grohl,yes,,draft
 nirvana,voice,background vocals,musicbrainz,Jason Everman,yes,,draft
@@ -924,6 +1138,9 @@ otis_redding,voice,voice,wikidata,,yes,,draft
 parliament_funkadelic,voice,background vocals,musicbrainz,Belita Woods,yes,,draft
 parliament_funkadelic,voice,background vocals,musicbrainz,Debbie Wright,yes,,draft
 parliament_funkadelic,bass_guitar,bass guitar,musicbrainz,Lonnie Motley,yes,,draft
+parliament_funkadelic,drum_kit,drum kit,wikidata members,Jerome Brailey,yes,,draft
+parliament_funkadelic,guitar,guitar,wikidata members,Glenn Goins,yes,,draft
+parliament_funkadelic,voice,voice,wikidata members,Glenn Goins,yes,,draft
 patti_smith,clarinet,clarinet,wikidata,,yes,,draft
 patti_smith,guitar,guitar,wikidata,,yes,,draft
 patti_smith,voice,voice,wikidata,,yes,,draft
@@ -935,30 +1152,39 @@ pearl_jam,voice,background vocals,musicbrainz,Matt Cameron,yes,,draft
 pearl_jam,voice,background vocals,musicbrainz,Mike McCready,yes,,draft
 pearl_jam,voice,background vocals,musicbrainz,Stone Gossard,yes,,draft
 pearl_jam,bass_guitar,bass guitar,musicbrainz,Jeff Ament,yes,,draft
+pearl_jam,bass_guitar,bass guitar,wikidata members,Josh Klinghoffer,yes,,draft
 pearl_jam,bass_guitar,bass guitar,musicbrainz,Stone Gossard,yes,,draft
 pearl_jam,double_bass,double bass,musicbrainz,Jeff Ament,yes,,draft
+pearl_jam,drum_kit,drum kit,wikidata members,Josh Klinghoffer,yes,,draft
 pearl_jam,drum_kit,drums (drum set),musicbrainz,Jack Irons,yes,,draft
 pearl_jam,drum_kit,drums (drum set),musicbrainz,Matt Cameron,yes,,draft
 pearl_jam,drum_kit,drums (drum set),musicbrainz,Matt Chamberlain,yes,,draft
+pearl_jam,keyboards,electronic keyboard,wikidata members,Josh Klinghoffer,yes,,draft
 pearl_jam,guitar,guitar,musicbrainz,Eddie Vedder,yes,,draft
+pearl_jam,guitar,guitar,wikidata members,Josh Klinghoffer,yes,,draft
 pearl_jam,guitar,guitar,musicbrainz,Mike McCready,yes,,draft
 pearl_jam,guitar,guitar,musicbrainz,Stone Gossard,yes,,draft
 pearl_jam,harmonica,harmonica,musicbrainz,Eddie Vedder,yes,,draft
 pearl_jam,voice,lead vocals,musicbrainz,Eddie Vedder,yes,,draft
-pearl_jam,percussion,membranophone,musicbrainz,Dave Abbruzzese,yes,,draft
-pearl_jam,percussion,membranophone,musicbrainz,Dave Krusen,yes,,draft
+pearl_jam,drum_kit,membranophone,musicbrainz,Dave Abbruzzese,yes,,draft
+pearl_jam,drum_kit,membranophone,musicbrainz,Dave Krusen,yes,,draft
+pearl_jam,keyboards,musical keyboard,wikidata members,Josh Klinghoffer,yes,,draft
+pearl_jam,organ,organ,wikidata members,Boom Gaspar,yes,,draft
+pearl_jam,piano,piano,wikidata members,Boom Gaspar,yes,,draft
 pearl_jam,percussion,tambourine,musicbrainz,Eddie Vedder,yes,,draft
+pearl_jam,voice,voice,wikidata members,Josh Klinghoffer,yes,,draft
 pet_shop_boys,keyboards,electronic keyboard,wikidata members,Chris Lowe,yes,,draft
 pet_shop_boys,guitar,guitar,wikidata members,Neil Tennant,yes,,draft
 pet_shop_boys,keyboards,keyboard instrument,wikidata members,Neil Tennant,yes,,draft
 pet_shop_boys,keyboards,musical keyboard,wikidata members,Chris Lowe,yes,,draft
 pet_shop_boys,voice,voice,wikidata members,Chris Lowe,yes,,draft
 pet_shop_boys,voice,voice,wikidata members,Neil Tennant,yes,,draft
-pete_seeger,banjo,banjo,wikidata,,no,Fewer than 3 of our artists play it.,draft
+pete_seeger,banjo,banjo,wikidata,,no,Not in our list of instruments.,draft
 pete_seeger,guitar,guitar,wikidata,,yes,,draft
 pete_seeger,voice,voice,wikidata,,yes,,draft
 pink_floyd,bass_guitar,bass guitar,musicbrainz,Roger Waters,yes,,draft
 pink_floyd,drum_kit,drums (drum set),musicbrainz,Nick Mason,yes,,draft
+pink_floyd,guitar,guitar,wikidata members,Bob Klose,yes,,draft
 pink_floyd,guitar,guitar,musicbrainz,David Gilmour,yes,,draft
 pink_floyd,guitar,guitar,musicbrainz,Syd Barrett,yes,,draft
 pink_floyd,keyboards,keyboard,musicbrainz,Richard Wright,yes,,draft
@@ -974,6 +1200,7 @@ pixies,voice,background vocals,musicbrainz,Emma Richardson,yes,,draft
 pixies,voice,background vocals,musicbrainz,Kim Deal,yes,,draft
 pixies,voice,background vocals,musicbrainz,Kim Shattuck,yes,,draft
 pixies,voice,background vocals,musicbrainz,Paz Lenchantin,yes,,draft
+pixies,drum_kit,drum kit,wikidata members,David Lovering,yes,,draft
 pixies,drum_kit,drums (drum set),musicbrainz,Dave Lovering,yes,,draft
 pixies,bass_guitar,electric bass guitar,musicbrainz,Emma Richardson,yes,,draft
 pixies,bass_guitar,electric bass guitar,musicbrainz,Kim Deal,yes,,draft
@@ -997,6 +1224,9 @@ public_enemy,drum_kit,drums (drum set),musicbrainz,T Bone Motta,yes,,draft
 public_enemy,guitar,guitar,musicbrainz,Khari Wynn,yes,,draft
 public_enemy,turntables,turntable,musicbrainz,DJ Lord,yes,,draft
 public_enemy,turntables,turntable,musicbrainz,Terminator X,yes,,draft
+public_enemy,voice,voice,wikidata members,,yes,,draft
+public_enemy,voice,voice,wikidata members,Chuck D,yes,,draft
+public_enemy,voice,voice,wikidata members,Professor Griff,yes,,draft
 r_e_m,voice,background vocals,musicbrainz,Mike Mills,yes,,draft
 r_e_m,bass_guitar,bass guitar,musicbrainz,Mike Mills,yes,,draft
 r_e_m,drum_kit,drums (drum set),musicbrainz,Bill Berry,yes,,draft
@@ -1014,6 +1244,7 @@ radiohead,guitar,electric guitar,musicbrainz,Ed O’Brien,yes,,draft
 radiohead,guitar,electric guitar,musicbrainz,Jonny Greenwood,yes,,draft
 radiohead,guitar,electric guitar,musicbrainz,Thom Yorke,yes,,draft
 radiohead,percussion,glockenspiel,musicbrainz,Jonny Greenwood,yes,,draft
+radiohead,guitar,guitar,wikidata members,Ed O'Brien,yes,,draft
 radiohead,voice,lead vocals,musicbrainz,Thom Yorke,yes,,draft
 radiohead,,ondes martenot,musicbrainz,Jonny Greenwood,no,Not in our list of instruments.,draft
 radiohead,percussion,percussion,musicbrainz,Philip Selway,yes,,draft
@@ -1022,10 +1253,13 @@ radiohead,sampler,sampler,musicbrainz,Colin Greenwood,yes,,draft
 radiohead,,string synthesizer,musicbrainz,Colin Greenwood,no,Not in our list of instruments.,draft
 radiohead,synthesizer,synthesizer,musicbrainz,Thom Yorke,yes,,draft
 radiohead,,toy piano,musicbrainz,Jonny Greenwood,no,Not in our list of instruments.,draft
+radiohead,voice,voice,wikidata members,Ed O'Brien,yes,,draft
 ramones,voice,background vocals,musicbrainz,C.J. Ramone,yes,,draft
 ramones,voice,background vocals,musicbrainz,Richie Ramone,yes,,draft
+ramones,bass_guitar,bass guitar,wikidata members,C. J. Ramone,yes,,draft
 ramones,bass_guitar,bass guitar,musicbrainz,C.J. Ramone,yes,,draft
 ramones,bass_guitar,bass guitar,musicbrainz,Dee Dee Ramone,yes,,draft
+ramones,drum_kit,drum kit,wikidata members,Clem Burke,yes,,draft
 ramones,drum_kit,drums (drum set),musicbrainz,Elvis Ramone,yes,,draft
 ramones,drum_kit,drums (drum set),musicbrainz,Marky Ramone,yes,,draft
 ramones,drum_kit,drums (drum set),musicbrainz,Marky Ramone,yes,,draft
@@ -1038,9 +1272,36 @@ ray_charles,piano,piano,wikidata,,yes,,draft
 ray_charles,voice,voice,wikidata,,yes,,draft
 robert_johnson,guitar,guitar,wikidata,,yes,,draft
 robert_johnson,voice,voice,wikidata,,yes,,draft
+roxy_music,bass_guitar,bass guitar,wikidata members,John Gustafson,yes,,draft
 roxy_music,bass_guitar,bass guitar,musicbrainz,Sal Maida,yes,,draft
+roxy_music,guitar,guitar,wikidata members,Brian Eno,yes,,draft
+roxy_music,guitar,guitar,wikidata members,Bryan Ferry,yes,,draft
+roxy_music,guitar,guitar,wikidata members,David O'List,yes,,draft
+roxy_music,guitar,guitar,wikidata members,John Gustafson,yes,,draft
+roxy_music,guitar,guitar,wikidata members,Neil Hubbard,yes,,draft
+roxy_music,guitar,guitar,wikidata members,Phil Manzanera,yes,,draft
+roxy_music,guitar,guitar,wikidata members,Rick Wills,yes,,draft
+roxy_music,harmonica,harmonica,wikidata members,Bryan Ferry,yes,,draft
 roxy_music,keyboards,keyboard,musicbrainz,David Skinner,yes,,draft
+roxy_music,keyboards,keyboard instrument,wikidata members,Andy Mackay,yes,,draft
+roxy_music,keyboards,keyboard instrument,wikidata members,Dave Skinner,yes,,draft
+roxy_music,keyboards,keyboard instrument,wikidata members,Eddie Jobson,yes,,draft
+roxy_music,keyboards,musical keyboard,wikidata members,Bryan Ferry,yes,,draft
+roxy_music,,oboe,wikidata members,Andy Mackay,no,Not in our list of instruments.,draft
+roxy_music,piano,piano,wikidata members,Bryan Ferry,yes,,draft
+roxy_music,piano,piano,wikidata members,Dave Skinner,yes,,draft
+roxy_music,saxophone,saxophone,wikidata members,Andy Mackay,yes,,draft
+roxy_music,synthesizer,synthesizer,wikidata members,Brian Eno,yes,,draft
+roxy_music,synthesizer,synthesizer,wikidata members,Eddie Jobson,yes,,draft
+roxy_music,violin,violin,wikidata members,Andy Mackay,yes,,draft
+roxy_music,violin,violin,wikidata members,Eddie Jobson,yes,,draft
+roxy_music,voice,voice,wikidata members,Bryan Ferry,yes,,draft
+roxy_music,voice,voice,wikidata members,Eddie Jobson,yes,,draft
+roxy_music,voice,voice,wikidata members,John Gustafson,yes,,draft
 run_dmc,turntables,turntable,musicbrainz,DJ Jam Master J'Son,yes,,draft
+run_dmc,voice,voice,wikidata members,Darryl McDaniels,yes,,draft
+run_dmc,voice,voice,wikidata members,Jam Master Jay,yes,,draft
+run_dmc,voice,voice,wikidata members,Joseph Simmons,yes,,draft
 rush,voice,background vocals,musicbrainz,Alex Lifeson,yes,,draft
 rush,bass_guitar,bass guitar,musicbrainz,Geddy Lee,yes,,draft
 rush,bass_guitar,bass guitar,musicbrainz,Jeff Jones,yes,,draft
@@ -1053,7 +1314,15 @@ rush,voice,lead vocals,musicbrainz,Jeff Jones,yes,,draft
 rush,percussion,percussion,musicbrainz,Neil Peart,yes,,draft
 sam_cooke,piano,upright piano,wikidata,,yes,,draft
 sam_cooke,voice,voice,wikidata,,yes,,draft
+sex_pistols,bass_guitar,bass guitar,wikidata members,Glen Matlock,yes,,draft
+sex_pistols,bass_guitar,bass guitar,wikidata members,Sid Vicious,yes,,draft
+sex_pistols,drum_kit,drum kit,wikidata members,Paul Cook,yes,,draft
 sex_pistols,,eponymous,musicbrainz,Sex Pistols feat. Frank Carter,no,Not in our list of instruments.,draft
+sex_pistols,guitar,guitar,wikidata members,Steve Jones,yes,,draft
+sex_pistols,voice,voice,wikidata members,Frank Carter,yes,,draft
+sex_pistols,voice,voice,wikidata members,Glen Matlock,yes,,draft
+sex_pistols,voice,voice,wikidata members,John Lydon,yes,,draft
+siouxsie_and_the_banshees,bass_guitar,bass guitar,wikidata members,Sid Vicious,yes,,draft
 siouxsie_and_the_banshees,bass_guitar,bass guitar,musicbrainz,Steven Severin,yes,,draft
 siouxsie_and_the_banshees,drum_kit,drums (drum set),musicbrainz,Budgie,yes,,draft
 siouxsie_and_the_banshees,drum_kit,drums (drum set),musicbrainz,Kenny Morris,yes,,draft
@@ -1063,6 +1332,7 @@ siouxsie_and_the_banshees,guitar,guitar,musicbrainz,John McKay,yes,,draft
 siouxsie_and_the_banshees,guitar,guitar,musicbrainz,John Valentine Carruthers,yes,,draft
 siouxsie_and_the_banshees,guitar,guitar,musicbrainz,Jon Klein,yes,,draft
 siouxsie_and_the_banshees,guitar,guitar,musicbrainz,Knox Chandler,yes,,draft
+siouxsie_and_the_banshees,guitar,guitar,wikidata members,Marco Pirroni,yes,,draft
 siouxsie_and_the_banshees,guitar,guitar,musicbrainz,Peter Fenton,yes,,draft
 siouxsie_and_the_banshees,guitar,guitar,musicbrainz,Robert Smith,yes,,draft
 siouxsie_and_the_banshees,keyboards,keyboard,musicbrainz,Martin McCarrick,yes,,draft
@@ -1096,14 +1366,18 @@ sly_and_the_family_stone,trumpet,trumpet,musicbrainz,Cynthia Robinson,yes,,draft
 sly_and_the_family_stone,violin,violin,musicbrainz,Sid Page,yes,,draft
 son_house,guitar,guitar,wikidata,,yes,,draft
 son_house,voice,voice,wikidata,,yes,,draft
+sonic_youth,bass_guitar,bass guitar,wikidata members,Jim O'Rourke,yes,,draft
 sonic_youth,bass_guitar,bass guitar,musicbrainz,Jim O’Rourke,yes,,draft
 sonic_youth,bass_guitar,bass guitar,musicbrainz,Kim Gordon,yes,,draft
 sonic_youth,bass_guitar,bass guitar,musicbrainz,Mark Ibold,yes,,draft
+sonic_youth,bass_guitar,bass instrument,wikidata members,Jim O'Rourke,yes,,draft
 sonic_youth,drum_kit,drums (drum set),musicbrainz,Bob Bert,yes,,draft
 sonic_youth,drum_kit,drums (drum set),musicbrainz,Bob Bert,yes,,draft
 sonic_youth,drum_kit,drums (drum set),musicbrainz,Jim Sclavunos,yes,,draft
 sonic_youth,drum_kit,drums (drum set),musicbrainz,Richard Edson,yes,,draft
 sonic_youth,drum_kit,drums (drum set),musicbrainz,Steve Shelley,yes,,draft
+sonic_youth,,electronic musical instrument,wikidata members,Jim O'Rourke,no,Not in our list of instruments.,draft
+sonic_youth,guitar,guitar,wikidata members,Jim O'Rourke,yes,,draft
 sonic_youth,guitar,guitar,musicbrainz,Jim O’Rourke,yes,,draft
 sonic_youth,guitar,guitar,musicbrainz,Kim Gordon,yes,,draft
 sonic_youth,guitar,guitar,musicbrainz,Lee Ranaldo,yes,,draft
@@ -1140,8 +1414,8 @@ sum_41,guitar,guitar,musicbrainz,Deryck Whibley,yes,,draft
 sum_41,guitar,guitar,musicbrainz,Tom Thacker,yes,,draft
 sum_41,keyboards,keyboard,musicbrainz,John Nicosia,yes,,draft
 sum_41,voice,lead vocals,musicbrainz,Deryck Whibley,yes,,draft
-sum_41,percussion,membranophone,musicbrainz,Frank Zummo,yes,,draft
-sum_41,percussion,membranophone,musicbrainz,Steve Jocz,yes,,draft
+sum_41,drum_kit,membranophone,musicbrainz,Frank Zummo,yes,,draft
+sum_41,drum_kit,membranophone,musicbrainz,Steve Jocz,yes,,draft
 t_rex,voice,background vocals,musicbrainz,Gloria Jones,yes,,draft
 t_rex,voice,background vocals,musicbrainz,Steve Peregrine Took,yes,,draft
 t_rex,bass_guitar,bass guitar,musicbrainz,Steve Currie,yes,,draft
@@ -1163,7 +1437,20 @@ talking_heads,keyboards,musical keyboard,wikidata members,Jerry Harrison,yes,,dr
 talking_heads,voice,voice,wikidata members,David Byrne,yes,,draft
 talking_heads,voice,voice,wikidata members,Tina Weymouth,yes,,draft
 tangerine_dream,,cello,musicbrainz,Hoshiko Yamane,no,Not in our list of instruments.,draft
+tangerine_dream,drum_kit,drum kit,wikidata members,Klaus Schulze,yes,,draft
 tangerine_dream,drum_kit,drums (drum set),musicbrainz,Lanse Hapshash,yes,,draft
+tangerine_dream,keyboards,electronic keyboard,wikidata members,Christopher Franke,yes,,draft
+tangerine_dream,keyboards,electronic keyboard,wikidata members,Edgar Froese,yes,,draft
+tangerine_dream,keyboards,electronic keyboard,wikidata members,Peter Baumann,yes,,draft
+tangerine_dream,keyboards,electronic keyboard,wikidata members,Ulrich Schnauss,yes,,draft
+tangerine_dream,guitar,guitar,wikidata members,Klaus Schulze,yes,,draft
+tangerine_dream,keyboards,keyboard instrument,wikidata members,Christopher Franke,yes,,draft
+tangerine_dream,keyboards,keyboard instrument,wikidata members,Thorsten Quaeschning,yes,,draft
+tangerine_dream,percussion,percussion instrument,wikidata members,Klaus Schulze,yes,,draft
+tangerine_dream,saxophone,saxophone,wikidata members,Steve Jolliffe,yes,,draft
+tangerine_dream,synthesizer,synthesizer,wikidata members,Christopher Franke,yes,,draft
+tangerine_dream,synthesizer,synthesizer,wikidata members,Conrad Schnitzler,yes,,draft
+tangerine_dream,synthesizer,synthesizer,wikidata members,Klaus Schulze,yes,,draft
 tangerine_dream,violin,violin,musicbrainz,Hoshiko Yamane,yes,,draft
 the_beatles,bass_guitar,bass guitar,musicbrainz,Chas Newby,yes,,draft
 the_beatles,bass_guitar,bass guitar,musicbrainz,Paul McCartney,yes,,draft
@@ -1178,7 +1465,7 @@ the_beatles,voice,lead vocals,musicbrainz,George Harrison,yes,,draft
 the_beatles,voice,lead vocals,musicbrainz,John Lennon,yes,,draft
 the_beatles,voice,lead vocals,musicbrainz,Paul McCartney,yes,,draft
 the_byrds,guitar,12-string guitar,wikidata members,David Crosby,yes,,draft
-the_byrds,banjo,banjo,wikidata members,Gene Parsons,no,Fewer than 3 of our artists play it.,draft
+the_byrds,banjo,banjo,wikidata members,Gene Parsons,no,Not in our list of instruments.,draft
 the_byrds,bass_guitar,bass guitar,wikidata members,Chris Hillman,yes,,draft
 the_byrds,bass_guitar,bass guitar,wikidata members,John York,yes,,draft
 the_byrds,bass_guitar,bass guitar,wikidata members,Skip Battin,yes,,draft
@@ -1226,7 +1513,22 @@ the_cars,percussion,percussion,musicbrainz,David Robinson,yes,,draft
 the_cars,percussion,percussion,musicbrainz,Greg Hawkes,yes,,draft
 the_cars,saxophone,saxophone,musicbrainz,Greg Hawkes,yes,,draft
 the_cars,synthesizer,synthesizer,musicbrainz,Greg Hawkes,yes,,draft
+the_clash,bass_guitar,bass,wikidata members,Mick Jones,yes,,draft
+the_clash,bass_guitar,bass guitar,wikidata members,Paul Simonon,yes,,draft
+the_clash,bass_guitar,bass instrument,wikidata members,Paul Simonon,yes,,draft
+the_clash,drum_kit,drum kit,wikidata members,Mick Jones,yes,,draft
+the_clash,drum_kit,drum kit,wikidata members,Terry Chimes,yes,,draft
+the_clash,drum_kit,drum kit,wikidata members,Topper Headon,yes,,draft
+the_clash,guitar,guitar,wikidata members,Joe Strummer,yes,,draft
+the_clash,guitar,guitar,wikidata members,Keith Levene,yes,,draft
+the_clash,guitar,guitar,wikidata members,Mick Jones,yes,,draft
 the_clash,guitar,guitar,musicbrainz,Nick Sheppard,yes,,draft
+the_clash,guitar,guitar,wikidata members,Paul Simonon,yes,,draft
+the_clash,harmonica,harmonica,wikidata members,Mick Jones,yes,,draft
+the_clash,keyboards,keyboard instrument,wikidata members,Mick Jones,yes,,draft
+the_clash,keyboards,musical keyboard,wikidata members,Mick Jones,yes,,draft
+the_clash,voice,voice,wikidata members,Mick Jones,yes,,draft
+the_clash,voice,voice,wikidata members,Paul Simonon,yes,,draft
 the_doors,voice,background vocals,musicbrainz,Ray Manzarek,yes,,draft
 the_doors,voice,background vocals,musicbrainz,Robby Krieger,yes,,draft
 the_doors,drum_kit,drums (drum set),musicbrainz,John Densmore,yes,,draft
@@ -1268,15 +1570,18 @@ the_kinks,keyboards,keyboard instrument,wikidata members,Ray Davies,yes,,draft
 the_kinks,piano,piano,wikidata members,Ian Gibbons,yes,,draft
 the_kinks,voice,voice,wikidata members,Ray Davies,yes,,draft
 the_meters,bass_guitar,bass guitar,musicbrainz,"George Porter, Jr.",yes,,draft
+the_meters,bass_guitar,bass instrument,wikidata members,George Porter,yes,,draft
 the_meters,drum_kit,drums (drum set),musicbrainz,Russell Batiste,yes,,draft
 the_meters,drum_kit,drums (drum set),musicbrainz,Ziggy Modeliste,yes,,draft
 the_meters,guitar,guitar,musicbrainz,Brian Stoltz,yes,,draft
+the_meters,guitar,guitar,wikidata members,George Porter,yes,,draft
 the_meters,guitar,guitar,musicbrainz,Leo Nocentelli,yes,,draft
 the_meters,keyboards,keyboard,musicbrainz,Art Neville,yes,,draft
 the_meters,voice,lead vocals,musicbrainz,Art Neville,yes,,draft
 the_meters,voice,lead vocals,musicbrainz,Cyril Neville,yes,,draft
 the_meters,voice,lead vocals,musicbrainz,"George Porter, Jr.",yes,,draft
 the_meters,percussion,percussion,musicbrainz,Cyril Neville,yes,,draft
+the_meters,voice,voice,wikidata members,George Porter,yes,,draft
 the_orb,keyboards,electronic keyboard,wikidata members,Kris Weston,yes,,draft
 the_orb,guitar,guitar,wikidata members,Jimmy Cauty,yes,,draft
 the_police,bass_guitar,bass guitar,musicbrainz,Sting,yes,,draft
@@ -1315,6 +1620,7 @@ the_rolling_stones,bass_guitar,bass guitar,musicbrainz,Mick Jagger,yes,,draft
 the_rolling_stones,bass_guitar,bass guitar,musicbrainz,Mick Taylor,yes,,draft
 the_rolling_stones,bass_guitar,bass guitar,musicbrainz,Ronnie Wood,yes,,draft
 the_rolling_stones,,cello,musicbrainz,Brian Jones,no,Not in our list of instruments.,draft
+the_rolling_stones,drum_kit,drum kit,wikidata members,Carlo Little,yes,,draft
 the_rolling_stones,drum_kit,drums (drum set),musicbrainz,Charlie Watts,yes,,draft
 the_rolling_stones,drum_kit,drums (drum set),musicbrainz,Mick Avory,yes,,draft
 the_rolling_stones,drum_kit,drums (drum set),musicbrainz,Steve Jordan,yes,,draft
@@ -1338,7 +1644,7 @@ the_rolling_stones,voice,lead vocals,musicbrainz,Mick Jagger,yes,,draft
 the_rolling_stones,mandolin,mandolin,musicbrainz,Brian Jones,yes,,draft
 the_rolling_stones,percussion,marimba,musicbrainz,Bill Wyman,yes,,draft
 the_rolling_stones,percussion,marimba,musicbrainz,Brian Jones,yes,,draft
-the_rolling_stones,percussion,membranophone,musicbrainz,Ronnie Wood,yes,,draft
+the_rolling_stones,drum_kit,membranophone,musicbrainz,Ronnie Wood,yes,,draft
 the_rolling_stones,guitar,pedal steel guitar,musicbrainz,Ronnie Wood,yes,,draft
 the_rolling_stones,percussion,percussion,musicbrainz,Bill Wyman,yes,,draft
 the_rolling_stones,percussion,percussion,musicbrainz,Brian Jones,yes,,draft
@@ -1352,13 +1658,23 @@ the_rolling_stones,,sitar,musicbrainz,Brian Jones,no,Not in our list of instrume
 the_rolling_stones,guitar,slide guitar,musicbrainz,Brian Jones,yes,,draft
 the_rolling_stones,guitar,slide guitar,musicbrainz,Mick Taylor,yes,,draft
 the_rolling_stones,guitar,slide guitar,musicbrainz,Ronnie Wood,yes,,draft
+the_skatalites,double_bass,double bass,wikidata members,Lloyd Brevett,yes,,draft
+the_skatalites,drum_kit,drum kit,wikidata members,Lloyd Knibb,yes,,draft
+the_skatalites,drum_kit,drum kit,wikidata members,Sparrow Thompson,yes,,draft
+the_skatalites,guitar,guitar,wikidata members,Jah Jerry Haynes,yes,,draft
 the_skatalites,keyboards,keyboard,musicbrainz,Cameron Greenlee,yes,,draft
+the_skatalites,piano,piano,wikidata members,Jackie Mittoo,yes,,draft
 the_skatalites,saxophone,saxophone,musicbrainz,Karl Bryan,yes,,draft
 the_skatalites,saxophone,saxophone,musicbrainz,Lester Sterling,yes,,draft
+the_skatalites,saxophone,saxophone,wikidata members,Roland Alphonso,yes,,draft
+the_skatalites,saxophone,saxophone,wikidata members,Tommy McCook,yes,,draft
 the_skatalites,saxophone,tenor saxophone,musicbrainz,Cedric “Im” Brooks,yes,,draft
+the_skatalites,trombone,trombone,wikidata members,Don Drummond,no,Fewer than 3 of our artists play it.,draft
 the_skatalites,trombone,trombone,musicbrainz,Vin Gordon,no,Fewer than 3 of our artists play it.,draft
 the_skatalites,trombone,trombone,musicbrainz,Will Clark,no,Fewer than 3 of our artists play it.,draft
+the_skatalites,trumpet,trumpet,wikidata members,Johnny Moore,yes,,draft
 the_skatalites,trumpet,trumpet,musicbrainz,Nathan Breedlove,yes,,draft
+the_skatalites,voice,voice,wikidata members,Doreen Shaffer,yes,,draft
 the_smiths,bass_guitar,bass guitar,musicbrainz,Andy Rourke,yes,,draft
 the_smiths,drum_kit,drums (drum set),musicbrainz,Mike Joyce,yes,,draft
 the_smiths,guitar,guitar,musicbrainz,Johnny Marr,yes,,draft
@@ -1366,7 +1682,15 @@ the_smiths,voice,lead vocals,musicbrainz,Morrissey,yes,,draft
 the_specials,keyboards,keyboard instrument,wikidata members,Jerry Dammers,yes,,draft
 the_specials,keyboards,musical keyboard,wikidata members,Jerry Dammers,yes,,draft
 the_specials,voice,voice,wikidata members,Terry Hall,yes,,draft
+the_stooges,bass_guitar,bass guitar,wikidata members,Mike Watt,yes,,draft
+the_stooges,bass_guitar,bass instrument,wikidata members,Mike Watt,yes,,draft
+the_stooges,drum_kit,drum kit,wikidata members,Scott Asheton,yes,,draft
+the_stooges,bass_guitar,electric bass guitar,wikidata members,Dave Alexander,yes,,draft
 the_stooges,,eponymous,musicbrainz,Iggy Pop,no,Not in our list of instruments.,draft
+the_stooges,guitar,guitar,wikidata members,Bill Cheatham,yes,,draft
+the_stooges,guitar,guitar,wikidata members,James Williamson,yes,,draft
+the_stooges,guitar,guitar,wikidata members,Ron Asheton,yes,,draft
+the_stooges,voice,voice,wikidata members,Mike Watt,yes,,draft
 the_strokes,voice,background vocals,musicbrainz,"Albert Hammond, Jr.",yes,,draft
 the_strokes,voice,background vocals,musicbrainz,Nick Valensi,yes,,draft
 the_strokes,bass_guitar,bass guitar,musicbrainz,Nikolai Fraiture,yes,,draft
@@ -1376,6 +1700,7 @@ the_strokes,guitar,guitar,musicbrainz,Nick Valensi,yes,,draft
 the_strokes,keyboards,keyboard,musicbrainz,"Albert Hammond, Jr.",yes,,draft
 the_strokes,keyboards,keyboard,musicbrainz,Nick Valensi,yes,,draft
 the_strokes,voice,lead vocals,musicbrainz,Julian Casablancas,yes,,draft
+the_strokes,voice,voice,wikidata members,Julian Fernando Casablancas Christiansen,yes,,draft
 the_velvet_underground,voice,background vocals,musicbrainz,John Cale,yes,,draft
 the_velvet_underground,voice,background vocals,musicbrainz,John Cale,yes,,draft
 the_velvet_underground,voice,background vocals,musicbrainz,Moe Tucker,yes,,draft
@@ -1390,6 +1715,7 @@ the_velvet_underground,bass_guitar,bass,musicbrainz,John Cale,yes,,draft
 the_velvet_underground,bass_guitar,bass,musicbrainz,Sterling Morrison,yes,,draft
 the_velvet_underground,bass_guitar,bass,musicbrainz,Sterling Morrison,yes,,draft
 the_velvet_underground,bass_guitar,bass,musicbrainz,Walter Powers,yes,,draft
+the_velvet_underground,bass_guitar,bass guitar,wikidata members,Maureen Tucker,yes,,draft
 the_velvet_underground,drum_kit,drums (drum set),musicbrainz,Angus MacLise,yes,,draft
 the_velvet_underground,drum_kit,drums (drum set),musicbrainz,Billy Yule,yes,,draft
 the_velvet_underground,drum_kit,drums (drum set),musicbrainz,Moe Tucker,yes,,draft
@@ -1397,6 +1723,7 @@ the_velvet_underground,drum_kit,drums (drum set),musicbrainz,Moe Tucker,yes,,dra
 the_velvet_underground,guitar,guitar,musicbrainz,Doug Yule,yes,,draft
 the_velvet_underground,guitar,guitar,musicbrainz,Lou Reed,yes,,draft
 the_velvet_underground,guitar,guitar,musicbrainz,Lou Reed,yes,,draft
+the_velvet_underground,guitar,guitar,wikidata members,Maureen Tucker,yes,,draft
 the_velvet_underground,guitar,guitar,musicbrainz,Sterling Morrison,yes,,draft
 the_velvet_underground,guitar,guitar,musicbrainz,Sterling Morrison,yes,,draft
 the_velvet_underground,keyboards,keyboard,musicbrainz,Willie Alexander,yes,,draft
@@ -1410,12 +1737,15 @@ the_velvet_underground,organ,organ,musicbrainz,John Cale,yes,,draft
 the_velvet_underground,percussion,percussion,musicbrainz,Angus MacLise,yes,,draft
 the_velvet_underground,percussion,percussion,musicbrainz,Moe Tucker,yes,,draft
 the_velvet_underground,percussion,percussion,musicbrainz,Moe Tucker,yes,,draft
+the_velvet_underground,percussion,percussion instrument,wikidata members,Maureen Tucker,yes,,draft
 the_velvet_underground,piano,piano,musicbrainz,Doug Yule,yes,,draft
 the_velvet_underground,piano,piano,musicbrainz,Lou Reed,yes,,draft
 the_velvet_underground,piano,piano,musicbrainz,Lou Reed,yes,,draft
 the_velvet_underground,,viola,musicbrainz,John Cale,no,Not in our list of instruments.,draft
 the_velvet_underground,,viola,musicbrainz,John Cale,no,Not in our list of instruments.,draft
+the_velvet_underground,voice,voice,wikidata members,Maureen Tucker,yes,,draft
 the_who,bass_guitar,bass guitar,musicbrainz,John Entwistle,yes,,draft
+the_who,drum_kit,drum kit,wikidata members,Zak Starkey,yes,,draft
 the_who,drum_kit,drums (drum set),musicbrainz,Doug Sandom,yes,,draft
 the_who,drum_kit,drums (drum set),musicbrainz,Keith Moon,yes,,draft
 the_who,drum_kit,drums (drum set),musicbrainz,Kenney Jones,yes,,draft
@@ -1430,26 +1760,60 @@ the_who,voice,lead vocals,musicbrainz,John Entwistle,yes,,draft
 the_who,voice,lead vocals,musicbrainz,Pete Townshend,yes,,draft
 the_who,voice,lead vocals,musicbrainz,Roger Daltrey,yes,,draft
 the_who,percussion,percussion,musicbrainz,Roger Daltrey,yes,,draft
+the_who,percussion,percussion instrument,wikidata members,Zak Starkey,yes,,draft
 the_who,synthesizer,synthesizer,musicbrainz,John Entwistle,yes,,draft
 the_who,synthesizer,synthesizer,musicbrainz,Pete Townshend,yes,,draft
 the_who,trumpet,trumpet,musicbrainz,John Entwistle,yes,,draft
 the_winstons,saxophone,saxophone,wikidata members,Richard Lewis Spencer,yes,,draft
+the_yardbirds,synthesizer,arp 2500,wikidata members,Jimmy Page,yes,,draft
 the_yardbirds,voice,background vocals,musicbrainz,Ray Majors,yes,,draft
+the_yardbirds,bass_guitar,bass guitar,wikidata members,Paul Samwell-Smith,yes,,draft
+the_yardbirds,drum_kit,drum kit,wikidata members,Jim McCarty,yes,,draft
+the_yardbirds,guitar,fender stratocaster,wikidata members,Jimmy Page,yes,,draft
+the_yardbirds,guitar,fender telecaster,wikidata members,Jimmy Page,yes,,draft
+the_yardbirds,guitar,gibson eds-1275,wikidata members,Jimmy Page,yes,,draft
+the_yardbirds,guitar,gibson les paul,wikidata members,Jimmy Page,yes,,draft
+the_yardbirds,guitar,guitar,wikidata members,Chris Dreja,yes,,draft
+the_yardbirds,guitar,guitar,wikidata members,Eric Clapton,yes,,draft
+the_yardbirds,guitar,guitar,wikidata members,Jeff Beck,yes,,draft
+the_yardbirds,guitar,guitar,wikidata members,Jimmy Page,yes,,draft
+the_yardbirds,guitar,guitar,wikidata members,Paul Samwell-Smith,yes,,draft
 the_yardbirds,guitar,guitar,musicbrainz,Ray Majors,yes,,draft
 the_yardbirds,guitar,guitar,musicbrainz,Top Topham,yes,,draft
+the_yardbirds,harmonica,harmonica,wikidata members,Keith Relf,yes,,draft
+the_yardbirds,keyboards,keyboard instrument,wikidata members,Eric Clapton,yes,,draft
+the_yardbirds,mandolin,mandolin,wikidata members,Jimmy Page,yes,,draft
+the_yardbirds,voice,voice,wikidata members,Eric Clapton,yes,,draft
+the_yardbirds,voice,voice,wikidata members,Jeff Beck,yes,,draft
+the_yardbirds,voice,voice,wikidata members,Keith Relf,yes,,draft
 thelonious_monk,piano,piano,wikidata,,yes,,draft
 thomas_a_dorsey,piano,piano,wikidata,,yes,,draft
 toots_and_the_maytals,drum_kit,drum kit,wikidata members,Paul Douglas,yes,,draft
 toots_and_the_maytals,voice,voice,wikidata members,Toots Hibbert,yes,,draft
 tupac_shakur,voice,voice,wikidata,,yes,,draft
 van_halen,bass_guitar,bass guitar,musicbrainz,Mark Stone,yes,,draft
+van_halen,bass_guitar,bass guitar,wikidata members,Michael Anthony,yes,,draft
+van_halen,bass_guitar,bass guitar,wikidata members,Wolfgang Van Halen,yes,,draft
+van_halen,drum_kit,drum kit,wikidata members,Alex Van Halen,yes,,draft
+van_halen,guitar,guitar,wikidata members,Eddie Van Halen,yes,,draft
+van_halen,guitar,guitar,wikidata members,Wolfgang Van Halen,yes,,draft
+van_halen,keyboards,keyboard instrument,wikidata members,Eddie Van Halen,yes,,draft
+van_halen,voice,voice,wikidata members,David Lee Roth,yes,,draft
+van_halen,voice,voice,wikidata members,Gary Cherone,yes,,draft
+van_halen,voice,voice,wikidata members,Sammy Hagar,yes,,draft
+van_halen,voice,voice,wikidata members,Wolfgang Van Halen,yes,,draft
 venom,bass_guitar,bass,musicbrainz,Cronos,yes,,draft
 venom,bass_guitar,bass,musicbrainz,Cronos,yes,,draft
+venom,bass_guitar,bass guitar,wikidata members,Conrad Lant,yes,,draft
+venom,bass_guitar,bass guitar,wikidata members,Tony Dolan,yes,,draft
 venom,bass_guitar,bass guitar,musicbrainz,Tony “Demolition Man” Dolan,yes,,draft
+venom,drum_kit,drum kit,wikidata members,Anthony Lant,yes,,draft
+venom,drum_kit,drum kit,wikidata members,Tony Bray,yes,,draft
 venom,drum_kit,drums (drum set),musicbrainz,Abaddon,yes,,draft
 venom,drum_kit,drums (drum set),musicbrainz,Abaddon,yes,,draft
 venom,drum_kit,drums (drum set),musicbrainz,Antton,yes,,draft
 venom,guitar,guitar,musicbrainz,Al Barnes,yes,,draft
+venom,guitar,guitar,wikidata members,Jeffrey Dunn,yes,,draft
 venom,guitar,guitar,musicbrainz,Mantas,yes,,draft
 venom,guitar,guitar,musicbrainz,Mantas,yes,,draft
 venom,guitar,guitar,musicbrainz,Mantas,yes,,draft
@@ -1460,10 +1824,41 @@ venom,guitar,guitar,musicbrainz,Stuart “La Rage” Dixon,yes,,draft
 venom,voice,lead vocals,musicbrainz,Cronos,yes,,draft
 venom,voice,lead vocals,musicbrainz,Cronos,yes,,draft
 venom,voice,lead vocals,musicbrainz,Tony “Demolition Man” Dolan,yes,,draft
-venom,percussion,membranophone,musicbrainz,Danny “Dante” Needham,yes,,draft
+venom,drum_kit,membranophone,musicbrainz,Danny “Dante” Needham,yes,,draft
+venom,voice,voice,wikidata members,Conrad Lant,yes,,draft
+venom,voice,voice,wikidata members,Tony Dolan,yes,,draft
+weather_report,bass_guitar,acoustic bass guitar,wikidata members,Miroslav Vitouš,yes,,draft
+weather_report,,alphorn,wikidata members,Alex Acuña,no,Not in our list of instruments.,draft
+weather_report,saxophone,alto saxophone,wikidata members,Wayne Shorter,yes,,draft
+weather_report,synthesizer,arp chroma,wikidata members,Joe Zawinul,yes,,draft
+weather_report,bass_guitar,bass guitar,wikidata members,Alphonso Johnson,yes,,draft
+weather_report,bass_guitar,bass guitar,wikidata members,Jaco Pastorius,yes,,draft
+weather_report,bass_guitar,bass instrument,wikidata members,Alphonso Johnson,yes,,draft
+weather_report,bass_guitar,bass instrument,wikidata members,Miroslav Vitouš,yes,,draft
+weather_report,,berimbau,wikidata members,Airto Moreira,no,Not in our list of instruments.,draft
+weather_report,bass_guitar,chapman stick,wikidata members,Alphonso Johnson,yes,,draft
+weather_report,percussion,conga,wikidata members,Alex Acuña,yes,,draft
+weather_report,double_bass,double bass,wikidata members,Miroslav Vitouš,yes,,draft
 weather_report,double_bass,double bass,musicbrainz,Victor Bailey,yes,,draft
+weather_report,drum_kit,drum kit,wikidata members,Airto Moreira,yes,,draft
+weather_report,drum_kit,drum kit,wikidata members,Alex Acuña,yes,,draft
+weather_report,drum_kit,drum kit,wikidata members,Alphonse Mouzon,yes,,draft
+weather_report,drum_kit,drum kit,wikidata members,Don Alias,yes,,draft
 weather_report,drum_kit,drums (drum set),musicbrainz,Peter Erskine,yes,,draft
+weather_report,guitar,guitar,wikidata members,Alphonso Johnson,yes,,draft
+weather_report,keyboards,musical keyboard,wikidata members,Joe Zawinul,yes,,draft
 weather_report,percussion,percussion,musicbrainz,José Rossy,yes,,draft
+weather_report,,percussion guitare,wikidata members,Alex Acuña,no,Not in our list of instruments.,draft
+weather_report,percussion,percussion instrument,wikidata members,Airto Moreira,yes,,draft
+weather_report,percussion,percussion instrument,wikidata members,Alex Acuña,yes,,draft
+weather_report,percussion,percussion instrument,wikidata members,Don Alias,yes,,draft
+weather_report,piano,piano,wikidata members,Joe Zawinul,yes,,draft
+weather_report,saxophone,saxophone,wikidata members,Wayne Shorter,yes,,draft
+weather_report,saxophone,soprano saxophone,wikidata members,Wayne Shorter,yes,,draft
+weather_report,saxophone,tenor saxophone,wikidata members,Wayne Shorter,yes,,draft
+weather_report,percussion,timbales,wikidata members,Alex Acuña,yes,,draft
+weather_report,voice,voice,wikidata members,Airto Moreira,yes,,draft
+weather_report,voice,voice,wikidata members,Joe Zawinul,yes,,draft
 whitney_houston,voice,voice,wikidata,,yes,,draft
 willie_dixon,bass_guitar,bass guitar,wikidata,,yes,,draft
 willie_dixon,double_bass,bass instrument,wikidata,,yes,Willie Dixon played the double bass.,draft
@@ -1487,25 +1882,70 @@ wu_tang_clan,voice,voice,wikidata members,Method Man,yes,,draft
 wu_tang_clan,voice,voice,wikidata members,Ol' Dirty Bastard,yes,,draft
 wu_tang_clan,voice,voice,wikidata members,Raekwon,yes,,draft
 wu_tang_clan,voice,voice,wikidata members,U-God,yes,,draft
+yes,guitar,acoustic guitar,musicbrainz,Benoît David,yes,,draft
+yes,guitar,acoustic guitar,musicbrainz,Steve Howe,yes,,draft
+yes,guitar,acoustic guitar,musicbrainz,Trevor Horn,yes,,draft
+yes,guitar,acoustic guitar,musicbrainz,Trevor Rabin,yes,,draft
+yes,voice,background vocals,musicbrainz,Alan White,yes,,draft
+yes,voice,background vocals,musicbrainz,Billy Sherwood,yes,,draft
+yes,voice,background vocals,musicbrainz,Billy Sherwood,yes,,draft
+yes,voice,background vocals,musicbrainz,Chris Squire,yes,,draft
+yes,voice,background vocals,musicbrainz,Igor Khoroshev,yes,,draft
 yes,voice,background vocals,musicbrainz,Oliver Wakeman,yes,,draft
+yes,voice,background vocals,musicbrainz,Peter Banks,yes,,draft
+yes,voice,background vocals,musicbrainz,Trevor Rabin,yes,,draft
 yes,bass_guitar,bass guitar,musicbrainz,Chris Squire,yes,,draft
+yes,guitar,classical guitar,musicbrainz,Steve Howe,yes,,draft
+yes,drum_kit,drum kit,wikidata members,Ian Wallace,yes,,draft
 yes,drum_kit,drums (drum set),musicbrainz,Alan White,yes,,draft
 yes,drum_kit,drums (drum set),musicbrainz,Bill Bruford,yes,,draft
 yes,drum_kit,drums (drum set),musicbrainz,Bill Bruford,yes,,draft
+yes,drum_kit,drums (drum set),musicbrainz,Bill Bruford,yes,,draft
+yes,drum_kit,drums (drum set),musicbrainz,Jay Schellen,yes,,draft
+yes,drum_kit,drums (drum set),musicbrainz,Tony O'Reilly,yes,,draft
+yes,bass_guitar,electric bass guitar,musicbrainz,Billy Sherwood,yes,,draft
+yes,guitar,electric guitar,musicbrainz,Steve Howe,yes,,draft
+yes,guitar,electric guitar,musicbrainz,Trevor Rabin,yes,,draft
+yes,drum_kit,electronic drum set,musicbrainz,Bill Bruford,yes,,draft
+yes,bass_guitar,fretless bass,musicbrainz,Trevor Horn,yes,,draft
+yes,guitar,guitar,musicbrainz,Billy Sherwood,yes,,draft
 yes,guitar,guitar,musicbrainz,Peter Banks,yes,,draft
 yes,guitar,guitar,musicbrainz,Steve Howe,yes,,draft
 yes,guitar,guitar,musicbrainz,Steve Howe,yes,,draft
-yes,guitar,guitar,musicbrainz,Steve Howe,yes,,draft
+yes,guitar,guitar,wikidata members,Steve Nardelli,yes,,draft
+yes,organ,hammond organ,musicbrainz,Tony Kaye,yes,,draft
+yes,keyboards,keyboard,musicbrainz,Billy Sherwood,yes,,draft
+yes,keyboards,keyboard,musicbrainz,Eddie Jobson,yes,,draft
+yes,keyboards,keyboard,musicbrainz,Geoff Downes,yes,,draft
+yes,keyboards,keyboard,musicbrainz,Geoff Downes,yes,,draft
+yes,keyboards,keyboard,musicbrainz,Igor Khoroshev,yes,,draft
 yes,keyboards,keyboard,musicbrainz,Oliver Wakeman,yes,,draft
+yes,keyboards,keyboard,musicbrainz,Patrick Moraz,yes,,draft
 yes,keyboards,keyboard,musicbrainz,Rick Wakeman,yes,,draft
 yes,keyboards,keyboard,musicbrainz,Rick Wakeman,yes,,draft
 yes,keyboards,keyboard,musicbrainz,Rick Wakeman,yes,,draft
 yes,keyboards,keyboard,musicbrainz,Rick Wakeman,yes,,draft
 yes,keyboards,keyboard,musicbrainz,Rick Wakeman,yes,,draft
 yes,keyboards,keyboard,musicbrainz,Tony Kaye,yes,,draft
+yes,keyboards,keyboard,musicbrainz,Trevor Rabin,yes,,draft
+yes,,laúd,musicbrainz,Steve Howe,no,Not in our list of instruments.,draft
 yes,voice,lead vocals,musicbrainz,Benoît David,yes,,draft
 yes,voice,lead vocals,musicbrainz,Jon Anderson,yes,,draft
 yes,voice,lead vocals,musicbrainz,Jon Anderson,yes,,draft
 yes,voice,lead vocals,musicbrainz,Jon Anderson,yes,,draft
 yes,voice,lead vocals,musicbrainz,Jon Davison,yes,,draft
 yes,voice,lead vocals,musicbrainz,Trevor Horn,yes,,draft
+yes,voice,lead vocals,musicbrainz,Trevor Rabin,yes,,draft
+yes,voice,other vocals,musicbrainz,Geoff Downes,yes,,draft
+yes,voice,other vocals,musicbrainz,Geoff Downes,yes,,draft
+yes,percussion,percussion,musicbrainz,Alan White,yes,,draft
+yes,percussion,percussion,musicbrainz,Bill Bruford,yes,,draft
+yes,percussion,percussion,musicbrainz,Bill Bruford,yes,,draft
+yes,percussion,percussion,musicbrainz,Bill Bruford,yes,,draft
+yes,percussion,percussion,musicbrainz,Jay Schellen,yes,,draft
+yes,percussion,percussion,musicbrainz,Tony O'Reilly,yes,,draft
+yes,piano,piano,musicbrainz,Tony Kaye,yes,,draft
+yes,guitar,steel guitar,musicbrainz,Steve Howe,yes,,draft
+yes,,vocoder,musicbrainz,Geoff Downes,no,Not in our list of instruments.,draft
+yes,,vocoder,musicbrainz,Geoff Downes,no,Not in our list of instruments.,draft
+yes,voice,voice,wikidata members,Ian Wallace,yes,,draft

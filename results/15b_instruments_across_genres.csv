@@ -1,16 +1,20 @@
 instrumentName,groupName,genres,firstYear
-Voice,Voice,38,1860
-Guitar,Strings,30,1860
-Drum kit,Drums and percussion,20,1940
-Keyboards,Keyboards,17,1940
-Bass guitar,Strings,16,1940
-Percussion,Drums and percussion,9,1940
-Piano,Keyboards,6,1870
-Harmonica,Winds and brass,4,1936
-Synthesizer,Electronic,3,1960
-Saxophone,Winds and brass,2,1956
+Voice,Voice,40,1860
+Guitar,Strings,34,1860
+Drum kit,Drums and percussion,25,1940
+Bass guitar,Strings,22,1940
+Keyboards,Keyboards,21,1940
+Piano,Keyboards,9,1870
+Percussion,Drums and percussion,8,1940
+Synthesizer,Electronic,8,1960
+Harmonica,Winds and brass,5,1936
+Saxophone,Winds and brass,5,1956
+Flute,Winds and brass,2,1963
 Trumpet,Winds and brass,2,1870
 Turntables,Electronic,2,1970
 Accordion,Winds and brass,1,1983
-Flute,Winds and brass,1,1963
+Double bass,Strings,1,1966
+Drum machine,Electronic,1,1983
+Organ,Keyboards,1,1963
+Sampler,Electronic,1,1983
 Violin,Strings,1,1966
