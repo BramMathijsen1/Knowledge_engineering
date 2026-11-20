@@ -143,7 +143,7 @@ the table below, such as turntables and the drum machine, which often appear wit
 <p>At least two artists of the genre play these instruments, but no artist of a genre it comes from does.
 The year is the earliest year Wikipedia gives for the genre. Read this table with care: for a solo artist we only know
 their own instruments, not those of their backing band. The older genres in our list are mostly solo singers,
-so drums or bass can look new in rock or funk when they are not. Turntables in hip hop is a real case.</p>
+so drums or bass can look new in rock, ska or funk when they are not. Turntables in hip hop is a real case.</p>
 {html_table(result_rows("16_new_instruments"), MAX_ROWS)}
 
 <h2>What is in the graph</h2>

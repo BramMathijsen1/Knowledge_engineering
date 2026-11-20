@@ -1,0 +1,92 @@
+REVIEW OF THE INSTRUMENT DATA (data/raw/instruments_raw.csv, data/curated/artist_instruments.csv)
+
+Checked on 16 November 2026. The changes are on the branch TR_instruments_check.
+
+
+WHAT WAS CHECKED
+- Structure: every raw row has exactly one curated row, every kept instrument is in instruments.csv,
+  every artist is in artists.csv, and every kept instrument is played by at least 3 of our artists.
+- The same raw name is mapped the same way everywhere.
+- The download was run again (16 November) and compared with the saved raw file.
+- Every artist's list of instruments was read and compared with what is known about the artist.
+
+
+OVERALL
+The structure was correct and the download is reproducible: 1,509 of the 1,510 saved rows came back
+unchanged. The only difference is Yes, which has 43 more rows in MusicBrainz now. But many bands were
+missing their main members, and one mapping was wrong. Both are fixed on the branch.
+
+
+PROBLEMS FOUND AND FIXED
+
+1. Bands were missing their main members
+   Problem:  MusicBrainz often gives instruments for only some members of a band, often later or minor
+             ones. The Clash had only Nick Sheppard, a late guitarist. Tangerine Dream had no Edgar Froese
+             and no synthesizer. Mahavishnu Orchestra had no John McLaughlin. Weather Report had no Joe
+             Zawinul or Wayne Shorter. Run-DMC, N.W.A and Public Enemy had only their DJs, and no rappers.
+             The Wikidata fallback only ran for bands with no MusicBrainz instruments at all, so one minor
+             member was enough to block it. "eponymous" (a MusicBrainz word, not an instrument) also counted
+             as an instrument, so the Sex Pistols and The Stooges got nothing at all.
+   Fix:      fetch_instruments.py now takes Wikidata's instruments for every member that MusicBrainz lists
+             with no instruments, as well as for bands with none at all.
+   Result:   440 more raw rows. 122 more "artist plays instrument" facts, for 34 artists. 170 of our 181
+             artists now have instruments (before: 168).
+   Trade-off: Wikidata gives a member's instruments over their whole career, not only in that band. This
+             is why MusicBrainz is still used first. The method page says so.
+
+2. "membranophone" was mapped to percussion
+   Problem:  MusicBrainz uses this word (the Hornbostel-Sachs class of drums) for some drummers: Earl Hudson
+             and Mackie Jayson (Bad Brains), Jeff Nelson (Minor Threat), John Maher (Buzzcocks), Steve Jocz
+             and Frank Zummo (Sum 41). Query 16 therefore said percussion was new in hardcore punk and
+             pop-punk.
+   Fix:      "membranophone" now maps to drum kit. The two false rows are gone from query 16.
+
+3. New raw names
+   Mapped by the existing rules: Gibson Les Paul, Gibson EDS-1275, classical guitar, steel guitar -> guitar;
+   fretless bass -> bass guitar; Minimoog -> synthesizer; Roland TR-808 -> drum machine; Hammond organ,
+   electronic organ -> organ; soprano saxophone -> saxophone; western concert flute -> flute;
+   timbales -> percussion.
+   Dropped as not in our list: alphorn, berimbau, laud, Suzuki Omnichord, "programming", "electrophone",
+   "electronic musical instrument", "percussion guitare".
+
+4. Banjo note
+   The note said "Fewer than 3 of our artists play it". With Jerry Garcia (Grateful Dead) it is now 3, so
+   the note now says "Not in our list of instruments".
+
+
+EFFECT ON THE RESULTS
+
+Query 17 (voice left out), artist-instrument pairs:
+                      before        after
+  both                277 (57%)     336 (58%)
+  genre roots only    128 (27%)     161 (28%)
+  neither              58 (12%)      58 (10%)
+  influences only      20 (4%)       25 (4%)
+The shares barely change, so the conclusion holds with more complete data.
+
+Query 16: percussion in hardcore punk and pop-punk is gone. New: drum machine and piano in gangsta rap
+(N.W.A and Dr. Dre), and drum kit, guitar and keyboards in ska. The ska rows come from the known problem
+with solo singers in the parent genres (see the limits on the method page).
+
+Queries 1 to 14 and 18 are unchanged. The ontology is unchanged.
+
+
+POINTS NOT FIXED, TO DECIDE OR TO MENTION AS LIMITS
+
+5. Solo artists depend on Wikidata, which has gaps: Johnny Cash has no guitar, Neil Young no voice,
+   Marvin Gaye only voice. Fixing these by hand would make the data harder to rebuild, so they are a limit.
+
+6. The Winstons still have no drum kit, because neither source has an instrument for their drummer
+   G. C. Coleman (the Amen break).
+
+7. Cello is played by 5 of our artists but is not in our list. The rule "at least 3 artists" is a minimum,
+   not a reason to add an instrument, but this should be said, or cello should be added to Strings.
+
+8. Query 17 compares pools of different sizes. "From influences" looks at the few artists who influenced
+   this artist. "From genre roots" looks at every artist of every parent genre, which is a much bigger
+   pool and so more likely to contain any instrument. Part of the gap between 28% and 4% comes from this,
+   not from genres mattering more. A fairer test would compare with a random group of artists of the same
+   size.
+
+9. All rows are still marked "draft". The mapping of raw names to instruments (about 90 names) is the real
+   decision. Once someone has read it, the rows can be marked "checked".

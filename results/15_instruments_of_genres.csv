@@ -7,17 +7,22 @@ Alternative rock,Keyboards,Keyboards,2,5
 Alternative rock,Synthesizer,Electronic,2,5
 Ambient music,Guitar,Strings,2,3
 Ambient music,Synthesizer,Electronic,2,3
+Art rock,Guitar,Strings,4,4
+Art rock,Piano,Keyboards,4,4
+Art rock,Voice,Voice,4,4
 Art rock,Bass guitar,Strings,3,4
-Art rock,Guitar,Strings,3,4
 Art rock,Keyboards,Keyboards,3,4
-Art rock,Piano,Keyboards,3,4
-Art rock,Voice,Voice,3,4
 Art rock,Drum kit,Drums and percussion,2,4
+Art rock,Saxophone,Winds and brass,2,4
+Art rock,Synthesizer,Electronic,2,4
 Blues,Voice,Voice,4,4
 Blues,Guitar,Strings,3,4
 Blues rock,Guitar,Strings,3,3
+Blues rock,Keyboards,Keyboards,3,3
 Blues rock,Voice,Voice,3,3
-Blues rock,Keyboards,Keyboards,2,3
+Blues rock,Bass guitar,Strings,2,3
+Blues rock,Drum kit,Drums and percussion,2,3
+Blues rock,Harmonica,Winds and brass,2,3
 Contemporary R&B,Voice,Voice,4,5
 Contemporary R&B,Drum kit,Drums and percussion,2,5
 Contemporary R&B,Guitar,Strings,2,5
@@ -33,45 +38,53 @@ Disco,Keyboards,Keyboards,2,4
 Electric blues,Voice,Voice,4,4
 Electric blues,Guitar,Strings,3,4
 Electric blues,Harmonica,Winds and brass,2,4
+Extreme metal,Bass guitar,Strings,4,4
 Extreme metal,Drum kit,Drums and percussion,4,4
 Extreme metal,Guitar,Strings,4,4
-Extreme metal,Bass guitar,Strings,3,4
-Extreme metal,Voice,Voice,3,4
+Extreme metal,Voice,Voice,4,4
 Folk music,Guitar,Strings,3,3
 Folk music,Voice,Voice,3,3
 Folk rock,Guitar,Strings,3,3
 Folk rock,Harmonica,Winds and brass,2,3
 Folk rock,Piano,Keyboards,2,3
 Folk rock,Voice,Voice,2,3
+Funk,Drum kit,Drums and percussion,4,5
+Funk,Guitar,Strings,4,5
 Funk,Bass guitar,Strings,3,5
-Funk,Drum kit,Drums and percussion,3,5
-Funk,Guitar,Strings,3,5
 Funk,Voice,Voice,3,5
 Funk,Saxophone,Winds and brass,2,5
-Gangsta rap,Voice,Voice,3,5
+Gangsta rap,Voice,Voice,4,5
+Gangsta rap,Drum machine,Electronic,2,5
+Gangsta rap,Keyboards,Keyboards,2,5
+Gangsta rap,Piano,Keyboards,2,5
+Gangsta rap,Sampler,Electronic,2,5
+Gangsta rap,Synthesizer,Electronic,2,5
 Gangsta rap,Turntables,Electronic,2,5
+Garage rock,Bass guitar,Strings,2,3
+Garage rock,Drum kit,Drums and percussion,2,3
+Garage rock,Guitar,Strings,2,3
+Garage rock,Voice,Voice,2,3
 Glam rock,Bass guitar,Strings,2,2
 Glam rock,Drum kit,Drums and percussion,2,2
 Glam rock,Guitar,Strings,2,2
 Glam rock,Voice,Voice,2,2
 Gospel music,Voice,Voice,2,3
 Grunge,Bass guitar,Strings,5,5
-Grunge,Drum kit,Drums and percussion,3,5
-Grunge,Guitar,Strings,3,5
-Grunge,Voice,Voice,3,5
+Grunge,Drum kit,Drums and percussion,5,5
+Grunge,Guitar,Strings,5,5
+Grunge,Voice,Voice,5,5
 Grunge,Accordion,Winds and brass,2,5
 Hard rock,Bass guitar,Strings,5,5
-Hard rock,Drum kit,Drums and percussion,4,5
-Hard rock,Guitar,Strings,4,5
-Hard rock,Voice,Voice,4,5
+Hard rock,Drum kit,Drums and percussion,5,5
+Hard rock,Guitar,Strings,5,5
+Hard rock,Voice,Voice,5,5
+Hard rock,Keyboards,Keyboards,3,5
 Hard rock,Harmonica,Winds and brass,2,5
-Hard rock,Keyboards,Keyboards,2,5
 Hard rock,Percussion,Drums and percussion,2,5
 Hardcore punk,Bass guitar,Strings,4,4
+Hardcore punk,Drum kit,Drums and percussion,4,4
 Hardcore punk,Guitar,Strings,4,4
 Hardcore punk,Voice,Voice,4,4
-Hardcore punk,Drum kit,Drums and percussion,2,4
-Hardcore punk,Percussion,Drums and percussion,2,4
 Heavy metal,Bass guitar,Strings,5,5
 Heavy metal,Drum kit,Drums and percussion,5,5
 Heavy metal,Guitar,Strings,5,5
@@ -79,7 +92,7 @@ Heavy metal,Voice,Voice,5,5
 Heavy metal,Percussion,Drums and percussion,4,5
 Heavy metal,Keyboards,Keyboards,3,5
 Heavy metal,Synthesizer,Electronic,2,5
-Hip hop,Voice,Voice,5,7
+Hip hop,Voice,Voice,7,7
 Hip hop,Turntables,Electronic,4,7
 Hip hop,Keyboards,Keyboards,2,7
 Indie rock,Guitar,Strings,3,3
@@ -90,40 +103,62 @@ Indie rock,Keyboards,Keyboards,2,3
 Jazz,Piano,Keyboards,3,7
 Jazz,Voice,Voice,3,7
 Jazz,Trumpet,Winds and brass,2,7
+Jazz fusion,Keyboards,Keyboards,3,3
+Jazz fusion,Piano,Keyboards,3,3
+Jazz fusion,Bass guitar,Strings,2,3
+Jazz fusion,Drum kit,Drums and percussion,2,3
+Jazz fusion,Guitar,Strings,2,3
+Jazz fusion,Percussion,Drums and percussion,2,3
+Jazz fusion,Saxophone,Winds and brass,2,3
+Jazz fusion,Synthesizer,Electronic,2,3
+Jazz fusion,Voice,Voice,2,3
 Jazz rap,Voice,Voice,3,3
 Jazz rap,Keyboards,Keyboards,2,3
 Krautrock,Drum kit,Drums and percussion,4,4
-Krautrock,Keyboards,Keyboards,2,4
-Krautrock,Violin,Strings,2,4
+Krautrock,Guitar,Strings,4,4
+Krautrock,Keyboards,Keyboards,3,4
+Krautrock,Percussion,Drums and percussion,3,4
+Krautrock,Violin,Strings,3,4
+Krautrock,Bass guitar,Strings,2,4
+Krautrock,Double bass,Strings,2,4
+Krautrock,Flute,Winds and brass,2,4
+Krautrock,Saxophone,Winds and brass,2,4
+Krautrock,Synthesizer,Electronic,2,4
 Krautrock,Voice,Voice,2,4
+New wave,Bass guitar,Strings,4,4
+New wave,Drum kit,Drums and percussion,4,4
 New wave,Guitar,Strings,4,4
-New wave,Drum kit,Drums and percussion,3,4
-New wave,Bass guitar,Strings,2,4
-New wave,Voice,Voice,2,4
+New wave,Voice,Voice,4,4
+New wave,Keyboards,Keyboards,3,4
+New wave,Synthesizer,Electronic,2,4
 Pop-punk,Bass guitar,Strings,4,4
 Pop-punk,Drum kit,Drums and percussion,4,4
-Pop-punk,Guitar,Strings,3,4
-Pop-punk,Voice,Voice,3,4
-Pop-punk,Percussion,Drums and percussion,2,4
+Pop-punk,Guitar,Strings,4,4
+Pop-punk,Voice,Voice,4,4
+Pop-punk,Keyboards,Keyboards,2,4
 Post-punk,Bass guitar,Strings,4,4
 Post-punk,Drum kit,Drums and percussion,4,4
 Post-punk,Guitar,Strings,4,4
 Post-punk,Voice,Voice,4,4
-Post-punk,Keyboards,Keyboards,2,4
+Post-punk,Keyboards,Keyboards,3,4
 Progressive rock,Bass guitar,Strings,4,4
 Progressive rock,Drum kit,Drums and percussion,4,4
 Progressive rock,Guitar,Strings,4,4
 Progressive rock,Keyboards,Keyboards,4,4
+Progressive rock,Percussion,Drums and percussion,4,4
 Progressive rock,Voice,Voice,4,4
-Progressive rock,Percussion,Drums and percussion,3,4
 Progressive rock,Flute,Winds and brass,2,4
-Psychedelic rock,Guitar,Strings,3,4
+Progressive rock,Organ,Keyboards,2,4
+Psychedelic rock,Guitar,Strings,4,4
+Psychedelic rock,Voice,Voice,4,4
+Psychedelic rock,Drum kit,Drums and percussion,3,4
 Psychedelic rock,Keyboards,Keyboards,3,4
 Psychedelic rock,Percussion,Drums and percussion,3,4
-Psychedelic rock,Voice,Voice,3,4
-Psychedelic rock,Drum kit,Drums and percussion,2,4
-Punk rock,Guitar,Strings,3,4
-Punk rock,Voice,Voice,2,4
+Psychedelic rock,Bass guitar,Strings,2,4
+Punk rock,Guitar,Strings,4,4
+Punk rock,Voice,Voice,4,4
+Punk rock,Bass guitar,Strings,3,4
+Punk rock,Drum kit,Drums and percussion,3,4
 Reggae,Voice,Voice,3,3
 Reggae,Guitar,Strings,2,3
 Rhythm and blues,Voice,Voice,3,4
@@ -140,14 +175,16 @@ Rock music,Percussion,Drums and percussion,2,4
 Rockabilly,Guitar,Strings,3,3
 Rockabilly,Voice,Voice,3,3
 Ska,Keyboards,Keyboards,3,3
+Ska,Voice,Voice,3,3
+Ska,Drum kit,Drums and percussion,2,3
+Ska,Guitar,Strings,2,3
+Ska,Piano,Keyboards,2,3
 Ska,Saxophone,Winds and brass,2,3
 Ska,Trumpet,Winds and brass,2,3
-Ska,Voice,Voice,2,3
 Soul music,Voice,Voice,6,6
 Soul music,Piano,Keyboards,5,6
 Synth-pop,Guitar,Strings,5,5
 Synth-pop,Voice,Voice,5,5
 Synth-pop,Keyboards,Keyboards,4,5
+Synth-pop,Drum kit,Drums and percussion,3,5
 Synth-pop,Bass guitar,Strings,2,5
-Synth-pop,Drum kit,Drums and percussion,2,5
-Synth-pop,Percussion,Drums and percussion,2,5
