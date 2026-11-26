@@ -11,9 +11,12 @@ import shutil
 from rdflib import Graph
 from rdflib.namespace import OWL, RDF, RDFS
 
+from common import RIFF, MM, INFLUENCE, CLAIM, ARTIST, PROV, WD
+
 MENU = [("index.html", "Home"), ("ontology.html", "Ontology"),
         ("queries.html", "Queries"), ("method.html", "Method")]
 MAX_ROWS = 15
+EXAMPLE = "nirvana--led_zeppelin"
 
 
 def make_page(file_name, title, body):
@@ -175,7 +178,28 @@ def terms_table(graph, kind):
     return html_table(rows)
 
 
-def build_ontology():
+def example_turtle(full_graph):
+    influence = INFLUENCE[EXAMPLE]
+    example = Graph()
+    for prefix, namespace in [("riff", RIFF), ("mm", MM), ("influence", INFLUENCE), ("claim", CLAIM),
+                              ("artist", ARTIST), ("prov", PROV), ("wd", WD)]:
+        example.bind(prefix, namespace, override=True, replace=True)
+    for triple in full_graph.triples((influence, None, None)):
+        example.add(triple)
+    for claim in full_graph.subjects(RIFF.describes, influence):
+        for triple in full_graph.triples((claim, None, None)):
+            example.add(triple)
+    influenced = full_graph.value(influence, RIFF.influenced)
+    influencer = full_graph.value(influence, RIFF.influencer)
+    example.add((influenced, MM.isInfluencedBy, influencer))
+
+    blocks = example.serialize(format="turtle").strip().split("\n\n")
+    prefixes, things = blocks[0], blocks[1:]
+    things.sort(key=lambda block: (not block.startswith("influence:"), block.startswith("artist:")))
+    return "\n\n".join([prefixes] + things)
+
+
+def build_ontology(full_graph):
     graph = Graph()
     graph.parse("ontology/riff.ttl")
     body = f"""
@@ -185,6 +209,13 @@ Music Meta already has artists, genres, recordings and a simple "is influenced b
 to say how we know about an influence, and it has no links between genres. RIFF adds those two things.</p>
 <p>Namespace: <code>https://w3id.org/riff/ontology#</code>. Download: <a href="data/riff.ttl">riff.ttl</a>.</p>
 <img src="data/riff_diagram.svg" alt="Diagram of the RIFF ontology">
+
+<h2>One example</h2>
+<p>The influence of Led Zeppelin on Nirvana, as it is in the graph. <code>riff:Influence</code> is the
+influence itself. Each <code>riff:InfluenceClaim</code> is what one source says about it: here one claim
+comes from a sentence on Wikipedia and one from Wikidata. The last part is the plain
+<code>mm:isInfluencedBy</code> link that we get from the influence.</p>
+<pre><code>{html.escape(example_turtle(full_graph))}</code></pre>
 
 <h2>Classes</h2>
 {terms_table(graph, OWL.Class)}
@@ -253,7 +284,7 @@ def main():
     graph.parse("graph/routes.ttl")
     copy_data_files()
     build_home(graph)
-    build_ontology()
+    build_ontology(graph)
     build_queries()
     build_method()
     print("Pages written to docs/")

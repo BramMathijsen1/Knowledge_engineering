@@ -17,6 +17,36 @@ to say how we know about an influence, and it has no links between genres. RIFF 
 <p>Namespace: <code>https://w3id.org/riff/ontology#</code>. Download: <a href="data/riff.ttl">riff.ttl</a>.</p>
 <img src="data/riff_diagram.svg" alt="Diagram of the RIFF ontology">
 
+<h2>One example</h2>
+<p>The influence of Led Zeppelin on Nirvana, as it is in the graph. <code>riff:Influence</code> is the
+influence itself. Each <code>riff:InfluenceClaim</code> is what one source says about it: here one claim
+comes from a sentence on Wikipedia and one from Wikidata. The last part is the plain
+<code>mm:isInfluencedBy</code> link that we get from the influence.</p>
+<pre><code>@prefix artist: &lt;https://w3id.org/riff/artist/&gt; .
+@prefix claim: &lt;https://w3id.org/riff/claim/&gt; .
+@prefix influence: &lt;https://w3id.org/riff/influence/&gt; .
+@prefix mm: &lt;https://w3id.org/polifonia/ontology/music-meta/&gt; .
+@prefix prov: &lt;http://www.w3.org/ns/prov#&gt; .
+@prefix riff: &lt;https://w3id.org/riff/ontology#&gt; .
+@prefix wd: &lt;http://www.wikidata.org/entity/&gt; .
+
+influence:nirvana--led_zeppelin a riff:Influence ;
+    riff:influenced artist:nirvana ;
+    riff:influencer artist:led_zeppelin .
+
+claim:nirvana--led_zeppelin--attributed a riff:InfluenceClaim ;
+    prov:wasDerivedFrom &lt;https://en.wikipedia.org/wiki/Led_Zeppelin&gt; ;
+    riff:describes influence:nirvana--led_zeppelin ;
+    riff:evidenceQuote &quot;They were also an important influence on the development of alternative rock, as bands adapted elements from the \&quot;Zeppelin sound\&quot; of the mid-1970s, including the Smashing Pumpkins, Nirvana, Pearl Jam, and Soundgarden.&quot;@en ;
+    riff:hasEvidenceKind riff:Attributed .
+
+claim:nirvana--led_zeppelin--unsourced a riff:InfluenceClaim ;
+    prov:wasDerivedFrom wd:Q11649 ;
+    riff:describes influence:nirvana--led_zeppelin ;
+    riff:hasEvidenceKind riff:Unsourced .
+
+artist:nirvana mm:isInfluencedBy artist:led_zeppelin .</code></pre>
+
 <h2>Classes</h2>
 <table><tr><th>Term</th><th>Meaning</th></tr><tr><td>void:Dataset</td><td>A set of RDF data. We use it to describe the graph itself.</td></tr><tr><td>sit:Situation</td><td>The situation pattern from ontologydesignpatterns.org: one thing that links many others.</td></tr><tr><td>skos:Concept</td><td>A concept in a classification scheme, from SKOS.</td></tr><tr><td>mm:MusicArtist</td><td>A person or a group that makes music.</td></tr><tr><td>mm:MusicEnsenble</td><td>A band or other music group. The name is spelled this way in Music Meta.</td></tr><tr><td>mm:MusicGenre</td><td>A category of music. Genres are individuals here, not classes, because a subgenre is not a kind of its parent in the logical sense. Subgenres use skos:broader.</td></tr><tr><td>mm:Musician</td><td>A single person who makes music.</td></tr><tr><td>mm:Recording</td><td>A recorded performance of a piece of music.</td></tr><tr><td>riff:EvidenceKind</td><td>A way of knowing about an influence.</td></tr><tr><td>riff:GenreForm</td><td>One of the four forms of a music genre described by Lena and Peterson.</td></tr><tr><td>riff:GenrePhase</td><td>A genre in one form, at one step of its history.</td></tr><tr><td>riff:GenreRoute</td><td>Artist influence added up from one genre to another. These are not entered by hand: query 09 builds them.</td></tr><tr><td>riff:Influence</td><td>The influence of one artist on another. This is the situation itself, so there is one for each pair of artists. What the sources say about it is kept in riff:InfluenceClaim.</td></tr><tr><td>riff:InfluenceClaim</td><td>What one source says about an influence, or one recording that shows it. It has the evidence kind, the source, and the quote or the recordings. One influence can have many claims, for example one from Wikipedia and one from Wikidata.</td></tr><tr><td>riff:Instrument</td><td>A musical instrument, or the voice. It is close to Instrument in the Music Ontology, but that class does not include the voice.</td></tr><tr><td>riff:InstrumentGroup</td><td>A broad group of instruments. The groups loosely follow the top level of the Hornbostel-Sachs classification (strings, winds, drums and percussion, electronic), but keyboards and the voice get their own group.</td></tr></table>
 <h2>Object properties</h2>
