@@ -10,7 +10,7 @@ from rdflib import Graph
 
 from common import read_csv
 
-CURATED_FILES = ["genres", "lineage", "artists", "genre_phases", "recordings",
+CURATED_FILES = ["genres", "origin_claims", "lineage", "artists", "genre_phases", "recordings",
                  "influences_wikidata", "influences_text", "influences_recordings",
                  "instruments", "artist_instruments"]
 

@@ -1,50 +1,50 @@
-id,label,wikipedia,dbpedia,wikidata,emerged,origin_place,status
-blues,Blues,Blues,Blues,Q9759,1865,"Deep South, United States",draft
-electric_blues,Electric blues,Electric blues,Electric_blues,Q640097,1938,United States,draft
-gospel,Gospel music,Gospel music,Gospel_music,Q180268,,Southern United States,draft
-folk,Folk music,Folk music,Folk_music,Q43343,,Many regions,draft
-country,Country music,Country music,Country_music,Q83440,1925,United States,draft
-jazz,Jazz,Jazz,Jazz,Q8341,1890,"New Orleans, United States",draft
-bebop,Bebop,Bebop,Bebop,Q105513,1945,United States,draft
-rhythm_and_blues,Rhythm and blues,Rhythm and blues,Rhythm_and_blues,Q45981,1945,"Deep South, United States",draft
-rock_and_roll,Rock and roll,Rock and roll,Rock_and_roll,Q7749,1949,United States,draft
-rockabilly,Rockabilly,Rockabilly,Rockabilly,Q203720,1953,Southern United States,draft
-rock,Rock music,Rock music,Rock_music,Q11399,1955,Southern and Midwestern United States,draft
-folk_rock,Folk rock,Folk rock,Folk_rock,Q186472,1963,United States,draft
-blues_rock,Blues rock,Blues rock,Blues_rock,Q193355,1962,United States and United Kingdom,draft
-psychedelic_rock,Psychedelic rock,Psychedelic rock,Psychedelic_rock,Q206159,1965,United States and United Kingdom,draft
-hard_rock,Hard rock,Hard rock,Hard_rock,Q83270,1965,United States and United Kingdom,draft
-heavy_metal,Heavy metal,Heavy metal music,Heavy_metal_music,Q38848,1968,United Kingdom and United States,draft
-extreme_metal,Extreme metal,Extreme metal,Extreme_metal,Q465978,1985,United States and Europe,draft
-progressive_rock,Progressive rock,Progressive rock,Progressive_rock,Q49451,1967,United States and United Kingdom,draft
-art_rock,Art rock,Art rock,Art_rock,Q217467,1965,United States and United Kingdom,draft
-glam_rock,Glam rock,Glam rock,Glam_rock,Q76092,1972,United Kingdom,draft
-garage_rock,Garage rock,Garage rock,Garage_rock,Q211573,1959,United States and Canada,draft
-punk_rock,Punk rock,Punk rock,Punk_rock,Q3071,1975,"United States, United Kingdom and Australia",draft
-hardcore_punk,Hardcore punk,Hardcore punk,Hardcore_punk,Q10922,1979,United States and Canada,draft
-post_punk,Post-punk,Post-punk,Post-punk,Q598929,1978,United Kingdom,draft
-new_wave,New wave,New wave music,New_wave_music,Q187760,1977,United States and United Kingdom,draft
-alternative_rock,Alternative rock,Alternative rock,Alternative_rock,Q11366,1979,United States and United Kingdom,draft
-grunge,Grunge,Grunge,Grunge,Q11365,1985,"Seattle, United States",draft
-indie_rock,Indie rock,Indie rock,Indie_rock,Q183504,1983,"United Kingdom, United States and New Zealand",draft
-pop_punk,Pop-punk,Pop-punk,Pop-punk,Q487914,1978,United States and United Kingdom,draft
-soul,Soul music,Soul music,Soul_music,Q131272,1959,United States,draft
-funk,Funk,Funk,Funk,Q164444,1965,United States,draft
-disco,Disco,Disco,Disco,Q58339,1969,"Philadelphia, Baltimore and New York City",draft
-contemporary_rnb,Contemporary R&B,Contemporary R&B,Contemporary_R&B,Q850412,1979,North America,draft
-jazz_fusion,Jazz fusion,Jazz fusion,Jazz_fusion,Q105527,1968,United States,draft
-ska,Ska,Ska,Ska,Q54365,1958,Jamaica,draft
-reggae,Reggae,Reggae,Reggae,Q9794,1968,"Kingston, Jamaica",draft
-dub,Dub,Dub music,Dub_music,Q212688,1968,Jamaica,draft
-hip_hop,Hip hop,Hip-hop,Hip_hop_music,Q11401,1972,"The Bronx, New York City",draft
-gangsta_rap,Gangsta rap,Gangsta rap,Gangsta_rap,Q753679,1986,"Oakland, Los Angeles, Philadelphia and New York",draft
-trap,Trap,Trap music,Trap_music,Q2913982,1995,"Atlanta, United States",draft
-jazz_rap,Jazz rap,Jazz rap,Jazz_rap,Q255406,1988,New York metropolitan area,draft
-krautrock,Krautrock,Krautrock,Krautrock,Q320592,1969,West Germany,draft
-synth_pop,Synth-pop,Synth-pop,Synth-pop,Q1298934,1978,"Germany, Japan and United Kingdom",draft
-electro,Electro,Electro (music),Electro_(music),Q217597,1982,Japan and United States,draft
-house,House music,House music,House_music,Q20502,1982,"Chicago, United States",draft
-techno,Techno,Techno,Techno,Q170611,1985,"Detroit, United States and Frankfurt, Germany",draft
-ambient,Ambient music,Ambient music,Ambient_music,Q193207,1970,Japan and United Kingdom,draft
-jungle,Jungle,Jungle music,Jungle_music,Q1102161,1992,United Kingdom,draft
-drum_and_bass,Drum and bass,Drum and bass,Drum_and_bass,Q188994,1992,United Kingdom,draft
+id,label,wikipedia,dbpedia,wikidata,status
+blues,Blues,Blues,Blues,Q9759,checked
+electric_blues,Electric blues,Electric blues,Electric_blues,Q640097,checked
+gospel,Gospel music,Gospel music,Gospel_music,Q180268,checked
+folk,Folk music,Folk music,Folk_music,Q43343,checked
+country,Country music,Country music,Country_music,Q83440,checked
+jazz,Jazz,Jazz,Jazz,Q8341,checked
+bebop,Bebop,Bebop,Bebop,Q105513,checked
+rhythm_and_blues,Rhythm and blues,Rhythm and blues,Rhythm_and_blues,Q45981,checked
+rock_and_roll,Rock and roll,Rock and roll,Rock_and_roll,Q7749,checked
+rockabilly,Rockabilly,Rockabilly,Rockabilly,Q203720,checked
+rock,Rock music,Rock music,Rock_music,Q11399,checked
+folk_rock,Folk rock,Folk rock,Folk_rock,Q186472,checked
+blues_rock,Blues rock,Blues rock,Blues_rock,Q193355,checked
+psychedelic_rock,Psychedelic rock,Psychedelic rock,Psychedelic_rock,Q206159,checked
+hard_rock,Hard rock,Hard rock,Hard_rock,Q83270,checked
+heavy_metal,Heavy metal,Heavy metal music,Heavy_metal_music,Q38848,checked
+extreme_metal,Extreme metal,Extreme metal,Extreme_metal,Q465978,checked
+progressive_rock,Progressive rock,Progressive rock,Progressive_rock,Q49451,checked
+art_rock,Art rock,Art rock,Art_rock,Q217467,checked
+glam_rock,Glam rock,Glam rock,Glam_rock,Q76092,checked
+garage_rock,Garage rock,Garage rock,Garage_rock,Q211573,checked
+punk_rock,Punk rock,Punk rock,Punk_rock,Q3071,checked
+hardcore_punk,Hardcore punk,Hardcore punk,Hardcore_punk,Q10922,checked
+post_punk,Post-punk,Post-punk,Post-punk,Q598929,checked
+new_wave,New wave,New wave music,New_wave_music,Q187760,checked
+alternative_rock,Alternative rock,Alternative rock,Alternative_rock,Q11366,checked
+grunge,Grunge,Grunge,Grunge,Q11365,checked
+indie_rock,Indie rock,Indie rock,Indie_rock,Q183504,checked
+pop_punk,Pop-punk,Pop-punk,Pop-punk,Q487914,checked
+soul,Soul music,Soul music,Soul_music,Q131272,checked
+funk,Funk,Funk,Funk,Q164444,checked
+disco,Disco,Disco,Disco,Q58339,checked
+contemporary_rnb,Contemporary R&B,Contemporary R&B,Contemporary_R&B,Q850412,checked
+jazz_fusion,Jazz fusion,Jazz fusion,Jazz_fusion,Q105527,checked
+ska,Ska,Ska,Ska,Q54365,checked
+reggae,Reggae,Reggae,Reggae,Q9794,checked
+dub,Dub,Dub music,Dub_music,Q212688,checked
+hip_hop,Hip hop,Hip-hop,Hip_hop_music,Q11401,checked 
+gangsta_rap,Gangsta rap,Gangsta rap,Gangsta_rap,Q753679,checked
+trap,Trap,Trap music,Trap_music,Q2913982,checked
+jazz_rap,Jazz rap,Jazz rap,Jazz_rap,Q255406,checked
+krautrock,Krautrock,Krautrock,Krautrock,Q320592,checked
+synth_pop,Synth-pop,Synth-pop,Synth-pop,Q1298934,checked
+electro,Electro,Electro (music),Electro_(music),Q217597,checked
+house,House music,House music,House_music,Q20502,checked
+techno,Techno,Techno,Techno,Q170611,checked
+ambient,Ambient music,Ambient music,Ambient_music,Q193207,checked
+jungle,Jungle,Jungle music,Jungle_music,Q1102161,checked
+drum_and_bass,Drum and bass,Drum and bass,Drum_and_bass,Q188994,checked

@@ -6,6 +6,7 @@
 @prefix influence: <https://w3id.org/riff/influence/> .
 @prefix instrument: <https://w3id.org/riff/instrument/> .
 @prefix mm: <https://w3id.org/polifonia/ontology/music-meta/> .
+@prefix origin: <https://w3id.org/riff/origin/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix phase: <https://w3id.org/riff/phase/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -5656,6 +5657,873 @@ claim:yes--the_beatles--declared a riff:InfluenceClaim ;
         <https://www.wikidata.org/> ;
     dcterms:title "RIFF knowledge graph"@en .
 
+origin:alternative_rock--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q11366 ;
+    riff:claimedPlace "United States and United Kingdom" ;
+    riff:earliestYear 1978 ;
+    riff:isPreferred false ;
+    riff:latestYear 1978 ;
+    riff:originOf genre:alternative_rock ;
+    riff:sourceWording "inception (P571): 1978; country of origin (P495): United States, United Kingdom" .
+
+origin:alternative_rock--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Alternative_rock> ;
+    riff:claimedPlace "United States and United Kingdom" ;
+    riff:earliestYear 1976 ;
+    riff:isPreferred true ;
+    riff:latestYear 1983 ;
+    riff:originOf genre:alternative_rock ;
+    riff:sourceWording "Late 1970s to early 1980s, United States and United Kingdom" .
+
+origin:ambient--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q193207 ;
+    riff:claimedPlace "Japan and United Kingdom" ;
+    riff:earliestYear 1967 ;
+    riff:isPreferred false ;
+    riff:latestYear 1967 ;
+    riff:originOf genre:ambient ;
+    riff:sourceWording "inception (P571): 1967; country of origin (P495): Japan, United Kingdom" .
+
+origin:ambient--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Ambient_music> ;
+    riff:claimedPlace "Japan and United Kingdom" ;
+    riff:earliestYear 1960 ;
+    riff:isPreferred true ;
+    riff:latestYear 1979 ;
+    riff:originOf genre:ambient ;
+    riff:sourceWording "1960s–70s, Japan and United Kingdom" .
+
+origin:art_rock--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q217467 ;
+    riff:claimedPlace "United Kingdom" ;
+    riff:earliestYear 1968 ;
+    riff:isPreferred false ;
+    riff:latestYear 1968 ;
+    riff:originOf genre:art_rock ;
+    riff:sourceWording "inception (P571): 1968; country of origin (P495): United Kingdom" .
+
+origin:art_rock--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Art_rock> ;
+    riff:claimedPlace "United States and United Kingdom" ;
+    riff:earliestYear 1960 ;
+    riff:isPreferred true ;
+    riff:latestYear 1969 ;
+    riff:originOf genre:art_rock ;
+    riff:sourceWording "1960s, United States and United Kingdom" .
+
+origin:bebop--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q105513 ;
+    riff:claimedPlace "United States" ;
+    riff:earliestYear 1945 ;
+    riff:isPreferred false ;
+    riff:latestYear 1945 ;
+    riff:originOf genre:bebop ;
+    riff:sourceWording "inception (P571): 1945; country of origin (P495): United States" .
+
+origin:bebop--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Bebop> ;
+    riff:claimedPlace "United States" ;
+    riff:earliestYear 1943 ;
+    riff:isPreferred true ;
+    riff:latestYear 1947 ;
+    riff:originOf genre:bebop ;
+    riff:sourceWording "Mid-1940s, United States" .
+
+origin:blues--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q9759 ;
+    riff:claimedPlace "United States" ;
+    riff:earliestYear 1890 ;
+    riff:isPreferred false ;
+    riff:latestYear 1890 ;
+    riff:originOf genre:blues ;
+    riff:sourceWording "inception (P571): 1890; country of origin (P495): United States" .
+
+origin:blues--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Blues> ;
+    riff:claimedPlace "Deep South, United States" ;
+    riff:earliestYear 1860 ;
+    riff:isPreferred true ;
+    riff:latestYear 1869 ;
+    riff:originOf genre:blues ;
+    riff:sourceWording "1860s, Deep South, U.S." .
+
+origin:blues_rock--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q193355 ;
+    riff:claimedPlace "United States and United Kingdom" ;
+    riff:earliestYear 1960 ;
+    riff:isPreferred false ;
+    riff:latestYear 1960 ;
+    riff:originOf genre:blues_rock ;
+    riff:sourceWording "inception (P571): 1960; country of origin (P495): United States, United Kingdom" .
+
+origin:blues_rock--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Blues_rock> ;
+    riff:claimedPlace "United States and United Kingdom" ;
+    riff:earliestYear 1960 ;
+    riff:isPreferred true ;
+    riff:latestYear 1963 ;
+    riff:originOf genre:blues_rock ;
+    riff:sourceWording "Early 1960s, United States and United Kingdom" .
+
+origin:contemporary_rnb--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q850412 ;
+    riff:claimedPlace "United States" ;
+    riff:earliestYear 1980 ;
+    riff:isPreferred false ;
+    riff:latestYear 1980 ;
+    riff:originOf genre:contemporary_rnb ;
+    riff:sourceWording "inception (P571): 1980; country of origin (P495): United States" .
+
+origin:contemporary_rnb--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Contemporary_R&B> ;
+    riff:claimedPlace "North America" ;
+    riff:earliestYear 1976 ;
+    riff:isPreferred true ;
+    riff:latestYear 1983 ;
+    riff:originOf genre:contemporary_rnb ;
+    riff:sourceWording "Late 1970s and early 1980s, North America" .
+
+origin:country--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q83440 ;
+    riff:claimedPlace "United States" ;
+    riff:earliestYear 1920 ;
+    riff:isPreferred false ;
+    riff:latestYear 1920 ;
+    riff:originOf genre:country ;
+    riff:sourceWording "inception (P571): 1920; country of origin (P495): United States" .
+
+origin:country--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Country_music> ;
+    riff:claimedPlace "United States" ;
+    riff:earliestYear 1920 ;
+    riff:isPreferred true ;
+    riff:latestYear 1929 ;
+    riff:originOf genre:country ;
+    riff:sourceWording "1920s, United States" .
+
+origin:disco--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q58339 ;
+    riff:earliestYear 1972 ;
+    riff:isPreferred false ;
+    riff:latestYear 1972 ;
+    riff:originOf genre:disco ;
+    riff:sourceWording "inception (P571): 1972; country of origin (P495): none" .
+
+origin:disco--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Disco> ;
+    riff:claimedPlace "Philadelphia, Baltimore and New York City" ;
+    riff:earliestYear 1966 ;
+    riff:isPreferred true ;
+    riff:latestYear 1973 ;
+    riff:originOf genre:disco ;
+    riff:sourceWording "Late 1960s early 1970s, Philadelphia, Baltimore, and New York City" .
+
+origin:drum_and_bass--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q188994 ;
+    riff:claimedPlace "United Kingdom and Jamaica" ;
+    riff:earliestYear 1992 ;
+    riff:isPreferred false ;
+    riff:latestYear 1992 ;
+    riff:originOf genre:drum_and_bass ;
+    riff:sourceWording "inception (P571): 1992; country of origin (P495): United Kingdom, Jamaica" .
+
+origin:drum_and_bass--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Drum_and_bass> ;
+    riff:claimedPlace "United Kingdom" ;
+    riff:earliestYear 1990 ;
+    riff:isPreferred true ;
+    riff:latestYear 1993 ;
+    riff:originOf genre:drum_and_bass ;
+    riff:sourceWording "Early 1990s, United Kingdom" .
+
+origin:dub--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q212688 ;
+    riff:claimedPlace "Jamaica" ;
+    riff:earliestYear 1960 ;
+    riff:isPreferred false ;
+    riff:latestYear 1960 ;
+    riff:originOf genre:dub ;
+    riff:sourceWording "inception (P571): 1960; country of origin (P495): Jamaica" .
+
+origin:dub--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Dub_music> ;
+    riff:claimedPlace "Jamaica" ;
+    riff:earliestYear 1966 ;
+    riff:isPreferred true ;
+    riff:latestYear 1969 ;
+    riff:originOf genre:dub ;
+    riff:sourceWording "Late 1960s, Jamaica" .
+
+origin:electric_blues--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q640097 ;
+    riff:earliestYear 1945 ;
+    riff:isPreferred false ;
+    riff:latestYear 1945 ;
+    riff:originOf genre:electric_blues ;
+    riff:sourceWording "inception (P571): 1945; country of origin (P495): none" .
+
+origin:electric_blues--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Electric_blues> ;
+    riff:claimedPlace "United States" ;
+    riff:earliestYear 1936 ;
+    riff:isPreferred true ;
+    riff:latestYear 1939 ;
+    riff:originOf genre:electric_blues ;
+    riff:sourceWording "Late 1930s, United States" .
+
+origin:electro--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q217597 ;
+    riff:earliestYear 1980 ;
+    riff:isPreferred false ;
+    riff:latestYear 1980 ;
+    riff:originOf genre:electro ;
+    riff:sourceWording "inception (P571): 1980; country of origin (P495): none" .
+
+origin:electro--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Electro_(music)> ;
+    riff:claimedPlace "Japan and United States" ;
+    riff:earliestYear 1980 ;
+    riff:isPreferred true ;
+    riff:latestYear 1983 ;
+    riff:originOf genre:electro ;
+    riff:sourceWording "Early 1980s, Japan (Tokyo), U.S. (New York City, Detroit)" .
+
+origin:extreme_metal--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q465978 ;
+    riff:claimedPlace "South America, United States, Switzerland, Germany and Scandinavia" ;
+    riff:earliestYear 1977 ;
+    riff:isPreferred false ;
+    riff:latestYear 1977 ;
+    riff:originOf genre:extreme_metal ;
+    riff:sourceWording "inception (P571): 1977; country of origin (P495): South America, United States, Switzerland, Germany, Scandinavia" .
+
+origin:extreme_metal--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Extreme_metal> ;
+    riff:claimedPlace "United States and Europe" ;
+    riff:earliestYear 1980 ;
+    riff:isPreferred true ;
+    riff:latestYear 1989 ;
+    riff:originOf genre:extreme_metal ;
+    riff:sourceWording "1980s, United States and Europe" .
+
+origin:folk--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Folk_music> ;
+    riff:claimedPlace "Many regions" ;
+    riff:isPreferred true ;
+    riff:originNote "Wikipedia gives no date or single place."@en ;
+    riff:originOf genre:folk ;
+    riff:sourceWording "Individual nations or regions" .
+
+origin:folk_rock--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q186472 ;
+    riff:claimedPlace "United States and United Kingdom" ;
+    riff:earliestYear 1964 ;
+    riff:isPreferred false ;
+    riff:latestYear 1964 ;
+    riff:originOf genre:folk_rock ;
+    riff:sourceWording "inception (P571): 1964; country of origin (P495): United States, United Kingdom" .
+
+origin:folk_rock--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Folk_rock> ;
+    riff:claimedPlace "United States" ;
+    riff:earliestYear 1960 ;
+    riff:isPreferred true ;
+    riff:latestYear 1966 ;
+    riff:originOf genre:folk_rock ;
+    riff:sourceWording "Early to mid-1960s, United States" .
+
+origin:funk--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q164444 ;
+    riff:claimedPlace "United States" ;
+    riff:earliestYear 1965 ;
+    riff:isPreferred false ;
+    riff:latestYear 1965 ;
+    riff:originOf genre:funk ;
+    riff:sourceWording "inception (P571): 1965; country of origin (P495): United States" .
+
+origin:funk--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Funk> ;
+    riff:claimedPlace "United States" ;
+    riff:earliestYear 1963 ;
+    riff:isPreferred true ;
+    riff:latestYear 1967 ;
+    riff:originOf genre:funk ;
+    riff:sourceWording "Mid-1960s, United States" .
+
+origin:gangsta_rap--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q753679 ;
+    riff:claimedPlace "United States" ;
+    riff:earliestYear 1985 ;
+    riff:isPreferred false ;
+    riff:latestYear 1985 ;
+    riff:originOf genre:gangsta_rap ;
+    riff:sourceWording "inception (P571): 1985; country of origin (P495): United States" .
+
+origin:gangsta_rap--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Gangsta_rap> ;
+    riff:claimedPlace "Oakland, Los Angeles, Philadelphia and New York City" ;
+    riff:earliestYear 1983 ;
+    riff:isPreferred true ;
+    riff:latestYear 1989 ;
+    riff:originNote "Place and period from the Wikipedia infobox (hlist template), fetched 2026-11-13."@en ;
+    riff:originOf genre:gangsta_rap ;
+    riff:sourceWording "Mid-to-late 1980s, Oakland, Los Angeles, Philadelphia, New York" .
+
+origin:garage_rock--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q211573 ;
+    riff:claimedPlace "United States" ;
+    riff:earliestYear 1960 ;
+    riff:isPreferred false ;
+    riff:latestYear 1960 ;
+    riff:originOf genre:garage_rock ;
+    riff:sourceWording "inception (P571): 1960; country of origin (P495): United States" .
+
+origin:garage_rock--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Garage_rock> ;
+    riff:claimedPlace "United States and Canada" ;
+    riff:earliestYear 1956 ;
+    riff:isPreferred true ;
+    riff:latestYear 1963 ;
+    riff:originOf genre:garage_rock ;
+    riff:sourceWording "Late 1950s to early 1960s, United States and Canada" .
+
+origin:glam_rock--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q76092 ;
+    riff:claimedPlace "United Kingdom" ;
+    riff:earliestYear 1969 ;
+    riff:isPreferred false ;
+    riff:latestYear 1969 ;
+    riff:originOf genre:glam_rock ;
+    riff:sourceWording "inception (P571): 1969; country of origin (P495): United Kingdom" .
+
+origin:glam_rock--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Glam_rock> ;
+    riff:claimedPlace "United Kingdom" ;
+    riff:earliestYear 1970 ;
+    riff:isPreferred true ;
+    riff:latestYear 1973 ;
+    riff:originOf genre:glam_rock ;
+    riff:sourceWording "Early 1970s, United Kingdom" .
+
+origin:gospel--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q180268 ;
+    riff:claimedPlace "United States" ;
+    riff:earliestYear 1600 ;
+    riff:isPreferred false ;
+    riff:latestYear 1600 ;
+    riff:originOf genre:gospel ;
+    riff:sourceWording "inception (P571): 1600; country of origin (P495): United States" .
+
+origin:gospel--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Gospel_music> ;
+    riff:claimedPlace "Southern United States" ;
+    riff:isPreferred true ;
+    riff:originNote "Wikipedia gives no date. Wikidata says 1600 and DBpedia says early 17th century, Scotland."@en ;
+    riff:originOf genre:gospel ;
+    riff:sourceWording "Southern United States" .
+
+origin:grunge--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q11365 ;
+    riff:claimedPlace "United States" ;
+    riff:earliestYear 1985 ;
+    riff:isPreferred false ;
+    riff:latestYear 1985 ;
+    riff:originOf genre:grunge ;
+    riff:sourceWording "inception (P571): 1985; country of origin (P495): United States" .
+
+origin:grunge--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Grunge> ;
+    riff:claimedPlace "Seattle, United States" ;
+    riff:earliestYear 1983 ;
+    riff:isPreferred true ;
+    riff:latestYear 1987 ;
+    riff:originOf genre:grunge ;
+    riff:sourceWording "Mid-1980s, Seattle, Washington, U.S." .
+
+origin:hard_rock--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q83270 ;
+    riff:claimedPlace "United States and United Kingdom" ;
+    riff:earliestYear 1967 ;
+    riff:isPreferred false ;
+    riff:latestYear 1967 ;
+    riff:originOf genre:hard_rock ;
+    riff:sourceWording "inception (P571): 1967; country of origin (P495): United States, United Kingdom" .
+
+origin:hard_rock--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Hard_rock> ;
+    riff:claimedPlace "United States and United Kingdom" ;
+    riff:earliestYear 1963 ;
+    riff:isPreferred true ;
+    riff:latestYear 1967 ;
+    riff:originOf genre:hard_rock ;
+    riff:sourceWording "Mid-1960s, United States and United Kingdom" .
+
+origin:hardcore_punk--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q10922 ;
+    riff:claimedPlace "United States" ;
+    riff:earliestYear 1978 ;
+    riff:isPreferred false ;
+    riff:latestYear 1978 ;
+    riff:originOf genre:hardcore_punk ;
+    riff:sourceWording "inception (P571): 1978; country of origin (P495): United States" .
+
+origin:hardcore_punk--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Hardcore_punk> ;
+    riff:claimedPlace "United States and Canada" ;
+    riff:earliestYear 1976 ;
+    riff:isPreferred true ;
+    riff:latestYear 1983 ;
+    riff:originOf genre:hardcore_punk ;
+    riff:sourceWording "Late 1970s to early 1980s, Southern California, Vancouver, Knoxville, San Francisco, Washington, D.C. area" .
+
+origin:heavy_metal--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q38848 ;
+    riff:claimedPlace "United Kingdom" ;
+    riff:earliestYear 1970 ;
+    riff:isPreferred false ;
+    riff:latestYear 1970 ;
+    riff:originOf genre:heavy_metal ;
+    riff:sourceWording "inception (P571): 1970; country of origin (P495): United Kingdom" .
+
+origin:heavy_metal--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Heavy_metal_music> ;
+    riff:claimedPlace "United Kingdom and United States" ;
+    riff:earliestYear 1966 ;
+    riff:isPreferred true ;
+    riff:latestYear 1969 ;
+    riff:originOf genre:heavy_metal ;
+    riff:sourceWording "Late 1960s, United Kingdom and United States" .
+
+origin:hip_hop--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q11401 ;
+    riff:claimedPlace "United States" ;
+    riff:earliestYear 1973 ;
+    riff:isPreferred false ;
+    riff:latestYear 1973 ;
+    riff:originOf genre:hip_hop ;
+    riff:sourceWording "inception (P571): 1973; country of origin (P495): United States" .
+
+origin:hip_hop--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Hip-hop> ;
+    riff:claimedPlace "The Bronx, New York City" ;
+    riff:earliestYear 1970 ;
+    riff:isPreferred true ;
+    riff:latestYear 1973 ;
+    riff:originOf genre:hip_hop ;
+    riff:sourceWording "Early 1970s, the Bronx, New York City, U.S." .
+
+origin:house--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q20502 ;
+    riff:claimedPlace "United States" ;
+    riff:earliestYear 1982 ;
+    riff:isPreferred false ;
+    riff:latestYear 1982 ;
+    riff:originOf genre:house ;
+    riff:sourceWording "inception (P571): 1982; country of origin (P495): United States" .
+
+origin:house--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/House_music> ;
+    riff:claimedPlace "Chicago, United States" ;
+    riff:earliestYear 1980 ;
+    riff:isPreferred true ;
+    riff:latestYear 1983 ;
+    riff:originOf genre:house ;
+    riff:sourceWording "Early 1980s, Chicago, Illinois, U.S." .
+
+origin:indie_rock--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q183504 ;
+    riff:claimedPlace "United States, Europe and United Kingdom" ;
+    riff:earliestYear 1981 ;
+    riff:isPreferred false ;
+    riff:latestYear 1981 ;
+    riff:originOf genre:indie_rock ;
+    riff:sourceWording "inception (P571): 1981; country of origin (P495): United States, Europe, United Kingdom" .
+
+origin:indie_rock--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Indie_rock> ;
+    riff:claimedPlace "United Kingdom, United States and New Zealand" ;
+    riff:earliestYear 1980 ;
+    riff:isPreferred true ;
+    riff:latestYear 1986 ;
+    riff:originOf genre:indie_rock ;
+    riff:sourceWording "Early to mid-1980s, United Kingdom, United States and New Zealand" .
+
+origin:jazz--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q8341 ;
+    riff:claimedPlace "United States" ;
+    riff:earliestYear 1917 ;
+    riff:isPreferred false ;
+    riff:latestYear 1917 ;
+    riff:originOf genre:jazz ;
+    riff:sourceWording "inception (P571): 1917; country of origin (P495): United States" .
+
+origin:jazz--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Jazz> ;
+    riff:claimedPlace "New Orleans, United States" ;
+    riff:earliestYear 1870 ;
+    riff:isPreferred true ;
+    riff:latestYear 1899 ;
+    riff:originOf genre:jazz ;
+    riff:sourceWording "Late 19th century, New Orleans, U.S." .
+
+origin:jazz_fusion--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q105527 ;
+    riff:claimedPlace "United States and Europe" ;
+    riff:earliestYear 1950 ;
+    riff:isPreferred false ;
+    riff:latestYear 1950 ;
+    riff:originOf genre:jazz_fusion ;
+    riff:sourceWording "inception (P571): 1950; country of origin (P495): United States, Europe" .
+
+origin:jazz_fusion--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Jazz_fusion> ;
+    riff:claimedPlace "United States" ;
+    riff:earliestYear 1966 ;
+    riff:isPreferred true ;
+    riff:latestYear 1969 ;
+    riff:originOf genre:jazz_fusion ;
+    riff:sourceWording "Late 1960s, United States" .
+
+origin:jazz_rap--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q255406 ;
+    riff:claimedPlace "United States" ;
+    riff:earliestYear 1985 ;
+    riff:isPreferred false ;
+    riff:latestYear 1985 ;
+    riff:originOf genre:jazz_rap ;
+    riff:sourceWording "inception (P571): 1985; country of origin (P495): United States" .
+
+origin:jazz_rap--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Jazz_rap> ;
+    riff:claimedPlace "New York metropolitan area" ;
+    riff:earliestYear 1986 ;
+    riff:isPreferred true ;
+    riff:latestYear 1989 ;
+    riff:originOf genre:jazz_rap ;
+    riff:sourceWording "Late 1980s, New York metropolitan area" .
+
+origin:jungle--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q1102161 ;
+    riff:claimedPlace "United Kingdom" ;
+    riff:earliestYear 1987 ;
+    riff:isPreferred false ;
+    riff:latestYear 1987 ;
+    riff:originOf genre:jungle ;
+    riff:sourceWording "inception (P571): 1987; country of origin (P495): United Kingdom" .
+
+origin:jungle--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Jungle_music> ;
+    riff:claimedPlace "United Kingdom" ;
+    riff:earliestYear 1990 ;
+    riff:isPreferred true ;
+    riff:latestYear 1993 ;
+    riff:originOf genre:jungle ;
+    riff:sourceWording "Early 1990s, United Kingdom" .
+
+origin:krautrock--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q320592 ;
+    riff:claimedPlace "Germany" ;
+    riff:earliestYear 1967 ;
+    riff:isPreferred false ;
+    riff:latestYear 1967 ;
+    riff:originOf genre:krautrock ;
+    riff:sourceWording "inception (P571): 1967; country of origin (P495): Germany" .
+
+origin:krautrock--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Krautrock> ;
+    riff:claimedPlace "West Germany" ;
+    riff:earliestYear 1966 ;
+    riff:isPreferred true ;
+    riff:latestYear 1973 ;
+    riff:originOf genre:krautrock ;
+    riff:sourceWording "Late 1960s – early 1970s, West Germany" .
+
+origin:new_wave--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q187760 ;
+    riff:claimedPlace "United States and United Kingdom" ;
+    riff:earliestYear 1976 ;
+    riff:isPreferred false ;
+    riff:latestYear 1976 ;
+    riff:originOf genre:new_wave ;
+    riff:sourceWording "inception (P571): 1976; country of origin (P495): United States, United Kingdom" .
+
+origin:new_wave--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/New_wave_music> ;
+    riff:claimedPlace "United States and United Kingdom" ;
+    riff:earliestYear 1973 ;
+    riff:isPreferred true ;
+    riff:latestYear 1979 ;
+    riff:originOf genre:new_wave ;
+    riff:sourceWording "Mid-to-late 1970s, United States and United Kingdom" .
+
+origin:pop_punk--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q487914 ;
+    riff:claimedPlace "Canada, United States and United Kingdom" ;
+    riff:earliestYear 1977 ;
+    riff:isPreferred false ;
+    riff:latestYear 1977 ;
+    riff:originOf genre:pop_punk ;
+    riff:sourceWording "inception (P571): 1977; country of origin (P495): Canada, United States, United Kingdom" .
+
+origin:pop_punk--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Pop-punk> ;
+    riff:claimedPlace "United States and United Kingdom" ;
+    riff:earliestYear 1976 ;
+    riff:isPreferred true ;
+    riff:latestYear 1979 ;
+    riff:originOf genre:pop_punk ;
+    riff:sourceWording "Late 1970s, United States and United Kingdom" .
+
+origin:post_punk--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q598929 ;
+    riff:claimedPlace "United Kingdom" ;
+    riff:earliestYear 1978 ;
+    riff:isPreferred false ;
+    riff:latestYear 1978 ;
+    riff:originOf genre:post_punk ;
+    riff:sourceWording "inception (P571): 1978; country of origin (P495): United Kingdom" .
+
+origin:post_punk--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Post-punk> ;
+    riff:claimedPlace "United Kingdom" ;
+    riff:earliestYear 1976 ;
+    riff:isPreferred true ;
+    riff:latestYear 1979 ;
+    riff:originOf genre:post_punk ;
+    riff:sourceWording "Late 1970s, United Kingdom" .
+
+origin:progressive_rock--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q49451 ;
+    riff:claimedPlace "United Kingdom" ;
+    riff:earliestYear 1967 ;
+    riff:isPreferred false ;
+    riff:latestYear 1967 ;
+    riff:originOf genre:progressive_rock ;
+    riff:sourceWording "inception (P571): 1967; country of origin (P495): United Kingdom" .
+
+origin:progressive_rock--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Progressive_rock> ;
+    riff:claimedPlace "United States and United Kingdom" ;
+    riff:earliestYear 1963 ;
+    riff:isPreferred true ;
+    riff:latestYear 1969 ;
+    riff:originOf genre:progressive_rock ;
+    riff:sourceWording "Mid to late 1960s, United States and United Kingdom" .
+
+origin:psychedelic_rock--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q206159 ;
+    riff:claimedPlace "United States and United Kingdom" ;
+    riff:earliestYear 1965 ;
+    riff:isPreferred false ;
+    riff:latestYear 1965 ;
+    riff:originOf genre:psychedelic_rock ;
+    riff:sourceWording "inception (P571): 1965; country of origin (P495): United States, United Kingdom" .
+
+origin:psychedelic_rock--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Psychedelic_rock> ;
+    riff:claimedPlace "United States and United Kingdom" ;
+    riff:earliestYear 1963 ;
+    riff:isPreferred true ;
+    riff:latestYear 1967 ;
+    riff:originOf genre:psychedelic_rock ;
+    riff:sourceWording "Mid 1960s, United States and United Kingdom" .
+
+origin:punk_rock--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q3071 ;
+    riff:claimedPlace "United States and United Kingdom" ;
+    riff:earliestYear 1975 ;
+    riff:isPreferred false ;
+    riff:latestYear 1975 ;
+    riff:originOf genre:punk_rock ;
+    riff:sourceWording "inception (P571): 1975; country of origin (P495): United States, United Kingdom" .
+
+origin:punk_rock--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Punk_rock> ;
+    riff:claimedPlace "United States, United Kingdom and Australia" ;
+    riff:earliestYear 1973 ;
+    riff:isPreferred true ;
+    riff:latestYear 1977 ;
+    riff:originOf genre:punk_rock ;
+    riff:sourceWording "Mid-1970s, United States, United Kingdom, and Australia" .
+
+origin:reggae--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q9794 ;
+    riff:claimedPlace "Jamaica" ;
+    riff:earliestYear 1961 ;
+    riff:isPreferred false ;
+    riff:latestYear 1961 ;
+    riff:originOf genre:reggae ;
+    riff:sourceWording "inception (P571): 1961; country of origin (P495): Jamaica" .
+
+origin:reggae--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Reggae> ;
+    riff:claimedPlace "Kingston, Jamaica" ;
+    riff:earliestYear 1966 ;
+    riff:isPreferred true ;
+    riff:latestYear 1969 ;
+    riff:originOf genre:reggae ;
+    riff:sourceWording "Late-1960s Jamaica, particularly Kingston" .
+
+origin:rhythm_and_blues--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q45981 ;
+    riff:earliestYear 1938 ;
+    riff:isPreferred false ;
+    riff:latestYear 1938 ;
+    riff:originOf genre:rhythm_and_blues ;
+    riff:sourceWording "inception (P571): 1938; country of origin (P495): none" .
+
+origin:rhythm_and_blues--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Rhythm_and_blues> ;
+    riff:claimedPlace "Deep South, United States" ;
+    riff:earliestYear 1940 ;
+    riff:isPreferred true ;
+    riff:latestYear 1949 ;
+    riff:originOf genre:rhythm_and_blues ;
+    riff:sourceWording "1940s, Deep South, United States" .
+
+origin:rock--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q11399 ;
+    riff:claimedPlace "United States and United Kingdom" ;
+    riff:earliestYear 1948 ;
+    riff:isPreferred false ;
+    riff:latestYear 1948 ;
+    riff:originOf genre:rock ;
+    riff:sourceWording "inception (P571): 1948; country of origin (P495): United States, United Kingdom" .
+
+origin:rock--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Rock_music> ;
+    riff:claimedPlace "Southern and Midwestern United States" ;
+    riff:earliestYear 1940 ;
+    riff:isPreferred true ;
+    riff:latestYear 1959 ;
+    riff:originOf genre:rock ;
+    riff:sourceWording "1940s–1950s, Southern and Midwestern United States" .
+
+origin:rock_and_roll--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q7749 ;
+    riff:claimedPlace "United States" ;
+    riff:earliestYear 1949 ;
+    riff:isPreferred false ;
+    riff:latestYear 1949 ;
+    riff:originOf genre:rock_and_roll ;
+    riff:sourceWording "inception (P571): 1949; country of origin (P495): United States" .
+
+origin:rock_and_roll--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Rock_and_roll> ;
+    riff:claimedPlace "United States" ;
+    riff:earliestYear 1946 ;
+    riff:isPreferred true ;
+    riff:latestYear 1953 ;
+    riff:originOf genre:rock_and_roll ;
+    riff:sourceWording "Late 1940s – early 1950s, United States" .
+
+origin:rockabilly--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q203720 ;
+    riff:claimedPlace "United States" ;
+    riff:earliestYear 1950 ;
+    riff:isPreferred false ;
+    riff:latestYear 1950 ;
+    riff:originOf genre:rockabilly ;
+    riff:sourceWording "inception (P571): 1950; country of origin (P495): United States" .
+
+origin:rockabilly--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Rockabilly> ;
+    riff:claimedPlace "Southern United States" ;
+    riff:earliestYear 1950 ;
+    riff:isPreferred true ;
+    riff:latestYear 1956 ;
+    riff:originOf genre:rockabilly ;
+    riff:sourceWording "Early to mid-1950s, Southern United States" .
+
+origin:ska--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q54365 ;
+    riff:claimedPlace "United States, Europe, Australia, Jamaica and Latin America" ;
+    riff:earliestYear 1958 ;
+    riff:isPreferred false ;
+    riff:latestYear 1958 ;
+    riff:originOf genre:ska ;
+    riff:sourceWording "inception (P571): 1958; country of origin (P495): United States, Europe, Australia, Jamaica, Latin America" .
+
+origin:ska--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Ska> ;
+    riff:claimedPlace "Jamaica" ;
+    riff:earliestYear 1956 ;
+    riff:isPreferred true ;
+    riff:latestYear 1959 ;
+    riff:originOf genre:ska ;
+    riff:sourceWording "Late 1950s, Jamaica" .
+
+origin:soul--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q131272 ;
+    riff:claimedPlace "United States" ;
+    riff:earliestYear 1955 ;
+    riff:isPreferred false ;
+    riff:latestYear 1955 ;
+    riff:originOf genre:soul ;
+    riff:sourceWording "inception (P571): 1955; country of origin (P495): United States" .
+
+origin:soul--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Soul_music> ;
+    riff:claimedPlace "United States" ;
+    riff:earliestYear 1956 ;
+    riff:isPreferred true ;
+    riff:latestYear 1963 ;
+    riff:originOf genre:soul ;
+    riff:sourceWording "Late 1950s – early 1960s, U.S." .
+
+origin:synth_pop--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q1298934 ;
+    riff:claimedPlace "Japan, United Kingdom and Germany" ;
+    riff:earliestYear 1972 ;
+    riff:isPreferred false ;
+    riff:latestYear 1972 ;
+    riff:originOf genre:synth_pop ;
+    riff:sourceWording "inception (P571): 1972; country of origin (P495): Japan, United Kingdom, Germany" .
+
+origin:synth_pop--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Synth-pop> ;
+    riff:claimedPlace "Germany, Japan and United Kingdom" ;
+    riff:earliestYear 1977 ;
+    riff:isPreferred true ;
+    riff:latestYear 1980 ;
+    riff:originOf genre:synth_pop ;
+    riff:sourceWording "1977–1980 in Germany, Japan, and the United Kingdom" .
+
+origin:techno--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q170611 ;
+    riff:claimedPlace "United States" ;
+    riff:earliestYear 1984 ;
+    riff:isPreferred false ;
+    riff:latestYear 1984 ;
+    riff:originOf genre:techno ;
+    riff:sourceWording "inception (P571): 1984; country of origin (P495): United States" .
+
+origin:techno--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Techno> ;
+    riff:claimedPlace "Detroit, United States and Frankfurt, Germany" ;
+    riff:earliestYear 1983 ;
+    riff:isPreferred true ;
+    riff:latestYear 1987 ;
+    riff:originOf genre:techno ;
+    riff:sourceWording "Mid-1980s, Detroit, Michigan, U.S. Frankfurt DE" .
+
+origin:trap--wikidata a riff:OriginClaim ;
+    prov:wasDerivedFrom wd:Q2913982 ;
+    riff:earliestYear 1990 ;
+    riff:isPreferred false ;
+    riff:latestYear 1990 ;
+    riff:originOf genre:trap ;
+    riff:sourceWording "inception (P571): 1990; country of origin (P495): none" .
+
+origin:trap--wikipedia a riff:OriginClaim ;
+    prov:wasDerivedFrom <https://en.wikipedia.org/wiki/Trap_music> ;
+    riff:claimedPlace "Atlanta, United States" ;
+    riff:earliestYear 1990 ;
+    riff:isPreferred true ;
+    riff:latestYear 1999 ;
+    riff:originOf genre:trap ;
+    riff:sourceWording "1990s, Atlanta, Georgia, U.S." .
+
 phase:bebop_1 a riff:GenrePhase ;
     prov:wasDerivedFrom <https://doi.org/10.2383/77058> ;
     riff:hasForm riff:AvantGarde ;
@@ -9040,7 +9908,15 @@ artist:mahavishnu_orchestra a mm:MusicArtist,
     riff:activeFrom 1971 ;
     riff:activeTo 1987 ;
     riff:hasPrimaryGenre genre:jazz_fusion ;
-    riff:playsInstrument instrument:violin .
+    riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
+        instrument:guitar,
+        instrument:keyboards,
+        instrument:percussion,
+        instrument:piano,
+        instrument:saxophone,
+        instrument:violin,
+        instrument:voice .
 
 artist:napalm_death a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -9115,9 +9991,14 @@ artist:the_skatalites a mm:MusicArtist,
     mm:hasGenre genre:ska ;
     riff:activeFrom 1964 ;
     riff:hasPrimaryGenre genre:ska ;
-    riff:playsInstrument instrument:keyboards,
+    riff:playsInstrument instrument:double_bass,
+        instrument:drum_kit,
+        instrument:guitar,
+        instrument:keyboards,
+        instrument:piano,
         instrument:saxophone,
-        instrument:trumpet .
+        instrument:trumpet,
+        instrument:voice .
 
 artist:the_specials a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -9140,17 +10021,6 @@ artist:thomas_a_dorsey a mm:MusicArtist,
     riff:activeTo 1993 ;
     riff:hasPrimaryGenre genre:gospel ;
     riff:playsInstrument instrument:piano .
-
-genre:jungle a mm:MusicGenre ;
-    rdfs:label "Jungle"@en ;
-    owl:sameAs dbr:Jungle_music,
-        wd:Q1102161 ;
-    riff:emergedIn 1992 ;
-    riff:hasStylisticOrigin genre:dub,
-        genre:funk,
-        genre:hip_hop,
-        genre:reggae ;
-    riff:originPlace "United Kingdom" .
 
 influence:a_tribe_called_quest--can a riff:Influence ;
     riff:influenced artist:a_tribe_called_quest ;
@@ -10064,11 +10934,6 @@ influence:van_halen--the_kinks a riff:Influence ;
     riff:influenced artist:van_halen ;
     riff:influencer artist:the_kinks .
 
-instrument:drum_machine a riff:Instrument ;
-    rdfs:label "Drum machine"@en ;
-    owl:sameAs wd:Q831698 ;
-    riff:inInstrumentGroup riff:Electronic .
-
 recording:parliament_funkadelic__get_off_your_ass_and_jam a mm:Recording ;
     rdfs:label "Get Off Your Ass and Jam"@en ;
     dcterms:creator artist:parliament_funkadelic ;
@@ -10108,7 +10973,12 @@ artist:blondie a mm:MusicArtist,
         artist:the_kinks ;
     riff:activeFrom 1974 ;
     riff:hasPrimaryGenre genre:new_wave ;
-    riff:playsInstrument instrument:guitar .
+    riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
+        instrument:guitar,
+        instrument:keyboards,
+        instrument:piano,
+        instrument:voice .
 
 artist:daft_punk a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -10127,7 +10997,8 @@ artist:daft_punk a mm:MusicArtist,
         instrument:drum_kit,
         instrument:guitar,
         instrument:keyboards,
-        instrument:synthesizer .
+        instrument:synthesizer,
+        instrument:voice .
 
 artist:jeff_mills a mm:MusicArtist,
         mm:Musician ;
@@ -10222,17 +11093,16 @@ artist:whitney_houston a mm:MusicArtist,
     riff:hasPrimaryGenre genre:contemporary_rnb ;
     riff:playsInstrument instrument:voice .
 
-genre:trap a mm:MusicGenre ;
-    rdfs:label "Trap"@en ;
-    owl:sameAs dbr:Trap_music,
-        wd:Q2913982 ;
-    skos:broader genre:gangsta_rap,
-        genre:hip_hop ;
-    riff:emergedIn 1995 ;
-    riff:hasStylisticOrigin genre:electro,
-        genre:gangsta_rap,
-        genre:hip_hop ;
-    riff:originPlace "Atlanta, United States" .
+genre:jungle a mm:MusicGenre ;
+    rdfs:label "Jungle"@en ;
+    owl:sameAs dbr:Jungle_music,
+        wd:Q1102161 ;
+    riff:emergedIn 1990 ;
+    riff:hasStylisticOrigin genre:dub,
+        genre:funk,
+        genre:hip_hop,
+        genre:reggae ;
+    riff:originPlace "United Kingdom" .
 
 influence:a_tribe_called_quest--parliament_funkadelic a riff:Influence ;
     riff:influenced artist:a_tribe_called_quest ;
@@ -10262,16 +11132,6 @@ instrument:clarinet a riff:Instrument ;
     rdfs:label "Clarinet"@en ;
     owl:sameAs wd:Q8343 ;
     riff:inInstrumentGroup riff:WindsAndBrass .
-
-instrument:mandolin a riff:Instrument ;
-    rdfs:label "Mandolin"@en ;
-    owl:sameAs wd:Q302497 ;
-    riff:inInstrumentGroup riff:Strings .
-
-instrument:sampler a riff:Instrument ;
-    rdfs:label "Sampler"@en ;
-    owl:sameAs wd:Q320002 ;
-    riff:inInstrumentGroup riff:Electronic .
 
 artist:aphex_twin a mm:MusicArtist,
         mm:Musician ;
@@ -10370,7 +11230,11 @@ artist:mudhoney a mm:MusicArtist,
         artist:the_stooges ;
     riff:activeFrom 1988 ;
     riff:hasPrimaryGenre genre:grunge ;
-    riff:playsInstrument instrument:bass_guitar .
+    riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
+        instrument:guitar,
+        instrument:saxophone,
+        instrument:voice .
 
 artist:the_winstons a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -10381,27 +11245,19 @@ artist:the_winstons a mm:MusicArtist,
     riff:hasPrimaryGenre genre:funk ;
     riff:playsInstrument instrument:saxophone .
 
-genre:drum_and_bass a mm:MusicGenre ;
-    rdfs:label "Drum and bass"@en ;
-    owl:sameAs dbr:Drum_and_bass,
-        wd:Q188994 ;
-    riff:emergedIn 1992 ;
-    riff:hasStylisticOrigin genre:ambient,
-        genre:dub,
-        genre:house,
-        genre:jungle,
-        genre:reggae,
-        genre:techno ;
-    riff:originPlace "United Kingdom" .
-
 influence:a_tribe_called_quest--sly_and_the_family_stone a riff:Influence ;
     riff:influenced artist:a_tribe_called_quest ;
     riff:influencer artist:sly_and_the_family_stone .
 
-instrument:accordion a riff:Instrument ;
-    rdfs:label "Accordion"@en ;
-    owl:sameAs wd:Q79838 ;
-    riff:inInstrumentGroup riff:WindsAndBrass .
+instrument:drum_machine a riff:Instrument ;
+    rdfs:label "Drum machine"@en ;
+    owl:sameAs wd:Q831698 ;
+    riff:inInstrumentGroup riff:Electronic .
+
+instrument:sampler a riff:Instrument ;
+    rdfs:label "Sampler"@en ;
+    owl:sameAs wd:Q320002 ;
+    riff:inInstrumentGroup riff:Electronic .
 
 artist:arcade_fire a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -10476,6 +11332,7 @@ artist:gang_of_four a mm:MusicArtist,
     riff:playsInstrument instrument:bass_guitar,
         instrument:drum_kit,
         instrument:guitar,
+        instrument:keyboards,
         instrument:voice .
 
 artist:gary_numan a mm:MusicArtist,
@@ -10505,7 +11362,16 @@ artist:grateful_dead a mm:MusicArtist,
     riff:activeFrom 1965 ;
     riff:activeTo 1995 ;
     riff:hasPrimaryGenre genre:psychedelic_rock ;
-    riff:playsInstrument instrument:keyboards .
+    riff:playsInstrument instrument:accordion,
+        instrument:bass_guitar,
+        instrument:drum_kit,
+        instrument:guitar,
+        instrument:harmonica,
+        instrument:keyboards,
+        instrument:mandolin,
+        instrument:organ,
+        instrument:piano,
+        instrument:voice .
 
 artist:john_coltrane a mm:MusicArtist,
         mm:Musician ;
@@ -10581,6 +11447,11 @@ artist:tangerine_dream a mm:MusicArtist,
     riff:activeFrom 1967 ;
     riff:hasPrimaryGenre genre:krautrock ;
     riff:playsInstrument instrument:drum_kit,
+        instrument:guitar,
+        instrument:keyboards,
+        instrument:percussion,
+        instrument:saxophone,
+        instrument:synthesizer,
         instrument:violin .
 
 artist:the_meters a mm:MusicArtist,
@@ -10633,15 +11504,27 @@ artist:wu_tang_clan a mm:MusicArtist,
         instrument:trumpet,
         instrument:voice .
 
-instrument:double_bass a riff:Instrument ;
-    rdfs:label "Double bass"@en ;
-    owl:sameAs wd:Q80019 ;
-    riff:inInstrumentGroup riff:Strings .
+genre:trap a mm:MusicGenre ;
+    rdfs:label "Trap"@en ;
+    owl:sameAs dbr:Trap_music,
+        wd:Q2913982 ;
+    skos:broader genre:gangsta_rap,
+        genre:hip_hop ;
+    riff:emergedIn 1990 ;
+    riff:hasStylisticOrigin genre:electro,
+        genre:gangsta_rap,
+        genre:hip_hop ;
+    riff:originPlace "Atlanta, United States" .
 
-instrument:flute a riff:Instrument ;
-    rdfs:label "Flute"@en ;
-    owl:sameAs wd:Q11405 ;
+instrument:accordion a riff:Instrument ;
+    rdfs:label "Accordion"@en ;
+    owl:sameAs wd:Q79838 ;
     riff:inInstrumentGroup riff:WindsAndBrass .
+
+instrument:mandolin a riff:Instrument ;
+    rdfs:label "Mandolin"@en ;
+    owl:sameAs wd:Q302497 ;
+    riff:inInstrumentGroup riff:Strings .
 
 recording:james_brown__funky_drummer a mm:Recording ;
     rdfs:label "Funky Drummer, Part 1"@en ;
@@ -10719,8 +11602,12 @@ artist:death a mm:MusicArtist,
     riff:activeFrom 1983 ;
     riff:activeTo 2001 ;
     riff:hasPrimaryGenre genre:extreme_metal ;
-    riff:playsInstrument instrument:drum_kit,
-        instrument:guitar .
+    riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
+        instrument:guitar,
+        instrument:keyboards,
+        instrument:percussion,
+        instrument:voice .
 
 artist:new_order a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -10781,10 +11668,23 @@ artist:the_orb a mm:MusicArtist,
     riff:playsInstrument instrument:guitar,
         instrument:keyboards .
 
-instrument:organ a riff:Instrument ;
-    rdfs:label "Organ"@en ;
-    owl:sameAs wd:Q1444 ;
-    riff:inInstrumentGroup riff:Keyboards .
+genre:drum_and_bass a mm:MusicGenre ;
+    rdfs:label "Drum and bass"@en ;
+    owl:sameAs dbr:Drum_and_bass,
+        wd:Q188994 ;
+    riff:emergedIn 1990 ;
+    riff:hasStylisticOrigin genre:ambient,
+        genre:dub,
+        genre:house,
+        genre:jungle,
+        genre:reggae,
+        genre:techno ;
+    riff:originPlace "United Kingdom" .
+
+instrument:flute a riff:Instrument ;
+    rdfs:label "Flute"@en ;
+    owl:sameAs wd:Q11405 ;
+    riff:inInstrumentGroup riff:WindsAndBrass .
 
 instrument:turntables a riff:Instrument ;
     rdfs:label "Turntables"@en ;
@@ -10855,8 +11755,8 @@ artist:minor_threat a mm:MusicArtist,
     riff:activeTo 1983 ;
     riff:hasPrimaryGenre genre:hardcore_punk ;
     riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
         instrument:guitar,
-        instrument:percussion,
         instrument:voice .
 
 artist:the_smiths a mm:MusicArtist,
@@ -10896,26 +11796,6 @@ artist:woody_guthrie a mm:MusicArtist,
         instrument:violin,
         instrument:voice .
 
-genre:ambient a mm:MusicGenre ;
-    rdfs:label "Ambient music"@en ;
-    owl:sameAs dbr:Ambient_music,
-        wd:Q193207 ;
-    riff:emergedIn 1970 ;
-    riff:hasStylisticOrigin genre:dub,
-        genre:krautrock ;
-    riff:originPlace "Japan and United Kingdom" .
-
-genre:jazz_rap a mm:MusicGenre ;
-    rdfs:label "Jazz rap"@en ;
-    owl:sameAs dbr:Jazz_rap,
-        wd:Q255406 ;
-    riff:emergedIn 1988 ;
-    riff:hasStylisticOrigin genre:hip_hop,
-        genre:jazz ;
-    riff:isFusionOf genre:hip_hop,
-        genre:jazz ;
-    riff:originPlace "New York metropolitan area" .
-
 instrument:trumpet a riff:Instrument ;
     rdfs:label "Trumpet"@en ;
     owl:sameAs wd:Q8338 ;
@@ -10931,8 +11811,8 @@ artist:bad_brains a mm:MusicArtist,
     riff:activeFrom 1977 ;
     riff:hasPrimaryGenre genre:hardcore_punk ;
     riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
         instrument:guitar,
-        instrument:percussion,
         instrument:voice .
 
 artist:bee_gees a mm:MusicArtist,
@@ -11038,45 +11918,20 @@ artist:weather_report a mm:MusicArtist,
     riff:activeFrom 1970 ;
     riff:activeTo 1986 ;
     riff:hasPrimaryGenre genre:jazz_fusion ;
-    riff:playsInstrument instrument:double_bass,
+    riff:playsInstrument instrument:bass_guitar,
+        instrument:double_bass,
         instrument:drum_kit,
-        instrument:percussion .
+        instrument:guitar,
+        instrument:keyboards,
+        instrument:percussion,
+        instrument:piano,
+        instrument:saxophone,
+        instrument:synthesizer,
+        instrument:voice .
 
-genre:electro a mm:MusicGenre ;
-    rdfs:label "Electro"@en ;
-    owl:sameAs dbr:Electro_\(music\),
-        wd:Q217597 ;
-    riff:emergedIn 1982 ;
-    riff:hasStylisticOrigin genre:funk,
-        genre:hip_hop,
-        genre:synth_pop ;
-    riff:originPlace "Japan and United States" .
-
-genre:jazz_fusion a mm:MusicGenre ;
-    rdfs:label "Jazz fusion"@en ;
-    owl:sameAs dbr:Jazz_fusion,
-        wd:Q105527 ;
-    riff:emergedIn 1968 ;
-    riff:hasStylisticOrigin genre:bebop,
-        genre:funk,
-        genre:jazz,
-        genre:rhythm_and_blues,
-        genre:rock ;
-    riff:isFusionOf genre:jazz,
-        genre:rock ;
-    riff:originPlace "United States" .
-
-genre:pop_punk a mm:MusicGenre ;
-    rdfs:label "Pop-punk"@en ;
-    owl:sameAs dbr:Pop-punk,
-        wd:Q487914 ;
-    riff:emergedIn 1978 ;
-    riff:hasStylisticOrigin genre:punk_rock ;
-    riff:originPlace "United States and United Kingdom" .
-
-instrument:violin a riff:Instrument ;
-    rdfs:label "Violin"@en ;
-    owl:sameAs wd:Q8355 ;
+instrument:double_bass a riff:Instrument ;
+    rdfs:label "Double bass"@en ;
+    owl:sameAs wd:Q80019 ;
     riff:inInstrumentGroup riff:Strings .
 
 artist:billie_holiday a mm:MusicArtist,
@@ -11134,6 +11989,7 @@ artist:genesis a mm:MusicArtist,
         instrument:flute,
         instrument:guitar,
         instrument:keyboards,
+        instrument:organ,
         instrument:percussion,
         instrument:voice .
 
@@ -11165,66 +12021,30 @@ artist:yes a mm:MusicArtist,
         instrument:drum_kit,
         instrument:guitar,
         instrument:keyboards,
+        instrument:organ,
+        instrument:percussion,
+        instrument:piano,
         instrument:voice .
 
-genre:extreme_metal a mm:MusicGenre ;
-    rdfs:label "Extreme metal"@en ;
-    owl:sameAs dbr:Extreme_metal,
-        wd:Q465978 ;
-    skos:broader genre:heavy_metal ;
-    riff:emergedIn 1985 ;
-    riff:hasStylisticOrigin genre:hardcore_punk,
-        genre:heavy_metal ;
-    riff:originPlace "United States and Europe" .
-
-genre:glam_rock a mm:MusicGenre ;
-    rdfs:label "Glam rock"@en ;
-    owl:sameAs dbr:Glam_rock,
-        wd:Q76092 ;
-    skos:broader genre:rock ;
-    riff:emergedIn 1972 ;
-    riff:hasStylisticOrigin genre:hard_rock,
-        genre:psychedelic_rock,
-        genre:rock ;
-    riff:originPlace "United Kingdom" .
-
-genre:house a mm:MusicGenre ;
-    rdfs:label "House music"@en ;
-    owl:sameAs dbr:House_music,
-        wd:Q20502 ;
-    riff:emergedIn 1982 ;
-    riff:hasStylisticOrigin genre:disco,
-        genre:dub,
-        genre:electro,
-        genre:jazz,
-        genre:synth_pop ;
-    riff:originPlace "Chicago, United States" .
-
-genre:indie_rock a mm:MusicGenre ;
-    rdfs:label "Indie rock"@en ;
-    owl:sameAs dbr:Indie_rock,
-        wd:Q183504 ;
-    skos:broader genre:alternative_rock,
-        genre:rock ;
-    riff:emergedIn 1983 ;
-    riff:hasStylisticOrigin genre:alternative_rock,
-        genre:post_punk,
-        genre:punk_rock,
-        genre:rock ;
-    riff:originPlace "United Kingdom, United States and New Zealand" .
-
-genre:techno a mm:MusicGenre ;
-    rdfs:label "Techno"@en ;
-    owl:sameAs dbr:Techno,
-        wd:Q170611 ;
-    riff:emergedIn 1985 ;
+genre:ambient a mm:MusicGenre ;
+    rdfs:label "Ambient music"@en ;
+    owl:sameAs dbr:Ambient_music,
+        wd:Q193207 ;
+    riff:emergedIn 1960 ;
     riff:hasStylisticOrigin genre:dub,
-        genre:electro,
-        genre:funk,
-        genre:house,
-        genre:krautrock,
-        genre:synth_pop ;
-    riff:originPlace "Detroit, United States and Frankfurt, Germany" .
+        genre:krautrock ;
+    riff:originPlace "Japan and United Kingdom" .
+
+genre:jazz_rap a mm:MusicGenre ;
+    rdfs:label "Jazz rap"@en ;
+    owl:sameAs dbr:Jazz_rap,
+        wd:Q255406 ;
+    riff:emergedIn 1986 ;
+    riff:hasStylisticOrigin genre:hip_hop,
+        genre:jazz ;
+    riff:isFusionOf genre:hip_hop,
+        genre:jazz ;
+    riff:originPlace "New York metropolitan area" .
 
 artist:gang_starr a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -11286,46 +12106,47 @@ artist:sam_cooke a mm:MusicArtist,
     riff:playsInstrument instrument:piano,
         instrument:voice .
 
-genre:bebop a mm:MusicGenre ;
-    rdfs:label "Bebop"@en ;
-    owl:sameAs dbr:Bebop,
-        wd:Q105513 ;
-    riff:emergedIn 1945 ;
-    riff:originPlace "United States" .
-
-genre:contemporary_rnb a mm:MusicGenre ;
-    rdfs:label "Contemporary R&B"@en ;
-    owl:sameAs <http://dbpedia.org/resource/Contemporary_R&B>,
-        wd:Q850412 ;
-    skos:broader genre:rhythm_and_blues ;
-    riff:emergedIn 1979 ;
+genre:electro a mm:MusicGenre ;
+    rdfs:label "Electro"@en ;
+    owl:sameAs dbr:Electro_\(music\),
+        wd:Q217597 ;
+    riff:emergedIn 1980 ;
     riff:hasStylisticOrigin genre:funk,
         genre:hip_hop,
+        genre:synth_pop ;
+    riff:originPlace "Japan and United States" .
+
+genre:jazz_fusion a mm:MusicGenre ;
+    rdfs:label "Jazz fusion"@en ;
+    owl:sameAs dbr:Jazz_fusion,
+        wd:Q105527 ;
+    riff:emergedIn 1966 ;
+    riff:hasStylisticOrigin genre:bebop,
+        genre:funk,
+        genre:jazz,
         genre:rhythm_and_blues,
-        genre:soul ;
-    riff:originPlace "North America" .
-
-genre:grunge a mm:MusicGenre ;
-    rdfs:label "Grunge"@en ;
-    owl:sameAs dbr:Grunge,
-        wd:Q11365 ;
-    skos:broader genre:alternative_rock,
         genre:rock ;
-    riff:emergedIn 1985 ;
-    riff:hasStylisticOrigin genre:alternative_rock,
-        genre:garage_rock,
-        genre:hard_rock,
-        genre:hardcore_punk,
-        genre:heavy_metal,
-        genre:indie_rock,
-        genre:punk_rock,
+    riff:isFusionOf genre:jazz,
         genre:rock ;
-    riff:originPlace "Seattle, United States" .
+    riff:originPlace "United States" .
 
-instrument:saxophone a riff:Instrument ;
-    rdfs:label "Saxophone"@en ;
-    owl:sameAs wd:Q9798 ;
-    riff:inInstrumentGroup riff:WindsAndBrass .
+genre:pop_punk a mm:MusicGenre ;
+    rdfs:label "Pop-punk"@en ;
+    owl:sameAs dbr:Pop-punk,
+        wd:Q487914 ;
+    riff:emergedIn 1976 ;
+    riff:hasStylisticOrigin genre:punk_rock ;
+    riff:originPlace "United States and United Kingdom" .
+
+instrument:organ a riff:Instrument ;
+    rdfs:label "Organ"@en ;
+    owl:sameAs wd:Q1444 ;
+    riff:inInstrumentGroup riff:Keyboards .
+
+instrument:violin a riff:Instrument ;
+    rdfs:label "Violin"@en ;
+    owl:sameAs wd:Q8355 ;
+    riff:inInstrumentGroup riff:Strings .
 
 artist:bo_diddley a mm:MusicArtist,
         mm:Musician ;
@@ -11432,29 +12253,64 @@ artist:the_byrds a mm:MusicArtist,
         instrument:violin,
         instrument:voice .
 
-genre:dub a mm:MusicGenre ;
-    rdfs:label "Dub"@en ;
-    owl:sameAs dbr:Dub_music,
-        wd:Q212688 ;
-    riff:emergedIn 1968 ;
-    riff:hasStylisticOrigin genre:reggae,
-        genre:ska ;
-    riff:originPlace "Jamaica" .
+genre:extreme_metal a mm:MusicGenre ;
+    rdfs:label "Extreme metal"@en ;
+    owl:sameAs dbr:Extreme_metal,
+        wd:Q465978 ;
+    skos:broader genre:heavy_metal ;
+    riff:emergedIn 1980 ;
+    riff:hasStylisticOrigin genre:hardcore_punk,
+        genre:heavy_metal ;
+    riff:originPlace "United States and Europe" .
 
-genre:folk a mm:MusicGenre ;
-    rdfs:label "Folk music"@en ;
-    owl:sameAs dbr:Folk_music,
-        wd:Q43343 ;
-    riff:originPlace "Many regions" .
+genre:glam_rock a mm:MusicGenre ;
+    rdfs:label "Glam rock"@en ;
+    owl:sameAs dbr:Glam_rock,
+        wd:Q76092 ;
+    skos:broader genre:rock ;
+    riff:emergedIn 1970 ;
+    riff:hasStylisticOrigin genre:hard_rock,
+        genre:psychedelic_rock,
+        genre:rock ;
+    riff:originPlace "United Kingdom" .
 
-genre:hardcore_punk a mm:MusicGenre ;
-    rdfs:label "Hardcore punk"@en ;
-    owl:sameAs dbr:Hardcore_punk,
-        wd:Q10922 ;
-    skos:broader genre:punk_rock ;
-    riff:emergedIn 1979 ;
-    riff:hasStylisticOrigin genre:punk_rock ;
-    riff:originPlace "United States and Canada" .
+genre:house a mm:MusicGenre ;
+    rdfs:label "House music"@en ;
+    owl:sameAs dbr:House_music,
+        wd:Q20502 ;
+    riff:emergedIn 1980 ;
+    riff:hasStylisticOrigin genre:disco,
+        genre:dub,
+        genre:electro,
+        genre:jazz,
+        genre:synth_pop ;
+    riff:originPlace "Chicago, United States" .
+
+genre:indie_rock a mm:MusicGenre ;
+    rdfs:label "Indie rock"@en ;
+    owl:sameAs dbr:Indie_rock,
+        wd:Q183504 ;
+    skos:broader genre:alternative_rock,
+        genre:rock ;
+    riff:emergedIn 1980 ;
+    riff:hasStylisticOrigin genre:alternative_rock,
+        genre:post_punk,
+        genre:punk_rock,
+        genre:rock ;
+    riff:originPlace "United Kingdom, United States and New Zealand" .
+
+genre:techno a mm:MusicGenre ;
+    rdfs:label "Techno"@en ;
+    owl:sameAs dbr:Techno,
+        wd:Q170611 ;
+    riff:emergedIn 1983 ;
+    riff:hasStylisticOrigin genre:dub,
+        genre:electro,
+        genre:funk,
+        genre:house,
+        genre:krautrock,
+        genre:synth_pop ;
+    riff:originPlace "Detroit, United States and Frankfurt, Germany" .
 
 artist:buzzcocks a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -11469,7 +12325,9 @@ artist:buzzcocks a mm:MusicArtist,
     riff:hasPrimaryGenre genre:pop_punk ;
     riff:playsInstrument instrument:bass_guitar,
         instrument:drum_kit,
-        instrument:percussion .
+        instrument:guitar,
+        instrument:synthesizer,
+        instrument:voice .
 
 artist:devo a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -11480,8 +12338,12 @@ artist:devo a mm:MusicArtist,
     mm:isInfluencedBy artist:roxy_music ;
     riff:activeFrom 1972 ;
     riff:hasPrimaryGenre genre:new_wave ;
-    riff:playsInstrument instrument:drum_kit,
-        instrument:guitar .
+    riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
+        instrument:guitar,
+        instrument:keyboards,
+        instrument:synthesizer,
+        instrument:voice .
 
 artist:judas_priest a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -11514,7 +12376,13 @@ artist:n_w_a a mm:MusicArtist,
     riff:activeFrom 1986 ;
     riff:activeTo 2002 ;
     riff:hasPrimaryGenre genre:gangsta_rap ;
-    riff:playsInstrument instrument:turntables .
+    riff:playsInstrument instrument:drum_machine,
+        instrument:keyboards,
+        instrument:piano,
+        instrument:sampler,
+        instrument:synthesizer,
+        instrument:turntables,
+        instrument:voice .
 
 artist:ray_charles a mm:MusicArtist,
         mm:Musician ;
@@ -11572,39 +12440,49 @@ artist:sum_41 a mm:MusicArtist,
         instrument:drum_kit,
         instrument:guitar,
         instrument:keyboards,
-        instrument:percussion,
         instrument:voice .
 
-genre:garage_rock a mm:MusicGenre ;
-    rdfs:label "Garage rock"@en ;
-    owl:sameAs dbr:Garage_rock,
-        wd:Q211573 ;
-    skos:broader genre:rock ;
-    riff:emergedIn 1959 ;
-    riff:hasStylisticOrigin genre:rock,
-        genre:rockabilly ;
-    riff:originPlace "United States and Canada" .
+genre:bebop a mm:MusicGenre ;
+    rdfs:label "Bebop"@en ;
+    owl:sameAs dbr:Bebop,
+        wd:Q105513 ;
+    riff:emergedIn 1943 ;
+    riff:originPlace "United States" .
 
-genre:krautrock a mm:MusicGenre ;
-    rdfs:label "Krautrock"@en ;
-    owl:sameAs dbr:Krautrock,
-        wd:Q320592 ;
-    riff:emergedIn 1969 ;
-    riff:hasStylisticOrigin genre:art_rock,
-        genre:funk,
-        genre:jazz_fusion,
-        genre:progressive_rock,
-        genre:psychedelic_rock ;
-    riff:originPlace "West Germany" .
+genre:contemporary_rnb a mm:MusicGenre ;
+    rdfs:label "Contemporary R&B"@en ;
+    owl:sameAs <http://dbpedia.org/resource/Contemporary_R&B>,
+        wd:Q850412 ;
+    skos:broader genre:rhythm_and_blues ;
+    riff:emergedIn 1976 ;
+    riff:hasStylisticOrigin genre:funk,
+        genre:hip_hop,
+        genre:rhythm_and_blues,
+        genre:soul ;
+    riff:originPlace "North America" .
 
-genre:ska a mm:MusicGenre ;
-    rdfs:label "Ska"@en ;
-    owl:sameAs dbr:Ska,
-        wd:Q54365 ;
-    riff:emergedIn 1958 ;
-    riff:hasStylisticOrigin genre:jazz,
-        genre:rhythm_and_blues ;
-    riff:originPlace "Jamaica" .
+genre:folk a mm:MusicGenre ;
+    rdfs:label "Folk music"@en ;
+    owl:sameAs dbr:Folk_music,
+        wd:Q43343 ;
+    riff:originPlace "Many regions" .
+
+genre:grunge a mm:MusicGenre ;
+    rdfs:label "Grunge"@en ;
+    owl:sameAs dbr:Grunge,
+        wd:Q11365 ;
+    skos:broader genre:alternative_rock,
+        genre:rock ;
+    riff:emergedIn 1983 ;
+    riff:hasStylisticOrigin genre:alternative_rock,
+        genre:garage_rock,
+        genre:hard_rock,
+        genre:hardcore_punk,
+        genre:heavy_metal,
+        genre:indie_rock,
+        genre:punk_rock,
+        genre:rock ;
+    riff:originPlace "Seattle, United States" .
 
 artist:aretha_franklin a mm:MusicArtist,
         mm:Musician ;
@@ -11648,9 +12526,10 @@ artist:depeche_mode a mm:MusicArtist,
         artist:the_human_league ;
     riff:activeFrom 1980 ;
     riff:hasPrimaryGenre genre:synth_pop ;
-    riff:playsInstrument instrument:guitar,
+    riff:playsInstrument instrument:drum_kit,
+        instrument:drum_machine,
+        instrument:guitar,
         instrument:keyboards,
-        instrument:percussion,
         instrument:voice .
 
 artist:eric_clapton a mm:MusicArtist,
@@ -11718,7 +12597,10 @@ artist:melvins a mm:MusicArtist,
         artist:venom ;
     riff:activeFrom 1983 ;
     riff:hasPrimaryGenre genre:grunge ;
-    riff:playsInstrument instrument:bass_guitar .
+    riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
+        instrument:guitar,
+        instrument:voice .
 
 artist:neu a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -11727,7 +12609,9 @@ artist:neu a mm:MusicArtist,
     mm:hasGenre genre:krautrock ;
     riff:activeFrom 1971 ;
     riff:hasPrimaryGenre genre:krautrock ;
-    riff:playsInstrument instrument:drum_kit .
+    riff:playsInstrument instrument:double_bass,
+        instrument:drum_kit,
+        instrument:guitar .
 
 artist:r_e_m a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -11792,20 +12676,32 @@ artist:the_yardbirds a mm:MusicArtist,
     mm:isInfluencedBy artist:howlin_wolf ;
     riff:activeFrom 1963 ;
     riff:hasPrimaryGenre genre:blues_rock ;
-    riff:playsInstrument instrument:guitar,
+    riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
+        instrument:guitar,
+        instrument:harmonica,
+        instrument:keyboards,
+        instrument:mandolin,
+        instrument:synthesizer,
         instrument:voice .
 
-genre:rockabilly a mm:MusicGenre ;
-    rdfs:label "Rockabilly"@en ;
-    owl:sameAs dbr:Rockabilly,
-        wd:Q203720 ;
-    riff:emergedIn 1953 ;
-    riff:hasStylisticOrigin genre:country,
-        genre:rhythm_and_blues,
-        genre:rock_and_roll ;
-    riff:isFusionOf genre:country,
-        genre:rhythm_and_blues ;
-    riff:originPlace "Southern United States" .
+genre:dub a mm:MusicGenre ;
+    rdfs:label "Dub"@en ;
+    owl:sameAs dbr:Dub_music,
+        wd:Q212688 ;
+    riff:emergedIn 1966 ;
+    riff:hasStylisticOrigin genre:reggae,
+        genre:ska ;
+    riff:originPlace "Jamaica" .
+
+genre:hardcore_punk a mm:MusicGenre ;
+    rdfs:label "Hardcore punk"@en ;
+    owl:sameAs dbr:Hardcore_punk,
+        wd:Q10922 ;
+    skos:broader genre:punk_rock ;
+    riff:emergedIn 1976 ;
+    riff:hasStylisticOrigin genre:punk_rock ;
+    riff:originPlace "United States and Canada" .
 
 artist:beyonce a mm:MusicArtist,
         mm:Musician ;
@@ -11928,40 +12824,39 @@ artist:run_dmc a mm:MusicArtist,
     riff:activeFrom 1981 ;
     riff:activeTo 2002 ;
     riff:hasPrimaryGenre genre:hip_hop ;
-    riff:playsInstrument instrument:turntables .
+    riff:playsInstrument instrument:turntables,
+        instrument:voice .
 
-genre:disco a mm:MusicGenre ;
-    rdfs:label "Disco"@en ;
-    owl:sameAs dbr:Disco,
-        wd:Q58339 ;
-    riff:emergedIn 1969 ;
-    riff:hasStylisticOrigin genre:funk,
-        genre:rhythm_and_blues,
-        genre:soul ;
-    riff:originPlace "Philadelphia, Baltimore and New York City" .
-
-genre:folk_rock a mm:MusicGenre ;
-    rdfs:label "Folk rock"@en ;
-    owl:sameAs dbr:Folk_rock,
-        wd:Q186472 ;
-    riff:emergedIn 1963 ;
-    riff:hasStylisticOrigin genre:folk,
-        genre:rock ;
-    riff:isFusionOf genre:folk,
-        genre:rock ;
-    riff:originPlace "United States" .
-
-genre:progressive_rock a mm:MusicGenre ;
-    rdfs:label "Progressive rock"@en ;
-    owl:sameAs dbr:Progressive_rock,
-        wd:Q49451 ;
+genre:garage_rock a mm:MusicGenre ;
+    rdfs:label "Garage rock"@en ;
+    owl:sameAs dbr:Garage_rock,
+        wd:Q211573 ;
     skos:broader genre:rock ;
-    riff:emergedIn 1967 ;
-    riff:hasStylisticOrigin genre:folk,
-        genre:jazz,
-        genre:psychedelic_rock,
-        genre:rock ;
-    riff:originPlace "United States and United Kingdom" .
+    riff:emergedIn 1956 ;
+    riff:hasStylisticOrigin genre:rock,
+        genre:rockabilly ;
+    riff:originPlace "United States and Canada" .
+
+genre:krautrock a mm:MusicGenre ;
+    rdfs:label "Krautrock"@en ;
+    owl:sameAs dbr:Krautrock,
+        wd:Q320592 ;
+    riff:emergedIn 1966 ;
+    riff:hasStylisticOrigin genre:art_rock,
+        genre:funk,
+        genre:jazz_fusion,
+        genre:progressive_rock,
+        genre:psychedelic_rock ;
+    riff:originPlace "West Germany" .
+
+genre:ska a mm:MusicGenre ;
+    rdfs:label "Ska"@en ;
+    owl:sameAs dbr:Ska,
+        wd:Q54365 ;
+    riff:emergedIn 1956 ;
+    riff:hasStylisticOrigin genre:jazz,
+        genre:rhythm_and_blues ;
+    riff:originPlace "Jamaica" .
 
 artist:cream a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -12100,8 +12995,19 @@ artist:venom a mm:MusicArtist,
     riff:playsInstrument instrument:bass_guitar,
         instrument:drum_kit,
         instrument:guitar,
-        instrument:percussion,
         instrument:voice .
+
+genre:rockabilly a mm:MusicGenre ;
+    rdfs:label "Rockabilly"@en ;
+    owl:sameAs dbr:Rockabilly,
+        wd:Q203720 ;
+    riff:emergedIn 1950 ;
+    riff:hasStylisticOrigin genre:country,
+        genre:rhythm_and_blues,
+        genre:rock_and_roll ;
+    riff:isFusionOf genre:country,
+        genre:rhythm_and_blues ;
+    riff:originPlace "Southern United States" .
 
 artist:aerosmith a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -12172,6 +13078,9 @@ artist:green_day a mm:MusicArtist,
     riff:playsInstrument instrument:bass_guitar,
         instrument:drum_kit,
         instrument:guitar,
+        instrument:keyboards,
+        instrument:piano,
+        instrument:saxophone,
         instrument:voice .
 
 artist:nas a mm:MusicArtist,
@@ -12191,62 +13100,42 @@ artist:nas a mm:MusicArtist,
     riff:hasPrimaryGenre genre:hip_hop ;
     riff:playsInstrument instrument:voice .
 
-genre:blues_rock a mm:MusicGenre ;
-    rdfs:label "Blues rock"@en ;
-    owl:sameAs dbr:Blues_rock,
-        wd:Q193355 ;
-    riff:emergedIn 1962 ;
-    riff:hasStylisticOrigin genre:blues,
-        genre:electric_blues,
+genre:disco a mm:MusicGenre ;
+    rdfs:label "Disco"@en ;
+    owl:sameAs dbr:Disco,
+        wd:Q58339 ;
+    riff:emergedIn 1966 ;
+    riff:hasStylisticOrigin genre:funk,
+        genre:rhythm_and_blues,
+        genre:soul ;
+    riff:originPlace "Philadelphia, Baltimore and New York City" .
+
+genre:folk_rock a mm:MusicGenre ;
+    rdfs:label "Folk rock"@en ;
+    owl:sameAs dbr:Folk_rock,
+        wd:Q186472 ;
+    riff:emergedIn 1960 ;
+    riff:hasStylisticOrigin genre:folk,
         genre:rock ;
-    riff:isFusionOf genre:blues,
+    riff:isFusionOf genre:folk,
+        genre:rock ;
+    riff:originPlace "United States" .
+
+genre:progressive_rock a mm:MusicGenre ;
+    rdfs:label "Progressive rock"@en ;
+    owl:sameAs dbr:Progressive_rock,
+        wd:Q49451 ;
+    skos:broader genre:rock ;
+    riff:emergedIn 1963 ;
+    riff:hasStylisticOrigin genre:folk,
+        genre:jazz,
+        genre:psychedelic_rock,
         genre:rock ;
     riff:originPlace "United States and United Kingdom" .
 
-genre:electric_blues a mm:MusicGenre ;
-    rdfs:label "Electric blues"@en ;
-    owl:sameAs dbr:Electric_blues,
-        wd:Q640097 ;
-    skos:broader genre:blues ;
-    riff:emergedIn 1938 ;
-    riff:hasStylisticOrigin genre:blues ;
-    riff:originPlace "United States" .
-
-genre:gangsta_rap a mm:MusicGenre ;
-    rdfs:label "Gangsta rap"@en ;
-    owl:sameAs dbr:Gangsta_rap,
-        wd:Q753679 ;
-    skos:broader genre:hip_hop ;
-    riff:emergedIn 1986 ;
-    riff:hasStylisticOrigin genre:hip_hop ;
-    riff:originPlace "Oakland, Los Angeles, Philadelphia and New York" .
-
-genre:reggae a mm:MusicGenre ;
-    rdfs:label "Reggae"@en ;
-    owl:sameAs dbr:Reggae,
-        wd:Q9794 ;
-    riff:emergedIn 1968 ;
-    riff:hasStylisticOrigin genre:jazz,
-        genre:rhythm_and_blues,
-        genre:ska ;
-    riff:originPlace "Kingston, Jamaica" .
-
-genre:synth_pop a mm:MusicGenre ;
-    rdfs:label "Synth-pop"@en ;
-    owl:sameAs dbr:Synth-pop,
-        wd:Q1298934 ;
-    riff:emergedIn 1978 ;
-    riff:hasStylisticOrigin genre:disco,
-        genre:glam_rock,
-        genre:krautrock,
-        genre:new_wave,
-        genre:post_punk,
-        genre:progressive_rock ;
-    riff:originPlace "Germany, Japan and United Kingdom" .
-
-instrument:harmonica a riff:Instrument ;
-    rdfs:label "Harmonica"@en ;
-    owl:sameAs wd:Q51290 ;
+instrument:saxophone a riff:Instrument ;
+    rdfs:label "Saxophone"@en ;
+    owl:sameAs wd:Q9798 ;
     riff:inInstrumentGroup riff:WindsAndBrass .
 
 artist:can a mm:MusicArtist,
@@ -12261,8 +13150,13 @@ artist:can a mm:MusicArtist,
         artist:the_velvet_underground ;
     riff:activeFrom 1968 ;
     riff:hasPrimaryGenre genre:krautrock ;
-    riff:playsInstrument instrument:drum_kit,
+    riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
+        instrument:flute,
+        instrument:guitar,
         instrument:keyboards,
+        instrument:percussion,
+        instrument:violin,
         instrument:voice .
 
 artist:hank_williams a mm:MusicArtist,
@@ -12386,7 +13280,8 @@ artist:public_enemy a mm:MusicArtist,
     riff:playsInstrument instrument:bass_guitar,
         instrument:drum_kit,
         instrument:guitar,
-        instrument:turntables .
+        instrument:turntables,
+        instrument:voice .
 
 artist:radiohead a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -12423,33 +13318,58 @@ artist:radiohead a mm:MusicArtist,
         instrument:synthesizer,
         instrument:voice .
 
-genre:heavy_metal a mm:MusicGenre ;
-    rdfs:label "Heavy metal"@en ;
-    owl:sameAs dbr:Heavy_metal_music,
-        wd:Q38848 ;
-    skos:broader genre:rock ;
-    riff:emergedIn 1968 ;
-    riff:hasStylisticOrigin genre:blues_rock,
-        genre:psychedelic_rock,
+genre:blues_rock a mm:MusicGenre ;
+    rdfs:label "Blues rock"@en ;
+    owl:sameAs dbr:Blues_rock,
+        wd:Q193355 ;
+    riff:emergedIn 1960 ;
+    riff:hasStylisticOrigin genre:blues,
+        genre:electric_blues,
         genre:rock ;
-    riff:originPlace "United Kingdom and United States" .
+    riff:isFusionOf genre:blues,
+        genre:rock ;
+    riff:originPlace "United States and United Kingdom" .
 
-genre:post_punk a mm:MusicGenre ;
-    rdfs:label "Post-punk"@en ;
-    owl:sameAs dbr:Post-punk,
-        wd:Q598929 ;
-    skos:broader genre:rock ;
-    riff:emergedIn 1978 ;
-    riff:hasStylisticOrigin genre:art_rock,
-        genre:disco,
-        genre:dub,
-        genre:funk,
-        genre:garage_rock,
+genre:electric_blues a mm:MusicGenre ;
+    rdfs:label "Electric blues"@en ;
+    owl:sameAs dbr:Electric_blues,
+        wd:Q640097 ;
+    skos:broader genre:blues ;
+    riff:emergedIn 1936 ;
+    riff:hasStylisticOrigin genre:blues ;
+    riff:originPlace "United States" .
+
+genre:gangsta_rap a mm:MusicGenre ;
+    rdfs:label "Gangsta rap"@en ;
+    owl:sameAs dbr:Gangsta_rap,
+        wd:Q753679 ;
+    skos:broader genre:hip_hop ;
+    riff:emergedIn 1983 ;
+    riff:hasStylisticOrigin genre:hip_hop ;
+    riff:originPlace "Oakland, Los Angeles, Philadelphia and New York City" .
+
+genre:reggae a mm:MusicGenre ;
+    rdfs:label "Reggae"@en ;
+    owl:sameAs dbr:Reggae,
+        wd:Q9794 ;
+    riff:emergedIn 1966 ;
+    riff:hasStylisticOrigin genre:jazz,
+        genre:rhythm_and_blues,
+        genre:ska ;
+    riff:originPlace "Kingston, Jamaica" .
+
+genre:synth_pop a mm:MusicGenre ;
+    rdfs:label "Synth-pop"@en ;
+    owl:sameAs dbr:Synth-pop,
+        wd:Q1298934 ;
+    riff:emergedIn 1977 ;
+    riff:hasStylisticOrigin genre:disco,
         genre:glam_rock,
         genre:krautrock,
-        genre:punk_rock,
-        genre:rock ;
-    riff:originPlace "United Kingdom" .
+        genre:new_wave,
+        genre:post_punk,
+        genre:progressive_rock ;
+    riff:originPlace "Germany, Japan and United Kingdom" .
 
 artist:chuck_berry a mm:MusicArtist,
         mm:Musician ;
@@ -12599,17 +13519,11 @@ artist:van_halen a mm:MusicArtist,
     riff:activeFrom 1972 ;
     riff:activeTo 2020 ;
     riff:hasPrimaryGenre genre:hard_rock ;
-    riff:playsInstrument instrument:bass_guitar .
-
-genre:art_rock a mm:MusicGenre ;
-    rdfs:label "Art rock"@en ;
-    owl:sameAs dbr:Art_rock,
-        wd:Q217467 ;
-    skos:broader genre:rock ;
-    riff:emergedIn 1965 ;
-    riff:hasStylisticOrigin genre:psychedelic_rock,
-        genre:rock ;
-    riff:originPlace "United States and United Kingdom" .
+    riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
+        instrument:guitar,
+        instrument:keyboards,
+        instrument:voice .
 
 artist:black_flag a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -12635,10 +13549,38 @@ artist:black_flag a mm:MusicArtist,
         instrument:guitar,
         instrument:voice .
 
-instrument:synthesizer a riff:Instrument ;
-    rdfs:label "Synthesizer"@en ;
-    owl:sameAs wd:Q163829 ;
-    riff:inInstrumentGroup riff:Electronic .
+genre:heavy_metal a mm:MusicGenre ;
+    rdfs:label "Heavy metal"@en ;
+    owl:sameAs dbr:Heavy_metal_music,
+        wd:Q38848 ;
+    skos:broader genre:rock ;
+    riff:emergedIn 1966 ;
+    riff:hasStylisticOrigin genre:blues_rock,
+        genre:psychedelic_rock,
+        genre:rock ;
+    riff:originPlace "United Kingdom and United States" .
+
+genre:post_punk a mm:MusicGenre ;
+    rdfs:label "Post-punk"@en ;
+    owl:sameAs dbr:Post-punk,
+        wd:Q598929 ;
+    skos:broader genre:rock ;
+    riff:emergedIn 1976 ;
+    riff:hasStylisticOrigin genre:art_rock,
+        genre:disco,
+        genre:dub,
+        genre:funk,
+        genre:garage_rock,
+        genre:glam_rock,
+        genre:krautrock,
+        genre:punk_rock,
+        genre:rock ;
+    riff:originPlace "United Kingdom" .
+
+instrument:harmonica a riff:Instrument ;
+    rdfs:label "Harmonica"@en ;
+    owl:sameAs wd:Q51290 ;
+    riff:inInstrumentGroup riff:WindsAndBrass .
 
 artist:pearl_jam a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -12674,7 +13616,10 @@ artist:pearl_jam a mm:MusicArtist,
         instrument:drum_kit,
         instrument:guitar,
         instrument:harmonica,
+        instrument:keyboards,
+        instrument:organ,
         instrument:percussion,
+        instrument:piano,
         instrument:voice .
 
 artist:slayer a mm:MusicArtist,
@@ -12705,6 +13650,16 @@ artist:slayer a mm:MusicArtist,
         instrument:drum_kit,
         instrument:guitar,
         instrument:voice .
+
+genre:art_rock a mm:MusicGenre ;
+    rdfs:label "Art rock"@en ;
+    owl:sameAs dbr:Art_rock,
+        wd:Q217467 ;
+    skos:broader genre:rock ;
+    riff:emergedIn 1960 ;
+    riff:hasStylisticOrigin genre:psychedelic_rock,
+        genre:rock ;
+    riff:originPlace "United States and United Kingdom" .
 
 artist:mc5 a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -12774,46 +13729,6 @@ artist:neil_young a mm:MusicArtist,
     riff:hasPrimaryGenre genre:folk_rock ;
     riff:playsInstrument instrument:guitar .
 
-genre:country a mm:MusicGenre ;
-    rdfs:label "Country music"@en ;
-    owl:sameAs dbr:Country_music,
-        wd:Q83440 ;
-    riff:emergedIn 1925 ;
-    riff:hasStylisticOrigin genre:blues,
-        genre:gospel ;
-    riff:originPlace "United States" .
-
-genre:gospel a mm:MusicGenre ;
-    rdfs:label "Gospel music"@en ;
-    owl:sameAs dbr:Gospel_music,
-        wd:Q180268 ;
-    riff:originPlace "Southern United States" .
-
-genre:rock_and_roll a mm:MusicGenre ;
-    rdfs:label "Rock and roll"@en ;
-    owl:sameAs dbr:Rock_and_roll,
-        wd:Q7749 ;
-    riff:emergedIn 1949 ;
-    riff:hasStylisticOrigin genre:blues,
-        genre:country,
-        genre:electric_blues,
-        genre:gospel,
-        genre:jazz,
-        genre:rhythm_and_blues ;
-    riff:originPlace "United States" .
-
-genre:new_wave a mm:MusicGenre ;
-    rdfs:label "New wave"@en ;
-    owl:sameAs dbr:New_wave_music,
-        wd:Q187760 ;
-    riff:emergedIn 1977 ;
-    riff:hasStylisticOrigin genre:disco,
-        genre:krautrock,
-        genre:punk_rock,
-        genre:reggae,
-        genre:rock ;
-    riff:originPlace "United States and United Kingdom" .
-
 artist:rush a mm:MusicArtist,
         mm:MusicEnsenble ;
     rdfs:label "Rush"@en ;
@@ -12847,57 +13762,45 @@ artist:rush a mm:MusicArtist,
         instrument:percussion,
         instrument:voice .
 
-genre:psychedelic_rock a mm:MusicGenre ;
-    rdfs:label "Psychedelic rock"@en ;
-    owl:sameAs dbr:Psychedelic_rock,
-        wd:Q206159 ;
-    skos:broader genre:rock ;
-    riff:emergedIn 1965 ;
+genre:country a mm:MusicGenre ;
+    rdfs:label "Country music"@en ;
+    owl:sameAs dbr:Country_music,
+        wd:Q83440 ;
+    riff:emergedIn 1920 ;
     riff:hasStylisticOrigin genre:blues,
-        genre:garage_rock,
+        genre:gospel ;
+    riff:originPlace "United States" .
+
+genre:gospel a mm:MusicGenre ;
+    rdfs:label "Gospel music"@en ;
+    owl:sameAs dbr:Gospel_music,
+        wd:Q180268 ;
+    riff:originPlace "Southern United States" .
+
+genre:rock_and_roll a mm:MusicGenre ;
+    rdfs:label "Rock and roll"@en ;
+    owl:sameAs dbr:Rock_and_roll,
+        wd:Q7749 ;
+    riff:emergedIn 1946 ;
+    riff:hasStylisticOrigin genre:blues,
+        genre:country,
+        genre:electric_blues,
+        genre:gospel,
         genre:jazz,
+        genre:rhythm_and_blues ;
+    riff:originPlace "United States" .
+
+genre:new_wave a mm:MusicGenre ;
+    rdfs:label "New wave"@en ;
+    owl:sameAs dbr:New_wave_music,
+        wd:Q187760 ;
+    riff:emergedIn 1973 ;
+    riff:hasStylisticOrigin genre:disco,
+        genre:krautrock,
+        genre:punk_rock,
+        genre:reggae,
         genre:rock ;
     riff:originPlace "United States and United Kingdom" .
-
-genre:punk_rock a mm:MusicGenre ;
-    rdfs:label "Punk rock"@en ;
-    owl:sameAs dbr:Punk_rock,
-        wd:Q3071 ;
-    skos:broader genre:rock ;
-    riff:emergedIn 1975 ;
-    riff:hasStylisticOrigin genre:garage_rock,
-        genre:glam_rock,
-        genre:rock,
-        genre:rock_and_roll,
-        genre:rockabilly ;
-    riff:originPlace "United States, United Kingdom and Australia" .
-
-genre:hard_rock a mm:MusicGenre ;
-    rdfs:label "Hard rock"@en ;
-    owl:sameAs dbr:Hard_rock,
-        wd:Q83270 ;
-    skos:broader genre:rock ;
-    riff:emergedIn 1965 ;
-    riff:hasStylisticOrigin genre:blues_rock,
-        genre:electric_blues,
-        genre:garage_rock,
-        genre:psychedelic_rock,
-        genre:rock,
-        genre:rock_and_roll ;
-    riff:originPlace "United States and United Kingdom" .
-
-genre:hip_hop a mm:MusicGenre ;
-    rdfs:label "Hip hop"@en ;
-    owl:sameAs dbr:Hip_hop_music,
-        wd:Q11401 ;
-    riff:emergedIn 1972 ;
-    riff:hasStylisticOrigin genre:disco,
-        genre:dub,
-        genre:funk,
-        genre:jazz,
-        genre:rhythm_and_blues,
-        genre:soul ;
-    riff:originPlace "The Bronx, New York City" .
 
 artist:kraftwerk a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -12914,6 +13817,7 @@ artist:kraftwerk a mm:MusicArtist,
     riff:activeTo 2003 ;
     riff:hasPrimaryGenre genre:krautrock ;
     riff:playsInstrument instrument:bass_guitar,
+        instrument:double_bass,
         instrument:drum_kit,
         instrument:flute,
         instrument:guitar,
@@ -12973,27 +13877,62 @@ artist:the_kinks a mm:MusicArtist,
         instrument:piano,
         instrument:voice .
 
-genre:alternative_rock a mm:MusicGenre ;
-    rdfs:label "Alternative rock"@en ;
-    owl:sameAs dbr:Alternative_rock,
-        wd:Q11366 ;
+genre:psychedelic_rock a mm:MusicGenre ;
+    rdfs:label "Psychedelic rock"@en ;
+    owl:sameAs dbr:Psychedelic_rock,
+        wd:Q206159 ;
     skos:broader genre:rock ;
-    riff:emergedIn 1979 ;
-    riff:hasStylisticOrigin genre:hardcore_punk,
-        genre:new_wave,
-        genre:post_punk,
-        genre:punk_rock,
+    riff:emergedIn 1963 ;
+    riff:hasStylisticOrigin genre:blues,
+        genre:garage_rock,
+        genre:jazz,
         genre:rock ;
     riff:originPlace "United States and United Kingdom" .
 
-genre:soul a mm:MusicGenre ;
-    rdfs:label "Soul music"@en ;
-    owl:sameAs dbr:Soul_music,
-        wd:Q131272 ;
-    riff:emergedIn 1959 ;
-    riff:hasStylisticOrigin genre:gospel,
-        genre:rhythm_and_blues ;
-    riff:originPlace "United States" .
+genre:punk_rock a mm:MusicGenre ;
+    rdfs:label "Punk rock"@en ;
+    owl:sameAs dbr:Punk_rock,
+        wd:Q3071 ;
+    skos:broader genre:rock ;
+    riff:emergedIn 1973 ;
+    riff:hasStylisticOrigin genre:garage_rock,
+        genre:glam_rock,
+        genre:rock,
+        genre:rock_and_roll,
+        genre:rockabilly ;
+    riff:originPlace "United States, United Kingdom and Australia" .
+
+genre:hard_rock a mm:MusicGenre ;
+    rdfs:label "Hard rock"@en ;
+    owl:sameAs dbr:Hard_rock,
+        wd:Q83270 ;
+    skos:broader genre:rock ;
+    riff:emergedIn 1963 ;
+    riff:hasStylisticOrigin genre:blues_rock,
+        genre:electric_blues,
+        genre:garage_rock,
+        genre:psychedelic_rock,
+        genre:rock,
+        genre:rock_and_roll ;
+    riff:originPlace "United States and United Kingdom" .
+
+genre:hip_hop a mm:MusicGenre ;
+    rdfs:label "Hip hop"@en ;
+    owl:sameAs dbr:Hip_hop_music,
+        wd:Q11401 ;
+    riff:emergedIn 1970 ;
+    riff:hasStylisticOrigin genre:disco,
+        genre:dub,
+        genre:funk,
+        genre:jazz,
+        genre:rhythm_and_blues,
+        genre:soul ;
+    riff:originPlace "The Bronx, New York City" .
+
+instrument:synthesizer a riff:Instrument ;
+    rdfs:label "Synthesizer"@en ;
+    owl:sameAs wd:Q163829 ;
+    riff:inInstrumentGroup riff:Electronic .
 
 artist:black_sabbath a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -13013,8 +13952,31 @@ artist:black_sabbath a mm:MusicArtist,
         instrument:harmonica,
         instrument:keyboards,
         instrument:percussion,
+        instrument:piano,
         instrument:synthesizer,
         instrument:voice .
+
+genre:alternative_rock a mm:MusicGenre ;
+    rdfs:label "Alternative rock"@en ;
+    owl:sameAs dbr:Alternative_rock,
+        wd:Q11366 ;
+    skos:broader genre:rock ;
+    riff:emergedIn 1976 ;
+    riff:hasStylisticOrigin genre:hardcore_punk,
+        genre:new_wave,
+        genre:post_punk,
+        genre:punk_rock,
+        genre:rock ;
+    riff:originPlace "United States and United Kingdom" .
+
+genre:soul a mm:MusicGenre ;
+    rdfs:label "Soul music"@en ;
+    owl:sameAs dbr:Soul_music,
+        wd:Q131272 ;
+    riff:emergedIn 1956 ;
+    riff:hasStylisticOrigin genre:gospel,
+        genre:rhythm_and_blues ;
+    riff:originPlace "United States" .
 
 artist:elvis_presley a mm:MusicArtist,
         mm:Musician ;
@@ -13073,16 +14035,6 @@ artist:the_rolling_stones a mm:MusicArtist,
         instrument:percussion,
         instrument:saxophone,
         instrument:voice .
-
-genre:funk a mm:MusicGenre ;
-    rdfs:label "Funk"@en ;
-    owl:sameAs dbr:Funk,
-        wd:Q164444 ;
-    riff:emergedIn 1965 ;
-    riff:hasStylisticOrigin genre:jazz,
-        genre:rhythm_and_blues,
-        genre:soul ;
-    riff:originPlace "United States" .
 
 artist:david_bowie a mm:MusicArtist,
         mm:Musician ;
@@ -13163,7 +14115,12 @@ artist:the_clash a mm:MusicArtist,
     riff:activeFrom 1976 ;
     riff:activeTo 1986 ;
     riff:hasPrimaryGenre genre:punk_rock ;
-    riff:playsInstrument instrument:guitar .
+    riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
+        instrument:guitar,
+        instrument:harmonica,
+        instrument:keyboards,
+        instrument:voice .
 
 artist:the_velvet_underground a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -13189,11 +14146,6 @@ artist:the_velvet_underground a mm:MusicArtist,
         instrument:piano,
         instrument:voice .
 
-instrument:piano a riff:Instrument ;
-    rdfs:label "Piano"@en ;
-    owl:sameAs wd:Q5994 ;
-    riff:inInstrumentGroup riff:Keyboards .
-
 artist:bob_dylan a mm:MusicArtist,
         mm:Musician ;
     rdfs:label "Bob Dylan"@en ;
@@ -13217,6 +14169,16 @@ artist:bob_dylan a mm:MusicArtist,
         instrument:piano,
         instrument:voice .
 
+genre:funk a mm:MusicGenre ;
+    rdfs:label "Funk"@en ;
+    owl:sameAs dbr:Funk,
+        wd:Q164444 ;
+    riff:emergedIn 1963 ;
+    riff:hasStylisticOrigin genre:jazz,
+        genre:rhythm_and_blues,
+        genre:soul ;
+    riff:originPlace "United States" .
+
 artist:sex_pistols a mm:MusicArtist,
         mm:MusicEnsenble ;
     rdfs:label "Sex Pistols"@en ;
@@ -13237,7 +14199,11 @@ artist:sex_pistols a mm:MusicArtist,
         artist:the_velvet_underground,
         artist:the_who ;
     riff:activeFrom 1975 ;
-    riff:hasPrimaryGenre genre:punk_rock .
+    riff:hasPrimaryGenre genre:punk_rock ;
+    riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
+        instrument:guitar,
+        instrument:voice .
 
 artist:deep_purple a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -13357,7 +14323,14 @@ artist:roxy_music a mm:MusicArtist,
     riff:activeTo 2011 ;
     riff:hasPrimaryGenre genre:art_rock ;
     riff:playsInstrument instrument:bass_guitar,
-        instrument:keyboards .
+        instrument:guitar,
+        instrument:harmonica,
+        instrument:keyboards,
+        instrument:piano,
+        instrument:saxophone,
+        instrument:synthesizer,
+        instrument:violin,
+        instrument:voice .
 
 artist:the_stooges a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -13376,17 +14349,11 @@ artist:the_stooges a mm:MusicArtist,
         artist:the_who,
         artist:the_yardbirds ;
     riff:activeFrom 1967 ;
-    riff:hasPrimaryGenre genre:garage_rock .
-
-genre:rhythm_and_blues a mm:MusicGenre ;
-    rdfs:label "Rhythm and blues"@en ;
-    owl:sameAs dbr:Rhythm_and_blues,
-        wd:Q45981 ;
-    riff:emergedIn 1945 ;
-    riff:hasStylisticOrigin genre:blues,
-        genre:gospel,
-        genre:jazz ;
-    riff:originPlace "Deep South, United States" .
+    riff:hasPrimaryGenre genre:garage_rock ;
+    riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
+        instrument:guitar,
+        instrument:voice .
 
 artist:parliament_funkadelic a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -13399,6 +14366,8 @@ artist:parliament_funkadelic a mm:MusicArtist,
     riff:activeFrom 1955 ;
     riff:hasPrimaryGenre genre:funk ;
     riff:playsInstrument instrument:bass_guitar,
+        instrument:drum_kit,
+        instrument:guitar,
         instrument:voice .
 
 artist:led_zeppelin a mm:MusicArtist,
@@ -13425,12 +14394,14 @@ artist:led_zeppelin a mm:MusicArtist,
         instrument:keyboards,
         instrument:voice .
 
-genre:blues a mm:MusicGenre ;
-    rdfs:label "Blues"@en ;
-    owl:sameAs dbr:Blues,
-        wd:Q9759 ;
-    riff:emergedIn 1865 ;
-    riff:hasStylisticOrigin genre:folk ;
+genre:rhythm_and_blues a mm:MusicGenre ;
+    rdfs:label "Rhythm and blues"@en ;
+    owl:sameAs dbr:Rhythm_and_blues,
+        wd:Q45981 ;
+    riff:emergedIn 1940 ;
+    riff:hasStylisticOrigin genre:blues,
+        genre:gospel,
+        genre:jazz ;
     riff:originPlace "Deep South, United States" .
 
 artist:the_who a mm:MusicArtist,
@@ -13459,14 +14430,18 @@ artist:the_who a mm:MusicArtist,
         instrument:trumpet,
         instrument:voice .
 
-genre:jazz a mm:MusicGenre ;
-    rdfs:label "Jazz"@en ;
-    owl:sameAs dbr:Jazz,
-        wd:Q8341 ;
-    riff:emergedIn 1890 ;
-    riff:hasStylisticOrigin genre:blues,
-        genre:folk ;
-    riff:originPlace "New Orleans, United States" .
+instrument:piano a riff:Instrument ;
+    rdfs:label "Piano"@en ;
+    owl:sameAs wd:Q5994 ;
+    riff:inInstrumentGroup riff:Keyboards .
+
+genre:blues a mm:MusicGenre ;
+    rdfs:label "Blues"@en ;
+    owl:sameAs dbr:Blues,
+        wd:Q9759 ;
+    riff:emergedIn 1860 ;
+    riff:hasStylisticOrigin genre:folk ;
+    riff:originPlace "Deep South, United States" .
 
 artist:james_brown a mm:MusicArtist,
         mm:Musician ;
@@ -13487,10 +14462,14 @@ artist:james_brown a mm:MusicArtist,
         instrument:organ,
         instrument:voice .
 
-instrument:keyboards a riff:Instrument ;
-    rdfs:label "Keyboards"@en ;
-    owl:sameAs wd:Q52954 ;
-    riff:inInstrumentGroup riff:Keyboards .
+genre:jazz a mm:MusicGenre ;
+    rdfs:label "Jazz"@en ;
+    owl:sameAs dbr:Jazz,
+        wd:Q8341 ;
+    riff:emergedIn 1870 ;
+    riff:hasStylisticOrigin genre:blues,
+        genre:folk ;
+    riff:originPlace "New Orleans, United States" .
 
 artist:jimi_hendrix a mm:MusicArtist,
         mm:Musician ;
@@ -13512,6 +14491,11 @@ artist:jimi_hendrix a mm:MusicArtist,
     riff:playsInstrument instrument:guitar,
         instrument:percussion,
         instrument:voice .
+
+instrument:keyboards a riff:Instrument ;
+    rdfs:label "Keyboards"@en ;
+    owl:sameAs wd:Q52954 ;
+    riff:inInstrumentGroup riff:Keyboards .
 
 artist:the_beatles a mm:MusicArtist,
         mm:MusicEnsenble ;
@@ -13549,7 +14533,7 @@ genre:rock a mm:MusicGenre ;
     rdfs:label "Rock music"@en ;
     owl:sameAs dbr:Rock_music,
         wd:Q11399 ;
-    riff:emergedIn 1955 ;
+    riff:emergedIn 1940 ;
     riff:hasStylisticOrigin genre:blues,
         genre:country,
         genre:electric_blues,

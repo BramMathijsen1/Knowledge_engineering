@@ -7,12 +7,20 @@ Solo artists: Wikidata, property P1303 "instrument".
 Bands: MusicBrainz. Its "member of band" links say which instruments each member played
 in that band. Touring and session members ("additional") are left out.
 Wikidata only has the instruments a member played in their whole career, which is less
-exact. We use it only for bands where MusicBrainz gives no instruments.
+exact. We use it for bands where MusicBrainz gives no instruments, and for the members
+that MusicBrainz lists with no instruments. MusicBrainz often gives instruments only for
+some members of a band (for The Clash only a late guitarist), so without this the main
+members would be missing.
 """
 from common import read_csv, write_csv, query_wikidata, last_part, ask_musicbrainz, musicbrainz_ids
 
 # MusicBrainz puts these words next to the instruments. They are not instruments.
 NOT_INSTRUMENTS = {"original", "founder", "additional", "minor", "guest", "emeritus"}
+
+
+def same_name(name):
+    # MusicBrainz and Wikidata write some names with different hyphens or capitals.
+    return name.replace("‐", "-").lower()
 
 
 def solo_artist_instruments(artists):
@@ -94,7 +102,14 @@ def main():
     bands = {a["id"] for a in artists if a["kind"] == "group"}
     missing = bands - {r["artist"] for r in rows if r["instrument"] not in ("lead vocals", "background vocals", "vocals")}
     print("Bands with no instruments in MusicBrainz:", len(missing))
-    rows += member_instruments(artists, missing)
+    # Members that MusicBrainz already gives instruments for, in each band.
+    covered = {(r["artist"], same_name(r["member"])) for r in rows if r["source"] == "musicbrainz"}
+    added = 0
+    for row in member_instruments(artists, bands):
+        if row["artist"] in missing or (row["artist"], same_name(row["member"])) not in covered:
+            rows.append(row)
+            added += 1
+    print("Rows from Wikidata for members MusicBrainz leaves out:", added)
     rows.sort(key=lambda r: (r["artist"], r["instrument"], r["member"]))
     write_csv("data/raw/instruments_raw.csv", rows, ["artist", "source", "member", "instrument", "wikidata_item"])
     print("Instrument rows:", len(rows))
